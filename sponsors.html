@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GACC 2027 Sponsors</title><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:#071c43}.top{background:#071c43;color:white;text-align:center;padding:9px;font-weight:900;letter-spacing:1px}nav{position:sticky;top:0;z-index:5;background:white;border-bottom:4px solid #cf1723;padding:15px 5%;display:flex;justify-content:space-between;font-weight:900}nav span{color:#d71920}nav a{margin-left:20px;text-decoration:none;color:#071c43;font-size:13px}.hero{
+width:100%;
+background:#071c43;
+overflow:hidden;
+}
+.hero img{
+width:100%;
+height:auto;
+display:block;
+margin:0;
+object-fit:contain;
+object-position:center;
+}section{padding:55px 6%}h2{text-align:center;font-size:34px;text-transform:uppercase;margin:0 0 12px}.intro{text-align:center;color:#606978;max-width:780px;margin:0 auto 35px;line-height:1.6}.hoursgrid,.hubgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1080px;margin:auto}.hours{border:1px solid #d9dee8;box-shadow:0 6px 20px #0001}.hours h3{margin:0;padding:18px 22px;background:#071c43;color:white;border-bottom:5px solid #d71920;font-size:23px}.hours.public h3{background:#d71920;border-color:#071c43}.row{display:flex;justify-content:space-between;padding:16px 22px;border-bottom:1px solid #e6e9ee;gap:15px}.row b{white-space:nowrap}.hubs{background:#071c43;color:white}.hubs .intro{color:#dce3ef}.hub{background:white;color:#071c43;padding:35px;border-radius:5px;border-top:7px solid #d71920}.hub h3{font-size:29px;margin:0 0 12px}.hub p{color:#606978;line-height:1.6}.btn{display:inline-block;background:#d71920;color:white;text-decoration:none;padding:14px 21px;font-weight:900;margin-top:8px}.sponsors{background:#f4f6f9}.grand{max-width:1050px;margin:auto;background:#071c43;color:white;padding:30px;text-align:center;border-bottom:6px solid #d71920}.grand small{letter-spacing:2px;font-weight:bold}.grandnames{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;font-size:25px;font-weight:900;margin-top:16px}.banners{max-width:1050px;margin:18px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.banner{height:135px;background:white;border:1px solid #d8dde5;display:flex;align-items:center;justify-content:center;font-weight:900}footer{background:#04132e;color:white;text-align:center;padding:38px;border-top:6px solid #d71920}@media(max-width:760px){nav div:last-child{display:none}.hoursgrid,.hubgrid{grid-template-columns:1fr}.banners{grid-template-columns:1fr 1fr}.row{font-size:14px}}
+
+.sponsor-tabs{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px 0}.sponsor-tabs button{font:inherit;font-weight:bold;padding:14px 21px;border:2px solid #071c43;background:white;color:#071c43;cursor:pointer}.sponsor-tabs button[aria-selected="true"]{background:#071c43;color:white}.supporting-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1050px;margin:auto}[hidden]{display:none!important}
+</style></head><body><div class="top">OCTOBER 27–30, 2027 • DONALD E. STEPHENS CONVENTION CENTER • ROSEMONT, ILLINOIS</div><nav><div>GREAT <span>AMERICAN</span> COIN SHOW</div><div><a href="index.html">HOME</a><a href="index.html#hubs">DEALER HUB</a><a href="index.html#hubs">ATTENDEE HUB</a><a href="sponsors.html">SPONSORS</a><a href="index.html#contact">CONTACT</a></div></nav>
+<section class="sponsors"><h2>Our 2027 Sponsors</h2><p class="intro">Proudly Supported by Our Sponsors</p>
+<div class="sponsor-tabs" role="tablist" aria-label="Sponsor categories"><button id="featured-tab" role="tab" aria-controls="featured-panel" aria-selected="true" type="button">Featured Sponsors</button><button id="supporting-tab" role="tab" aria-controls="supporting-panel" aria-selected="false" type="button">Supporting Sponsors</button></div>
+<div id="featured-panel" role="tabpanel" aria-labelledby="featured-tab"><p class="intro">Meet our featured sponsors on the home page.</p><div style="text-align:center"><a class="btn" href="index.html#sponsors">VIEW FEATURED SPONSORS →</a></div></div>
+<div id="supporting-panel" role="tabpanel" aria-labelledby="supporting-tab" hidden><div class="supporting-grid" id="supporting-sponsors"></div><p class="intro">Supporting sponsors will be added here.</p></div></section><footer id="contact"><strong>GREAT AMERICAN COIN & COLLECTIBLES SHOW</strong><p>October 27–30, 2027 • Donald E. Stephens Convention Center • Rosemont, Illinois</p><p>COINS ★ CURRENCY ★ BULLION ★ TOKENS & EXONUMIA</p></footer>
+<script>
+const tabs=Array.from(document.querySelectorAll('[role="tab"]'));
+function selectTab(tab){tabs.forEach(item=>{const selected=item===tab;item.setAttribute('aria-selected',String(selected));document.getElementById(item.getAttribute('aria-controls')).hidden=!selected;});}
+tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',event=>{if(['ArrowRight','ArrowLeft','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;selectTab(tabs[next]);tabs[next].focus();}});});
+</script></body></html>
