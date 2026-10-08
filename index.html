@@ -76,14 +76,14 @@ object-position:center;
 @media(min-width:851px) and (max-width:1100px){.hours-grid .access .row{padding:14px 7px;gap:4px}.hours-grid .access .access-pair strong,.hours-grid .access .access-pair span{font-size:12px}}
 
 
-/* Access schedule: stable two-column layout and unbroken time ranges */
-.hours-grid .access .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center;gap:8px;padding:16px 10px}
-.hours-grid .access .row>.access-times{display:flex;flex-direction:column;align-items:flex-end;width:100%;min-width:0;max-width:none;text-align:right}
-.hours-grid .access .access-pair{display:flex;flex-direction:column;align-items:flex-end;gap:2px;margin:0 0 12px;width:100%}
+/* Uniform access schedule layout: every day uses the same two-line pairs */
+.hours-grid .access .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:6px;align-items:center;padding:16px 8px}
+.hours-grid .access .row>.access-times{display:flex;flex-direction:column;align-items:flex-end;width:100%;min-width:0;text-align:right}
+.hours-grid .access .access-pair{display:flex;flex-direction:column;align-items:flex-end;gap:2px;margin:0 0 10px;width:100%}
 .hours-grid .access .access-pair:last-child{margin-bottom:0}
-.hours-grid .access .access-pair strong{display:block;font-size:13px!important;white-space:nowrap;line-height:1.25}
-.hours-grid .access .access-pair span{display:block;width:max-content;min-width:max-content;max-width:none;white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;font-size:12px!important;letter-spacing:-.2px;line-height:1.25}
-@media(min-width:851px) and (max-width:1150px){.hours-grid .access .row{grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:4px;padding:14px 7px}.hours-grid .access .access-pair strong{font-size:12px!important}.hours-grid .access .access-pair span{font-size:11px!important}}
+.hours-grid .access .access-pair strong{display:block;font-size:12px!important;line-height:1.25;white-space:nowrap}
+.hours-grid .access .access-pair span{display:block;width:max-content;max-width:none;min-width:max-content;font-size:12px!important;line-height:1.25;white-space:nowrap!important;overflow-wrap:normal!important;word-break:keep-all!important;letter-spacing:0}
+@media(min-width:851px) and (max-width:1150px){.hours-grid .access .row{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);padding:12px 6px;gap:3px}.hours-grid .access .access-pair strong,.hours-grid .access .access-pair span{font-size:11px!important}}
 </style></head><body>
 <nav><div></div><div><a href="#">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a></div></nav>
 <div class="hero"><<img src="GACC-2027-Final-Banner.webp" alt="GACC 2027">></div>
