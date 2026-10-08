@@ -76,12 +76,14 @@ object-position:center;
 @media(min-width:851px) and (max-width:1100px){.hours-grid .access .row{padding:14px 7px;gap:4px}.hours-grid .access .access-pair strong,.hours-grid .access .access-pair span{font-size:12px}}
 
 
-/* Consistent, nonbreaking schedule times with visible spacing around hyphens */
-.hours-grid .access .access-pair span{white-space:nowrap!important;word-break:normal!important;overflow-wrap:normal!important;font-size:12px!important;letter-spacing:0}
-.hours-grid .access .access-pair strong{font-size:12px!important}
-.hours-grid .access .row{grid-template-columns:minmax(0,1fr) max-content;gap:5px;padding:15px 8px}
-.hours-grid .access .row>.access-times{width:max-content;max-width:none}
-.hours-grid .public .row b,.hours-grid .hours:not(.access) .row b{font-size:14px}
+/* Access schedule: stable two-column layout and unbroken time ranges */
+.hours-grid .access .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center;gap:8px;padding:16px 10px}
+.hours-grid .access .row>.access-times{display:flex;flex-direction:column;align-items:flex-end;width:100%;min-width:0;max-width:none;text-align:right}
+.hours-grid .access .access-pair{display:flex;flex-direction:column;align-items:flex-end;gap:2px;margin:0 0 12px;width:100%}
+.hours-grid .access .access-pair:last-child{margin-bottom:0}
+.hours-grid .access .access-pair strong{display:block;font-size:13px!important;white-space:nowrap;line-height:1.25}
+.hours-grid .access .access-pair span{display:block;width:max-content;min-width:max-content;max-width:none;white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;font-size:12px!important;letter-spacing:-.2px;line-height:1.25}
+@media(min-width:851px) and (max-width:1150px){.hours-grid .access .row{grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:4px;padding:14px 7px}.hours-grid .access .access-pair strong{font-size:12px!important}.hours-grid .access .access-pair span{font-size:11px!important}}
 </style></head><body>
 <nav><div></div><div><a href="#">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a></div></nav>
 <div class="hero"><<img src="GACC-2027-Final-Banner.webp" alt="GACC 2027">></div>
