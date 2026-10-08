@@ -23,6 +23,38 @@ object-position:center;
 .hours, .hours.public {
   min-width: 0;
 }
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hours-grid .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.hours-grid .row b {
+  text-align: right;
+  white-space: normal;
+}
+
+.hours.access h3 {
+  background: #071c43;
+  border-bottom: 5px solid #d71920;
+}
+
+@media (max-width: 900px) {
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style></head><body>
 <nav><div></div><div><a href="#">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a></div></nav>
 <div class="hero"><<img src="GACC-2027-Final-Banner.webp" alt="GACC 2027">></div>
@@ -31,30 +63,71 @@ object-position:center;
   <h2>2027 Show Hours</h2>
   <p class="intro">Great American Coin &amp; Collectibles Show • October 27–30, 2027</p>
 
-  <div class="hours-grid">
-    <div class="hours">
-      <h3 style="background:#071c43;color:white;padding:15px;">Dealer Hours</h3>
+ 
+<div class="hours-grid">
 
-      <div class="row">
-        <span>Wednesday, October 27<br>
-         <small>Equal Access: 3:00 PM<br>
-          Early Access: 4:30 PM</small>
-        </span>
-        <b>3:00 PM – 7:00 PM</b>
-      </div>
-
-      <div class="row"><span>Thursday, October 28</span><b>8:00 AM – 5:30 PM</b></div>
-      <div class="row"><span>Friday, October 29</span><b>8:00 AM – 5:30 PM</b></div>
-      <div class="row"><span>Saturday, October 30</span><b>8:00 AM – 3:00 PM</b></div>
+  <div class="hours">
+    <h3>Dealer Hours</h3>
+    <div class="row">
+      <span>Wednesday, October 27</span>
+      <b>Dealer Setup: 3:00 PM</b>
     </div>
-
-    <div class="hours public">
-      <h3 style="background:#d71920;color:white;padding:15px;">Attendee Hours</h3>
-    <div class="row"><span>Wednesday, October 27</span><b>Equal Access: 3:00 PM<br>Early Access: 4:30 PM</b></div>
-      <div class="row"><span>Thursday, October 28</span><b>10:00 AM – 5:30 PM</b></div>
-      <div class="row"><span>Friday, October 29</span><b>10:00 AM – 5:30 PM</b></div>
-      <div class="row"><span>Saturday, October 30</span><b>9:00 AM – 3:00 PM</b></div>
+    <div class="row">
+      <span>Thursday, October 28</span>
+      <b>8:00 AM – 5:30 PM</b>
     </div>
+    <div class="row">
+      <span>Friday, October 29</span>
+      <b>8:00 AM – 5:30 PM</b>
+    </div>
+    <div class="row">
+      <span>Saturday, October 30</span>
+      <b>8:00 AM – 3:00 PM</b>
+    </div>
+  </div>
+
+  <div class="hours public">
+    <h3>Attendee Hours</h3>
+    <div class="row">
+      <span>Wednesday, October 27</span>
+      <b>Equal: 3:00 PM<br>Early: 4:30 PM</b>
+    </div>
+    <div class="row">
+      <span>Thursday, October 28</span>
+      <b>10:00 AM – 5:30 PM</b>
+    </div>
+    <div class="row">
+      <span>Friday, October 29</span>
+      <b>10:00 AM – 5:30 PM</b>
+    </div>
+    <div class="row">
+      <span>Saturday, October 30</span>
+      <b>9:00 AM – 3:00 PM</b>
+    </div>
+  </div>
+
+  <div class="hours access">
+    <h3>Equal &amp; Early Access</h3>
+    <div class="row">
+      <span>Wednesday, October 27</span>
+      <b>Equal: 3:00 PM<br>Early: 4:30 PM</b>
+    </div>
+    <div class="row">
+      <span>Thursday, October 28</span>
+      <b>Equal: 8:00 AM<br>Early: 9:00 AM</b>
+    </div>
+    <div class="row">
+      <span>Friday, October 29</span>
+      <b>Equal: 8:00 AM<br>Early: 9:00 AM</b>
+    </div>
+    <div class="row">
+      <span>Saturday, October 30</span>
+      <b>Equal: 8:00 AM<br>Early: 8:30 AM</b>
+    </div>
+  </div>
+
+</div>
+
   </div>
 </section>
 Location &amp; Parking</h2><p class="intro"><strong>Donald E. Stephens Convention Center</strong><br>5555 N River Rd, Rosemont, IL 60018</p><div style="max-width:1080px;margin:auto;display:grid;grid-template-columns:1fr 1.35fr;gap:22px"><div style="background:#f4f6f9;padding:30px;border-left:7px solid #d71920"><h3 style="font-size:26px;margin-top:0">Donald E. Stephens Convention Center</h3><p style="font-size:18px;line-height:1.6"><strong>5555 N River Rd<br>Rosemont, IL 60018</strong></p><p style="line-height:1.6;margin-top:25px"><strong style="color:#d71920">PARKING</strong><br>The parking ramp is directly across the street (N River Road) from the Convention Center between the Embassy Suites and DoubleTree hotels.</p><a class="btn" href="https://maps.app.goo.gl/Ns9Yn8Yk8yvDD7sj7" target="_blank">GET DIRECTIONS →</a></div><iframe title="Donald E. Stephens Convention Center map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10141.49083147581!2d-87.86685790447947!3d41.97922708490319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb5fd86e69343%3A0xf59638d2764bf12b!2sDonald%20E.%20Stephens%20Convention%20Center!5e1!3m2!1sen!2sus!4v1734641957836!5m2!1sen!2sus" width="100%" height="390" style="border:0" loading="lazy" allowfullscreen></iframe></div></section><section class="hubs" id="hubs"><h2>Choose Your GACC Hub</h2><p class="intro">Show information organized around the way you're attending.</p><div class="hubgrid">
