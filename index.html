@@ -84,6 +84,13 @@ object-position:center;
 .hours-grid .access .access-pair strong{display:block;font-size:12px!important;line-height:1.25;white-space:nowrap}
 .hours-grid .access .access-pair span{display:block;width:max-content;max-width:none;min-width:max-content;font-size:12px!important;line-height:1.25;white-space:nowrap!important;overflow-wrap:normal!important;word-break:keep-all!important;letter-spacing:0}
 @media(min-width:851px) and (max-width:1150px){.hours-grid .access .row{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);padding:12px 6px;gap:3px}.hours-grid .access .access-pair strong,.hours-grid .access .access-pair span{font-size:11px!important}}
+
+/* Final access card: reserve enough width for full unbroken time ranges */
+.hours-grid .access .row{grid-template-columns:minmax(0,1fr) max-content!important;column-gap:5px!important;padding:14px 6px!important}
+.hours-grid .access .row>.access-times{width:max-content!important;max-width:none!important;min-width:max-content!important}
+.hours-grid .access .access-pair{width:max-content!important;align-items:flex-end!important}
+.hours-grid .access .access-pair strong,.hours-grid .access .access-pair span{font-size:11px!important;white-space:nowrap!important;max-width:none!important;min-width:max-content!important;word-break:normal!important}
+.hours-grid .access .row>span{font-size:14px;min-width:0}
 </style></head><body>
 <nav><div></div><div><a href="#">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a></div></nav>
 <div class="hero"><<img src="GACC-2027-Final-Banner.webp" alt="GACC 2027">></div>
