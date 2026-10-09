@@ -22,19 +22,18 @@ footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:
 
 .dealer-apply{background:#f7f9fc;border:2px solid #dbe2ed;border-top:6px solid #cf1723}.dealer-apply .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.dealer-apply label{display:block;font-size:14px;font-weight:700;margin:12px 0 5px}.dealer-apply input:not([type=checkbox]),.dealer-apply select,.dealer-apply textarea{width:100%;padding:12px;border:1px solid #b8c4d5;border-radius:5px;font:inherit;background:white}.dealer-apply fieldset{border:1px solid #ccd5e3;border-radius:7px;margin:18px 0;padding:16px}.dealer-apply legend{font-weight:900;padding:0 8px}.dealer-apply .check{display:flex;align-items:center;gap:9px;font-weight:500;margin:10px 0}.dealer-apply button{background:#cf1723;color:white;border:0;border-radius:5px;padding:15px 25px;font-size:16px;font-weight:900;cursor:pointer}.dealer-apply .table-options-panel{margin:18px 0;padding:20px;border:1px solid #ccd5e3;border-left:5px solid #cf1723;border-radius:7px;background:white}.dealer-apply .table-options-panel h3{margin:0 0 12px;color:#071c43}.dealer-apply .fine{font-size:13px;color:#536178;line-height:1.5}@media(max-width:600px){.dealer-apply .form-grid{grid-template-columns:1fr}}
 
-/* Patriotic application buttons */
-.gacc-flag-button{position:relative;isolation:isolate;overflow:hidden;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;padding:26px 18px!important;border:3px solid #f7f1e3!important;border-radius:17px!important;box-shadow:0 5px 0 #092044,0 10px 20px rgba(0,0,0,.19)!important;text-align:center;text-decoration:none;color:#fff!important;background:repeating-linear-gradient(166deg,rgba(255,255,255,.12) 0 18px,transparent 18px 42px,rgba(190,16,35,.38) 42px 64px,transparent 64px 86px),linear-gradient(110deg,#071c43,#bd1724 75%)!important}
-.gacc-flag-button:before{content:"★ ★ ★";position:absolute;left:0;top:0;padding:9px 12px;color:white;font-size:14px;letter-spacing:3px;background:#092b62;border-radius:0 0 15px 0;opacity:.94;z-index:-1}
-.gacc-flag-button .flag-heading{font-size:clamp(1.15rem,2.7vw,1.65rem);font-weight:900;line-height:1.2;text-shadow:0 2px 4px #06112e;max-width:95%}
-.gacc-flag-button .flag-subtitle{display:block;background:linear-gradient(#d71c2e,#960b1c);border:2px solid #fff;border-radius:999px;box-shadow:0 3px 8px #071c4366;color:white!important;padding:10px 20px;font-size:clamp(.83rem,2vw,1rem);font-weight:800;line-height:1.35;max-width:100%}
-.gacc-flag-button.flag-digital{background:repeating-linear-gradient(160deg,rgba(255,255,255,.10) 0 22px,transparent 22px 51px,rgba(191,20,40,.30) 51px 76px,transparent 76px 102px),linear-gradient(105deg,#051b3f,#123b78 65%,#061a3c)!important}
+/* Bold American flag application banners */
+.gacc-flag-button{position:relative;isolation:isolate;overflow:hidden;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;min-height:168px;padding:25px 18px!important;border:3px solid #d6ad56!important;border-radius:17px!important;box-shadow:0 5px 0 #092044,0 10px 20px rgba(0,0,0,.19)!important;text-align:center;text-decoration:none;color:#fff!important;background:repeating-linear-gradient(to bottom,#b3192c 0px,#b3192c 18px,#fff 18px,#fff 36px)!important}
+.gacc-flag-button:before{content:"★ ★ ★ ★ ★\\A ★ ★ ★ ★ ★\\A ★ ★ ★ ★ ★";white-space:pre;position:absolute;top:0;left:0;width:31%;height:100%;display:flex;align-items:center;justify-content:center;background:#08285b;color:#fff;font-size:clamp(13px,2.3vw,22px);line-height:2;letter-spacing:4px;text-align:center;z-index:0}
+.gacc-flag-button .flag-heading{position:relative;z-index:1;display:block;background:rgba(5,25,58,.94);border:1px solid #f0d595;border-radius:9px;padding:9px 17px;font-size:clamp(1.05rem,2.7vw,1.65rem);font-weight:900;line-height:1.2;text-shadow:0 2px 4px #06112e;max-width:95%}
+.gacc-flag-button .flag-subtitle{position:relative;z-index:1;display:block;background:linear-gradient(#d71c2e,#960b1c);border:2px solid #fff;border-radius:999px;box-shadow:0 3px 8px #071c4366;color:white!important;padding:10px 20px;font-size:clamp(.83rem,2vw,1rem);font-weight:800;line-height:1.35;max-width:100%}
+.gacc-flag-button.flag-digital .flag-heading{background:rgba(5,25,58,.96)}
 .gacc-flag-button.flag-digital .flag-subtitle{background:linear-gradient(#1a5fa9,#0a306b)}
-.gacc-flag-button.flag-soon{color:#071c43!important;background:repeating-linear-gradient(165deg,rgba(255,255,255,.6) 0 30px,rgba(198,20,40,.14) 30px 55px,rgba(255,255,255,.6) 55px 85px),linear-gradient(105deg,#f9f2df,#e5cfaa)!important;border-color:#b58a32!important}
-.gacc-flag-button.flag-soon .flag-heading{text-shadow:0 1px 0 #fff}
+.gacc-flag-button.flag-soon .flag-heading{background:rgba(255,249,231,.97);color:#071c43;text-shadow:none}
 .gacc-flag-button.flag-soon .flag-subtitle{background:linear-gradient(#d7a440,#a57519);border-color:#fff}
-a.gacc-flag-button:hover,summary.gacc-flag-button:hover{filter:brightness(1.07);transform:translateY(-1px)}
+a.gacc-flag-button:hover,summary.gacc-flag-button:hover{filter:brightness(1.06);transform:translateY(-1px)}
 summary.gacc-flag-button::-webkit-details-marker{display:none}
-@media(max-width:600px){.gacc-flag-button{padding:24px 12px!important}.gacc-flag-button:before{font-size:10px;padding:6px}}
+@media(max-width:600px){.gacc-flag-button{padding:20px 9px!important;min-height:155px}.gacc-flag-button:before{width:35%;font-size:11px;letter-spacing:1px}.gacc-flag-button .flag-heading{max-width:97%;padding:9px 8px}}
 </style>
 </head>
 
