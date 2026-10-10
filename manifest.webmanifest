@@ -1,0 +1,18 @@
+{
+  "name": "Great American Coin & Collectibles Show",
+  "short_name": "GACC",
+  "description": "Official Great American Coin & Collectibles Show app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071c43",
+  "icons": [
+    {
+      "src": "/gacc-app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
