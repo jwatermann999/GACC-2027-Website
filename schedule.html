@@ -16,10 +16,21 @@ h1{font-size:clamp(32px,5vw,56px);margin:0 0 24px}
 footer{background:#04132e;color:white;text-align:center;padding:35px 20px;border-top:6px solid #d71920}
 @media(max-width:760px){nav{justify-content:center;text-align:center}nav .links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}nav a{margin:0}}
 </style>
-</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 <body>
 <div class="top">OCTOBER 27–30, 2027 • DONALD E. STEPHENS CONVENTION CENTER • ROSEMONT, ILLINOIS</div>
 <nav><div class="brand">GREAT <span>AMERICAN</span> COIN &amp; COLLECTIBLES SHOW</div><div class="links"><a href="index.html">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html" aria-current="page">SCHEDULE</a><a href="index.html#sponsors">SPONSORS</a><a href="contact.html">CONTACT</a></div></nav>
 <main><div><h1>2027 Event Schedule</h1><p class="coming">Coming Fall 2027</p></div></main>
 <footer><strong>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</strong><p>October 27–30, 2027 • Donald E. Stephens Convention Center • Rosemont, Illinois</p></footer>
-</body></html>
+<script>
+(function(){
+function track(name,params){if(typeof window.gtag==='function')window.gtag('event',name,params||{});}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var href=a.getAttribute('href')||'';var url;try{url=new URL(href,location.href)}catch(_){return}var text=(a.textContent||'').trim().slice(0,100);
+if(/\.pdf(?:$|[?#])/i.test(url.pathname))track('dealer_pdf_download',{file_name:url.pathname.split('/').pop(),link_url:url.href});
+else if(url.protocol==='mailto:'||url.protocol==='tel:')track('contact_click',{contact_type:url.protocol.replace(':',''),link_text:text});
+else if(/hotel|booking|marriott|hilton|hyatt|crowne|embassy|doubletree|hampton|loews|sonesta/i.test(url.hostname+' '+text+' '+href)&&url.origin!==location.origin)track('hotel_link_click',{link_url:url.href,link_text:text});
+else if(a.closest('.sponsors,.sponsor,.sponsor-grid,.sponsor-card,.sponsor-banners,.industry-resources')&&url.origin!==location.origin)track('partner_link_click',{link_url:url.href,link_text:text});
+});
+var form=document.querySelector('#online-application form');if(form)form.addEventListener('submit',function(){track('dealer_application_submit_attempt',{form_name:'2027 Digital Dealer Application'});});
+})();
+</script></body></html>
