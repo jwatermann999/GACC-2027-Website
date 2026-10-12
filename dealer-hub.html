@@ -198,159 +198,35 @@ Everything GACC dealers need before arriving at the Great American Coin &amp; Co
 
 <footer>
 Great American Coin &amp; Collectibles Show • 2027
-</footer>
-
-<script>
+</footer><script>
 (function(){
-function track(name,params){if(typeof window.gtag==='function')window.gtag('event',name,params||{});}
-document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var href=a.getAttribute('href')||'';var url;try{url=new URL(href,location.href)}catch(_){return}var text=(a.textContent||'').trim().slice(0,100);
-if(/\.pdf(?:$|[?#])/i.test(url.pathname))track('dealer_pdf_download',{file_name:url.pathname.split('/').pop(),link_url:url.href});
-else if(url.protocol==='mailto:'||url.protocol==='tel:')track('contact_click',{contact_type:url.protocol.replace(':',''),link_text:text});
-else if(/hotel|booking|marriott|hilton|hyatt|crowne|embassy|doubletree|hampton|loews|sonesta/i.test(url.hostname+' '+text+' '+href)&&url.origin!==location.origin)track('hotel_link_click',{link_url:url.href,link_text:text});
-else if(a.closest('.sponsors,.sponsor,.sponsor-grid,.sponsor-card,.sponsor-banners,.industry-resources')&&url.origin!==location.origin)track('partner_link_click',{link_url:url.href,link_text:text});
+const root=document.querySelector('.approved-form');if(!root)return;
+const money=n=>'USD '+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fields=Array.from(root.querySelectorAll('[data-price]'));
+function recalc(){
+let tables=0,rentals=0,shared=0;const details=[];
+fields.forEach((el,i)=>{
+const n=Math.max(0,Math.floor(Number(el.value)||0));const price=Number(el.dataset.price);const sum=n*price;
+el.nextElementSibling.textContent=money(sum);
+if(i<13)tables+=sum;else if(i<16)rentals+=sum;else shared+=sum;
+if(n)details.push(el.dataset.title+': '+n+' x '+money(price)+' = '+money(sum));
 });
-var form=document.querySelector('#online-application form');if(form)form.addEventListener('submit',function(){track('dealer_application_submit_attempt',{form_name:'2027 Digital Dealer Application'});});
+const base=tables+rentals+shared;
+const fee=root.querySelector('#gacc-pay-method').value.startsWith('Credit Card')?Math.round(base*3)/100:0;
+const total=base+fee;
+const due=root.querySelector('#gacc-payment-plan').value==='half'?Math.round(total*50)/100:total;
+[['gacc-tables-total',tables],['gacc-rentals-total',rentals],['gacc-shared-total',shared],['gacc-card-fee',fee],['gacc-grand-total',total],['gacc-due-now',due],['gacc-balance',total-due]].forEach(([id,value])=>root.querySelector('#'+id).textContent=money(value));
+root.querySelector('#gacc-submitted-total').value=money(total);
+root.querySelector('#gacc-submitted-due').value=money(due);
+root.querySelector('#gacc-submitted-details').value=details.join('; ');
+}
+root.addEventListener('input',recalc);root.addEventListener('change',recalc);
+let n=1;
+root.querySelector('#gacc-add-badge').addEventListener('click',()=>{
+n++;const label=document.createElement('label');label.textContent='Badge Holder '+n;
+const input=document.createElement('input');input.name='Badge Holder '+n;input.type='text';label.append(input);
+root.querySelector('#gacc-badge-names').append(label);
+});
+recalc();
 })();
-</script><script>(function(){const root=document.querySelector('.approved-form');if(!root)return;const money=n=>'
-</html<details id="online-application"><summary class="gacc-flag-button flag-digital"><span class="flag-heading">📝 OPEN DIGITAL DEALER APPLICATION</span><span class="flag-subtitle">★ FILL OUT, REVIEW TOTALS &amp; SUBMIT ▼ ★</span></summary><div class="approved-form"><header><b class="gacc-mark">GACC</b><div><strong>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</strong><p>2027 DEALER APPLICATION | OCTOBER 27–30, 2027</p><small>Donald E. Stephens Convention Center | 5555 N. River Road, Rosemont, IL 60018</small></div></header><p class="fine">Complete this online application to request space. Submission is subject to availability and GACC approval. Payment is not collected by this form.</p><form action="https://formsubmit.co/gaccshow@gmail.com" method="POST"><input type="hidden" name="_subject" value="GACC 2027 Dealer Application"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1"><h3>DEALER INFORMATION</h3><div class="approved-grid"><label>Dealer / Contact Name<input name="Dealer / Contact Name" id="gacc-name" type="text" required ></label><label>Phone<input name="Phone" id="gacc-phone" type="tel" required ></label><label>Business / Booth Sign<input name="Business / Booth Sign" id="gacc-business" type="text" required ></label><label>Mailing Address<input name="Mailing Address" id="gacc-address" type="text" required ></label><label>City<input name="City" id="gacc-city" type="text" required ></label><label>State<input name="State" id="gacc-state" type="text" required ></label><label>ZIP<input name="ZIP" id="gacc-zip" type="text" required ></label><label>Email<input name="Email" id="gacc-email" type="email" required ></label><label>Website<input name="Website" id="gacc-website" type="url"  ></label></div><h3>SPONSOR CENTER | AREAS A, B & C</h3><div class="approved-prices"><label class="approved-price"><span>Sponsor Center · Area A Single<small>$2,500 each</small></span><input type="number" min="0" max="100" value="0" data-price="2500" data-title="Sponsor Center · Area A Single" name="Sponsor Center · Area A Single Quantity" aria-label="Sponsor Center · Area A Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Sponsor Center · Area A Corner<small>$3,500 each</small></span><input type="number" min="0" max="100" value="0" data-price="3500" data-title="Sponsor Center · Area A Corner" name="Sponsor Center · Area A Corner Quantity" aria-label="Sponsor Center · Area A Corner quantity"><output>$0.00</output></label><label class="approved-price"><span>Sponsor Center · Area B Single<small>$2,300 each</small></span><input type="number" min="0" max="100" value="0" data-price="2300" data-title="Sponsor Center · Area B Single" name="Sponsor Center · Area B Single Quantity" aria-label="Sponsor Center · Area B Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Sponsor Center · Area B Corner<small>$3,000 each</small></span><input type="number" min="0" max="100" value="0" data-price="3000" data-title="Sponsor Center · Area B Corner" name="Sponsor Center · Area B Corner Quantity" aria-label="Sponsor Center · Area B Corner quantity"><output>$0.00</output></label><label class="approved-price"><span>Sponsor Center · Area C Single<small>$2,150 each</small></span><input type="number" min="0" max="100" value="0" data-price="2150" data-title="Sponsor Center · Area C Single" name="Sponsor Center · Area C Single Quantity" aria-label="Sponsor Center · Area C Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Sponsor Center · Area C Corner<small>$2,700 each</small></span><input type="number" min="0" max="100" value="0" data-price="2700" data-title="Sponsor Center · Area C Corner" name="Sponsor Center · Area C Corner Quantity" aria-label="Sponsor Center · Area C Corner quantity"><output>$0.00</output></label></div><h3>OTHER DEALER TABLE OPTIONS</h3><div class="approved-prices"><label class="approved-price"><span>Section One · Premium Single<small>$1,650 each</small></span><input type="number" min="0" max="100" value="0" data-price="1650" data-title="Section One · Premium Single" name="Section One · Premium Single Quantity" aria-label="Section One · Premium Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Section One · Premium Corner<small>$2,350 each</small></span><input type="number" min="0" max="100" value="0" data-price="2350" data-title="Section One · Premium Corner" name="Section One · Premium Corner Quantity" aria-label="Section One · Premium Corner quantity"><output>$0.00</output></label><label class="approved-price"><span>Section Two · Standard Single<small>$1,450 each</small></span><input type="number" min="0" max="100" value="0" data-price="1450" data-title="Section Two · Standard Single" name="Section Two · Standard Single Quantity" aria-label="Section Two · Standard Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Section Two · Standard Corner<small>$2,150 each</small></span><input type="number" min="0" max="100" value="0" data-price="2150" data-title="Section Two · Standard Corner" name="Section Two · Standard Corner Quantity" aria-label="Section Two · Standard Corner quantity"><output>$0.00</output></label><label class="approved-price"><span>Budget Single<small>$750 each</small></span><input type="number" min="0" max="100" value="0" data-price="750" data-title="Budget Single" name="Budget Single Quantity" aria-label="Budget Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Budget Corner<small>$1,250 each</small></span><input type="number" min="0" max="100" value="0" data-price="1250" data-title="Budget Corner" name="Budget Corner Quantity" aria-label="Budget Corner quantity"><output>$0.00</output></label></div><h3>DEALER TRADING ROOM</h3><div class="approved-prices"><label class="approved-price"><span>Dealer Trading Room<small>$350 each</small></span><input type="number" min="0" max="100" value="0" data-price="350" data-title="Dealer Trading Room" name="Dealer Trading Room Quantity" aria-label="Dealer Trading Room quantity"><output>$0.00</output></label></div><h3>RENTALS & EXTRA BADGES</h3><div class="approved-prices"><label class="approved-price"><span>Extra Showcases<small>$20 each</small></span><input type="number" min="0" max="100" value="0" data-price="20" data-title="Extra Showcases" name="Extra Showcases Quantity" aria-label="Extra Showcases quantity"><output>$0.00</output></label><label class="approved-price"><span>Extra Lamps<small>$15 each</small></span><input type="number" min="0" max="100" value="0" data-price="15" data-title="Extra Lamps" name="Extra Lamps Quantity" aria-label="Extra Lamps quantity"><output>$0.00</output></label><label class="approved-price"><span>Extra Eligible Badges<small>$100 each</small></span><input type="number" min="0" max="100" value="0" data-price="100" data-title="Extra Eligible Badges" name="Extra Eligible Badges Quantity" aria-label="Extra Eligible Badges quantity"><output>$0.00</output></label></div><h3>SHARED DEALER</h3><div class="approved-prices"><label class="approved-price"><span>Shared Dealer · Single<small>$250 each</small></span><input type="number" min="0" max="100" value="0" data-price="250" data-title="Shared Dealer · Single" name="Shared Dealer · Single Quantity" aria-label="Shared Dealer · Single quantity"><output>$0.00</output></label><label class="approved-price"><span>Shared Dealer · Corner<small>$350 each</small></span><input type="number" min="0" max="100" value="0" data-price="350" data-title="Shared Dealer · Corner" name="Shared Dealer · Corner Quantity" aria-label="Shared Dealer · Corner quantity"><output>$0.00</output></label></div><p class="fine">Shared dealer registration adds another dealer or business sign and a separate program listing. It does not replace badge eligibility. Enter the shared dealer's name below.</p><label>Shared Dealer Name / Business Sign<input name="Shared Dealer Name / Business Sign" id="gacc-shared-name" type="text"  ></label><h3>INCLUDED WITH EACH TABLE</h3><p class="fine"><strong>Corner:</strong> 4 showcases, 2 lamps; owner + 2 eligible W-2 employees, immediate family members, or registered shared dealers.<br><strong>Single:</strong> 2 showcases, 1 lamp; owner + 1 eligible W-2 employee, immediate family member, or registered shared dealer.<br><strong>Budget:</strong> 2 showcases, 1 lamp; owner + 1 eligible W-2 employee, immediate family member, or registered shared dealer.<br><strong>Sponsor Center:</strong> Same rules. Other attendees must purchase Equal Access or Early Access Passes.</p><h3>DEALER BADGE NAMES</h3><p class="fine">List eligible badge holders, including W-2 employees, immediate family members, and registered shared dealers. Extra eligible badges are $100 each.</p><div id="gacc-badge-names"><label>Badge Holder 1 (Owner)<input name="Badge Holder 1 (Owner)" id="gacc-badge1" type="text"  ></label></div><button type="button" id="gacc-add-badge">+ Add Badge Holder Name</button><h3>IMPORTANT DEALER DEADLINES</h3><p><strong>SEPTEMBER 10, 2027:</strong> Program print deadline. Changes made after this date will not appear in the printed program.</p><p><strong>TABLE ADDITIONS:</strong> Dealers may add tables through show day, subject to availability.</p><p><strong>OCTOBER 10, 2027:</strong> Final badge-change deadline. Later access requires Equal Access or Early Access Passes.</p><label class="approved-check"><input type="checkbox" name="Deadlines Acknowledged" required> I acknowledge these deadlines and policies.</label><h3>PAYMENT &amp; AUTHORIZATION</h3><div class="approved-grid"><label>Payment Plan<select id="gacc-payment-plan" name="Payment Plan"><option value="full">Pay in Full</option><option value="half">50% Deposit (balance due August 14, 2027)</option></select></label><label>Payment Method<select id="gacc-pay-method" name="Payment Method" required><option value="">Choose a payment method</option><option value="Check">Check</option><option value="Cash">Cash</option><option value="Credit Card (+3%)">Credit Card (+3%)</option><option value="E-check">E-check</option></select></label></div><div class="approved-totals"><div>Tables: <b id="gacc-tables-total">$0.00</b></div><div>Rentals / Badges: <b id="gacc-rentals-total">$0.00</b></div><div>Shared Dealer: <b id="gacc-shared-total">$0.00</b></div><div>Card Fee: <b id="gacc-card-fee">$0.00</b></div><div class="approved-grand">TOTAL: <b id="gacc-grand-total">$0.00</b></div><div>Due Now: <b id="gacc-due-now">$0.00</b></div><div>Remaining Balance: <b id="gacc-balance">$0.00</b></div></div><input type="hidden" id="gacc-submitted-total" name="Calculated Total"><input type="hidden" id="gacc-submitted-due" name="Amount Due Now"><input type="hidden" id="gacc-submitted-details" name="Itemized Selections"><p class="fine"><strong>MAKE CHECKS PAYABLE TO SHEPARD EXPOS MANAGEMENT</strong><br>Shepard Expos | 462 Gardner St., South Beloit, IL 61080<br>gaccshow@gmail.com | 779-771-2417</p><p class="fine">Do not enter or email credit card or bank account numbers. Payment instructions and any secure card processing will be confirmed separately.</p><label>Signature / Typed Authorization<input name="Signature / Typed Authorization" id="gacc-signature" type="text" required ></label><label>Date<input name="Date" id="gacc-date" type="date" required ></label><button type="submit">SUBMIT DEALER APPLICATION</button><p class="fine">Applications are sent through a third-party email form service. The recipient must activate that service before reliable delivery is possible.</p></form></div></details><div class="card" id="access-pass-application" style="border-top:5px solid #b88a2a;">
-  <div class="gacc-flag-button flag-soon" aria-label="Equal Access and Early Access pass holder application coming soon"><span class="flag-heading">🎟️ EQUAL ACCESS &amp; EARLY ACCESS PASS HOLDERS</span><span class="flag-subtitle">★ APPLICATION COMING SOON! ★</span></div>
-  <p style="font-size:.95rem;">The Equal Access and Early Access pass holder application is being prepared. Please check back soon for details. No application is available to submit yet.</p>
-</div>
-
-
-<p class="intro">
-Everything GACC dealers need before arriving at the Great American Coin &amp; Collectibles Show.
-</p>
-
-<div class="card">
-<h2><p><strong>Dealer Load-In Begins:</strong> Wednesday, October 27th at 3:00 PM</p>
-  Dealer Setup &amp; Load-In</h2>
-<p>Dealer load-in will take place through the <strong>Hall G drive-in ramp</strong>, located off River Road on the south side of the Donald E. Stephens Convention Center, across from the Crowne Plaza O'Hare. Dealers may drive directly up the ramp and onto the Hall G show floor to unload. <strong>Security personnel will be stationed at the entrance and on the show floor to direct vehicles and assist with the load-in process.</strong> Once unloaded, please promptly remove your vehicle from the show floor and loading area to keep traffic moving for incoming dealers.
-
-</p>
-</div>
-
-<div class="card">
-<h2>Dealer Security Room</h2>
-<p>Opens: Tuesday, October 26 at 12:00 PM</p>
-<p>Wednesday: Available until 3:00 PM</p>
-<h3>Security Room Storage Policy</h3>
-<p>Complimentary storage is included for <strong>Table Holders and Equal Access Pass Holders</strong>. Show badges must be presented at check-in.</p>
-<p>All other participants, including Early Access Pass Holders, are welcome to utilize security room storage for <strong>$100 per item</strong>.</p>
-<p><strong>Late Pickup:</strong> $200 per bag after 3:30 PM Wednesday.</p>
-</div>
-
-<div class="card">
-<h2>Dealer Parking &amp; Accessibility</h2>
-<p><strong>Venue:</strong> Donald E. Stephens Convention Center, 5555 N. River Road, Rosemont, IL 60018.</p>
-<h3>Parking</h3>
-<p>Public parking options include the William Street Parking Garage (9500 Williams Street) and East Parking Garage (9221 Bryn Mawr Avenue). Parking rates and garage access are subject to venue policies and may change for 2027.</p>
-<h3>Dealer Load-In &amp; Load-Out</h3>
-<p>Dealer unloading is separate from regular visitor parking. Please follow GACC staff directions and posted dealer load-in instructions. Specific 2027 loading arrangements will be confirmed closer to the show. After unloading, promptly move your vehicle to an authorized parking area.</p>
-<h3>Accessible Parking &amp; Entry</h3>
-<p>Accessible parking spaces and elevator access are available at the venue. Follow posted signs for accessible routes to the convention center and show floor. For specific accessibility arrangements, contact the convention center at <a href="tel:8476922220">847-692-2220</a>.</p>
-<h3>Hotel &amp; Skybridge Access</h3>
-<p>Enclosed skybridge connections provide access between the convention center and certain nearby hotels and parking facilities. Follow posted signs for the appropriate route.</p>
-<p><strong>Security reminder:</strong> Parking and unloading arrangements are separate from Dealer Security Room check-in and storage policies.</p>
-<p><a href="https://rosemont.com/desconvention/attend/" target="_blank" rel="noopener"><strong>Convention Center Visitor &amp; Parking Information →</strong></a></p>
-</div>
-
-<div class="card">
-<h2>Dealer Trading Room</h2>
-
-<p>The GACC Dealer Trading Room gives participating dealers an opportunity to buy, sell, and trade before the show opens to the public.</p>
-
-<h3>Trading Room Access Times</h3>
-<ul>
-  <li><strong>8:00 AM:</strong> Trading Room table holders may enter.</li>
-  <li><strong>8:05 AM:</strong> Pass holders may enter, with equal access beginning at this time.</li>
-  <li><strong>10:15 AM:</strong> Early Access admission begins.</li>
-</ul>
-
-<h3>Trading Room Tables</h3>
-
-
-<h3>Trading Room Table Rules</h3>
-<p><strong>Maximum of Two W-2 Employees:</strong> Only two (2) employees are permitted behind each Trading Room table at any given time. This includes the table owner and employees.</p>
-<p>Employees working behind the table must be W-2 employees.</p>
-<p>Dealers needing space for additional personnel may purchase additional tables.</p>
-<p><strong>Limited Availability:</strong> Additional Trading Room tables are available on a first-come, first-served basis, subject to availability.</p>
-
-  
-
-<p><strong>Important:</strong> All participants must have the appropriate credentials for their admission category. Additional Trading Room information will be provided as the show approaches.</p>
-
-</div>
-
-
-
-<div class="card">
-<h2>Shipping, Electrical &amp; Show Services</h2>
-<p>
-<h3>Electrical Services</h3>
-<p><strong>Electrical service is provided to every dealer booth.</strong></p>
-<p>Dealers requiring additional electrical cords may rent them directly from Ed at the Showcase Booth.</p>
-<p>Dealers requiring a dedicated private electrical drop may request one through <strong>Jaye Watermann</strong>. Requests must be submitted <strong>at least two weeks before the show</strong>. An estimate will be provided and payment collected at the time of the request.</p>
-
-<h3>Showcase Rentals</h3>
-<p>Dealers will be provided with the number of showcases requested on their dealer application.</p>
-<p>Additional showcases will be available for rent at the show, subject to availability.</p>
-<p>Dealers needing extra showcases should visit Ed at the Showcase Booth to arrange and pay for rentals directly with him.</p>
-
-<h3>FedEx Pickup Information</h3>
-<p>FedEx pickup information and instructions will be updated two weeks before the show.</p>
-</p>
-</div>
-
-
-<div class="card">
-  <h2>Official Safe Rental Sponsor</h2>
-
-  <p>Professional safe rental services for the 2027 Great American Coin &amp; Collectibles Show are provided exclusively by our Official Safe Rental Sponsor.</p>
-
-  <h3>SAFES SECURITY SERVICES, LLC</h3>
-
-  <p><strong>Contact:</strong> Tom Volarich</p>
-  <p><strong>Phone:</strong> <a href="tel:3015093078">301-509-3078</a></p>
-  <p><strong>Email:</strong> <a href="mailto:tom@safessecurityservices.com?subject=Safe%20Rental%20at%20GACC%202027">tom@safessecurityservices.com</a></p>
-
-  <h3>Exclusive Safe Rentals</h3>
-  <p>All dealer safe rentals must be arranged directly through SAFES SECURITY SERVICES, LLC, the exclusive Official Safe Rental Sponsor of GACC.</p>
-
-  <h3>How to Reserve Your Safe</h3>
-  <ol>
-    <li>Contact Tom Volarich to request the current Dealer Safe Rental Application.</li>
-    <li><strong>Reservation Deadline:</strong> Orders must be received by October 4, 2027, to guarantee safe rental.</li>
-    <li>Order confirmation will be sent after payment is received.</li>
-    <li>Your safe combination will be delivered directly to your booth.</li>
-  </ol>
-
-  <p><strong>Important:</strong> Safe rentals are handled exclusively by SAFES SECURITY SERVICES, LLC. Contact Tom directly for rental arrangements, pricing, and availability.</p>
-</div>
-<div class="card dining-discounts">
-<h2>Dining &amp; Restaurant Discounts 🍽️</h2>
-<p>Enjoy Rosemont's dining scene during GACC 2027! Dealers and attendees can explore participating restaurants and ask about offers available through Rosemont's <strong>Show Your Badge Program</strong>.</p>
-<p><strong>Featured dining options:</strong> Select a restaurant logo to visit its website.</p><div class="dining-photo-strip" aria-label="Rosemont dining photography"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164902/WHere_to_eat-00002.jpg" alt="Rosemont dining, grilled entrée" loading="lazy"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164904/WHere_to_eat-00001.jpg" alt="Rosemont dining, plated restaurant dish" loading="lazy"></div>
-<div class="dining-restaurants" aria-label="Featured Rosemont restaurants">
-<a class="dining-restaurant" href="https://www.buona.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Buona Beef website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095412/Buona-512-x-512.jpg" alt="Buona Beef official restaurant logo" loading="lazy"><strong>Buona Beef</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://www.mortons.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Morton's The Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Mortons-512-x-512.jpg" alt="Morton's The Steakhouse official restaurant logo" loading="lazy"><strong>Morton's The Steakhouse</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://www.gibsonssteakhouse.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Gibsons Bar & Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095416/Gibsons-512-x-512.jpg" alt="Gibsons Bar & Steakhouse official restaurant logo" loading="lazy"><strong>Gibsons Bar & Steakhouse</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://morettisrestaurants.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Moretti's website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Morettis-512-x-512.jpg" alt="Moretti's official restaurant logo" loading="lazy"><strong>Moretti's</strong><small>Visit restaurant website ↗</small></a>
-</div>
-<p><small>Participating locations, offers, and terms are subject to the current Show Your Badge Program. Please confirm discounts with each restaurant.</small></p>
-</div>
-
-<div class="card">
-<h2>Dealer Rules &amp; Important Information</h2>
-<p>Show policies and important dealer information will be posted here.</p>
-</div>
-
-</main>
-
-<footer>
-Great American Coin &amp; Collectibles Show • 2027
-</footer>
-
-<script>(function(){const section=document.getElementById('table-section'),type=document.getElementById('table-type');if(!section||!type)return;const prices={'First Section':[['Straight',1650],['Corner',2350],['End Cap (2 Corners)',null],['Island (4 Corners)',null]],'Second Section':[['Straight',1450],['Corner',2150],['End Cap (2 Corners)',null],['Island (4 Corners)',null]],'Budget Section':[['Straight',750],['Corner',1250],['End Cap (2 Corners)',null],['Island (4 Corners)',null]],'Sponsor Center':[['Straight A',2500],['Corner A',3500],['Straight B',2300],['Corner B',3000],['Straight C',2150],['Corner C',2700],['End Cap (2 Corners)',null],['Island (4 Corners)',null]]};section.addEventListener('change',function(){type.replaceChildren(new Option('Choose table configuration',''));for(const [name,price] of prices[section.value]||[]){type.add(new Option(name+' — '+(price===null?'Price confirmed by GACC':'
-</html>+price.toLocaleString('en-US')),name))}type.disabled=!section.value});})();</script></body>
-</html>
+</script></body></html>
