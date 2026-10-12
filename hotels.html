@@ -22,7 +22,7 @@ footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:
 .card h3{color:#b71b24;margin-top:-5px}.card ul{line-height:1.7;padding-left:23px}.card li{margin:5px 0}.sold-out{display:inline-block;background:#b71b24;color:#fff;border-radius:4px;padding:5px 9px;font-size:14px;vertical-align:middle;letter-spacing:.04em}.hotel-button:hover{background:#d71920}
 .hotel-announcement{background:#071c43;color:#fff;text-align:center;border-top:7px solid #d71920;border-bottom:7px solid #d71920;padding:36px 24px;margin:0 auto 36px;border-radius:8px;box-shadow:0 8px 24px #071c4322}.hotel-announcement h2{font-size:clamp(27px,4.5vw,48px);line-height:1.15;margin:0 0 14px;letter-spacing:.02em}.hotel-announcement p{font-size:clamp(16px,2vw,20px);line-height:1.5;margin:0 auto;max-width:830px}
 </style>
-</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 
 <body>
 
@@ -56,5 +56,16 @@ footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:
 Great American Coin &amp; Collectibles Show • 2027
 </footer>
 
-</body>
+<script>
+(function(){
+function track(name,params){if(typeof window.gtag==='function')window.gtag('event',name,params||{});}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var href=a.getAttribute('href')||'';var url;try{url=new URL(href,location.href)}catch(_){return}var text=(a.textContent||'').trim().slice(0,100);
+if(/\.pdf(?:$|[?#])/i.test(url.pathname))track('dealer_pdf_download',{file_name:url.pathname.split('/').pop(),link_url:url.href});
+else if(url.protocol==='mailto:'||url.protocol==='tel:')track('contact_click',{contact_type:url.protocol.replace(':',''),link_text:text});
+else if(/hotel|booking|marriott|hilton|hyatt|crowne|embassy|doubletree|hampton|loews|sonesta/i.test(url.hostname+' '+text+' '+href)&&url.origin!==location.origin)track('hotel_link_click',{link_url:url.href,link_text:text});
+else if(a.closest('.sponsors,.sponsor,.sponsor-grid,.sponsor-card,.sponsor-banners,.industry-resources')&&url.origin!==location.origin)track('partner_link_click',{link_url:url.href,link_text:text});
+});
+var form=document.querySelector('#online-application form');if(form)form.addEventListener('submit',function(){track('dealer_application_submit_attempt',{form_name:'2027 Digital Dealer Application'});});
+})();
+</script></body>
 </html>
