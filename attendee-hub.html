@@ -22,7 +22,7 @@ footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:
 .admission-table-wrap{overflow-x:auto}.admission-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:16px}.admission-table th{background:#071c43;color:#fff;text-align:left;padding:14px 16px}.admission-table td{padding:14px 16px;border-bottom:1px solid #dfe4ec}.admission-table tbody tr:nth-child(even){background:#f6f8fb}.admission-table small{display:block;font-size:13px;color:#59677c;margin-top:3px}@media(max-width:600px){.admission-table{font-size:14px}.admission-table th,.admission-table td{padding:10px 8px}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
-</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 
 <body>
 
@@ -128,5 +128,16 @@ Hotel information and official GACC lodging options are available on our Hotels 
 Great American Coin &amp; Collectibles Show • 2027
 </footer>
 
-</body>
+<script>
+(function(){
+function track(name,params){if(typeof window.gtag==='function')window.gtag('event',name,params||{});}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var href=a.getAttribute('href')||'';var url;try{url=new URL(href,location.href)}catch(_){return}var text=(a.textContent||'').trim().slice(0,100);
+if(/\.pdf(?:$|[?#])/i.test(url.pathname))track('dealer_pdf_download',{file_name:url.pathname.split('/').pop(),link_url:url.href});
+else if(url.protocol==='mailto:'||url.protocol==='tel:')track('contact_click',{contact_type:url.protocol.replace(':',''),link_text:text});
+else if(/hotel|booking|marriott|hilton|hyatt|crowne|embassy|doubletree|hampton|loews|sonesta/i.test(url.hostname+' '+text+' '+href)&&url.origin!==location.origin)track('hotel_link_click',{link_url:url.href,link_text:text});
+else if(a.closest('.sponsors,.sponsor,.sponsor-grid,.sponsor-card,.sponsor-banners,.industry-resources')&&url.origin!==location.origin)track('partner_link_click',{link_url:url.href,link_text:text});
+});
+var form=document.querySelector('#online-application form');if(form)form.addEventListener('submit',function(){track('dealer_application_submit_attempt',{form_name:'2027 Digital Dealer Application'});});
+})();
+</script></body>
 </html>
