@@ -12,6 +12,27 @@
 .attendee-showcase .card{position:relative;z-index:3}
 .attendee-showcase .flag-ribbon{display:none!important}
 @media(max-width:760px){.attendee-showcase .cards{margin-top:0!important;padding-top:12px!important}.attendee-showcase .hero{height:16.8vw!important}}
+
+/* Mobile-first repair: keep the original Chicago artwork and live ticket cards. */
+.attendee-showcase .hero{height:12.3vw!important;max-height:176px!important;overflow:hidden}
+.attendee-showcase .hero img{top:-4.5vw;width:100%;height:auto}
+.attendee-showcase .cards{margin-top:0!important;padding-top:16px!important}
+.attendee-showcase .flag-ribbon{display:block!important}
+@media(max-width:760px){
+.gacc-global-header{padding:14px 12px;gap:12px}
+.gacc-global-brand strong{font-size:25px}
+.gacc-global-brand small{font-size:9px}
+.gacc-global-links{gap:8px 13px}
+.gacc-global-links a{font-size:12px}
+.attendee-showcase .hero{height:12.3vw!important}
+.attendee-showcase .hero img{top:-4.5vw}
+.attendee-showcase .cards{margin-top:0!important;padding:14px 12px 24px!important;grid-template-columns:minmax(0,1fr)}
+.attendee-showcase .card{width:100%;min-width:0}
+.attendee-showcase .body{padding:12px 14px 18px}
+.attendee-showcase .strip{overflow-wrap:anywhere}
+.attendee-showcase .times{grid-template-columns:repeat(2,minmax(0,1fr))}
+.attendee-showcase .head{font-size:clamp(18px,5vw,23px)}
+}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
