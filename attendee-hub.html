@@ -63,6 +63,27 @@ body:has(.attendee-magical){background:#f8fbff}
 .showcase-day small{font-size:12px;color:#b51d2b;font-weight:700}
 .showcase-no-public{color:#bd1022;font-weight:900}
 @media(max-width:950px){.attendee-showcase-grid{grid-template-columns:1fr;max-width:620px;margin:auto}.attendee-showcase-card h2{font-size:23px}.attendee-showcase-heading:before,.attendee-showcase-heading:after{height:60px}}
+
+/* Editorial styling to closely match approved visual reference */
+.attendee-showcase-heading{padding:45px 18px 34px;background:linear-gradient(180deg,#f0f7ff 0%,#fff 95%)}
+.attendee-showcase-heading h1{font-size:clamp(42px,5.5vw,78px);letter-spacing:.015em;line-height:1.1}
+.attendee-showcase-heading p{font-size:clamp(17px,1.75vw,23px)}
+.attendee-showcase-heading:before,.attendee-showcase-heading:after{height:140px;opacity:.22}
+.attendee-showcase-grid{gap:18px}
+.attendee-showcase-card{border-radius:15px;box-shadow:0 6px 16px rgba(7,28,67,.045)}
+.attendee-showcase-card h2{font-size:clamp(21px,2.15vw,29px);padding:24px 12px;border-bottom:5px solid #d71920;letter-spacing:.015em}
+.attendee-showcase-content{padding:10px 22px 28px}
+.showcase-fee{display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;padding:27px 5px;border-bottom:1px solid #cbd5e1}
+.showcase-fee:last-child{border-bottom:0}
+.showcase-fee>strong{font-size:clamp(18px,1.75vw,24px);font-weight:900;color:#071c43}
+.showcase-fee>span{font-size:clamp(15px,1.35vw,18px);line-height:1.4;color:#243957}
+.showcase-fee span b{font-weight:900;color:#071c43}
+.showcase-day{padding:25px 4px;gap:9px}
+.showcase-day>strong{font-size:clamp(17px,1.55vw,21px);font-weight:900}
+.showcase-day>span{font-size:clamp(16px,1.45vw,20px);line-height:1.4}
+.showcase-day span b{font-size:clamp(16px,1.4vw,19px);font-weight:900}
+.showcase-day small{font-size:13px}
+@media(max-width:950px){.attendee-showcase-content{padding:10px 20px 24px}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -76,17 +97,13 @@ body:has(.attendee-magical){background:#f8fbff}
 <header class="attendee-showcase-heading"><h1>Attendee Hub</h1><p>Plan your visit to the Great American Coin &amp; Collectibles Show 2027.</p></header>
 <div class="attendee-showcase-grid">
 <article class="attendee-showcase-card"><h2>Admission Fees</h2><div class="attendee-showcase-content">
-<p class="showcase-note">2027 Admission &amp; Registration Fees</p>
-<div class="admission-table-wrap"><table class="admission-table"><thead><tr><th>Admission Type</th><th>Advance Purchase</th><th>Day of Show</th></tr></thead><tbody>
-<tr><td>Equal Access Pass</td><td>$250</td><td>$300</td></tr>
-<tr><td>Early Access Pass</td><td>$150</td><td>$175</td></tr>
-<tr><td>Regular Admission</td><td>$15 <small>(3-day pass)</small></td><td>$11.20 <small>(single day)</small></td></tr>
-<tr><td>Children 12 and under</td><td>Free</td><td>Free</td></tr>
-</tbody></table></div>
-
+<div class="showcase-fee"><strong>Equal Access Pass</strong><span>Advance: <b>$250</b> · Day of Show: <b>$300</b></span></div>
+<div class="showcase-fee"><strong>Early Access Pass</strong><span>Advance: <b>$150</b> · Day of Show: <b>$175</b></span></div>
+<div class="showcase-fee"><strong>Regular Admission</strong><span><b>$15</b> 3-day advance pass</span><span><b>$11.20</b> single day at show</span></div>
+<div class="showcase-fee"><strong>Children 12 and Under</strong><span><b>Free</b></span></div>
 </div></article>
 <article class="attendee-showcase-card"><h2>Equal &amp; Early Access</h2><div class="attendee-showcase-content">
-<p class="showcase-note">2027 access-pass hours</p>
+
 <div class="showcase-day"><strong>Wednesday, October 27</strong><span><b>Equal Access</b>3:00 PM–7:00 PM</span><span><b>Early Access</b>4:30 PM–7:00 PM</span></div>
 <div class="showcase-day"><strong>Thursday, October 28</strong><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div>
 <div class="showcase-day"><strong>Friday, October 29</strong><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div>
@@ -97,7 +114,7 @@ body:has(.attendee-magical){background:#f8fbff}
 <div class="showcase-day"><strong>Thursday, October 28</strong><span>10:00 AM–6:00 PM</span><small>One-way traffic: 5:30 PM</small></div>
 <div class="showcase-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><small>One-way traffic: 5:30 PM</small></div>
 <div class="showcase-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><small>One-way traffic: 2:00 PM</small></div>
-<p class="showcase-note">Wednesday entry is available with an Equal Access or Early Access Pass.</p>
+
 </div></article>
 </div></section>
 
