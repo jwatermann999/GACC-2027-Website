@@ -187,6 +187,34 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 .attendee-magical .attendee-visit-intro{max-width:1100px;margin:32px auto 44px;padding:16px clamp(18px,3vw,30px);border:0;border-top:1px solid #dce4f0;border-radius:0;background:transparent;box-shadow:none}
 .attendee-magical .attendee-visit-intro h2{font-size:clamp(18px,2vw,22px);margin-bottom:8px}
 .attendee-magical .attendee-visit-intro p{font-size:15px;line-height:1.65}
+
+/* Precise editable text inside the original Chicago artwork's existing three panels. */
+.attendee-artwork-stage{position:relative;min-width:760px;container-type:inline-size}
+.attendee-info-overlays{position:absolute;inset:0;pointer-events:none;font-family:Arial,sans-serif;color:#071c43}
+.attendee-info-panel{position:absolute;top:53.4%;height:44.7%;background:linear-gradient(#fff,#f9fbff);border-radius:0 0 2.2cqw 2.2cqw;box-shadow:inset 0 -1px 4px #b7c5d9;padding:0.6cqw 1.1cqw;display:flex;flex-direction:column;justify-content:space-around;text-align:center}
+.attendee-admission{left:4.55%;width:30.65%}
+.attendee-access{left:36.2%;width:28.25%}
+.attendee-public{left:65.5%;width:30.5%}
+.attendee-admission-item{display:flex;flex-direction:column;gap:.32cqw;border-bottom:1px solid #bdc8d6;padding:.35cqw 0}
+.attendee-admission-item:last-child{border-bottom:0}
+.attendee-admission-item strong{font-size:1.23cqw}
+.attendee-admission-item span{font-size:1.13cqw}
+.attendee-admission-item span b{font-size:1.65cqw;color:#c51c31}
+.attendee-vip-label{font-size:1.05cqw;font-weight:900;color:#fff;background:#0a2d68;border-radius:.45cqw;padding:.5cqw .15cqw}
+.attendee-vip-prices strong{font-size:1.18cqw}
+.attendee-vip-prices span{font-size:1.05cqw}
+.attendee-vip-prices span b{font-size:1.25cqw}
+.attendee-day,.attendee-public-day{border-bottom:1px solid #bdc8d6;padding:.3cqw 0;display:flex;flex-direction:column;gap:.22cqw}
+.attendee-day:last-child,.attendee-public-day:last-child{border-bottom:0}
+.attendee-day>strong,.attendee-public-day>strong{font-size:1.33cqw}
+.attendee-day>div{display:grid;grid-template-columns:1fr 1fr;gap:.35cqw}
+.attendee-day span{font-size:1.03cqw;display:flex;flex-direction:column;gap:.2cqw;white-space:nowrap}
+.attendee-day span b{color:#1262ba;font-size:1.07cqw}
+.attendee-day span+span b{color:#cf243b}
+.attendee-public-day span{font-size:1.15cqw}
+.attendee-public-day em{font-size:1.02cqw;font-style:normal;font-weight:700;color:#d12137}
+.attendee-preview-label{background:#bc1028;color:white;border-radius:.3cqw;padding:.35cqw .1cqw;font-size:1.05cqw}
+@media(max-width:650px){.attendee-artwork-stage{width:760px}.attendee-artwork-stage>img{margin-top:-34.66px}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -196,7 +224,32 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
 
 <main class="attendee-magical">
-<section class="attendee-artwork" aria-label="GACC 2027 attendee admission fees and show hours"><img src="Chicago%20Attendee%20Hub%202027.png" alt="GACC 2027 Attendee Hub: admission fees, Equal and Early Access times, and public show hours" fetchpriority="high" style="display:block;width:100%;height:auto"></section>
+<section class="attendee-artwork" aria-label="GACC 2027 attendee admission fees and show hours">
+<div class="attendee-artwork-stage">
+<img src="Chicago%20Attendee%20Hub%202027.png" alt="Chicago skyline with GACC 2027 Attendee Hub artwork and patriotic admission and schedule panels" fetchpriority="high" style="display:block;width:100%;height:auto">
+<div class="attendee-info-overlays" aria-label="Updated admission fees and complete 2027 show hours">
+<div class="attendee-info-panel attendee-admission">
+<div class="attendee-admission-item"><strong>3-DAY GENERAL ADMISSION</strong><span><b>$15</b> advance purchase</span></div>
+<div class="attendee-admission-item"><strong>SINGLE-DAY GENERAL ADMISSION</strong><span><b>$11.20</b> at the show</span></div>
+<div class="attendee-vip-label">OPTIONAL EQUAL &amp; EARLY ACCESS PASSES</div>
+<div class="attendee-admission-item attendee-vip-prices"><strong>Equal Access Pass</strong><span>Advance: <b>$250</b> &nbsp;|&nbsp; Day of Show: <b>$300</b></span></div>
+<div class="attendee-admission-item attendee-vip-prices"><strong>Early Access Pass</strong><span>Advance: <b>$150</b> &nbsp;|&nbsp; Day of Show: <b>$175</b></span></div>
+</div>
+<div class="attendee-info-panel attendee-access">
+<div class="attendee-day"><strong>Wednesday, October 27</strong><div><span><b>Equal Access</b>3:00–7:00 PM</span><span><b>Early Access</b>4:30–7:00 PM</span></div></div>
+<div class="attendee-day"><strong>Thursday, October 28</strong><div><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div></div>
+<div class="attendee-day"><strong>Friday, October 29</strong><div><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div></div>
+<div class="attendee-day"><strong>Saturday, October 30</strong><div><span><b>Equal Access</b>8:00 AM–2:30 PM</span><span><b>Early Access</b>8:00 AM–2:30 PM</span></div></div>
+</div>
+<div class="attendee-info-panel attendee-public">
+<div class="attendee-public-day"><strong>Wednesday, October 27</strong><b class="attendee-preview-label">EXCLUSIVE ACCESS PREVIEW</b><span>For Equal &amp; Early Access Pass Holders</span><span>3:00–7:00 PM</span></div>
+<div class="attendee-public-day"><strong>Thursday, October 28</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
+<div class="attendee-public-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
+<div class="attendee-public-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><em>One-way traffic: 2:00 PM</em></div>
+</div>
+</div>
+</div>
+</section>
 
 
 
