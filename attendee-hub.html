@@ -84,6 +84,33 @@ body:has(.attendee-magical){background:#f8fbff}
 .showcase-day span b{font-size:clamp(16px,1.4vw,19px);font-weight:900}
 .showcase-day small{font-size:13px}
 @media(max-width:950px){.attendee-showcase-content{padding:10px 20px 24px}}
+
+/* Match the approved Attendee Hub reference composition */
+.attendee-magical{max-width:1580px;padding:26px 20px 55px}
+.attendee-showcase-heading{overflow:hidden;min-height:245px;padding:30px 16px 25px;background:linear-gradient(180deg,#f7fbff 0%,#f5faff 55%,#fff 100%);border-radius:0}
+.attendee-showcase-heading:before,.attendee-showcase-heading:after{display:none}
+.attendee-showcase-heading .showcase-title{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:clamp(12px,2vw,36px);max-width:1050px;margin:auto}
+.attendee-showcase-heading h1{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-stretch:condensed;font-size:clamp(42px,7.5vw,112px);font-weight:900;letter-spacing:.012em;line-height:1.05;margin:0;color:#071c43;white-space:nowrap}
+.attendee-showcase-heading h1:after{content:"";display:block;width:100%;height:5px;background:#d71920;margin:9px auto 0}
+.attendee-showcase-heading .title-star{font-size:clamp(20px,3vw,47px);color:#d71920;line-height:1}
+.attendee-showcase-heading>p{font-size:clamp(15px,2vw,25px);margin-top:17px}
+.attendee-showcase-heading .skyline{position:absolute;bottom:0;width:27%;height:190px;opacity:.4;pointer-events:none;background:linear-gradient(0deg,#c2d8ec99,#eaf4fc00),repeating-linear-gradient(90deg,transparent 0 15px,#8db4d7 15px 37px,transparent 37px 45px);clip-path:polygon(0 60%,6% 60%,6% 45%,12% 45%,12% 70%,19% 70%,19% 30%,24% 30%,24% 10%,26% 10%,26% 0,28% 10%,28% 36%,36% 36%,36% 60%,43% 60%,43% 22%,49% 22%,49% 65%,56% 65%,56% 48%,64% 48%,64% 25%,68% 25%,68% 55%,75% 55%,75% 70%,83% 70%,83% 45%,90% 45%,90% 65%,100% 65%,100% 100%,0 100%)}
+.attendee-showcase-heading .skyline-left{left:0}
+.attendee-showcase-heading .skyline-right{right:0;transform:scaleX(-1)}
+.attendee-showcase-grid{gap:16px}
+.attendee-showcase-card{border-radius:15px;border:1px solid #cbd3df;box-shadow:none}
+.attendee-showcase-card h2{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-size:clamp(24px,2.7vw,37px);letter-spacing:.02em;padding:23px 8px;background:#c9001a}
+.attendee-showcase-card:nth-child(2) h2{background:#08245a}
+.attendee-showcase-content{padding:10px 26px 30px}
+.showcase-fee{padding:27px 4px;gap:8px}
+.showcase-fee>strong{font-size:clamp(20px,2vw,29px)}
+.showcase-fee>span{font-size:clamp(16px,1.55vw,22px)}
+.showcase-day{padding:25px 4px}
+.showcase-day>strong{font-size:clamp(19px,1.8vw,25px)}
+.showcase-day>span{font-size:clamp(17px,1.6vw,23px)}
+.showcase-no-public{color:#c9001a}
+@media(max-width:950px){.attendee-showcase-heading{min-height:170px}.attendee-showcase-heading .skyline{height:100px}.attendee-showcase-heading h1{font-size:clamp(38px,7vw,68px)}.attendee-showcase-content{padding:10px 20px 25px}}
+@media(max-width:520px){.attendee-showcase-heading .skyline{width:19%;opacity:.2}.attendee-showcase-heading h1{font-size:clamp(32px,9vw,46px)}.attendee-showcase-heading .title-star{font-size:18px}.attendee-showcase-heading{padding:30px 8px}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -94,7 +121,7 @@ body:has(.attendee-magical){background:#f8fbff}
 
 <main class="attendee-magical">
 <section class="attendee-showcase" aria-label="GACC 2027 attendee information">
-<header class="attendee-showcase-heading"><h1>Attendee Hub</h1><p>Plan your visit to the Great American Coin &amp; Collectibles Show 2027.</p></header>
+<header class="attendee-showcase-heading"><div class="skyline skyline-left" aria-hidden="true"></div><div class="skyline skyline-right" aria-hidden="true"></div><div class="showcase-title"><span class="title-star" aria-hidden="true">★</span><h1>Attendee Hub</h1><span class="title-star" aria-hidden="true">★</span></div><p>Plan your visit to the Great American Coin &amp; Collectibles Show 2027.</p></header>
 <div class="attendee-showcase-grid">
 <article class="attendee-showcase-card"><h2>Admission Fees</h2><div class="attendee-showcase-content">
 <div class="showcase-fee"><strong>Equal Access Pass</strong><span>Advance: <b>$250</b> · Day of Show: <b>$300</b></span></div>
