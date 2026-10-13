@@ -284,6 +284,13 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 .attendee-live-panels .attendee-public-day em{font-size:clamp(11px,1.05vw,15px)}
 .attendee-live-panels .attendee-preview-label{font-size:clamp(10px,1.05vw,15px);padding:6px 3px}
 @media(max-width:720px){.attendee-live-panels{grid-template-columns:1fr;gap:12px;padding:10px 16px 22px}.attendee-artwork-stage{height:160px!important}.attendee-live-panels .attendee-info-panel{padding-bottom:14px!important}}
+
+/* Keep the original illustrated skyline and title, but stop before the old
+   baked-in panel headings. The live accessible cards supply one header each. */
+.attendee-artwork-stage{height:17.5cqw!important}
+.attendee-live-panels .attendee-admission:before{content:"🎟  ADMISSION FEES  ★"}
+.attendee-live-panels .attendee-access:before{content:"👥  EQUAL & EARLY ACCESS"}
+.attendee-live-panels .attendee-public:before{content:"◷  PUBLIC HOURS  ★"}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
