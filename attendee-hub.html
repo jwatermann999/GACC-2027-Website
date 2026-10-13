@@ -309,6 +309,63 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 .attendee-artwork-stage .attendee-info-overlays{overflow:visible!important}
 .attendee-artwork-stage .attendee-admission-item{padding:.32cqw 0!important}
 .attendee-artwork-stage .attendee-day,.attendee-artwork-stage .attendee-public-day{padding:.3cqw 0!important}
+
+/* 2027 clean rebuild: original illustrated skyline and title only, with ONE
+   real, accessible row of cards below it. No text or cards over printed artwork. */
+.attendee-magical .attendee-artwork-stage{
+ position:relative!important;display:block!important;width:100%!important;
+ min-width:0!important;height:auto!important;aspect-ratio:1536 / 342!important;
+ overflow:hidden!important;margin:0!important;padding:0!important;
+}
+.attendee-magical .attendee-artwork-stage>img{
+ position:absolute!important;inset:0 auto auto 0!important;
+ display:block!important;width:100%!important;height:auto!important;
+ max-width:none!important;margin:0!important;
+}
+.attendee-magical .attendee-info-overlays{
+ position:relative!important;inset:auto!important;display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ gap:1.1%!important;pointer-events:auto!important;
+ width:100%!important;padding:0 4.5% 2.5%!important;
+ box-sizing:border-box!important;overflow:visible!important;
+ background:linear-gradient(180deg,#16417f,#0a2255)!important;
+ border-bottom:8px solid #c31532!important;
+}
+.attendee-magical .attendee-info-overlays .attendee-info-panel{
+ position:relative!important;top:auto!important;left:auto!important;
+ width:auto!important;height:auto!important;min-width:0!important;
+ display:flex!important;flex-direction:column!important;
+ justify-content:space-evenly!important;box-sizing:border-box!important;
+ padding:0 12px 15px!important;margin:0!important;
+ background:#fff!important;border:3px solid #dce9ff!important;
+ border-radius:15px!important;overflow:hidden!important;
+ box-shadow:0 4px 12px #00173955!important;
+}
+.attendee-magical .attendee-info-overlays .attendee-info-panel:before{
+ display:block;flex:none;margin:0 -12px 12px;padding:13px 6px;
+ color:#fff;font-family:Impact,'Arial Narrow',Arial,sans-serif;
+ font-weight:900;font-size:clamp(15px,2vw,28px);line-height:1.25;
+ background:linear-gradient(#dc2c45,#a00923);border-radius:11px 11px 0 0;
+}
+.attendee-magical .attendee-info-overlays .attendee-admission:before{content:"🎟  ADMISSION FEES  ★"}
+.attendee-magical .attendee-info-overlays .attendee-access:before{content:"👥  EQUAL & EARLY ACCESS";background:linear-gradient(#2366b6,#092d73)}
+.attendee-magical .attendee-info-overlays .attendee-public:before{content:"◷  PUBLIC HOURS  ★"}
+.attendee-magical .attendee-info-overlays .attendee-admission-item{padding:8px 0!important}
+.attendee-magical .attendee-info-overlays .attendee-day,
+.attendee-magical .attendee-info-overlays .attendee-public-day{padding:7px 0!important}
+.attendee-magical .attendee-info-overlays .attendee-admission-item strong,
+.attendee-magical .attendee-info-overlays .attendee-day>strong,
+.attendee-magical .attendee-info-overlays .attendee-public-day>strong{font-size:clamp(12px,1.35vw,19px)!important}
+.attendee-magical .attendee-info-overlays .attendee-admission-item span,
+.attendee-magical .attendee-info-overlays .attendee-day span,
+.attendee-magical .attendee-info-overlays .attendee-public-day span{font-size:clamp(11px,1.08vw,16px)!important}
+.attendee-magical .attendee-info-overlays .attendee-vip-label{font-size:clamp(11px,1.05vw,15px)!important}
+.attendee-magical .attendee-info-overlays .attendee-preview-label{font-size:clamp(10px,1.05vw,15px)!important}
+@media(max-width:720px){
+ .attendee-magical .attendee-artwork-stage{aspect-ratio:1536 / 342!important}
+ .attendee-magical .attendee-info-overlays{grid-template-columns:1fr!important;gap:12px!important;padding:12px 16px 22px!important}
+}
+
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -321,6 +378,7 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 <section class="attendee-artwork" aria-label="GACC 2027 attendee admission fees and show hours">
 <div class="attendee-artwork-stage">
 <img src="Chicago%20Attendee%20Hub%202027.png" alt="Chicago skyline with GACC 2027 Attendee Hub artwork and patriotic admission and schedule panels" fetchpriority="high" style="display:block;width:100%;height:auto">
+</div>
 <div class="attendee-info-overlays" aria-label="Updated admission fees and complete 2027 show hours">
 <div class="attendee-info-panel attendee-admission">
 <div class="attendee-admission-item"><strong>3-DAY GENERAL ADMISSION</strong><span><b>$15</b> advance purchase</span></div>
@@ -340,7 +398,6 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 <div class="attendee-public-day"><strong>Thursday, October 28</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
 <div class="attendee-public-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
 <div class="attendee-public-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><em>One-way traffic: 2:00 PM</em></div>
-</div>
 </div>
 </div>
 </section>
