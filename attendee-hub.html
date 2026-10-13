@@ -36,6 +36,33 @@ body:has(.attendee-magical){background:#f8fbff}
 .attendee-magical>.card:nth-of-type(2)>p strong{color:#071c43}
 .attendee-magical>.attendee-visit-intro{background:#eef5fd;border:1px solid #cdd6e4;border-radius:15px;padding:28px 32px}
 @media(max-width:600px){.attendee-magical{padding:34px 15px}.attendee-magical>.card>h2{padding:19px 12px}.attendee-magical>.attendee-visit-intro{padding:22px 18px}}
+
+/* Three-column skyline attendee showcase */
+.attendee-magical{max-width:1400px;padding-top:32px}
+.attendee-showcase{margin:0 auto 34px}
+.attendee-showcase-heading{text-align:center;padding:32px 12px 24px;background:linear-gradient(180deg,rgba(237,246,255,.7),rgba(255,255,255,.96)),linear-gradient(90deg,#d6e6f6,#fff,#d6e6f6);border-radius:16px 16px 0 0;position:relative}
+.attendee-showcase-heading:before,.attendee-showcase-heading:after{content:"";position:absolute;bottom:0;width:25%;height:95px;opacity:.35;background:repeating-linear-gradient(90deg,transparent 0 9px,#8db4d7 9px 25px,transparent 25px 32px);clip-path:polygon(0 70%,10% 70%,10% 45%,25% 45%,25% 20%,40% 20%,40% 58%,60% 58%,60% 0,72% 0,72% 65%,100% 65%,100% 100%,0 100%);pointer-events:none}
+.attendee-showcase-heading:before{left:0}.attendee-showcase-heading:after{right:0;transform:scaleX(-1)}
+.attendee-showcase-heading h1{font-size:clamp(35px,5vw,64px);font-weight:900;text-transform:uppercase;margin:0 auto 10px;position:relative;z-index:1}
+.attendee-showcase-heading h1:after{content:"";display:block;height:5px;width:min(480px,75%);background:#d71920;margin:10px auto 0}
+.attendee-showcase-heading p{position:relative;z-index:1;font-size:clamp(15px,1.7vw,21px);margin:12px auto 0;color:#071c43}
+.attendee-showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.attendee-showcase-card{min-width:0;background:#fff;border:1px solid #cbd5e2;border-radius:14px;overflow:hidden;box-shadow:0 8px 22px #071c4312}
+.attendee-showcase-card h2{background:#bf1023;color:#fff;text-align:center;text-transform:uppercase;font-size:clamp(19px,2vw,27px);padding:21px 10px;margin:0;border-bottom:5px solid #e11d30}
+.attendee-showcase-card:nth-child(2) h2{background:#071c43}
+.attendee-showcase-content{padding:16px clamp(12px,1.6vw,24px)}
+.attendee-showcase-content .admission-table{font-size:clamp(12px,1vw,15px)}
+.attendee-showcase-content .admission-table th,.attendee-showcase-content .admission-table td{padding:10px 7px}
+.attendee-showcase-content .admission-table th{background:#071c43}
+.showcase-note{font-size:13px;color:#4c5c75;line-height:1.5}
+.showcase-day{padding:18px 3px;text-align:center;border-bottom:1px solid #d8e0eb;display:flex;flex-direction:column;align-items:center;gap:6px;color:#071c43}
+.showcase-day:last-of-type{border-bottom:0}
+.showcase-day>strong{font-size:clamp(14px,1.3vw,18px)}
+.showcase-day>span{font-size:clamp(14px,1.2vw,17px)}
+.showcase-day span b{display:block;margin-bottom:3px}
+.showcase-day small{font-size:12px;color:#b51d2b;font-weight:700}
+.showcase-no-public{color:#bd1022;font-weight:900}
+@media(max-width:950px){.attendee-showcase-grid{grid-template-columns:1fr;max-width:620px;margin:auto}.attendee-showcase-card h2{font-size:23px}.attendee-showcase-heading:before,.attendee-showcase-heading:after{height:60px}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -45,37 +72,34 @@ body:has(.attendee-magical){background:#f8fbff}
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
 
 <main class="attendee-magical">
-
-
-
-<h1>Attendee Hub</h1>
-
-<p class="intro">
-Everything you need to plan your visit to the Great American Coin &amp; Collectibles Show.
-</p>
-
-<div class="card">
-<h2>2027 Admission &amp; Registration Fees</h2>
-<p>Choose the admission option that works best for your visit to GACC 2027.</p>
-<div class="admission-table-wrap"><table class="admission-table">
-<thead><tr><th scope="col">Admission Type</th><th scope="col">Advance Purchase</th><th scope="col">Day of Show</th></tr></thead>
-<tbody>
+<section class="attendee-showcase" aria-label="GACC 2027 attendee information">
+<header class="attendee-showcase-heading"><h1>Attendee Hub</h1><p>Plan your visit to the Great American Coin &amp; Collectibles Show 2027.</p></header>
+<div class="attendee-showcase-grid">
+<article class="attendee-showcase-card"><h2>Admission Fees</h2><div class="attendee-showcase-content">
+<p class="showcase-note">2027 Admission &amp; Registration Fees</p>
+<div class="admission-table-wrap"><table class="admission-table"><thead><tr><th>Admission Type</th><th>Advance Purchase</th><th>Day of Show</th></tr></thead><tbody>
 <tr><td>Equal Access Pass</td><td>$250</td><td>$300</td></tr>
 <tr><td>Early Access Pass</td><td>$150</td><td>$175</td></tr>
 <tr><td>Regular Admission</td><td>$15 <small>(3-day pass)</small></td><td>$11.20 <small>(single day)</small></td></tr>
 <tr><td>Children 12 and under</td><td>Free</td><td>Free</td></tr>
 </tbody></table></div>
-<p><small>Wednesday admission requires an Equal Access or Early Access Pass. Advance purchase instructions and deadlines will be announced.</small></p>
-</div>
-
-<div class="card">
-<h2>2027 Public Show Hours</h2>
-<p><strong>Wednesday, October 27:</strong> Access Pass Holders Only</p>
-<p><strong>Thursday, October 28:</strong> 10:00 AM–5:30 PM</p>
-<p><strong>Friday, October 29:</strong> 10:00 AM–5:30 PM</p>
-<p><strong>Saturday, October 30:</strong> 9:00 AM–3:00 PM</p>
-<p><em>Wednesday admission is available to the general public with the purchase of an Equal Access or Early Access Pass.</em></p>
-</div>
+<p class="showcase-note">Wednesday admission requires an Equal Access or Early Access Pass. Advance purchase instructions and deadlines will be announced.</p>
+</div></article>
+<article class="attendee-showcase-card"><h2>Equal &amp; Early Access</h2><div class="attendee-showcase-content">
+<p class="showcase-note">2027 access-pass hours</p>
+<div class="showcase-day"><strong>Wednesday, October 27</strong><span><b>Equal Access</b>3:00 PM–7:00 PM</span><span><b>Early Access</b>4:30 PM–7:00 PM</span></div>
+<div class="showcase-day"><strong>Thursday, October 28</strong><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div>
+<div class="showcase-day"><strong>Friday, October 29</strong><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div>
+<div class="showcase-day"><strong>Saturday, October 30</strong><span><b>Equal Access</b>8:00 AM–2:30 PM</span><span><b>Early Access</b>8:00 AM–2:30 PM</span></div>
+</div></article>
+<article class="attendee-showcase-card"><h2>Public Hours</h2><div class="attendee-showcase-content">
+<div class="showcase-day"><strong>Wednesday, October 27</strong><span class="showcase-no-public">No Public Hours</span></div>
+<div class="showcase-day"><strong>Thursday, October 28</strong><span>10:00 AM–6:00 PM</span><small>One-way traffic: 5:30 PM</small></div>
+<div class="showcase-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><small>One-way traffic: 5:30 PM</small></div>
+<div class="showcase-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><small>One-way traffic: 2:00 PM</small></div>
+<p class="showcase-note">Wednesday entry is available with an Equal Access or Early Access Pass.</p>
+</div></article>
+</div></section>
 
 <section class="attendee-visit-intro" aria-label="GACC coin show information"><h2>Plan Your Visit to a Chicago-Area Coin Show</h2><p>Looking for coin shows in Illinois or a numismatic event near Chicago? The Great American Coin &amp; Collectibles Show in Rosemont welcomes visitors interested in rare coins, U.S. and world currency, collectible paper money, gold and silver bullion, precious metals, tokens, medals, exonumia and collectibles. Use this attendee guide to find show hours, admission information, parking, hotels and the dealer directory. Whether you are just beginning a coin collection or have collected for years, explore the show information before your visit.</p></section>
 
