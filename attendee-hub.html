@@ -120,6 +120,10 @@ body:has(.attendee-magical){background:#f8fbff}
 @media(max-width:650px){.attendee-showcase-heading{min-height:180px;background-size:auto 100%!important}.attendee-showcase-heading .showcase-title{padding:3px 7px}.attendee-showcase-heading>p{max-width:100%}}
 
 
+/* The uploaded artwork includes a decorative navigation row at its top.
+   Crop only that duplicate row; keep the site's real clickable navigation. */
+.attendee-artwork img{margin-top:-4.56%}
+@media(max-width:650px){.attendee-artwork img{margin-top:-34.66px}}
 /* Full-width attendee artwork, with visitor information continuing below. */
 main.attendee-magical{max-width:none;padding:0}
 .attendee-artwork{width:100%;margin:0 auto;overflow:hidden;background:#08245a}
