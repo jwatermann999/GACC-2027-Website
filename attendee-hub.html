@@ -130,6 +130,53 @@ main.attendee-magical{max-width:none;padding:0}
 .attendee-artwork img{width:100%;height:auto;display:block}
 .attendee-magical > :not(.attendee-artwork){max-width:1100px;margin-left:auto;margin-right:auto}
 @media(max-width:650px){.attendee-artwork{overflow-x:auto}.attendee-artwork img{min-width:760px}}
+
+/* Match the new artwork's navy navigation with white labels and red active underline.
+   Real links remain accessible and clickable; only the Attendee Hub is affected. */
+body:has(.attendee-magical) .gacc-global-header{
+  background:linear-gradient(180deg,#09275a 0%,#071c43 100%)!important;
+  border-bottom:2px solid rgba(255,255,255,.7)!important;
+  padding:12px clamp(16px,3.8vw,60px)!important;
+  gap:20px!important;
+}
+body:has(.attendee-magical) .gacc-global-brand strong{
+  font-family:Georgia,serif!important;
+  font-size:clamp(26px,2.7vw,40px)!important;
+  letter-spacing:1px!important;
+}
+body:has(.attendee-magical) .gacc-global-brand small{
+  font-size:clamp(10px,.95vw,13px)!important;
+}
+body:has(.attendee-magical) .gacc-global-links{
+  gap:clamp(12px,1.9vw,30px)!important;
+  align-items:center!important;
+}
+body:has(.attendee-magical) .gacc-global-links a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:12px 0 10px!important;
+  border-bottom:4px solid transparent!important;
+  font-family:Arial,sans-serif!important;
+  font-size:clamp(12px,1.05vw,16px)!important;
+  font-weight:800!important;
+  letter-spacing:.01em!important;
+  color:#fff!important;
+  text-decoration:none!important;
+}
+body:has(.attendee-magical) .gacc-global-links a[href="attendee-hub.html"]{
+  border-bottom-color:#ed174b!important;
+}
+body:has(.attendee-magical) .gacc-global-links a:hover,
+body:has(.attendee-magical) .gacc-global-links a:focus-visible{
+  color:#fff!important;
+  border-bottom-color:#ff607a!important;
+  text-decoration:none!important;
+}
+@media(max-width:900px){
+ body:has(.attendee-magical) .gacc-global-header{justify-content:center!important}
+ body:has(.attendee-magical) .gacc-global-links{justify-content:center!important;margin-left:0!important}
+}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
