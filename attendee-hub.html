@@ -376,6 +376,9 @@ body:has(.attendee-magical) .gacc-global-brand{display:flex!important}
 .attendee-magical .attendee-info-overlays .attendee-access .attendee-day>div{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:8px!important;align-items:start!important;width:100%!important}
 .attendee-magical .attendee-info-overlays .attendee-access .attendee-day>div>span{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;min-width:0!important;white-space:nowrap!important;line-height:1.3!important;font-variant-numeric:tabular-nums!important}
 .attendee-magical .attendee-info-overlays .attendee-access .attendee-day>div>span>b{display:block!important;width:100%!important;text-align:center!important;margin-bottom:2px!important}
+
+/* Leave breathing room beneath the attendee cards before the directory. */
+.attendee-magical .attendee-floor-directory{margin-top:clamp(100px,12vw,180px)!important}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -414,7 +417,7 @@ body:has(.attendee-magical) .gacc-global-brand{display:flex!important}
 
 
 
-<div class="card">
+<div class="card attendee-floor-directory">
 <h2>Floor Map &amp; Dealer Directory</h2>
 <p>
 Find the dealers you want to visit and locate their tables on the show floor.
