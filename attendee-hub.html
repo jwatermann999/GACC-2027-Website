@@ -256,6 +256,34 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 .attendee-artwork-stage .attendee-admission{left:7.9%;width:27.25%}
 .attendee-artwork-stage .attendee-access{left:39.0%;width:25.45%}
 .attendee-artwork-stage .attendee-public{left:68.1%;width:27.9%}
+
+/* Rebuild the information area as actual cards below the illustrated skyline.
+   Never overlay editable text on the artwork's baked-in words. */
+.attendee-artwork-stage{height:20.7cqw!important;overflow:hidden!important}
+.attendee-artwork-stage>img{width:100%!important;height:auto!important}
+.attendee-artwork-stage .attendee-info-overlays{display:none!important}
+.attendee-live-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1%;width:100%;padding:0 4.5% 2.5%;background:linear-gradient(180deg,#163d80,#081d51);border-bottom:8px solid #c31532}
+.attendee-live-panels .attendee-info-panel{position:static!important;display:flex!important;flex-direction:column;justify-content:space-around;min-width:0;height:auto!important;top:auto!important;left:auto!important;width:auto!important;overflow:visible!important;background:#fff!important;border:3px solid #dce9ff!important;border-radius:15px!important;padding:0 12px 12px!important;box-shadow:0 4px 12px #00173955!important;text-align:center}
+.attendee-live-panels .attendee-info-panel:before{display:block;margin:0 -12px 12px;padding:13px 6px;color:white;font-family:Impact,'Arial Narrow',Arial,sans-serif;font-weight:900;font-size:clamp(15px,2vw,28px);letter-spacing:.2px;background:linear-gradient(#d82943,#9d0922);border-radius:11px 11px 0 0}
+.attendee-live-panels .attendee-admission:before{content:"♢  ADMISSION FEES  ★"}
+.attendee-live-panels .attendee-access:before{content:"♟  EQUAL & EARLY ACCESS";background:linear-gradient(#2366b6,#092d73)}
+.attendee-live-panels .attendee-public:before{content:"◷  PUBLIC HOURS  ★"}
+.attendee-live-panels .attendee-admission-item{padding:8px 0;gap:4px}
+.attendee-live-panels .attendee-admission-item strong{font-size:clamp(13px,1.35vw,20px)}
+.attendee-live-panels .attendee-admission-item span{font-size:clamp(12px,1.12vw,17px)}
+.attendee-live-panels .attendee-admission-item span b{font-size:clamp(16px,1.65vw,24px)}
+.attendee-live-panels .attendee-vip-label{font-size:clamp(11px,1.05vw,15px);padding:7px 4px}
+.attendee-live-panels .attendee-vip-prices strong{font-size:clamp(12px,1.2vw,18px)}
+.attendee-live-panels .attendee-vip-prices span{font-size:clamp(11px,1.05vw,15px)}
+.attendee-live-panels .attendee-vip-prices span b{font-size:clamp(13px,1.3vw,19px)}
+.attendee-live-panels .attendee-day,.attendee-live-panels .attendee-public-day{padding:7px 0;gap:3px}
+.attendee-live-panels .attendee-day>strong,.attendee-live-panels .attendee-public-day>strong{font-size:clamp(12px,1.3vw,19px)}
+.attendee-live-panels .attendee-day span{font-size:clamp(11px,1.07vw,16px)}
+.attendee-live-panels .attendee-day span b{font-size:clamp(11px,1.12vw,16px)}
+.attendee-live-panels .attendee-public-day span{font-size:clamp(11px,1.1vw,16px)}
+.attendee-live-panels .attendee-public-day em{font-size:clamp(11px,1.05vw,15px)}
+.attendee-live-panels .attendee-preview-label{font-size:clamp(10px,1.05vw,15px);padding:6px 3px}
+@media(max-width:720px){.attendee-live-panels{grid-template-columns:1fr;gap:12px;padding:10px 16px 22px}.attendee-artwork-stage{height:160px!important}.attendee-live-panels .attendee-info-panel{padding-bottom:14px!important}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -288,6 +316,27 @@ body:has(.attendee-magical) .gacc-global-links{margin-left:auto!important}
 <div class="attendee-public-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
 <div class="attendee-public-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><em>One-way traffic: 2:00 PM</em></div>
 </div>
+</div>
+</div>
+<div class="attendee-live-panels" aria-label="GACC admission and hours">
+<div class="attendee-info-panel attendee-admission">
+<div class="attendee-admission-item"><strong>3-DAY GENERAL ADMISSION</strong><span><b>$15</b> advance purchase</span></div>
+<div class="attendee-admission-item"><strong>SINGLE-DAY GENERAL ADMISSION</strong><span><b>$11.20</b> at the show</span></div>
+<div class="attendee-vip-label">OPTIONAL EQUAL &amp; EARLY ACCESS PASSES</div>
+<div class="attendee-admission-item attendee-vip-prices"><strong>Equal Access Pass</strong><span>Advance: <b>$250</b> &nbsp;|&nbsp; Day of Show: <b>$300</b></span></div>
+<div class="attendee-admission-item attendee-vip-prices"><strong>Early Access Pass</strong><span>Advance: <b>$150</b> &nbsp;|&nbsp; Day of Show: <b>$175</b></span></div>
+</div>
+<div class="attendee-info-panel attendee-access">
+<div class="attendee-day"><strong>Wednesday, October 27</strong><div><span><b>Equal Access</b>3:00–7:00 PM</span><span><b>Early Access</b>4:30–7:00 PM</span></div></div>
+<div class="attendee-day"><strong>Thursday, October 28</strong><div><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div></div>
+<div class="attendee-day"><strong>Friday, October 29</strong><div><span><b>Equal Access</b>8:00 AM–6:00 PM</span><span><b>Early Access</b>9:00 AM–6:00 PM</span></div></div>
+<div class="attendee-day"><strong>Saturday, October 30</strong><div><span><b>Equal Access</b>8:00 AM–2:30 PM</span><span><b>Early Access</b>8:00 AM–2:30 PM</span></div></div>
+</div>
+<div class="attendee-info-panel attendee-public">
+<div class="attendee-public-day"><strong>Wednesday, October 27</strong><b class="attendee-preview-label">EXCLUSIVE ACCESS PREVIEW</b><span>For Equal &amp; Early Access Pass Holders</span><span>3:00–7:00 PM</span></div>
+<div class="attendee-public-day"><strong>Thursday, October 28</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
+<div class="attendee-public-day"><strong>Friday, October 29</strong><span>10:00 AM–6:00 PM</span><em>One-way traffic: 5:30 PM</em></div>
+<div class="attendee-public-day"><strong>Saturday, October 30</strong><span>9:00 AM–2:30 PM</span><em>One-way traffic: 2:00 PM</em></div>
 </div>
 </div>
 </section>
