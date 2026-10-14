@@ -33,6 +33,16 @@
 .attendee-showcase .times{grid-template-columns:repeat(2,minmax(0,1fr))}
 .attendee-showcase .head{font-size:clamp(18px,5vw,23px)}
 }
+
+/* Preview only: retain original artwork proportions */
+.attendee-art-preview{margin:0 -18px 32px;background:#09285c;overflow:visible}
+@media(max-width:760px){.attendee-art-preview{margin:0 -12px 25px}}
+
+.attendee-art-preview .attendee-art-link{display:block;line-height:0}
+.attendee-art-preview .attendee-art-link img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.attendee-art-preview .attendee-art-zoom{display:none;margin:0;padding:12px 14px;text-align:center;background:#09285c;font-size:15px;font-weight:700}
+.attendee-art-preview .attendee-art-zoom a{color:white;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.attendee-art-preview .attendee-art-zoom{display:block}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -42,7 +52,12 @@
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
 
 <main class="attendee-magical">
-<section class="attendee-showcase" aria-label="GACC 2027 admission and show hours"><div class="hero"><img src="Chicago%20Attendee%20Hub%202027.png" alt="Chicago skyline, Ferris wheel, and GACC 2027 Attendee Hub" fetchpriority="high"></div><div class="flag-ribbon" aria-hidden="true"></div><section class="cards"><article class="card"><header class="head"><span class="ico">🎟️</span> ADMISSION FEES ★</header><div class="body"><div class="line"><strong>3-DAY GENERAL ADMISSION</strong><span class="price">$15</span> <span class="small">advance purchase</span></div><div class="line"><strong>SINGLE-DAY GENERAL ADMISSION</strong><span class="price">$11.20</span> <span class="small">at the show</span></div><div class="strip">OPTIONAL EQUAL & EARLY ACCESS PASSES</div><div class="line"><strong>Equal Access Pass</strong><span class="small">Advance: <b>$250</b> | Day of Show: <b>$300</b></span></div><div class="line"><strong>Early Access Pass</strong><span class="small">Advance: <b>$150</b> | Day of Show: <b>$175</b></span></div></div></article><article class="card"><header class="head blue"><span class="ico">👥</span> EQUAL & EARLY ACCESS</header><div class="body"><div class="day"><div class="date">Wednesday, October 27</div><div class="times"><div><b>Equal Access</b><span>3:00–7:00 PM</span></div><div><b>Early Access</b><span>4:30–7:00 PM</span></div></div></div><div class="day"><div class="date">Thursday, October 28</div><div class="times"><div><b>Equal Access</b><span>8:00 AM–6:00 PM</span></div><div><b>Early Access</b><span>9:00 AM–6:00 PM</span></div></div></div><div class="day"><div class="date">Friday, October 29</div><div class="times"><div><b>Equal Access</b><span>8:00 AM–6:00 PM</span></div><div><b>Early Access</b><span>9:00 AM–6:00 PM</span></div></div></div><div class="day"><div class="date">Saturday, October 30</div><div class="times"><div><b>Equal Access</b><span>8:00 AM–2:30 PM</span></div><div><b>Early Access</b><span>8:00 AM–2:30 PM</span></div></div></div></div></article><article class="card"><header class="head"><span class="ico">◷</span> PUBLIC HOURS ★</header><div class="body"><div class="day"><div class="date">Wednesday, October 27</div><div class="preview">EXCLUSIVE ACCESS PREVIEW</div><div class="small">For Equal & Early Access Pass Holders</div><div class="small">3:00–7:00 PM</div></div><div class="day"><div class="date">Thursday, October 28</div><div class="small">10:00 AM–6:00 PM</div><div class="small oneway">One-way traffic: 5:30 PM</div></div><div class="day"><div class="date">Friday, October 29</div><div class="small">10:00 AM–6:00 PM</div><div class="small oneway">One-way traffic: 5:30 PM</div></div><div class="day"><div class="date">Saturday, October 30</div><div class="small">9:00 AM–2:30 PM</div><div class="small oneway">One-way traffic: 2:00 PM</div></div></div></article></section></section>
+<section class="attendee-showcase attendee-art-preview" aria-label="GACC 2027 admission and show hours">
+<a class="attendee-art-link" href="wide_colorful_poster_infographic_banner_clean_fla.png" target="_blank" rel="noopener" aria-label="Open full-size Attendee Hub artwork to zoom and read prices and hours">
+<img src="wide_colorful_poster_infographic_banner_clean_fla.png" alt="GACC 2027 Attendee Hub: regular admission $15 three-day advance pass and $11.20 single day at show; optional VIP passes, access schedules and public hours" width="1774" height="887" fetchpriority="high">
+</a>
+<p class="attendee-art-zoom"><a href="wide_colorful_poster_infographic_banner_clean_fla.png" target="_blank" rel="noopener">🔎 Tap to enlarge admission prices and show hours</a></p>
+</section>
 
 
 
