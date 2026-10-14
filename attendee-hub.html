@@ -34,6 +34,12 @@
 .attendee-showcase .head{font-size:clamp(18px,5vw,23px)}
 }
 
+/* Full-bleed attendee artwork on desktop and mobile, preserving its aspect ratio. */
+main.attendee-magical{max-width:none;width:100%;margin:0;padding:0 18px 45px}
+main.attendee-magical .attendee-art-preview{margin-left:-18px;margin-right:-18px;width:calc(100% + 36px)}
+main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height:auto;object-fit:contain}
+@media(max-width:760px){main.attendee-magical{padding:0 12px 30px}main.attendee-magical .attendee-art-preview{margin-left:-12px;margin-right:-12px;width:calc(100% + 24px)}}
+
 /* Preview only: retain original artwork proportions */
 .attendee-art-preview{margin:0 -18px 32px;background:#09285c;overflow:visible}
 @media(max-width:760px){.attendee-art-preview{margin:0 -12px 25px}}
