@@ -256,6 +256,103 @@ main.attendee-magical .card a:focus-visible{outline:2px solid #d5ae58;outline-of
 }
 @media(prefers-reduced-motion:reduce){.approved-poster-action{transition:none}}
 
+
+/* Attendee Hub desktop redesign, October 2026. The approved poster artwork is untouched. */
+html{scroll-behavior:smooth}
+body{background:#edf2f9;color:#122851}
+main.attendee-magical{padding:0 0 30px;background:linear-gradient(180deg,#081f49 0,#0c3268 190px,#edf2f9 940px,#edf2f9 100%)}
+.approved-attendee{max-width:none;width:100%;margin:0 auto;padding:30px clamp(15px,3vw,44px) 48px}
+.approved-poster-frame{max-width:1024px;width:100%;border:2px solid #d9b86d;border-radius:13px;box-shadow:0 24px 80px rgba(0,10,36,.30),0 0 0 8px rgba(255,255,255,.07);background:#071c43}
+.approved-poster-image{width:100%;height:auto;max-width:none}
+.approved-access-info{max-width:1024px}
+.approved-access-detail{margin:24px 0 4px;border:1px solid #d8c289;box-shadow:0 16px 45px rgba(0,13,44,.16)}
+.approved-choice-price{font-size:clamp(30px,4vw,44px);font-weight:900;letter-spacing:-.045em;color:#0b418e;line-height:1.1}
+.approved-choice-price span{font-size:14px;font-weight:700;letter-spacing:0;color:#47617e}
+.approved-choice-card.early .approved-choice-price{color:#ab1536}
+.approved-choice-secondary{color:#425776;font-size:14px;font-weight:700;margin:7px 0 16px!important}
+.approved-choice-card .approved-choice-stat{margin-bottom:18px}
+.approved-choice-card .approved-choice-stat strong{font-size:clamp(19px,2.4vw,25px)}
+.attendee-planner{max-width:1160px;margin:0 auto;padding:20px 22px 12px}
+.attendee-planner-heading{text-align:center;margin:0 auto 32px;max-width:770px}
+.attendee-eyebrow{display:block;color:#a57425;font-weight:900;font-size:11px;letter-spacing:.19em;margin-bottom:11px}
+.attendee-planner-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,3.6vw,43px);line-height:1.18;color:#092550;letter-spacing:-.035em;margin:0 0 13px}
+.attendee-planner-heading p{font-size:clamp(15px,1.5vw,18px);line-height:1.65;color:#50617a;margin:0}
+.attendee-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+.attendee-feature{position:relative;display:flex;gap:18px;min-width:0;min-height:245px;padding:28px;background:#fff;text-decoration:none;color:#0b2e65;border:1px solid #d1dce9;border-top:5px solid #b71335;border-radius:17px;box-shadow:0 12px 32px rgba(9,33,76,.09);transition:transform .2s ease,box-shadow .2s ease}
+.attendee-feature-hotels{border-top-color:#174a96}
+.attendee-feature:hover{transform:translateY(-4px);box-shadow:0 20px 38px rgba(9,33,76,.15)}
+.attendee-feature:focus-visible,.attendee-official-link:focus-visible,.dining-restaurant:focus-visible{outline:3px solid #dba93f;outline-offset:3px}
+.attendee-feature-number{flex:0 0 50px;width:50px;height:50px;display:grid;place-items:center;border:1px solid #e0c47e;border-radius:12px;color:#956c27;font-size:19px;font-weight:900;background:#fbf7ed}
+.attendee-feature-content{display:flex;flex-direction:column;align-items:flex-start}
+.attendee-feature-kicker{font-size:11px;letter-spacing:.16em;color:#8a6a3e;font-weight:900;margin:4px 0 12px}
+.attendee-feature h3{font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2.8vw,31px);letter-spacing:-.03em;line-height:1.2;margin:0 0 12px;color:#0c2e60}
+.attendee-feature p{color:#4a5e7a;font-size:15px;line-height:1.65;margin:0 0 21px}
+.attendee-feature-action{margin-top:auto;border-bottom:2px solid #c22643;padding-bottom:5px;color:#9d1938;font-size:14px;font-weight:900}
+.attendee-feature-hotels .attendee-feature-action{color:#124a91;border-bottom-color:#2358a3}
+.attendee-dining,.attendee-arrival{margin-top:26px;border-radius:18px;overflow:hidden;box-shadow:0 12px 32px rgba(9,33,76,.08)}
+.attendee-dining{background:#fff;border:1px solid #d4deeb;padding:34px}
+.attendee-section-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:24px}
+.attendee-section-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(26px,3vw,38px);line-height:1.2;letter-spacing:-.03em;margin:0 0 12px;color:#0c2c60}
+.attendee-section-heading p{font-size:15px;color:#4d607d;line-height:1.7;margin:0;max-width:720px}
+.attendee-section-seal{display:grid;place-items:center;flex:0 0 93px;height:93px;width:93px;border:2px solid #dec27e;outline:4px solid #f8f0de;outline-offset:-11px;border-radius:50%;font-size:16px;font-weight:900;text-align:center;letter-spacing:.08em;line-height:1.4;background:#0d3270;color:#f4d583;transform:rotate(8deg)}
+.attendee-dining .dining-photo-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.attendee-dining .dining-photo-strip img{height:190px;width:100%;border-radius:12px;object-fit:cover}
+.attendee-dining-label{display:flex;align-items:center;gap:14px;margin:29px 0 16px;font-size:12px;letter-spacing:.17em;color:#8b6130;font-weight:900}
+.attendee-dining-label:after{content:"";flex:1;height:1px;background:#dce3ed}
+.attendee-dining .dining-restaurants{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.attendee-dining .dining-restaurant{min-width:0;padding:16px 12px;border:1px solid #e0e6ef;background:#f8fafd;border-radius:13px;color:#15345f;box-shadow:none;transition:border-color .2s ease,transform .2s ease}
+.attendee-dining .dining-restaurant:hover{border-color:#bb9a57;transform:translateY(-2px)}
+.attendee-dining .dining-restaurant img{width:100%;max-width:150px;height:88px;object-fit:contain}
+.attendee-dining .dining-restaurant strong{font-size:14px;line-height:1.3}
+.attendee-dining .dining-restaurant small{font-size:11px;color:#2c5794;margin-top:auto}
+.attendee-fine-print{font-size:12px;color:#687791;line-height:1.6;margin:19px 0 0}
+.attendee-arrival{background:#092650;border:1px solid #244b81;padding:34px;color:#fff}
+.attendee-arrival .attendee-eyebrow{color:#e0bc73}
+.attendee-arrival .attendee-section-heading h2{color:#fff}
+.attendee-arrival .attendee-section-heading p{color:#d6e1f1}
+.attendee-arrival-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.attendee-arrival-tile{border:1px solid rgba(255,255,255,.20);background:rgba(255,255,255,.07);border-radius:12px;padding:23px;min-width:0}
+.attendee-arrival-tile h3{margin:0 0 13px;color:#f2ce86;font-family:Georgia,'Times New Roman',serif;font-size:23px}
+.attendee-arrival-tile p{font-size:14px;line-height:1.7;color:#eff3fa;margin:0 0 13px}
+.attendee-arrival-tile p:last-child{margin-bottom:0}
+.attendee-arrival-tile a{color:#fff;text-underline-offset:3px}
+.attendee-arrival-tile .attendee-arrival-note{color:#cfdeef;font-size:12px}
+.attendee-arrival-wide{grid-column:1/-1}
+.attendee-official-link{display:inline-flex;align-items:center;gap:9px;color:#0a2b61!important;text-decoration:none;background:#f1cc81;padding:13px 19px;margin-top:20px;border-radius:9px;font-size:14px;font-weight:900;transition:background .2s}
+.attendee-official-link:hover{background:#ffe0a0}
+main.attendee-magical>.attendee-visit-intro{max-width:1116px;border:1px solid #d7e0ec;background:#f9fbff;border-radius:14px;margin:24px auto 0;padding:24px 28px;color:#3d5473}
+.attendee-visit-intro h2{font-size:22px!important;color:#153964!important}
+.attendee-visit-intro p{font-size:14px;line-height:1.75}
+@media(max-width:900px){
+  .attendee-feature{padding:22px;gap:13px}
+  .attendee-feature-number{flex-basis:42px;width:42px;height:42px}
+  .attendee-dining .dining-restaurants{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  main.attendee-magical{background:linear-gradient(180deg,#092653 0,#edf2f9 450px,#edf2f9 100%)}
+  .approved-attendee{padding:14px 10px 22px}
+  .approved-poster-frame{border-radius:8px;box-shadow:0 10px 32px rgba(0,10,36,.22)}
+  .attendee-planner{padding:24px 14px 6px}
+  .attendee-planner-heading{margin-bottom:24px}
+  .attendee-feature-grid{grid-template-columns:1fr;gap:15px}
+  .attendee-feature{min-height:0;padding:23px 19px}
+  .attendee-feature h3{font-size:25px}
+  .attendee-dining,.attendee-arrival{margin-top:18px;padding:22px 18px;border-radius:14px}
+  .attendee-section-heading{gap:15px;align-items:flex-start}
+  .attendee-section-seal{display:none}
+  .attendee-dining .dining-photo-strip img{height:115px}
+  .attendee-dining-label{font-size:10px;letter-spacing:.09em}
+  .attendee-dining .dining-restaurants{gap:10px}
+  .attendee-dining .dining-restaurant{padding:13px 8px}
+  .attendee-dining .dining-restaurant img{height:70px}
+  .attendee-arrival-grid{grid-template-columns:1fr}
+  .attendee-arrival-wide{grid-column:auto}
+  .attendee-arrival-tile{padding:18px}
+  .attendee-official-link{display:flex;justify-content:center;text-align:center;line-height:1.4}
+  main.attendee-magical>.attendee-visit-intro{margin:18px 14px 0;padding:20px}
+}
+@media(prefers-reduced-motion:reduce){.attendee-feature,.attendee-dining .dining-restaurant,.attendee-official-link{transition:none}}
+
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -305,79 +402,115 @@ main.attendee-magical .card a:focus-visible{outline:2px solid #d5ae58;outline-of
       </div>
     </details>
     <details id="vip-compare-details" class="approved-access-detail">
-      <summary>Which V.I.P. Pass Is Right for You?</summary>
+      <summary>Compare V.I.P. Early and Equal Access Passes</summary>
       <div class="approved-detail-inner">
-        <p class="approved-panel-lead">Both upgrades let you enter before regular public hours, including Wednesday's V.I.P.-only preview. The deciding factor is how much of a head start you want.</p>
+        <p class="approved-panel-lead">Choose the access level that fits your visit. Both include the Wednesday preview and entry ahead of the general public on Thursday through Saturday.</p>
         <div class="approved-choice-grid">
           <article class="approved-choice-card equal">
-            <span class="approved-choice-eyebrow">For the earliest entry</span>
-            <h3>Equal Access</h3>
-            <p>Get the maximum time on the bourse floor, with first access every show day.</p>
-            <div class="approved-choice-stat"><strong>2 hours earlier</strong><span>than the public on Thursday and Friday</span></div>
-            <p class="approved-choice-foot">Wednesday doors open at <strong>3:00 PM</strong>, 90 minutes ahead of Early Access.</p>
+            <span class="approved-choice-eyebrow">FIRST ACCESS EVERY DAY</span>
+            <h3>V.I.P. Equal Access</h3>
+            <div class="approved-choice-price">$250 <span>in advance</span></div>
+            <p class="approved-choice-secondary">$300 at the show</p>
+            <div class="approved-choice-stat"><strong>Wednesday at 3:00 PM</strong><span>Thursday &amp; Friday at 8:00 AM · Saturday at 8:00 AM</span></div>
+            <p class="approved-choice-foot"><strong>Best for:</strong> Collectors who want the earliest possible floor access.</p>
           </article>
           <article class="approved-choice-card early">
-            <span class="approved-choice-eyebrow">For an earlier look at a lower price</span>
-            <h3>Early Access</h3>
-            <p>Enjoy a head start before public hours without choosing the highest-tier pass.</p>
-            <div class="approved-choice-stat"><strong>1 hour earlier</strong><span>than the public on Thursday and Friday</span></div>
-            <p class="approved-choice-foot">Wednesday doors open at <strong>4:30 PM</strong>, with the V.I.P. evening preview included.</p>
+            <span class="approved-choice-eyebrow">EARLY ENTRY, LOWER PRICE</span>
+            <h3>V.I.P. Early Access</h3>
+            <div class="approved-choice-price">$150 <span>in advance</span></div>
+            <p class="approved-choice-secondary">$175 at the show</p>
+            <div class="approved-choice-stat"><strong>Wednesday at 4:30 PM</strong><span>Thursday &amp; Friday at 9:00 AM · Saturday at 8:30 AM</span></div>
+            <p class="approved-choice-foot"><strong>Best for:</strong> Visitors who want a head start at a lower pass price.</p>
           </article>
         </div>
-        <p class="approved-schedule-note"><strong>Just visiting during public hours?</strong> You don't need either V.I.P. pass. The regular admission options are shown in the artwork above.</p>
-        <div class="approved-panel-actions"><button type="button" class="approved-panel-close">Close comparison ↑</button><a href="schedule.html">See the full show schedule →</a></div>
+        <p class="approved-schedule-note"><strong>Need exact closing times?</strong> Use “View full V.I.P. Early and Equal Access details” on the poster for the day-by-day schedule. General public admission does not require a V.I.P. pass.</p>
+        <div class="approved-panel-actions"><button type="button" class="approved-panel-close">Close comparison ↑</button><a href="schedule.html">See the complete show schedule →</a></div>
       </div>
     </details>
   </div>
 </section>
 
 
-<div class="attendee-essentials" aria-label="Plan your GACC visit">
-<div class="card attendee-floor-directory">
-<h2>Floor Map &amp; Dealer Directory</h2>
-<p>
-Find the dealers you want to visit and locate their tables on the show floor.
-</p>
-<p><a href="floor-map.html"><strong>View Floor Map &amp; Dealers</strong></a></p>
-</div>
 
-<div class="card">
-<h2>Hotels</h2>
-<p>
-Hotel information and official GACC lodging options are available on our Hotels page.
-</p>
-<p><a href="hotels.html"><strong>View Hotels</strong></a></p>
-</div>
-</div>
+<section class="attendee-planner" id="plan-your-visit" aria-labelledby="attendee-plan-heading">
+  <header class="attendee-planner-heading">
+    <span class="attendee-eyebrow">YOUR GACC 2027 VISITOR GUIDE</span>
+    <h2 id="attendee-plan-heading">Make the most of your visit</h2>
+    <p>Find your favorite dealers, plan your stay and enjoy everything Rosemont has to offer.</p>
+  </header>
 
-<div class="card dining-discounts">
-<h2>Dining &amp; Restaurant Discounts 🍽️</h2>
-<p>Enjoy Rosemont's dining scene during GACC 2027! Dealers and attendees can explore participating restaurants and ask about offers available through Rosemont's <strong>Show Your Badge Program</strong>.</p>
-<p><strong>Featured dining options:</strong> Select a restaurant logo to visit its website.</p><div class="dining-photo-strip" aria-label="Rosemont dining photography"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164902/WHere_to_eat-00002.jpg" alt="Rosemont dining, grilled entrée" loading="lazy"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164904/WHere_to_eat-00001.jpg" alt="Rosemont dining, plated restaurant dish" loading="lazy"></div>
-<div class="dining-restaurants" aria-label="Featured Rosemont restaurants">
-<a class="dining-restaurant" href="https://www.buona.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Buona Beef website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095412/Buona-512-x-512.jpg" alt="Buona Beef official restaurant logo" loading="lazy"><strong>Buona Beef</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://www.mortons.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Morton's The Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Mortons-512-x-512.jpg" alt="Morton's The Steakhouse official restaurant logo" loading="lazy"><strong>Morton's The Steakhouse</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://www.gibsonssteakhouse.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Gibsons Bar & Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095416/Gibsons-512-x-512.jpg" alt="Gibsons Bar & Steakhouse official restaurant logo" loading="lazy"><strong>Gibsons Bar & Steakhouse</strong><small>Visit restaurant website ↗</small></a>
-<a class="dining-restaurant" href="https://morettisrestaurants.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Moretti's website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Morettis-512-x-512.jpg" alt="Moretti's official restaurant logo" loading="lazy"><strong>Moretti's</strong><small>Visit restaurant website ↗</small></a>
-</div>
-<p><small>Participating locations, offers, and terms are subject to the current Show Your Badge Program. Please confirm discounts with each restaurant.</small></p>
-</div>
+  <div class="attendee-feature-grid">
+    <a class="attendee-feature attendee-feature-floor" href="floor-map.html">
+      <span class="attendee-feature-number" aria-hidden="true">01</span>
+      <div class="attendee-feature-content">
+        <span class="attendee-feature-kicker">EXPLORE THE SHOW</span>
+        <h3>Floor Map &amp; Dealer Directory</h3>
+        <p>Know where you're going before you arrive. Browse dealers and find their locations on the show floor.</p>
+        <span class="attendee-feature-action">View floor map &amp; dealers <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+    <a class="attendee-feature attendee-feature-hotels" href="hotels.html">
+      <span class="attendee-feature-number" aria-hidden="true">02</span>
+      <div class="attendee-feature-content">
+        <span class="attendee-feature-kicker">STAY NEAR THE ACTION</span>
+        <h3>Hotels &amp; Lodging</h3>
+        <p>Explore nearby Rosemont hotels, convenient skybridge connections and the latest lodging information.</p>
+        <span class="attendee-feature-action">Explore hotels <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+  </div>
 
-<div class="card">
-<h2>Parking &amp; Accessibility</h2>
-<p><strong>Venue:</strong> Donald E. Stephens Convention Center, 5555 N. River Road, Rosemont, IL 60018.</p>
-<h3>Where to Park</h3>
-<p>Public parking is available at the <strong>William Street Parking Garage</strong> (9500 Williams Street) and <strong>East Parking Garage</strong> (9221 Bryn Mawr Avenue), Rosemont, IL 60018.</p>
-<p><strong>Parking rate:</strong> Currently $20 for up to 24 hours, with no in-and-out privileges. Rates are set by the venue and may change before the 2027 show.</p>
-<h3>Getting to the Show</h3>
-<p>The convention center connects to the William Street garage and nearby hotels via an enclosed skybridge. Follow posted signs to the convention center and show entrance.</p>
-<h3>Accessible Parking &amp; Entry</h3>
-<p>Visitors needing accessible parking should follow posted accessible-parking signs at the garages. The convention center has elevator access; follow venue signs for an accessible route to the show floor.</p>
-<p>For wheelchair requests or specific accessibility accommodations, please contact the convention center in advance at <a href="tel:8476922220">847-692-2220</a> or visit its <a href="https://rosemont.com/desconvention/attend/" target="_blank" rel="noopener">official visitor information page</a>.</p>
-<h3>Passenger Drop-Off &amp; Rideshare</h3>
-<p>Taxi, Uber, Lyft, and passenger drop-off/pickup use the main circular drive entrance at <strong>5555 N. River Road</strong>.</p>
-<p><a href="https://rosemont.com/desconvention/attend/" target="_blank" rel="noopener"><strong>Official Parking, Accessibility &amp; Visitor Information →</strong></a></p>
-</div>
+  <section class="attendee-dining" aria-labelledby="attendee-dining-heading">
+    <div class="attendee-section-heading">
+      <div>
+        <span class="attendee-eyebrow">BEYOND THE BOURSE</span>
+        <h2 id="attendee-dining-heading">Dining &amp; Restaurant Discounts</h2>
+        <p>Discover Rosemont dining favorites. Ask participating restaurants about offers through Rosemont's <strong>Show Your Badge Program</strong>.</p>
+      </div>
+      <span class="attendee-section-seal" aria-hidden="true">DINE<br>LOCAL</span>
+    </div>
+    <div class="dining-photo-strip" aria-label="Dining in Rosemont">
+      <img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164902/WHere_to_eat-00002.jpg" alt="Restaurant entrée served in Rosemont" loading="lazy">
+      <img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/09/05164904/WHere_to_eat-00001.jpg" alt="Plated restaurant meal" loading="lazy">
+    </div>
+    <div class="attendee-dining-label">FEATURED ROSEMONT RESTAURANTS</div>
+    <div class="dining-restaurants" aria-label="Featured Rosemont restaurants">
+      <a class="dining-restaurant" href="https://www.buona.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Buona Beef website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095412/Buona-512-x-512.jpg" alt="Buona Beef logo" loading="lazy"><strong>Buona Beef</strong><small>Restaurant website ↗</small></a>
+      <a class="dining-restaurant" href="https://www.mortons.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Morton's The Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Mortons-512-x-512.jpg" alt="Morton's The Steakhouse logo" loading="lazy"><strong>Morton's The Steakhouse</strong><small>Restaurant website ↗</small></a>
+      <a class="dining-restaurant" href="https://www.gibsonssteakhouse.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Gibsons Bar & Steakhouse website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095416/Gibsons-512-x-512.jpg" alt="Gibsons Bar &amp; Steakhouse logo" loading="lazy"><strong>Gibsons Bar &amp; Steakhouse</strong><small>Restaurant website ↗</small></a>
+      <a class="dining-restaurant" href="https://morettisrestaurants.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Moretti's website"><img src="https://bd-rosemont-images.s3.amazonaws.com/wp-content/uploads/2023/11/29095421/Morettis-512-x-512.jpg" alt="Moretti's logo" loading="lazy"><strong>Moretti's</strong><small>Restaurant website ↗</small></a>
+    </div>
+    <p class="attendee-fine-print">Discounts are not guaranteed. Participating locations, offers and terms can change, so please confirm directly with each restaurant.</p>
+  </section>
+
+  <section class="attendee-arrival" aria-labelledby="attendee-arrival-heading">
+    <div class="attendee-section-heading">
+      <div>
+        <span class="attendee-eyebrow">ARRIVE WITH CONFIDENCE</span>
+        <h2 id="attendee-arrival-heading">Parking &amp; Accessibility</h2>
+        <p>Donald E. Stephens Convention Center <span aria-hidden="true">·</span> 5555 N. River Road, Rosemont, IL 60018</p>
+      </div>
+    </div>
+    <div class="attendee-arrival-grid">
+      <div class="attendee-arrival-tile">
+        <h3>Parking garages</h3>
+        <p><strong>William Street Garage</strong><br>9500 Williams Street</p>
+        <p><strong>East Parking Garage</strong><br>9221 Bryn Mawr Avenue</p>
+        <p class="attendee-arrival-note">Published rate is currently $20 for up to 24 hours, with no in-and-out privileges. Venue rates may change by 2027.</p>
+      </div>
+      <div class="attendee-arrival-tile">
+        <h3>Getting to the show</h3>
+        <p>An enclosed skybridge connects the convention center to the William Street garage and nearby hotels. Follow venue signs to the show entrance.</p>
+        <p><strong>Rideshare &amp; drop-off:</strong> Main circular drive at 5555 N. River Road.</p>
+      </div>
+      <div class="attendee-arrival-tile attendee-arrival-wide">
+        <h3>Accessible entry &amp; assistance</h3>
+        <p>Accessible parking and elevators are available. Follow posted venue signage for accessible routes. For wheelchair requests or other accommodations, contact the convention center ahead of time at <a href="tel:8476922220">847-692-2220</a>.</p>
+      </div>
+    </div>
+    <a class="attendee-official-link" href="https://rosemont.com/desconvention/attend/" target="_blank" rel="noopener noreferrer">Official venue parking &amp; accessibility information <span aria-hidden="true">↗</span></a>
+  </section>
+</section>
 
 <section class="attendee-visit-intro" aria-label="GACC coin show information"><h2>Plan Your Visit to a Chicago-Area Coin Show</h2><p>Looking for coin shows in Illinois or a numismatic event near Chicago? The Great American Coin &amp; Collectibles Show in Rosemont welcomes visitors interested in rare coins, U.S. and world currency, collectible paper money, gold and silver bullion, precious metals, tokens, medals, exonumia and collectibles. Use this attendee guide to find show hours, admission information, parking, hotels and the dealer directory. Whether you are just beginning a coin collection or have collected for years, explore the show information before your visit.</p></section>
 
