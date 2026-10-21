@@ -139,6 +139,7 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 .approved-poster-zoom a{color:#074285;font-weight:800}
 .approved-access-info{max-width:1024px;margin:auto}
 .approved-access-detail{margin:12px 0;background:#fff;border:2px solid #cfdaec;border-radius:13px;overflow:hidden;box-shadow:0 4px 12px rgba(5,22,60,.05)}
+.approved-access-detail:not([open]):not(:target){display:none}
 .approved-access-detail summary{cursor:pointer;background:#0b2e6c;color:#fff;padding:17px 22px;font-weight:800;font-size:19px;list-style-position:inside}
 .approved-access-detail summary:hover{background:#164686}
 .approved-detail-inner{padding:18px 22px;color:#162e55;line-height:1.6}
@@ -166,7 +167,7 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
     <a class="approved-poster-action approved-details-action" href="#vip-access-details" onclick="document.getElementById('vip-access-details').open=true" aria-label="View full V.I.P. Early and Equal Access schedule"></a>
     <a class="approved-poster-action approved-compare-action" href="#vip-compare-details" onclick="document.getElementById('vip-compare-details').open=true" aria-label="Compare V.I.P. Early and Equal Access options"></a>
   </div>
-  <p class="approved-poster-zoom"><a href="GACC-2027-Attendee-Hub-Final.png" target="_blank" rel="noopener">🔎 Open full-size Attendee Hub artwork</a></p>
+  
   <div class="approved-access-info" aria-label="Full attendee details">
     <details id="vip-access-details" class="approved-access-detail">
       <summary>Full V.I.P. Early &amp; Equal Access Schedule</summary>
