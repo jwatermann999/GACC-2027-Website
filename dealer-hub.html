@@ -47,36 +47,152 @@ summary.gacc-flag-button::-webkit-details-marker{display:none}
 .gacc-global-links a[aria-current="page"]{border-bottom-color:#ed174b!important}
 .gacc-global-links a:hover,.gacc-global-links a:focus-visible{color:#fff!important;border-bottom-color:#ff607a!important;text-decoration:none!important}
 @media(max-width:900px){.gacc-global-header{justify-content:center!important}.gacc-global-links{justify-content:center!important;margin-left:0!important}}
+
+/* GACC 2027 Dealer Hub redesign: original information and links remain below. */
+body{background:#f7faff}
+.gacc-mobile-nav{display:none}
+.dealer-page{width:100%;max-width:none;margin:0;padding:0 16px 45px}
+.dealer-hero{width:calc(100% + 32px);max-width:1440px;margin:0 auto 18px;position:relative;left:0;transform:none;background:#09214d}
+.dealer-hero img{display:block;width:100%;height:auto}
+.dealer-shell{max-width:1150px;margin:0 auto;padding:0}
+.dealer-overview{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:12px;border:2px solid #e9b33c;border-radius:19px;background:linear-gradient(125deg,#fff,#f2f6fe);padding:29px 32px 30px;margin:0 0 16px;box-shadow:0 5px 17px #071c4314}
+.dealer-handshake{font-size:88px;line-height:1;filter:grayscale(1)}
+.dealer-overview h1{font:700 clamp(28px,3.2vw,48px)/1.07 Georgia,'Times New Roman',serif;text-align:left;margin:0 0 12px;color:#09265d}
+.dealer-overview p{font-size:clamp(15px,1.45vw,19px);line-height:1.6;margin:0;color:#122b59}
+.dealer-applications{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:0}
+.dealer-action{display:flex;align-items:center;gap:16px;min-width:0;min-height:132px;border-radius:17px;padding:20px 23px;color:white;text-decoration:none;box-shadow:0 5px 12px #071c432e;border:2px solid #3b8bea}
+.dealer-action svg{width:55px;height:55px;flex:0 0 55px}
+.dealer-action strong{display:block;color:white;font:700 clamp(22px,2.5vw,37px)/1.09 Georgia,serif}
+.dealer-action small{display:block;color:#fff;font:400 clamp(13px,1.15vw,16px)/1.35 Arial,sans-serif;margin-top:7px}
+.dealer-action-print{background:linear-gradient(135deg,#0754ab,#082b72)}
+.dealer-action-print:hover,.dealer-action-print:focus-visible{background:#0a53ad}
+.dealer-arrow{font-size:44px;margin-left:auto;line-height:1}
+.dealer-action-digital{position:relative;background:linear-gradient(125deg,#d4082d,#a50019);border-color:#f04463}
+.dealer-action-pending{cursor:default;padding-right:22px}
+.dealer-pending-pill{position:absolute;right:12px;top:10px;display:inline-block;background:#fff2cd;color:#842300;border:1px solid #ffd477;padding:3px 7px;border-radius:30px;font-size:11px;font-weight:900;line-height:1.15;letter-spacing:.02em}
+.dealer-application-note{margin:13px 4px 20px;font-size:14px;color:#425773;line-height:1.5}
+.dealer-application-note a{color:#07418d;font-weight:800}
+.dealer-shortcuts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;border:0;background:transparent;padding:0;justify-content:stretch;margin:0 0 20px}
+.dealer-shortcuts a{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;min-height:136px;text-align:center;border:2px solid #ecb23d;border-radius:15px;background:linear-gradient(#fff,#f7f9fd);text-decoration:none;color:#092659;font-weight:900;font-size:16px;line-height:1.3;box-shadow:0 4px 13px #071c4310}
+.dealer-shortcuts svg{color:#07275f;width:42px;height:42px}
+.dealer-shortcuts a:hover,.dealer-shortcuts a:focus-visible{background:#eff5ff;border-color:#b68d30;outline-offset:2px}
+.dealer-important{border-radius:19px;border:2px solid #e7b43f;overflow:hidden;box-shadow:0 5px 14px #071c431e;margin:0 0 26px;background:#fff}
+.dealer-important h2{margin:0;background:linear-gradient(105deg,#062453,#0c3e86,#062453);padding:13px 12px;color:white;text-align:center;text-transform:uppercase;letter-spacing:.02em;font:700 clamp(24px,3vw,40px)/1.25 Georgia,serif}
+.dealer-important h2 span{color:#f8cd63;padding:0 15px}
+.dealer-date-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:20px 8px 24px}
+.dealer-date-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:0 12px;min-width:0;color:#14315e;font-size:16px;line-height:1.36}
+.dealer-date-item+.dealer-date-item{border-left:1px solid #b7cae1}
+.dealer-date-item svg{width:36px;height:36px;color:#0b3075}
+.dealer-date-item strong{font-weight:900;text-transform:uppercase;color:#bf112c;font-size:clamp(18px,2vw,25px)}
+.dealer-date-item small{font-size:11px}
+.dealer-preserved-more,.dealer-page>.card,.dealer-page>.intro{width:100%;max-width:1100px;margin:22px auto}
+.dealer-page>.card{background:#fff;box-shadow:0 4px 16px #071c430b;scroll-margin-top:18px}
+.dealer-page>.intro{padding:0 15px}
+.dealer-preserved-more .card{margin:22px 0}
+@media(max-width:760px){
+.gacc-global-header{padding:12px 15px!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:10px!important}
+.gacc-global-brand{min-width:0!important;max-width:calc(100% - 114px)!important}
+.gacc-global-brand strong{font-family:Arial,sans-serif!important;letter-spacing:0!important;font-size:24px!important;white-space:nowrap}
+.gacc-global-brand small{font-size:9px!important;white-space:normal!important;line-height:1.3}
+.gacc-global-links{display:none!important}
+.gacc-mobile-nav{display:block!important;flex:0 0 auto;position:relative;z-index:99}
+.gacc-mobile-nav summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:10px 12px;min-height:44px;background:#1b4385;color:#fff;border:1px solid #7f9ed3;border-radius:10px;font-size:15px;font-weight:800;user-select:none}
+.gacc-mobile-nav summary::-webkit-details-marker{display:none}
+.gacc-mobile-nav summary::marker{content:""}
+.gacc-mobile-nav summary:focus-visible{outline:3px solid #f1cb61;outline-offset:2px}
+.gacc-menu-icon{font-size:20px;line-height:1}
+.gacc-mobile-links{position:absolute;right:0;top:calc(100% + 10px);width:min(86vw,285px);display:flex;flex-direction:column;gap:0;align-items:stretch;justify-content:flex-start;padding:0;margin:0;border:1px solid #85a3d6;border-radius:12px;background:#092658;box-shadow:0 15px 30px #0004;overflow:hidden}
+.gacc-mobile-links a{color:#fff;padding:13px 17px;border-bottom:1px solid #ffffff26;text-decoration:none;text-align:left;font-size:15px;font-weight:800}
+.gacc-mobile-links a:last-child{border-bottom:0}
+.gacc-mobile-links a[aria-current="page"]{background:#224985;border-left:4px solid #ecc066;padding-left:13px}
+.dealer-page{padding:0 12px 28px}
+.dealer-hero{width:calc(100% + 24px);margin-left:-12px;margin-right:-12px}
+.dealer-overview{grid-template-columns:49px 1fr;gap:9px;padding:17px 15px;margin-top:14px}
+.dealer-handshake{font-size:38px}
+.dealer-overview h1{font-size:clamp(23px,6vw,33px)}
+.dealer-overview p{font-size:15px;line-height:1.5}
+.dealer-applications{grid-template-columns:1fr 1fr;gap:9px}
+.dealer-action{min-height:117px;border-radius:13px;flex-direction:column;text-align:center;align-items:center;gap:5px;padding:13px 9px}
+.dealer-action svg{width:33px;height:33px;flex:0 0 33px}
+.dealer-action strong{font-size:clamp(18px,4.6vw,24px);line-height:1.12}
+.dealer-action small{font-size:12px}
+.dealer-arrow{display:none}
+.dealer-action-pending{padding-top:28px}
+.dealer-pending-pill{top:5px;right:5px;font-size:9px}
+.dealer-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.dealer-shortcuts a{min-height:110px;padding:11px 6px;font-size:14px;gap:8px}
+.dealer-shortcuts svg{width:34px;height:34px}
+.dealer-important h2{font-size:clamp(21px,5.4vw,30px);padding:11px 3px}
+.dealer-important h2 span{padding:0 3px}
+.dealer-date-grid{padding:15px 3px 18px}
+.dealer-date-item{padding:0 4px;font-size:12px;gap:7px}
+.dealer-date-item svg{width:27px;height:27px}
+.dealer-date-item strong{font-size:clamp(13px,3.7vw,17px)}
+.dealer-date-item small{font-size:9px}
+.dealer-preserved-more,.dealer-page>.card{margin:14px auto}
+.dealer-page>.card{padding:19px 17px}
+}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/dealer-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Chicago Coin Show 2027 Dealer Applications & Bourse Tables | GACC"><meta property="og:description" content="Apply for dealer space at the 2027 Great American Coin & Collectibles Show in Rosemont, Illinois. Information for rare coin, currency, bullion and collectibles dealers."><meta property="og:url" content="https://www.gaccshow.com/dealer-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script><style>.approved-form{max-width:1050px;margin:18px auto;padding:clamp(15px,3vw,34px);background:#fff;color:#17334c;border:1px solid #d8e0e7;font-size:15px}.approved-form header{display:flex;gap:35px;align-items:center;border-bottom:3px double #a3243b;padding-bottom:14px}.approved-form header p{color:#a3243b;font-weight:800;margin:6px 0}.approved-form .gacc-mark{font-size:36px;color:#a3243b}.approved-form h3{font-size:16px;color:#17334c;border-bottom:1px solid #ad3546;padding:13px 0 7px;margin:19px 0 10px}.approved-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.approved-form label{display:block;font-weight:700}.approved-form input:not([type=checkbox]),.approved-form select{display:block;width:100%;padding:10px;margin-top:5px;border:1px solid #aab8c5;border-radius:3px;font-size:15px}.approved-prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.approved-price{display:grid!important;grid-template-columns:minmax(0,1fr) 78px 92px;gap:8px;align-items:center;border-bottom:1px solid #dce3e9;padding:9px 2px}.approved-price small{display:block;color:#687786;font-weight:400;margin-top:4px}.approved-price input{margin:0!important}.approved-price output{text-align:right;font-variant-numeric:tabular-nums}.approved-form .approved-check{display:flex;align-items:center;gap:10px}.approved-totals{margin:15px 0;padding:16px;background:#f4f7fb;border:1px solid #ccd6e1}.approved-totals>div{display:flex;justify-content:space-between;gap:10px;padding:5px 0}.approved-grand{border-top:2px solid #a3243b;margin-top:6px;padding-top:12px!important;font-size:20px;color:#a3243b}.approved-form button{background:#a3243b;color:white;border:0;padding:12px 16px;font-weight:800;cursor:pointer;margin:12px 0}.approved-form .fine{line-height:1.65}@media(max-width:650px){.approved-grid,.approved-prices{grid-template-columns:1fr}.approved-form header{gap:12px;align-items:flex-start}.approved-form .gacc-mark{font-size:25px}.approved-price{grid-template-columns:minmax(0,1fr) 65px 85px}}</style></head>
 
 <body>
 
-<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html" aria-current="page">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
+<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html" aria-current="page">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div><details class="gacc-mobile-nav">
+  <summary aria-label="Open site navigation"><span class="gacc-menu-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
+  <nav class="gacc-mobile-links" aria-label="Mobile site navigation">
+    <a href="index.html">Home</a>
+    <a href="attendee-hub.html">Attendee Hub</a>
+    <a href="dealer-hub.html" aria-current="page">Dealer Hub</a>
+    <a href="floor-map.html">Floor Map &amp; Dealers</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</details></div>
 
-<main>
-<section aria-label="GACC coin show information" style="margin:18px 0 30px;padding:22px 25px;background:#f4f6f9;border-radius:9px"><h2 style="font-size:24px;margin:0 0 12px;color:#071c43">2027 Dealer Information &amp; Applications</h2><p style="line-height:1.75;margin:0;color:#34445e">Are you a professional numismatist, coin dealer, currency dealer, bullion business or collectibles exhibitor looking for a Chicago-area coin show? Explore GACC's 2027 dealer information and bourse floor application for the Great American Coin &amp; Collectibles Show in Rosemont, Illinois. The event brings together collectors and businesses interested in U.S. and world coins, rare coins, paper money, banknotes, gold and silver bullion, tokens, medals and exonumia. Review the application, show services, security information and dealer requirements before submitting your request.</p></section>
-
-
-<h1>Dealer Hub</h1>
-<div class="card" style="border-top:5px solid #bd1724;">
-<h2>Dealer Applications &amp; Forms</h2>
-<a class="gacc-flag-button flag-pdf" href="GACC%202027%20APP.pdf" target="_blank"><span class="flag-heading">📄 FILLABLE &amp; PRINTABLE DEALER APPLICATION</span><span class="flag-subtitle">★ COMPLETE, SAVE &amp; EMAIL OR PRINT ★</span></a>
-<p style="font-size:.95rem;">Complete the fillable PDF on your computer and save it, then email it to <a href="mailto:gaccshow@gmail.com">gaccshow@gmail.com</a> or mail it to GACC, 462 Gardner Street, South Beloit, IL 61080.</p>
-</div>
-
-<div class="card" id="access-pass-application" style="border-top:5px solid #b88a2a;">
+<main class="dealer-page">
+  <section class="dealer-hero" aria-label="GACC 2027 Dealer Hub, October 27 through October 30, 2027">
+    <img src="GACC-2027-Dealer-Hub-Banner.webp" width="1024" height="378" alt="GACC 2027 Dealer Hub: Chicago skyline, October 27–30, 2027, Donald E. Stephens Convention Center, Rosemont, Illinois" fetchpriority="high">
+  </section>
+  <div class="dealer-shell">
+    <section class="dealer-overview" aria-labelledby="dealer-overview-title">
+      <span class="dealer-handshake" aria-hidden="true">🤝</span>
+      <div>
+        <h1 id="dealer-overview-title">2027 Dealer Information &amp; Applications</h1>
+        <p>Join dealers from across the country at the Great American Coin &amp; Collectibles Show in Rosemont, Illinois. GACC brings together collectors and businesses in coins, currency, bullion, tokens, medals, exonumia and more.</p>
+      </div>
+    </section>
+    <section class="dealer-applications" id="dealer-applications" aria-label="Dealer applications">
+      <a class="dealer-action dealer-action-print" href="GACC%202027%20APP.pdf" target="_blank" rel="noopener">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h7M8 17h4"/><path d="M16 19l4-4 2 2-4 4-3 1z"/></svg><span><strong>Bourse Floor Application</strong><small>Printable PDF to email or mail</small></span><span aria-hidden="true" class="dealer-arrow">›</span>
+      </a>
+      <div class="dealer-action dealer-action-digital dealer-action-pending" aria-label="Digital Dealer Application coming soon">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 12h8M8 16h5"/><path d="m15 19 3-2 1 4 1.5-1.5"/></svg><span><strong>Digital Dealer Application</strong><small>Coming Soon. Online submissions are not available yet.</small></span><span class="dealer-pending-pill">Coming Soon</span>
+      </div>
+    </section>
+    <p class="dealer-application-note">Complete and save the printable application, then email it to <a href="mailto:gaccshow@gmail.com">gaccshow@gmail.com</a> or mail it to GACC, 462 Gardner Street, South Beloit, IL 61080.</p>
+    <nav class="dealer-shortcuts" aria-label="Quick dealer information links">
+      <a href="GACC%202027%20APP.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="8" cy="17" rx="5" ry="2.2"/><path d="M3 17v3c0 1.2 2.2 2 5 2s5-.8 5-2v-3"/><ellipse cx="16" cy="7" rx="5" ry="2.2"/><path d="M11 7v8m10-8v8c0 1.2-2.2 2-5 2h-2m-3-6c0 1.2 2.2 2 5 2s5-.8 5-2"/></svg><span>Table Options<br>&amp; Pricing</span></a>
+      <a href="#dealer-load-in"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M6 20v-2a6 6 0 0 1 12 0v2M3 19v-2a5 5 0 0 1 3-4.5M21 19v-2a5 5 0 0 0-3-4.5M4.5 8a2.3 2.3 0 0 1 2-3M19.5 8a2.3 2.3 0 0 0-2-3"/></svg><span>Dealer Hours<br>&amp; Setup</span></a>
+      <a href="#dealer-rules"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg><span>Dealer Rules<br>&amp; Policies</span></a>
+      <a href="#dealer-security"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 22 7-4V5l-7-3-7 3v13z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>Security &amp;<br>Services</span></a>
+    </nav>
+    <section class="dealer-important" aria-labelledby="dealer-important-heading">
+      <h2 id="dealer-important-heading"><span aria-hidden="true">★</span> Important Dates <span aria-hidden="true">★</span></h2>
+      <div class="dealer-date-grid">
+        <div class="dealer-date-item"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 4h3m3 0h3m-9 3h3"/></svg><strong>Sept 10, 2027</strong><span>Application Changes<br>Deadline</span></div>
+        <div class="dealer-date-item"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 4h3m3 0h3m-9 3h3"/></svg><strong>Oct 4, 2027</strong><span>Safe Rental Deadline<br><small>SAFES Security Services, LLC</small></span></div>
+        <div class="dealer-date-item"><svg aria-hidden="true" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 4h3m3 0h3m-9 3h3"/></svg><strong>Oct 10, 2027</strong><span>No Badge Changes<br>After This Date</span></div>
+      </div>
+    </section>
+  </div>
+  <div class="dealer-preserved-more">
+    <div class="card" id="access-pass-application" style="border-top:5px solid #b88a2a;">
   <div class="gacc-flag-button flag-soon" aria-label="V.I.P. Early and Equal Access pass holder application coming soon"><span class="flag-heading">🎟️ V.I.P. EARLY AND EQUAL ACCESS PASS HOLDERS</span><span class="flag-subtitle">★ APPLICATION COMING SOON! ★</span></div>
   <p style="font-size:.95rem;">The V.I.P. Early and Equal Access pass holder application is being prepared. Please check back soon for details. No application is available to submit yet.</p>
 </div>
-
-
-<p class="intro">
-Everything GACC dealers need before arriving at the Great American Coin &amp; Collectibles Show.
-</p>
-
-<div class="card">
+  </div>
+<div class="card" id="dealer-load-in">
 <h2><p><strong>Dealer Load-In Begins:</strong> Wednesday, October 27th at 3:00 PM</p>
   Dealer Setup &amp; Load-In</h2>
 <p>Dealer load-in will take place through the <strong>Hall G drive-in ramp</strong>, located off River Road on the south side of the Donald E. Stephens Convention Center, across from the Crowne Plaza O'Hare. Dealers may drive directly up the ramp and onto the Hall G show floor to unload. <strong>Security personnel will be stationed at the entrance and on the show floor to direct vehicles and assist with the load-in process.</strong> Once unloaded, please promptly remove your vehicle from the show floor and loading area to keep traffic moving for incoming dealers.
@@ -84,7 +200,7 @@ Everything GACC dealers need before arriving at the Great American Coin &amp; Co
 </p>
 </div>
 
-<div class="card">
+<div class="card" id="dealer-security">
 <h2>Dealer Security Room</h2>
 <p>Opens: Tuesday, October 26 at 12:00 PM</p>
 <p>Wednesday: Available until 3:00 PM</p>
@@ -193,7 +309,7 @@ Everything GACC dealers need before arriving at the Great American Coin &amp; Co
 <p><small>Participating locations, offers, and terms are subject to the current Show Your Badge Program. Please confirm discounts with each restaurant.</small></p>
 </div>
 
-<div class="card">
+<div class="card" id="dealer-rules">
 <h2>Dealer Rules &amp; Important Information</h2>
 <p>Show policies and important dealer information will be posted here.</p>
 </div>
