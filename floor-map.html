@@ -102,6 +102,23 @@ body{background:#f5f8ff}
   .floor-original-sponsors>.section{padding:20px 17px}
 }
 
+
+/* Streamlined pre-launch directory: two status cards, no duplicate or inactive buttons. */
+.floor-intro.floor-intro-compact{display:block;text-align:center;padding:20px 28px;margin-bottom:18px}
+.floor-intro-compact h1{text-align:center;font-size:clamp(26px,2.8vw,38px);margin-bottom:8px}
+.floor-intro-compact p{max-width:660px;margin:0 auto;font-size:clamp(15px,1.35vw,18px);line-height:1.5}
+.floor-status-only{margin-bottom:20px}
+.floor-status-only .floor-status-panel:nth-child(2) h2{background:linear-gradient(120deg,#c00a2b,#940b22)}
+.floor-status-only .floor-status-panel h2{font-size:clamp(23px,2.4vw,31px)}
+.floor-status-only .floor-panel-inside{min-height:180px;gap:10px;padding:20px 16px}
+.floor-status-only .floor-panel-inside strong{font-size:clamp(23px,2vw,28px);color:#123569}
+.floor-status-only .floor-panel-inside p{max-width:300px}
+@media(max-width:760px){
+.floor-intro.floor-intro-compact{padding:17px 16px}
+.floor-intro-compact h1{font-size:26px}
+.floor-intro-compact p{font-size:15px}
+.floor-status-only .floor-panel-inside{min-height:155px}
+}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/floor-map.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="GACC 2027 Coin Show Floor Map & Dealer Directory | Rosemont IL"><meta property="og:description" content="Find the GACC 2027 Chicago-area coin show floor map and dealer directory in Rosemont. Explore rare coin, currency, paper money, bullion and collectible dealers."><meta property="og:url" content="https://www.gaccshow.com/floor-map.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -125,36 +142,28 @@ body{background:#f5f8ff}
     <img src="GACC-2027-Floor-Directory-Hero.webp" width="1024" height="380" alt="Chicago skyline and GACC 2027 Floor Map &amp; Dealer Directory heading, Donald E. Stephens Convention Center, Rosemont, October 27–30, 2027" fetchpriority="high">
   </section>
   <div class="floor-shell">
-    <section class="floor-intro" aria-labelledby="floor-intro-title">
-      <div class="floor-location-icon" aria-hidden="true">⌖</div>
-      <div>
-        <h1 id="floor-intro-title">Find Coin Dealers, Currency Specialists &amp; Collectibles</h1>
-        <p>Use the GACC floor map and dealer directory to plan your visit, find participating dealers and locate their tables at the Great American Coin &amp; Collectibles Show in Rosemont, Illinois.</p>
-      </div>
+    <section class="floor-intro floor-intro-compact" aria-labelledby="floor-intro-title">
+      <h1 id="floor-intro-title">Plan Your Visit</h1>
+      <p>The official 2027 floor map and participating dealer list are being prepared. Check back for confirmed dealer locations and show information.</p>
     </section>
-    <nav class="floor-quick-actions" aria-label="Floor map and dealer directory sections">
-      <a href="#show-floor-map" class="floor-action floor-action-map"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/><circle cx="16" cy="8" r="2"/></svg><span><strong>Floor Map</strong><small>Coming Soon</small></span><span class="floor-arrow" aria-hidden="true">›</span></a>
-      <a href="#show-dealer-directory" class="floor-action floor-action-directory"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 19v-2a6 6 0 0 1 12 0v2M12 19v-2a6 6 0 0 1 10 0v2"/></svg><span><strong>Dealer Directory</strong><small>Coming Soon</small></span><span class="floor-arrow" aria-hidden="true">›</span></a>
-    </nav>
-    <div class="floor-panel-grid">
+    <div class="floor-panel-grid floor-status-only">
       <section class="floor-status-panel" id="show-floor-map" aria-labelledby="show-floor-map-heading">
-        <h2 id="show-floor-map-heading"><span aria-hidden="true">★</span> 2027 Show Floor Map <span aria-hidden="true">★</span></h2>
+        <h2 id="show-floor-map-heading">Floor Map</h2>
         <div class="floor-panel-inside">
-          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/><circle cx="16" cy="8" r="2"/></svg></div>
-          <strong>Floor Map Coming Soon</strong>
-          <p>We're finalizing the 2027 floor layout. The official map and table locations will appear here when they're ready.</p>
+          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg></div>
+          <strong>Coming Soon</strong>
+          <p>We'll publish the show floor layout when it's finalized.</p>
         </div>
       </section>
       <section class="floor-status-panel" id="show-dealer-directory" aria-labelledby="show-dealer-directory-heading">
-        <h2 id="show-dealer-directory-heading"><span aria-hidden="true">★</span> 2027 Dealer Directory <span aria-hidden="true">★</span></h2>
+        <h2 id="show-dealer-directory-heading">Dealer Directory</h2>
         <div class="floor-panel-inside">
-          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.5 5.1-5.1 2.5 2.5-5.1z"/></svg></div>
-          <strong>Dealer Directory Coming Soon</strong>
-          <p>Participating dealers and confirmed booth assignments will be posted here as the 2027 directory is finalized.</p>
+          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 19v-2a6 6 0 0 1 12 0v2M12 19v-2a6 6 0 0 1 10 0v2"/></svg></div>
+          <strong>Coming Soon</strong>
+          <p>Confirmed dealers and table numbers will be listed here when ready.</p>
         </div>
       </section>
     </div>
-    <div class="floor-followup-note">Check back for updates as GACC 2027 approaches. We look forward to welcoming you to Rosemont!</div>
     <section class="floor-original-sponsors"><div class="section">
 <h2>GACC Sponsors</h2>
 
