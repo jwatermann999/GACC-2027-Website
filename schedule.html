@@ -25,12 +25,121 @@ footer{background:#04132e;color:white;text-align:center;padding:35px 20px;border
 .gacc-global-links a[aria-current="page"]{border-bottom-color:#ed174b!important}
 .gacc-global-links a:hover,.gacc-global-links a:focus-visible{color:#fff!important;border-bottom-color:#ff607a!important;text-decoration:none!important}
 @media(max-width:900px){.gacc-global-header{justify-content:center!important}.gacc-global-links{justify-content:center!important;margin-left:0!important}}
+
+/* GACC 2027 published schedule: approved V.I.P. and public hours */
+.schedule-main{display:block;min-height:0;padding:0 18px 76px;text-align:left;background:linear-gradient(180deg,#e9f1fb 0,#f5f7fb 380px,#f5f7fb 100%)}
+.schedule-shell{max-width:1160px;margin:0 auto}
+.schedule-hero{position:relative;isolation:isolate;overflow:hidden;margin:0 -18px 28px;padding:53px 20px 52px;text-align:center;color:#fff;background:radial-gradient(ellipse at 10% 10%,#204a8b 0,transparent 47%),radial-gradient(ellipse at 85% 80%,#1e3c7d 0,transparent 55%),linear-gradient(135deg,#06183c,#102d65 62%,#071c43)}
+.schedule-hero:before,.schedule-hero:after{content:"★";position:absolute;color:#f2cb6d;opacity:.16;z-index:-1;font-size:130px;line-height:1}
+.schedule-hero:before{left:3%;top:12%}.schedule-hero:after{right:3%;bottom:0;font-size:165px}
+.schedule-eyebrow{font-size:12px;letter-spacing:.21em;font-weight:900;color:#f2cf80;text-transform:uppercase}
+.schedule-hero h1{color:#fff;font-family:Georgia,'Times New Roman',serif;font-size:clamp(35px,5.4vw,64px);font-weight:700;letter-spacing:.01em;margin:13px 0 10px;line-height:1.08}
+.schedule-hero .schedule-subtitle{font-size:clamp(14px,2vw,19px);font-weight:700;letter-spacing:.035em;line-height:1.5;margin:0 auto 15px;max-width:740px}
+.schedule-hero .schedule-location{font-size:14px;color:#e2e8f4;margin:0 auto}
+.schedule-rule{display:block;width:90px;height:4px;border-radius:8px;background:linear-gradient(90deg,#e8bb55,#fff0b5,#e8bb55);margin:22px auto 0}
+.schedule-notice{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #d7e0ee;border-left:5px solid #bf1b3b;box-shadow:0 6px 18px #071c4310;border-radius:12px;padding:21px 22px;max-width:1000px;margin:0 auto 32px;color:#15335e}
+.schedule-notice .notice-star{flex:0 0 auto;width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#fff0cb;color:#906116;font-size:18px}
+.schedule-notice strong{font-size:18px}.schedule-notice p{font-size:15px;line-height:1.55;margin:6px 0 0}
+.schedule-section-header{text-align:center;margin:14px 0 28px}.schedule-section-header .kicker{font-size:12px;font-weight:900;letter-spacing:.16em;color:#c01d40}
+.schedule-section-header h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,4vw,41px);margin:9px 0;color:#071c43}
+.schedule-section-header p{margin:0;color:#4b617f;font-size:15px}
+.schedule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+.schedule-card{min-width:0;overflow:hidden;border-radius:16px;border:1px solid #cfd9e8;background:#fff;box-shadow:0 12px 28px #08254b14}
+.schedule-card-head{padding:20px 24px;color:white;background:linear-gradient(115deg,#092650,#16458b);border-bottom:4px solid #e8c26c}
+.schedule-card-head .day-kind{display:block;color:#e9c980;letter-spacing:.11em;font-size:11px;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+.schedule-card-head h3{font-family:Georgia,'Times New Roman',serif;font-size:29px;line-height:1.12;margin:0;color:#fff}
+.schedule-card-head p{margin:5px 0 0;color:#e7effc;font-size:15px;font-weight:650}
+.schedule-card.wednesday .schedule-card-head{background:linear-gradient(115deg,#7b142c,#bf2544 66%,#95112f)}
+.schedule-card.wednesday .schedule-card-head .day-kind{color:#ffe39b}
+.schedule-card-rows{padding:10px 23px 17px}
+.schedule-row{min-height:55px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid #e4eaf2}
+.schedule-row:last-child{border-bottom:0}
+.schedule-row .access-label{font-weight:750;font-size:15px;line-height:1.25;color:#1c365d}
+.schedule-row .access-time{font-size:15px;line-height:1.25;font-weight:900;text-align:right;white-space:nowrap;color:#071c43;font-variant-numeric:tabular-nums}
+.schedule-row .access-label.vip-equal{color:#144c9d}.schedule-row .access-label.vip-early{color:#b32041}
+.schedule-row .access-label.dealer-label{color:#62718a}
+.schedule-row .access-time.no-public{color:#a83242;font-size:13px;white-space:normal;max-width:140px}
+.schedule-row .access-label .mini-label{font-size:11px;font-weight:600;display:block;color:#72819a;margin-top:4px}
+.schedule-footnote{text-align:center;color:#4d617d;margin:25px auto 0;max-width:900px;font-size:14px;line-height:1.65}
+.schedule-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:28px auto 0}
+.schedule-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:14px 22px;font-weight:900;text-decoration:none;text-align:center;min-height:48px;transition:transform .15s,box-shadow .15s}
+.schedule-actions a:hover{transform:translateY(-2px);box-shadow:0 8px 20px #071c4324}
+.schedule-actions a:focus-visible{outline:3px solid #e0a332;outline-offset:3px}
+.schedule-actions .attendee-btn{background:#c51c3b;color:#fff}
+.schedule-actions .dealer-btn{background:#0c2c60;color:#fff}
+@media(max-width:720px){.schedule-main{padding:0 14px 48px}.schedule-hero{margin:0 -14px 21px;padding:36px 18px 35px}.schedule-notice{padding:16px;gap:12px;margin-bottom:25px}.schedule-notice strong{font-size:16px}.schedule-notice p{font-size:14px}.schedule-grid{grid-template-columns:1fr;gap:17px}.schedule-card-head{padding:17px 19px}.schedule-card-head h3{font-size:26px}.schedule-card-rows{padding:6px 18px 10px}.schedule-row .access-label,.schedule-row .access-time{font-size:14px}.schedule-row{gap:7px;min-height:52px}.schedule-section-header{margin-bottom:20px}}
+@media(max-width:540px){.top{font-size:11px;line-height:1.45;letter-spacing:.06em;padding:8px 14px}.gacc-global-header{gap:9px!important;padding:12px 10px!important}.gacc-global-brand strong{font-size:28px!important}.gacc-global-brand small{font-size:10px!important}.gacc-global-links{gap:0 13px!important}.gacc-global-links a{font-size:11px!important;padding:7px 0!important;border-bottom-width:3px!important}.schedule-eyebrow{font-size:10px;letter-spacing:.13em}.schedule-hero h1{font-size:37px}.schedule-hero:before{font-size:80px}.schedule-hero:after{font-size:95px}.schedule-card-head p{font-size:14px}.schedule-row .access-label,.schedule-row .access-time{font-size:13px}.schedule-actions{gap:10px}.schedule-actions a{width:100%}}
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 <body>
 <div class="top">OCTOBER 27–30, 2027 • DONALD E. STEPHENS CONVENTION CENTER • ROSEMONT, ILLINOIS</div>
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html" aria-current="page">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
-<main><div><h1>2027 Event Schedule</h1><p class="coming">Coming Fall 2027</p></div></main>
+
+<main class="schedule-main" id="main-content">
+  <section class="schedule-hero" aria-labelledby="schedule-title">
+    <div class="schedule-eyebrow">★ October 27–30, 2027 ★</div>
+    <h1 id="schedule-title">2027 Event Schedule</h1>
+    <p class="schedule-subtitle">Great American Coin &amp; Collectibles Show</p>
+    <p class="schedule-location">Donald E. Stephens Convention Center · Rosemont, Illinois</p>
+    <span class="schedule-rule" aria-hidden="true"></span>
+  </section>
+  <div class="schedule-shell">
+    <aside class="schedule-notice" aria-label="Admission information">
+      <span class="notice-star" aria-hidden="true">★</span>
+      <div><strong>Everyone is welcome during public show hours.</strong>
+      <p>General admission begins Thursday, October 28 at 10:00 AM. <strong>V.I.P. Early and Equal Access</strong> is optional, with earlier admission and an exclusive Wednesday preview.</p></div>
+    </aside>
+    <div class="schedule-section-header">
+      <span class="kicker">FOUR DAYS · ONE GREAT SHOW</span>
+      <h2>Plan Your Visit</h2>
+      <p>Find the correct entry time for your pass or dealer badge.</p>
+    </div>
+    <div class="schedule-grid" aria-label="October 2027 daily show hours">
+      <article class="schedule-card wednesday" aria-labelledby="day-wed">
+        <header class="schedule-card-head"><span class="day-kind">Exclusive V.I.P. Preview &amp; Setup</span><h3 id="day-wed">Wednesday</h3><p>October 27, 2027</p></header>
+        <div class="schedule-card-rows">
+          <div class="schedule-row"><span class="access-label vip-equal">V.I.P. Equal Access</span><time class="access-time" datetime="15:00">3:00–7:00 PM</time></div>
+          <div class="schedule-row"><span class="access-label vip-early">V.I.P. Early Access</span><time class="access-time" datetime="16:30">4:30–7:00 PM</time></div>
+          <div class="schedule-row"><span class="access-label">General Public</span><span class="access-time no-public">Not open Wednesday</span></div>
+          <div class="schedule-row"><span class="access-label dealer-label">Dealer Setup</span><time class="access-time" datetime="15:00">3:00–7:00 PM</time></div>
+        </div>
+      </article>
+      <article class="schedule-card" aria-labelledby="day-thu">
+        <header class="schedule-card-head"><span class="day-kind">First Public Show Day</span><h3 id="day-thu">Thursday</h3><p>October 28, 2027</p></header>
+        <div class="schedule-card-rows">
+          <div class="schedule-row"><span class="access-label vip-equal">V.I.P. Equal Access</span><span class="access-time">8:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label vip-early">V.I.P. Early Access</span><span class="access-time">9:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label">General Public</span><span class="access-time">10:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label dealer-label">Dealer Access</span><span class="access-time">8:00 AM–5:30 PM</span></div>
+        </div>
+      </article>
+      <article class="schedule-card" aria-labelledby="day-fri">
+        <header class="schedule-card-head"><span class="day-kind">Public Show Day</span><h3 id="day-fri">Friday</h3><p>October 29, 2027</p></header>
+        <div class="schedule-card-rows">
+          <div class="schedule-row"><span class="access-label vip-equal">V.I.P. Equal Access</span><span class="access-time">8:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label vip-early">V.I.P. Early Access</span><span class="access-time">9:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label">General Public</span><span class="access-time">10:00 AM–5:30 PM</span></div>
+          <div class="schedule-row"><span class="access-label dealer-label">Dealer Access</span><span class="access-time">8:00 AM–5:30 PM</span></div>
+        </div>
+      </article>
+      <article class="schedule-card" aria-labelledby="day-sat">
+        <header class="schedule-card-head"><span class="day-kind">Final Public Show Day</span><h3 id="day-sat">Saturday</h3><p>October 30, 2027</p></header>
+        <div class="schedule-card-rows">
+          <div class="schedule-row"><span class="access-label vip-equal">V.I.P. Equal Access</span><span class="access-time">8:00 AM–3:00 PM</span></div>
+          <div class="schedule-row"><span class="access-label vip-early">V.I.P. Early Access</span><span class="access-time">8:30 AM–3:00 PM</span></div>
+          <div class="schedule-row"><span class="access-label">General Public</span><span class="access-time">9:00 AM–3:00 PM</span></div>
+          <div class="schedule-row"><span class="access-label dealer-label">Dealer Access</span><span class="access-time">8:00 AM–3:00 PM</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="schedule-footnote">All times are Central Time. <strong>V.I.P. Early and Equal Access passes are optional.</strong> You do not need a V.I.P. pass to attend during regular public hours. Dealer Trading Room and load-in information is available on the Dealer Hub.</p>
+    <nav class="schedule-actions" aria-label="Plan your visit links">
+      <a class="attendee-btn" href="attendee-hub.html">Explore Attendee Hub →</a>
+      <a class="dealer-btn" href="dealer-hub.html">Explore Dealer Hub →</a>
+    </nav>
+  </div>
+</main>
 <footer><strong>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</strong><p>October 27–30, 2027 • Donald E. Stephens Convention Center • Rosemont, Illinois</p></footer>
 <script>
 (function(){
