@@ -49,6 +49,82 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 .attendee-art-preview .attendee-art-zoom{display:none;margin:0;padding:12px 14px;text-align:center;background:#09285c;font-size:15px;font-weight:700}
 .attendee-art-preview .attendee-art-zoom a{color:white;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:760px){.attendee-art-preview .attendee-art-zoom{display:block}}
+
+/* Approved GACC 2027 attendee experience: live, readable cards below the Chicago banner. */
+.attendee-2027{--navy:#071c43;--royal:#0343a0;--red:#c50025;--gold:#ecc36b;max-width:1540px;margin:0 auto 38px;padding:0 18px 40px;color:#102954;background:#f4f8ff}
+.attendee-2027 *{box-sizing:border-box}
+.attendee-2027 .gacc-art{position:relative;margin:0 -18px;background:#061b44;overflow:hidden}
+.attendee-2027 .gacc-art img{display:block;width:100%;height:auto;max-height:390px;object-fit:cover;object-position:center}
+.attendee-2027 .gacc-art:after{content:"";display:block;height:13px;background:linear-gradient(180deg,#ca0928 0 33%,#fff 33% 58%,#173e96 58%);border-bottom:3px solid var(--gold)}
+.attendee-2027 .gacc-main-boxes{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:-25px auto 38px;max-width:1280px;align-items:stretch}
+.attendee-2027 .gacc-panel{background:#fff;border:2px solid #b9d6fa;border-radius:22px;box-shadow:0 15px 28px #061b442c;overflow:hidden;min-width:0}
+.attendee-2027 .gacc-panel-header{color:#fff;font-size:clamp(21px,2.45vw,33px);font-family:Impact,'Arial Narrow',Arial,sans-serif;font-weight:900;letter-spacing:.025em;text-align:center;padding:19px 12px 17px}
+.attendee-2027 .gacc-panel-header.red{background:linear-gradient(125deg,#f02739,#9f0021)}
+.attendee-2027 .gacc-panel-header.blue{background:linear-gradient(125deg,#1973da,#071e57)}
+.attendee-2027 .gacc-panel-header .symbol{display:inline-block;margin-right:12px}
+.attendee-2027 .gacc-panel-body{padding:22px 26px 28px}
+.attendee-2027 .gacc-overline{color:#526a89;text-align:center;font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;margin:0 0 13px}
+.attendee-2027 .gacc-admission-row{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:21px 5px;border-bottom:1px solid #d3dfef}
+.attendee-2027 .gacc-admission-row:last-of-type{border-bottom:0}
+.attendee-2027 .gacc-admission-row .cost{min-width:140px;color:#bf0026;font-weight:900;font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.04em}
+.attendee-2027 .gacc-admission-row .label{flex:1;color:#10295d;font-weight:900;font-size:clamp(17px,1.8vw,24px);line-height:1.3}
+.attendee-2027 .gacc-admission-row .label small{display:block;font-size:13px;font-weight:500;margin-top:4px;color:#57708c}
+.attendee-2027 .gacc-star-rule{text-align:center;letter-spacing:8px;color:#cb0f35;font-size:24px;padding-top:14px}
+.attendee-2027 .gacc-hour-row{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid #d4e1f2;align-items:center}
+.attendee-2027 .gacc-hour-row:last-child{border-bottom:0}
+.attendee-2027 .gacc-day{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:900;color:#092d79}
+.attendee-2027 .gacc-day .calendar{border:2px solid #0d3e98;border-radius:8px;padding:8px 7px;background:#eff5fe;display:block;font-weight:900;text-align:center;font-size:12px;line-height:1.15;min-width:66px}
+.attendee-2027 .gacc-hour-info{min-width:0}
+.attendee-2027 .gacc-hour-info strong{display:block;color:#071e55;font-size:clamp(15px,1.6vw,19px);line-height:1.35}
+.attendee-2027 .gacc-hour-info .hour{font-size:clamp(18px,2vw,24px);font-weight:900;color:#123a83;display:block;margin-top:3px}
+.attendee-2027 .gacc-hour-info .hour-note{display:block;color:#bb1735;font-size:13px;font-weight:700;margin-top:3px}
+.attendee-2027 .gacc-hour-info .vip-only{background:#e8eef9;color:#092a6b;border-radius:8px;padding:8px 10px;margin-top:6px;font-size:14px;font-weight:750}
+.attendee-2027 .gacc-vip{max-width:1280px;margin:0 auto}
+.attendee-2027 .gacc-vip-heading{background:linear-gradient(112deg,#061a40,#123a83 52%,#061a40);border:2px solid #d9b65e;color:#f4cd6a;border-radius:22px 22px 0 0;padding:22px 15px 20px;text-align:center;box-shadow:0 8px 18px #061b442b}
+.attendee-2027 .gacc-vip-heading h2{color:#f6d17b!important;font-family:Georgia,'Times New Roman',serif;font-size:clamp(36px,5.5vw,68px);font-weight:900;letter-spacing:.07em;margin:0;text-shadow:0 2px 3px #0008}
+.attendee-2027 .gacc-vip-heading p{color:#fff;font-size:clamp(15px,2vw,22px);margin:5px 0 0}
+.attendee-2027 .gacc-vip-inner{padding:22px;border:2px solid #d4ba7b;border-top:0;border-radius:0 0 22px 22px;background:#edf5ff}
+.attendee-2027 .gacc-vip-choice{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.attendee-2027 .gacc-tier{background:#fff;border:2px solid #c5d8ef;border-radius:18px;overflow:hidden;box-shadow:0 6px 15px #041a3b1a}
+.attendee-2027 .gacc-tier.early{border-color:#f0b7c3}
+.attendee-2027 .gacc-tier header{padding:16px 15px;background:linear-gradient(120deg,#0b62d6,#061d68);color:#fff;text-align:center}
+.attendee-2027 .gacc-tier.early header{background:linear-gradient(120deg,#f3243c,#a9001d)}
+.attendee-2027 .gacc-tier h3{color:#fff;font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(23px,2.4vw,31px);font-weight:900;margin:0}
+.attendee-2027 .gacc-tier header small{display:block;font-size:14px;margin-top:3px;font-weight:600}
+.attendee-2027 .gacc-tier-content{padding:17px 19px 20px}
+.attendee-2027 .gacc-tier-prices{display:grid;grid-template-columns:1fr 1fr;text-align:center;gap:8px;margin-bottom:16px}
+.attendee-2027 .gacc-tier-prices > div + div{border-left:1px solid #b8c9df}
+.attendee-2027 .gacc-tier-prices strong{display:block;font-size:clamp(27px,3vw,40px);color:#c60027;line-height:1.1}
+.attendee-2027 .gacc-tier-prices span{font-weight:800;font-size:13px;color:#213967}
+.attendee-2027 .gacc-tier ul{padding-left:20px;margin:0;font-size:16px;line-height:1.65}
+.attendee-2027 .gacc-tier li{padding-left:3px}
+.attendee-2027 .gacc-optional{background:#fffaf0;border:2px solid #d8ad4b;border-radius:16px;padding:15px 20px;text-align:center;margin:20px 0 0;font-size:17px;color:#17305e;line-height:1.55}
+.attendee-2027 .gacc-optional strong{display:block;color:#ae0023;font-size:22px}
+.attendee-2027 .gacc-schedules{margin-top:22px;border:1px solid #a2b7d6;background:#fff;border-radius:16px;overflow:hidden}
+.attendee-2027 .gacc-schedules summary{list-style:revert;cursor:pointer;background:#0d326f;color:#fff;font-weight:900;padding:18px 24px;font-size:18px}
+.attendee-2027 .gacc-schedules summary:focus-visible{outline:3px solid #e5ad43;outline-offset:-4px}
+.attendee-2027 .gacc-schedule-wrap{padding:18px;overflow-x:auto}
+.attendee-2027 .gacc-schedule-wrap table{width:100%;border-collapse:collapse;min-width:530px;text-align:left}
+.attendee-2027 .gacc-schedule-wrap th{background:#eaf2fc;color:#12376e;padding:12px 13px}
+.attendee-2027 .gacc-schedule-wrap td{border-top:1px solid #d4e1f0;padding:12px 13px}
+.attendee-2027 .gacc-schedule-foot{font-size:13px;color:#48617e;line-height:1.5;margin:12px 0 0}
+@media(max-width:760px){
+.attendee-2027{padding:0 12px 28px}
+.attendee-2027 .gacc-art{margin:0 -12px}
+.attendee-2027 .gacc-art img{min-height:160px;max-height:260px;object-fit:cover}
+.attendee-2027 .gacc-main-boxes{grid-template-columns:1fr;gap:17px;margin:-17px auto 29px}
+.attendee-2027 .gacc-panel-body{padding:12px 16px 20px}
+.attendee-2027 .gacc-admission-row .cost{min-width:105px;font-size:42px}
+.attendee-2027 .gacc-admission-row .label{font-size:17px}
+.attendee-2027 .gacc-hour-row{grid-template-columns:79px 1fr;gap:10px}
+.attendee-2027 .gacc-day .calendar{min-width:65px}
+.attendee-2027 .gacc-vip-choice{grid-template-columns:1fr}
+.attendee-2027 .gacc-vip-inner{padding:12px}
+.attendee-2027 .gacc-vip-heading{padding:19px 8px}
+.attendee-2027 .gacc-optional{padding:13px 10px}
+}
+@media(prefers-reduced-motion:no-preference){.attendee-2027 .gacc-tier{transition:transform .18s,box-shadow .18s}.attendee-2027 .gacc-tier:hover{transform:translateY(-3px);box-shadow:0 12px 25px #041a3b30}}
+
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -58,11 +134,100 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
 
 <main class="attendee-magical">
-<section class="attendee-showcase attendee-art-preview" aria-label="GACC 2027 admission and show hours">
-<a class="attendee-art-link" href="wide_colorful_poster_infographic_banner_clean_fla.png" target="_blank" rel="noopener" aria-label="Open full-size Attendee Hub artwork to zoom and read prices and hours">
-<img src="wide_colorful_poster_infographic_banner_clean_fla.png" alt="GACC 2027 Attendee Hub: regular admission $15 three-day advance pass and $11.20 single day at show; optional VIP passes, access schedules and public hours" width="1774" height="887" fetchpriority="high">
-</a>
-<p class="attendee-art-zoom"><a href="wide_colorful_poster_infographic_banner_clean_fla.png" target="_blank" rel="noopener">🔎 Tap to enlarge admission prices and show hours</a></p>
+<section class="attendee-2027" id="gacc-visitor-2027" aria-label="GACC 2027 attendee admission, public hours and optional VIP access">
+  <div class="gacc-art" aria-label="Great American Coin and Collectibles Show, October 27 through October 30, 2027">
+    <img src="GACC-2027-Final-Banner.webp" alt="GACC 2027 Great American Coin and Collectibles Show, Rosemont Illinois" width="1440" height="380" fetchpriority="high">
+  </div>
+  <div class="gacc-main-boxes">
+    <article class="gacc-panel" aria-labelledby="gacc-admission-title">
+      <div class="gacc-panel-header red" id="gacc-admission-title"><span class="symbol" aria-hidden="true">🎟</span> ADMISSION FEES</div>
+      <div class="gacc-panel-body">
+        <p class="gacc-overline">Regular Public Admission</p>
+        <div class="gacc-admission-row">
+          <span class="cost">$15</span>
+          <span class="label">3-Day Advance Pass<small>Regular admission, purchased in advance</small></span>
+        </div>
+        <div class="gacc-admission-row">
+          <span class="cost">$11.20</span>
+          <span class="label">Single Day at Show<small>Regular admission, one show day</small></span>
+        </div>
+        <div class="gacc-star-rule" aria-hidden="true">★ ★ ★ ★ ★</div>
+      </div>
+    </article>
+    <article class="gacc-panel" aria-labelledby="gacc-hours-title">
+      <div class="gacc-panel-header blue" id="gacc-hours-title"><span class="symbol" aria-hidden="true">◷</span> PUBLIC HOURS</div>
+      <div class="gacc-panel-body">
+        <div class="gacc-hour-row">
+          <span class="gacc-day"><span class="calendar">WED<br>OCT 27</span></span>
+          <div class="gacc-hour-info"><strong>Wednesday, October 27</strong><div class="vip-only">V.I.P. passholders only. No regular public admission.<br>Equal Access: 3:00–7:00 PM · Early Access: 4:30–7:00 PM</div></div>
+        </div>
+        <div class="gacc-hour-row">
+          <span class="gacc-day"><span class="calendar">THU<br>OCT 28</span></span>
+          <div class="gacc-hour-info"><strong>Thursday, October 28</strong><span class="hour">10:00 AM–5:30 PM</span></div>
+        </div>
+        <div class="gacc-hour-row">
+          <span class="gacc-day"><span class="calendar">FRI<br>OCT 29</span></span>
+          <div class="gacc-hour-info"><strong>Friday, October 29</strong><span class="hour">10:00 AM–5:30 PM</span></div>
+        </div>
+        <div class="gacc-hour-row">
+          <span class="gacc-day"><span class="calendar">SAT<br>OCT 30</span></span>
+          <div class="gacc-hour-info"><strong>Saturday, October 30</strong><span class="hour">9:00 AM–3:00 PM</span><span class="hour-note">One-way traffic begins at 2:00 PM.</span></div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <section class="gacc-vip" aria-labelledby="gacc-vip-title">
+    <div class="gacc-vip-heading">
+      <h2 id="gacc-vip-title">★ V.I.P. ACCESS</h2>
+      <p>Enhance Your Show Experience</p>
+    </div>
+    <div class="gacc-vip-inner">
+      <div class="gacc-vip-choice">
+        <article class="gacc-tier equal" aria-labelledby="gacc-equal">
+          <header><h3 id="gacc-equal">♛ EQUAL ACCESS</h3><small>Premium V.I.P. Experience · Earliest Entry</small></header>
+          <div class="gacc-tier-content">
+            <div class="gacc-tier-prices">
+              <div><strong>$250</strong><span>Advance</span></div><div><strong>$300</strong><span>Day of Show</span></div>
+            </div>
+            <ul>
+              <li>Earliest attendee entry each day</li>
+              <li>Shop before the general public</li>
+              <li>Security room access included during designated security room hours</li>
+            </ul>
+          </div>
+        </article>
+        <article class="gacc-tier early" aria-labelledby="gacc-early">
+          <header><h3 id="gacc-early">♛ EARLY ACCESS</h3><small>V.I.P. Early Entry Experience</small></header>
+          <div class="gacc-tier-content">
+            <div class="gacc-tier-prices">
+              <div><strong>$150</strong><span>Advance</span></div><div><strong>$175</strong><span>Day of Show</span></div>
+            </div>
+            <ul>
+              <li>Get in before the general public</li>
+              <li>Wednesday evening preview entry</li>
+              <li>Security room service available for $100 per item, when open</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="gacc-optional"><strong>★ V.I.P. Access is optional.</strong>You do not need an Equal Access or Early Access pass to attend during regular public hours. Regular admission starts Thursday, October 28.</p>
+      <details class="gacc-schedules" id="vip-access-details">
+        <summary>View Full V.I.P. Access Schedule &amp; Compare Passes</summary>
+        <div class="gacc-schedule-wrap">
+          <table aria-label="GACC 2027 V.I.P. entry schedule comparison">
+            <thead><tr><th scope="col">Date</th><th scope="col">Equal Access</th><th scope="col">Early Access</th><th scope="col">Regular Public</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Wed, Oct 27</th><td>3:00–7:00 PM</td><td>4:30–7:00 PM</td><td>Not open</td></tr>
+              <tr><th scope="row">Thu, Oct 28</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
+              <tr><th scope="row">Fri, Oct 29</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
+              <tr><th scope="row">Sat, Oct 30</th><td>8:00 AM–3:00 PM</td><td>8:30 AM–3:00 PM</td><td>9:00 AM–3:00 PM</td></tr>
+            </tbody>
+          </table>
+          <p class="gacc-schedule-foot">Security room service is scheduled from Tuesday at noon until Wednesday at 3:00 PM. Equal Access includes eligible access during those hours; Early Access does not include that service. V.I.P. access is an optional upgrade, not a requirement for general admission.</p>
+        </div>
+      </details>
+    </div>
+  </section>
 </section>
 
 
