@@ -150,13 +150,47 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 .approved-compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .approved-compare-grid h3{margin:0;color:#0a3684}
 @media(max-width:700px){.approved-attendee{padding:0 0 12px}.approved-poster-frame{width:100%}.approved-poster-zoom{padding:0 10px}.approved-access-info{padding:0 10px}.approved-compare-grid{grid-template-columns:1fr}}
+
+/* Mobile Attendee Hub navigation: preserve full desktop links and poster artwork. */
+.gacc-mobile-nav{display:none}
+.approved-attendee{padding-top:18px}
+@media(max-width:760px){
+  .gacc-global-header{position:relative;z-index:30;flex-wrap:nowrap;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px}
+  .gacc-global-brand{min-width:0;max-width:calc(100% - 110px);text-align:left}
+  .gacc-global-brand strong{font-size:24px;line-height:1.1}
+  .gacc-global-brand small{font-size:9px;line-height:1.35;letter-spacing:.02em}
+  .gacc-global-links{display:none!important}
+  .gacc-mobile-nav{display:block;flex:0 0 auto;position:relative}
+  .gacc-mobile-nav summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;border:1px solid #718ebf;border-radius:9px;padding:10px 13px;color:white;background:#173e7f;font-size:15px;font-weight:800;min-height:44px;user-select:none}
+  .gacc-mobile-nav summary::-webkit-details-marker{display:none}
+  .gacc-mobile-nav summary::marker{content:""}
+  .gacc-mobile-nav[open] summary{background:#28559a;border-color:#a6bde4}
+  .gacc-mobile-nav summary:focus-visible{outline:3px solid #e6c068;outline-offset:3px}
+  .gacc-menu-icon{font-size:18px;line-height:1}
+  .gacc-mobile-links{position:absolute;top:calc(100% + 10px);right:0;width:min(86vw,290px);display:flex;flex-direction:column;gap:0;overflow:hidden;border-radius:12px;background:#092653;border:1px solid #7b95c4;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+  .gacc-mobile-links a{display:block;color:white;text-decoration:none;padding:14px 17px;font-size:15px;font-weight:800;border-bottom:1px solid rgba(255,255,255,.16)}
+  .gacc-mobile-links a:last-child{border-bottom:0}
+  .gacc-mobile-links a[aria-current="page"]{color:#fff3d0;background:#244b87;border-left:4px solid #ecb849;padding-left:13px}
+  .gacc-mobile-links a:hover,.gacc-mobile-links a:focus-visible{background:#28579f;outline-offset:-3px}
+  .approved-attendee{padding:12px 0 12px}
+}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 
 <body>
 
-<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
+<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div><details class="gacc-mobile-nav">
+  <summary aria-label="Toggle navigation menu"><span class="gacc-menu-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
+  <nav class="gacc-mobile-links" aria-label="Mobile site navigation">
+    <a href="index.html">Home</a>
+    <a href="attendee-hub.html" aria-current="page">Attendee Hub</a>
+    <a href="dealer-hub.html">Dealer Hub</a>
+    <a href="floor-map.html">Floor Map &amp; Dealers</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</details></div>
 
 <main class="attendee-magical">
 
