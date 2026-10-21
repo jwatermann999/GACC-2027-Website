@@ -39,40 +39,127 @@ footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:
 .gacc-global-links a[aria-current="page"]{border-bottom-color:#ed174b!important}
 .gacc-global-links a:hover,.gacc-global-links a:focus-visible{color:#fff!important;border-bottom-color:#ff607a!important;text-decoration:none!important}
 @media(max-width:900px){.gacc-global-header{justify-content:center!important}.gacc-global-links{justify-content:center!important;margin-left:0!important}}
+
+/* Floor Map & Dealer Directory redesign: no provisional dealers or floor map on the site. */
+body{background:#f5f8ff}
+.floor-page{max-width:none!important;padding:0 12px 48px!important;margin:0!important}
+.floor-hero{width:calc(100% + 24px);max-width:1440px;margin:0 auto 20px;background:#061d43}
+.floor-hero img{display:block;width:100%;height:auto}
+.floor-shell{max-width:1180px;margin:0 auto}
+.floor-intro{display:grid;grid-template-columns:70px 1fr;align-items:center;gap:14px;padding:24px 28px;border:2px solid #e1ad34;border-radius:18px;background:linear-gradient(125deg,#fff,#f3f7ff);box-shadow:0 5px 16px #071c4314;margin:0 0 18px}
+.floor-intro h1{font:700 clamp(25px,3vw,38px)/1.12 Georgia,'Times New Roman',serif;color:#09275d;text-align:left;margin:0 0 9px}
+.floor-intro p{font-size:clamp(15px,1.4vw,18px);line-height:1.56;color:#1a355f;margin:0}
+.floor-location-icon{display:flex;align-items:center;justify-content:center;width:61px;height:61px;border-radius:50%;background:#092c76;color:#fff;font-size:47px;font-weight:bold}
+.floor-quick-actions{display:grid;grid-template-columns:1fr 1fr;gap:16px;border:0;padding:0!important;margin:0 0 17px;background:transparent!important;justify-content:stretch}
+.floor-action{display:flex;align-items:center;text-decoration:none;gap:16px;border-radius:15px;border:2px solid #266fc0;color:white;padding:20px;min-height:128px;box-shadow:0 5px 12px #071c4325}
+.floor-action svg{flex:0 0 52px;width:52px;height:52px}
+.floor-action-map{background:linear-gradient(120deg,#05428d,#082a6e)}
+.floor-action-directory{background:linear-gradient(120deg,#d20a2d,#a40720);border-color:#e74d65}
+.floor-action strong{display:block;font:700 clamp(22px,2.35vw,35px)/1.1 Georgia,serif;color:white}
+.floor-action small{display:block;font-size:15px;margin-top:7px;color:#fff5d9;font-weight:700}
+.floor-action:hover,.floor-action:focus-visible{filter:brightness(1.13);outline-offset:2px}
+.floor-arrow{font-size:42px;line-height:1;margin-left:auto;color:white}
+.floor-panel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:0 0 20px}
+.floor-status-panel{border:2px solid #e5b440;border-radius:18px;overflow:hidden;background:white;box-shadow:0 5px 13px #071c4319;scroll-margin-top:24px;min-width:0}
+.floor-status-panel h2{margin:0;text-align:center;padding:16px 9px;background:#092a66;color:#fff;font:700 clamp(21px,2.4vw,32px)/1.17 Georgia,serif}
+.floor-status-panel h2 span{color:#ffd475;padding:0 8px}
+.floor-panel-inside{min-height:215px;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:13px;padding:24px 25px;color:#0b2d67}
+.floor-panel-symbol{display:flex;align-items:center;justify-content:center;color:#143a83;background:#edf3ff;border-radius:50%;width:72px;height:72px}
+.floor-panel-symbol svg{width:40px;height:40px}
+.floor-panel-inside strong{font-size:clamp(21px,2vw,28px)}
+.floor-panel-inside p{color:#405579;line-height:1.55;font-size:15px;margin:0;max-width:370px}
+.floor-followup-note{text-align:center;font-size:15px;color:#39547e;padding:13px 17px;margin:0 0 20px;border-radius:13px;background:#eaf0fa}
+.floor-original-sponsors>.section{border:1px solid #d5e1f0;border-radius:13px;background:#fff;margin:0;padding:25px}
+.floor-original-sponsors h2{font-size:24px;color:#09275d}
+.gacc-mobile-nav{display:none}
+@media(max-width:760px){
+  .gacc-global-header{padding:12px 15px!important;justify-content:space-between!important;align-items:center!important;flex-wrap:nowrap!important;gap:11px!important}
+  .gacc-global-brand{min-width:0!important;max-width:calc(100% - 113px)!important}
+  .gacc-global-brand strong{font-family:Arial,sans-serif!important;letter-spacing:0!important;font-size:24px!important}
+  .gacc-global-brand small{font-size:9px!important;line-height:1.3!important;white-space:normal!important}
+  .gacc-global-links{display:none!important}
+  .gacc-mobile-nav{display:block!important;flex:0 0 auto;position:relative;z-index:100}
+  .gacc-mobile-nav summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:10px 12px;min-height:44px;background:#1b4385;color:#fff;border:1px solid #83a1d4;border-radius:10px;font-size:15px;font-weight:800;user-select:none}
+  .gacc-mobile-nav summary::-webkit-details-marker{display:none}
+  .gacc-mobile-nav summary::marker{content:""}
+  .gacc-mobile-nav summary:focus-visible{outline:3px solid #f1cc64;outline-offset:2px}
+  .gacc-menu-icon{font-size:20px;line-height:1}
+  .gacc-mobile-links{position:absolute;right:0;top:calc(100% + 10px);width:min(86vw,290px);display:flex;flex-direction:column;align-items:stretch;justify-content:start;gap:0;padding:0;margin:0;border:1px solid #8da8d4;border-radius:12px;background:#092658;box-shadow:0 15px 30px #0004;overflow:hidden}
+  .gacc-mobile-links a{color:white;text-decoration:none;display:block;padding:13px 17px;border-bottom:1px solid #ffffff26;text-align:left;font-size:15px;font-weight:800}
+  .gacc-mobile-links a:last-child{border-bottom:0}
+  .gacc-mobile-links a[aria-current="page"]{background:#204983;border-left:4px solid #eabf62;padding-left:13px}
+  .floor-page{padding:0 12px 28px!important}
+  .floor-hero{width:calc(100% + 24px);margin:0 -12px 15px}
+  .floor-intro{grid-template-columns:44px 1fr;gap:9px;padding:16px 13px}
+  .floor-location-icon{width:41px;height:41px;font-size:30px}
+  .floor-intro h1{font-size:clamp(22px,5.4vw,31px)}
+  .floor-intro p{font-size:14px}
+  .floor-quick-actions{gap:9px;padding:0!important}
+  .floor-action{flex-direction:column;gap:7px;text-align:center;padding:13px 7px;min-height:108px}
+  .floor-action svg{width:35px;height:35px;flex:0 0 35px}
+  .floor-action strong{font-size:clamp(17px,4.6vw,25px)}
+  .floor-action small{font-size:12px;margin-top:5px}
+  .floor-arrow{display:none}
+  .floor-panel-grid{grid-template-columns:1fr;gap:14px}
+  .floor-status-panel h2{font-size:clamp(21px,5.5vw,28px);padding:13px 6px}
+  .floor-panel-inside{min-height:170px;padding:18px 15px}
+  .floor-original-sponsors>.section{padding:20px 17px}
+}
+
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/floor-map.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="GACC 2027 Coin Show Floor Map & Dealer Directory | Rosemont IL"><meta property="og:description" content="Find the GACC 2027 Chicago-area coin show floor map and dealer directory in Rosemont. Explore rare coin, currency, paper money, bullion and collectible dealers."><meta property="og:url" content="https://www.gaccshow.com/floor-map.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
 
 <body>
 
-<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html" aria-current="page">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
+<div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html" aria-current="page">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div><details class="gacc-mobile-nav">
+  <summary aria-label="Toggle navigation menu"><span class="gacc-menu-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
+  <div class="gacc-mobile-links" role="navigation" aria-label="Mobile site navigation">
+    <a href="index.html">Home</a>
+    <a href="attendee-hub.html">Attendee Hub</a>
+    <a href="dealer-hub.html">Dealer Hub</a>
+    <a href="floor-map.html" aria-current="page">Floor Map &amp; Dealers</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</details></div>
 
-<main>
-<section aria-label="GACC coin show information" style="margin:18px 0 30px;padding:22px 25px;background:#f4f6f9;border-radius:9px"><h2 style="font-size:24px;margin:0 0 12px;color:#071c43">Find Coin Dealers, Currency Specialists &amp; Collectibles</h2><p style="line-height:1.75;margin:0;color:#34445e">Use the GACC floor map and dealer directory to plan your visit to the Great American Coin &amp; Collectibles Show in Rosemont, near Chicago. The directory is intended to help visitors find participating numismatic dealers and explore specialties such as U.S. coins, world coins, rare coins, collectible paper money, banknotes, gold and silver bullion, tokens, medals, exonumia and other collectibles. Check back for 2027 dealer and floor map updates as show arrangements are finalized.</p></section>
-
-
-<h1>Floor Map &amp; Dealer Directory</h1>
-
-<p class="intro">
-Plan your visit before you arrive. Find your favorite dealers, discover new ones and locate their tables on the GACC show floor.
-</p>
-
-<div class="section">
-<h2>2027 Show Floor Map</h2>
-
-<div class="map-placeholder" style="padding:0;overflow:hidden;background:transparent"><img src="Great%20American%20Coin%20Show%20Floor%20Map.png" alt="Great American Coin &amp; Collectibles Show 2027 Floor Map Coming Soon, Rosemont, Illinois" style="display:block;width:100%;height:auto;object-fit:contain" loading="lazy"></div>
-
-</div>
-
-<div class="section">
-
-<h2>2027 Dealer Directory</h2>
-
-<div class="map-placeholder" role="status"><strong>Dealer List Coming Soon</strong></div>
-
-</div>
-
-<div class="section">
+<main class="floor-page">
+  <section class="floor-hero" aria-label="GACC 2027 Floor Map and Dealer Directory, October 27–30, 2027">
+    <img src="GACC-2027-Floor-Directory-Hero.webp" width="1024" height="380" alt="Chicago skyline and GACC 2027 Floor Map &amp; Dealer Directory heading, Donald E. Stephens Convention Center, Rosemont, October 27–30, 2027" fetchpriority="high">
+  </section>
+  <div class="floor-shell">
+    <section class="floor-intro" aria-labelledby="floor-intro-title">
+      <div class="floor-location-icon" aria-hidden="true">⌖</div>
+      <div>
+        <h1 id="floor-intro-title">Find Coin Dealers, Currency Specialists &amp; Collectibles</h1>
+        <p>Use the GACC floor map and dealer directory to plan your visit, find participating dealers and locate their tables at the Great American Coin &amp; Collectibles Show in Rosemont, Illinois.</p>
+      </div>
+    </section>
+    <nav class="floor-quick-actions" aria-label="Floor map and dealer directory sections">
+      <a href="#show-floor-map" class="floor-action floor-action-map"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/><circle cx="16" cy="8" r="2"/></svg><span><strong>Floor Map</strong><small>Coming Soon</small></span><span class="floor-arrow" aria-hidden="true">›</span></a>
+      <a href="#show-dealer-directory" class="floor-action floor-action-directory"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 19v-2a6 6 0 0 1 12 0v2M12 19v-2a6 6 0 0 1 10 0v2"/></svg><span><strong>Dealer Directory</strong><small>Coming Soon</small></span><span class="floor-arrow" aria-hidden="true">›</span></a>
+    </nav>
+    <div class="floor-panel-grid">
+      <section class="floor-status-panel" id="show-floor-map" aria-labelledby="show-floor-map-heading">
+        <h2 id="show-floor-map-heading"><span aria-hidden="true">★</span> 2027 Show Floor Map <span aria-hidden="true">★</span></h2>
+        <div class="floor-panel-inside">
+          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/><circle cx="16" cy="8" r="2"/></svg></div>
+          <strong>Floor Map Coming Soon</strong>
+          <p>We're finalizing the 2027 floor layout. The official map and table locations will appear here when they're ready.</p>
+        </div>
+      </section>
+      <section class="floor-status-panel" id="show-dealer-directory" aria-labelledby="show-dealer-directory-heading">
+        <h2 id="show-dealer-directory-heading"><span aria-hidden="true">★</span> 2027 Dealer Directory <span aria-hidden="true">★</span></h2>
+        <div class="floor-panel-inside">
+          <div class="floor-panel-symbol"><svg aria-hidden="true" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.5 5.1-5.1 2.5 2.5-5.1z"/></svg></div>
+          <strong>Dealer Directory Coming Soon</strong>
+          <p>Participating dealers and confirmed booth assignments will be posted here as the 2027 directory is finalized.</p>
+        </div>
+      </section>
+    </div>
+    <div class="floor-followup-note">Check back for updates as GACC 2027 approaches. We look forward to welcoming you to Rosemont!</div>
+    <section class="floor-original-sponsors"><div class="section">
 <h2>GACC Sponsors</h2>
 
 <p>
@@ -83,8 +170,8 @@ GACC sponsors will be identified in the dealer directory. Sponsor names can be s
 <a href="sponsors.html"><strong>View Our Sponsors</strong></a>
 </p>
 
-</div>
-
+</div></section>
+  </div>
 </main>
 
 <footer>
