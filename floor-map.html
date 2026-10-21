@@ -25,10 +25,6 @@ th{background:#071c43;color:white}
 .sponsor{font-weight:bold}
 footer{text-align:center;padding:30px;background:#071c43;color:white;margin-top:50px}
 
-/* Consistent bold blue website links for every linked dealer */
-#dealerTable tbody td a,
-#dealerTable tbody td a:visited{color:#244fba;font-weight:800;text-decoration:underline;text-underline-offset:2px}
-#dealerTable tbody td a:hover,#dealerTable tbody td a:focus-visible{color:#123a91}
 .gacc-global-header{background:#071c43!important;color:#fff!important;padding:17px clamp(18px,4vw,60px)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;flex-wrap:wrap!important;text-align:left!important}.gacc-global-brand{display:flex!important;flex-direction:column!important;flex-shrink:0!important;color:#fff!important;text-decoration:none!important;line-height:1.15!important}.gacc-global-brand strong{font-size:clamp(30px,3vw,44px)!important;letter-spacing:.3px!important;color:#fff!important}.gacc-global-brand small{font-size:clamp(12px,1.05vw,15px)!important;letter-spacing:.1px!important;color:#fff!important;font-weight:700!important}.gacc-global-links{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(12px,1.5vw,24px)!important;flex-wrap:wrap!important;margin-left:auto!important}.gacc-global-links a{font-size:clamp(12px,1vw,15px)!important;color:#fff!important;text-decoration:none!important;font-weight:700!important;white-space:nowrap!important}.gacc-global-links a:hover{text-decoration:underline!important}@media(max-width:900px){.gacc-global-header{justify-content:center!important}.gacc-global-links{justify-content:center!important;margin:0!important}}@media(max-width:540px){.gacc-global-header{padding:16px!important}.gacc-global-brand small{font-size:11px!important;white-space:normal!important}.gacc-global-links{gap:10px 14px!important}}
 /* GACC unified polished navigation */
 .gacc-global-header{background:linear-gradient(180deg,#09275a 0%,#071c43 100%)!important;border-bottom:2px solid rgba(255,255,255,.7)!important;padding:12px clamp(16px,3.8vw,60px)!important;gap:20px!important}
@@ -177,24 +173,6 @@ GACC sponsors will be identified in the dealer directory. Sponsor names can be s
 <footer>
 Great American Coin &amp; Collectibles Show • 2027
 </footer>
-
-<script>
-function searchDealers(){
-var input=document.getElementById("dealerSearch");
-var filter=input.value.toUpperCase();
-var table=document.getElementById("dealerTable");
-var tr=table.getElementsByTagName("tr");
-
-for(var i=1;i<tr.length;i++){
-var text=tr[i].textContent || tr[i].innerText;
-if(text.toUpperCase().indexOf(filter)>-1){
-tr[i].style.display="";
-}else{
-tr[i].style.display="none";
-}
-}
-}
-</script>
 
 <script>
 (function(){
