@@ -125,6 +125,30 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 }
 @media(prefers-reduced-motion:no-preference){.attendee-2027 .gacc-tier{transition:transform .18s,box-shadow .18s}.attendee-2027 .gacc-tier:hover{transform:translateY(-3px);box-shadow:0 12px 25px #041a3b30}}
 
+
+/* Approved October 2026 attendee artwork: display entire original design, never crop. */
+.approved-attendee{max-width:1100px;margin:0 auto 36px;padding:0 16px 20px}
+.approved-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.approved-poster-frame{position:relative;max-width:1024px;margin:0 auto;background:#06183e;box-shadow:0 12px 36px rgba(7,28,67,.18)}
+.approved-poster-image{display:block;width:100%;height:auto;max-width:1024px}
+.approved-poster-action{display:block;position:absolute;z-index:2;border-radius:12px;cursor:pointer}
+.approved-details-action{left:3%;top:91.15%;width:46%;height:5.65%}
+.approved-compare-action{left:51%;top:91.15%;width:46%;height:5.65%}
+.approved-poster-action:focus-visible{outline:4px solid #f8d869;outline-offset:1px;background:rgba(255,255,255,.13)}
+.approved-poster-zoom{text-align:center;margin:12px 0 24px;font-size:15px}
+.approved-poster-zoom a{color:#074285;font-weight:800}
+.approved-access-info{max-width:1024px;margin:auto}
+.approved-access-detail{margin:12px 0;background:#fff;border:2px solid #cfdaec;border-radius:13px;overflow:hidden;box-shadow:0 4px 12px rgba(5,22,60,.05)}
+.approved-access-detail summary{cursor:pointer;background:#0b2e6c;color:#fff;padding:17px 22px;font-weight:800;font-size:19px;list-style-position:inside}
+.approved-access-detail summary:hover{background:#164686}
+.approved-detail-inner{padding:18px 22px;color:#162e55;line-height:1.6}
+.approved-table-scroll{overflow-x:auto}
+.approved-detail-inner table{border-collapse:collapse;width:100%;min-width:630px;margin:16px 0}
+.approved-detail-inner th,.approved-detail-inner td{border:1px solid #cbd7e8;padding:12px 10px;text-align:left}
+.approved-detail-inner thead th{background:#e5f0ff;color:#092c72}
+.approved-compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.approved-compare-grid h3{margin:0;color:#0a3684}
+@media(max-width:700px){.approved-attendee{padding:0 0 12px}.approved-poster-frame{width:100%}.approved-poster-zoom{padding:0 10px}.approved-access-info{padding:0 10px}.approved-compare-grid{grid-template-columns:1fr}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/attendee-hub.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="Visit Chicago Coin Show 2027 | Rosemont Coin & Collectibles Event"><meta property="og:description" content="Plan your visit to GACC 2027 in Rosemont, Illinois. Discover a Chicago-area coin show featuring rare coins, paper money, currency, bullion, tokens and collectibles."><meta property="og:url" content="https://www.gaccshow.com/attendee-hub.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script></head>
@@ -134,102 +158,39 @@ main.attendee-magical .attendee-art-preview img{width:100%;max-width:none;height
 <div class="gacc-global-header"><a class="gacc-global-brand" href="index.html"><strong>GACC 2027</strong><small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a><div class="gacc-global-links"><a href="index.html">HOME</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="dealer-hub.html">DEALER HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="contact.html">CONTACT</a></div></div>
 
 <main class="attendee-magical">
-<section class="attendee-2027" id="gacc-visitor-2027" aria-label="GACC 2027 attendee admission, public hours and optional VIP access">
-  <div class="gacc-art" aria-label="Great American Coin and Collectibles Show, October 27 through October 30, 2027">
-    <img src="GACC-2027-Final-Banner.webp" alt="GACC 2027 Great American Coin and Collectibles Show, Rosemont Illinois" width="1440" height="380" fetchpriority="high">
-  </div>
-  <div class="gacc-main-boxes">
-    <article class="gacc-panel" aria-labelledby="gacc-admission-title">
-      <div class="gacc-panel-header red" id="gacc-admission-title"><span class="symbol" aria-hidden="true">🎟</span> ADMISSION FEES</div>
-      <div class="gacc-panel-body">
-        <p class="gacc-overline">Regular Public Admission</p>
-        <div class="gacc-admission-row">
-          <span class="cost">$15</span>
-          <span class="label">3-Day Advance Pass<small>Regular admission, purchased in advance</small></span>
-        </div>
-        <div class="gacc-admission-row">
-          <span class="cost">$11.20</span>
-          <span class="label">Single Day at Show<small>Regular admission, one show day</small></span>
-        </div>
-        <div class="gacc-star-rule" aria-hidden="true">★ ★ ★ ★ ★</div>
-      </div>
-    </article>
-    <article class="gacc-panel" aria-labelledby="gacc-hours-title">
-      <div class="gacc-panel-header blue" id="gacc-hours-title"><span class="symbol" aria-hidden="true">◷</span> PUBLIC HOURS</div>
-      <div class="gacc-panel-body">
-        <div class="gacc-hour-row">
-          <span class="gacc-day"><span class="calendar">WED<br>OCT 27</span></span>
-          <div class="gacc-hour-info"><strong>Wednesday, October 27</strong><div class="vip-only">V.I.P. passholders only. No regular public admission.<br>Equal Access: 3:00–7:00 PM · Early Access: 4:30–7:00 PM</div></div>
-        </div>
-        <div class="gacc-hour-row">
-          <span class="gacc-day"><span class="calendar">THU<br>OCT 28</span></span>
-          <div class="gacc-hour-info"><strong>Thursday, October 28</strong><span class="hour">10:00 AM–5:30 PM</span></div>
-        </div>
-        <div class="gacc-hour-row">
-          <span class="gacc-day"><span class="calendar">FRI<br>OCT 29</span></span>
-          <div class="gacc-hour-info"><strong>Friday, October 29</strong><span class="hour">10:00 AM–5:30 PM</span></div>
-        </div>
-        <div class="gacc-hour-row">
-          <span class="gacc-day"><span class="calendar">SAT<br>OCT 30</span></span>
-          <div class="gacc-hour-info"><strong>Saturday, October 30</strong><span class="hour">9:00 AM–3:00 PM</span><span class="hour-note">One-way traffic begins at 2:00 PM.</span></div>
-        </div>
-      </div>
-    </article>
-  </div>
-  <section class="gacc-vip" aria-labelledby="gacc-vip-title">
-    <div class="gacc-vip-heading">
-      <h2 id="gacc-vip-title">★ V.I.P. ACCESS</h2>
-      <p>Enhance Your Show Experience</p>
-    </div>
-    <div class="gacc-vip-inner">
-      <div class="gacc-vip-choice">
-        <article class="gacc-tier equal" aria-labelledby="gacc-equal">
-          <header><h3 id="gacc-equal">♛ EQUAL ACCESS</h3><small>Premium V.I.P. Experience · Earliest Entry</small></header>
-          <div class="gacc-tier-content">
-            <div class="gacc-tier-prices">
-              <div><strong>$250</strong><span>Advance</span></div><div><strong>$300</strong><span>Day of Show</span></div>
-            </div>
-            <ul>
-              <li>Earliest attendee entry each day</li>
-              <li>Shop before the general public</li>
-              <li>Security room access included during designated security room hours</li>
-            </ul>
-          </div>
-        </article>
-        <article class="gacc-tier early" aria-labelledby="gacc-early">
-          <header><h3 id="gacc-early">♛ EARLY ACCESS</h3><small>V.I.P. Early Entry Experience</small></header>
-          <div class="gacc-tier-content">
-            <div class="gacc-tier-prices">
-              <div><strong>$150</strong><span>Advance</span></div><div><strong>$175</strong><span>Day of Show</span></div>
-            </div>
-            <ul>
-              <li>Get in before the general public</li>
-              <li>Wednesday evening preview entry</li>
-              <li>Security room service available for $100 per item, when open</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <p class="gacc-optional"><strong>★ V.I.P. Access is optional.</strong>You do not need an Equal Access or Early Access pass to attend during regular public hours. Regular admission starts Thursday, October 28.</p>
-      <details class="gacc-schedules" id="vip-access-details">
-        <summary>View Full V.I.P. Access Schedule &amp; Compare Passes</summary>
-        <div class="gacc-schedule-wrap">
-          <table aria-label="GACC 2027 V.I.P. entry schedule comparison">
-            <thead><tr><th scope="col">Date</th><th scope="col">Equal Access</th><th scope="col">Early Access</th><th scope="col">Regular Public</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Wed, Oct 27</th><td>3:00–7:00 PM</td><td>4:30–7:00 PM</td><td>Not open</td></tr>
-              <tr><th scope="row">Thu, Oct 28</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
-              <tr><th scope="row">Fri, Oct 29</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
-              <tr><th scope="row">Sat, Oct 30</th><td>8:00 AM–3:00 PM</td><td>8:30 AM–3:00 PM</td><td>9:00 AM–3:00 PM</td></tr>
-            </tbody>
-          </table>
-          <p class="gacc-schedule-foot">Security room service is scheduled from Tuesday at noon until Wednesday at 3:00 PM. Equal Access includes eligible access during those hours; Early Access does not include that service. V.I.P. access is an optional upgrade, not a requirement for general admission.</p>
-        </div>
-      </details>
-    </div>
-  </section>
-</section>
 
+<section class="approved-attendee" aria-labelledby="approved-attendee-title">
+  <h1 class="approved-sr-only" id="approved-attendee-title">GACC 2027 Attendee Hub</h1>
+  <div class="approved-poster-frame">
+    <img class="approved-poster-image" src="GACC-2027-Attendee-Hub-Final.png" alt="GACC 2027 Attendee Hub event guide: Chicago skyline, October 27–30, 2027, admission fees ($15 advance three-day pass or $11.20 single day), public hours, and optional V.I.P. Early &amp; Equal Access options." width="1024" height="1536" fetchpriority="high">
+    <a class="approved-poster-action approved-details-action" href="#vip-access-details" onclick="document.getElementById('vip-access-details').open=true" aria-label="View full V.I.P. Early and Equal Access schedule"></a>
+    <a class="approved-poster-action approved-compare-action" href="#vip-compare-details" onclick="document.getElementById('vip-compare-details').open=true" aria-label="Compare V.I.P. Early and Equal Access options"></a>
+  </div>
+  <p class="approved-poster-zoom"><a href="GACC-2027-Attendee-Hub-Final.png" target="_blank" rel="noopener">🔎 Open full-size Attendee Hub artwork</a></p>
+  <div class="approved-access-info" aria-label="Full attendee details">
+    <details id="vip-access-details" class="approved-access-detail">
+      <summary>Full V.I.P. Early &amp; Equal Access Schedule</summary>
+      <div class="approved-detail-inner">
+        <p><strong>Early and Equal Access are optional upgrades.</strong> A V.I.P. pass is not required during regular public admission hours.</p>
+        <div class="approved-table-scroll"><table><thead><tr><th>Date</th><th>Equal Access</th><th>Early Access</th><th>General Public</th></tr></thead>
+          <tbody>
+            <tr><th>Wed, Oct 27</th><td>3:00–7:00 PM</td><td>4:30–7:00 PM</td><td>Not open</td></tr>
+            <tr><th>Thu, Oct 28</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
+            <tr><th>Fri, Oct 29</th><td>8:00 AM–5:30 PM</td><td>9:00 AM–5:30 PM</td><td>10:00 AM–5:30 PM</td></tr>
+            <tr><th>Sat, Oct 30</th><td>8:00 AM–3:00 PM</td><td>8:30 AM–3:00 PM</td><td>9:00 AM–3:00 PM</td></tr>
+          </tbody></table></div>
+        <p>Wednesday admission is limited to V.I.P. Early &amp; Equal Access passholders. The security room is scheduled to open Tuesday at noon and close Wednesday at 3:00 PM; Equal Access includes eligible use during those designated hours, while Early Access holders may request service for $100 per item, when open.</p>
+      </div>
+    </details>
+    <details id="vip-compare-details" class="approved-access-detail">
+      <summary>Compare V.I.P. Early &amp; Equal Access Options</summary>
+      <div class="approved-detail-inner approved-compare-grid">
+        <div><h3>Equal Access</h3><p><strong>$250 advance / $300 day of show</strong></p><p>Earliest entry each day, shopping before general public admission, and included eligible security room access during designated hours.</p></div>
+        <div><h3>Early Access</h3><p><strong>$150 advance / $175 day of show</strong></p><p>Early show entry before the general public and the Wednesday evening preview. Security room service may be available for $100 per item while open.</p></div>
+      </div>
+    </details>
+  </div>
+</section>
 
 
 <div class="card attendee-floor-directory">
