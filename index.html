@@ -269,18 +269,24 @@ footer .contact-details{margin:22px auto 26px}footer .contact-details h3{margin:
 </style>
 
 <style id="gacc-brevo-signup-styles">
-/* Compact, premium opt-in invitation. Brevo form is kept inside a native dialog. */
-.gacc-email-cta{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;max-width:none;margin:0;padding:29px clamp(22px,6vw,110px);background:linear-gradient(112deg,#071c43 0%,#123e72 68%,#071c43 100%);color:#fff;border-top:3px solid #d6b36b;border-bottom:3px solid #d71920}
-.gacc-email-cta:before{content:"★ ★ ★";display:block;flex:0 0 auto;color:#d6b36b;letter-spacing:5px;font-size:15px}
-.gacc-email-cta .gacc-email-copy{flex:1 1 320px;min-width:0}
-.gacc-email-cta .gacc-email-kicker{display:block;margin-bottom:4px;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#e5c57a}
-.gacc-email-cta h2{margin:0 0 6px;color:#fff;font-size:clamp(23px,2.8vw,31px);text-align:left;text-transform:none;letter-spacing:0}
-.gacc-email-cta p{margin:0;color:#e5ecf8;line-height:1.5;font-size:15px;max-width:560px}
-.gacc-email-cta .gacc-email-actions{display:flex;flex-direction:column;align-items:center;gap:8px}
-.gacc-email-cta .gacc-email-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 24px;border:2px solid #e5c57a;border-radius:999px;background:#fff;color:#071c43;text-decoration:none;font-size:15px;font-weight:900;white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.16);transition:background .2s ease,transform .2s ease}
-.gacc-email-cta .gacc-email-button:hover,.gacc-email-cta .gacc-email-button:focus-visible{background:#fff3d7;transform:translateY(-1px);text-decoration:none}
-.gacc-email-cta .gacc-email-note{color:#e5ecf8;font-size:12px;letter-spacing:.01em}
-.gacc-email-cta a:focus-visible,.gacc-signup-dialog a:focus-visible,.gacc-signup-dialog button:focus-visible{outline:3px solid #d71920;outline-offset:3px}
+/* Discreet email opt-in action in the top navigation */
+.site-nav .nav-links a.gacc-nav-updates{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;
+  padding:9px 15px!important;border:1px solid rgba(226,194,117,.75)!important;border-radius:999px!important;
+  background:rgba(226,194,117,.10)!important;color:#fff!important;letter-spacing:.035em!important;
+  box-shadow:0 2px 10px rgba(0,0,0,.10);text-decoration:none!important;
+  transition:background .2s ease,border-color .2s ease;
+}
+.site-nav .nav-links a.gacc-nav-updates:hover,.site-nav .nav-links a.gacc-nav-updates:focus-visible{
+  background:rgba(226,194,117,.24)!important;border-color:#f1d08b!important;
+}
+.site-nav .nav-links .gacc-updates-icon{font-size:17px;line-height:1;color:#f1d08b}
+.site-nav .nav-links a.gacc-nav-updates:focus-visible{outline:3px solid #f1d08b;outline-offset:3px}
+@media(max-width:760px){
+  .site-nav .nav-links a.gacc-nav-updates{display:flex!important;margin:9px 8px 12px!important;padding:13px 18px!important}
+}
+@media(prefers-reduced-motion:reduce){.site-nav .nav-links a.gacc-nav-updates{transition:none}}
+/* Signup is intentionally hidden until the visitor clicks the header link. */
 .gacc-signup-dialog{position:fixed;inset:0;box-sizing:border-box;width:min(640px,calc(100% - 28px));max-width:640px;max-height:92vh;max-height:92dvh;margin:auto;padding:0;overflow:auto;border:1px solid #d8dfed;border-top:5px solid #d6b36b;border-radius:16px;background:#fff;color:#071c43;box-shadow:0 22px 90px rgba(0,0,0,.45);z-index:1000}
 .gacc-signup-dialog::backdrop{background:rgba(3,15,38,.8)}
 .gacc-signup-dialog .gacc-signup-dialog-head{position:sticky;top:0;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:21px 22px 17px;background:#071c43;color:#fff;border-bottom:3px solid #d71920}
@@ -293,20 +299,15 @@ footer .contact-details{margin:22px auto 26px}footer .contact-details h3{margin:
 .gacc-signup-dialog iframe{display:block;width:100%;height:700px;max-width:540px;margin:0 auto;border:0;background:#fff}
 .gacc-signup-dialog .gacc-dialog-help{font-size:13px;text-align:center;padding:0 18px 18px;margin:2px 0 0;color:#44516a;line-height:1.55}
 .gacc-signup-dialog .gacc-dialog-help a{color:#093c8a;font-weight:800}
-@media(max-width:900px){.gacc-email-cta:before{display:none}}
-@media(max-width:650px){.gacc-email-cta{gap:18px;padding:24px 6%;text-align:center;justify-content:center}.gacc-email-cta .gacc-email-copy{flex-basis:100%}.gacc-email-cta h2{text-align:center}.gacc-email-cta p{margin:auto}.gacc-email-cta .gacc-email-actions{width:100%}.gacc-email-cta .gacc-email-button{width:min(100%,330px)}.gacc-signup-dialog .gacc-signup-dialog-head{padding:15px 15px 13px}.gacc-signup-dialog .gacc-dialog-form{padding:6px 4px 0}.gacc-signup-dialog iframe{height:730px}}
-@media(prefers-reduced-motion:reduce){.gacc-email-cta .gacc-email-button{transition:none}.gacc-email-cta .gacc-email-button:hover{transform:none}}
+.gacc-signup-dialog a:focus-visible,.gacc-signup-dialog button:focus-visible{outline:3px solid #d71920;outline-offset:3px}
+@media(max-width:650px){.gacc-signup-dialog .gacc-signup-dialog-head{padding:15px 15px 13px}.gacc-signup-dialog .gacc-dialog-form{padding:6px 4px 0}.gacc-signup-dialog iframe{height:730px}}
 </style>
 </head><body>
-<nav class="site-nav"><a class="nav-brand" href="index.html" aria-label="GACC home"><span style="display:block;font-size:1.15em">GACC 2027</span><span style="display:block;font-size:12px;letter-spacing:.1px;line-height:1.2">GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</span></a><button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-menu">☰ <span>MENU</span></button><div class="nav-links" id="site-menu"><a href="index.html">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="#sponsors">SPONSORS</a><a href="news-media.html">NEWS &amp; MEDIA</a><a href="#email-signup" data-gacc-signup-open>EMAIL UPDATES</a><a href="contact.html">CONTACT</a></div></nav>
+<nav class="site-nav"><a class="nav-brand" href="index.html" aria-label="GACC home"><span style="display:block;font-size:1.15em">GACC 2027</span><span style="display:block;font-size:12px;letter-spacing:.1px;line-height:1.2">GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</span></a><button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-menu">☰ <span>MENU</span></button><div class="nav-links" id="site-menu"><a href="index.html">HOME</a><a href="dealer-hub.html">DEALER HUB</a><a href="attendee-hub.html">ATTENDEE HUB</a><a href="floor-map.html">FLOOR MAP &amp; DEALERS</a><a href="schedule.html">SCHEDULE</a><a href="#sponsors">SPONSORS</a><a href="news-media.html">NEWS &amp; MEDIA</a><a class="gacc-nav-updates" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" data-gacc-signup-open aria-label="Get GACC 2027 email updates"><span class="gacc-updates-icon" aria-hidden="true">✉</span> GET UPDATES</a><a href="contact.html">CONTACT</a></div></nav>
 
 <div class="hero"><img src="GACC-2027-Final-Banner.webp" alt="GACC 2027"></div>
 
 <section class="gacc-seo-about" aria-labelledby="gacc-about-heading" style="padding:34px 6%;background:#fff;text-align:center"><h1 id="gacc-about-heading" style="font-size:clamp(23px,3vw,34px);color:#071c43;margin:0 0 14px">Welcome to the Great American Coin &amp; Collectibles Show!</h1><p style="max-width:760px;margin:0 auto;color:#46546b;line-height:1.65;font-size:clamp(16px,2vw,18px)">Join us October 27–30, 2027, in Rosemont, Illinois, for an exciting event featuring rare coins, currency, precious metals, bullion, and collectibles.</p></section>
-<section class="gacc-email-cta" id="email-signup" aria-labelledby="gacc-email-cta-heading">
-  <div class="gacc-email-copy"><span class="gacc-email-kicker">GACC 2027 • Email updates</span><h2 id="gacc-email-cta-heading">Be first to know.</h2><p>Show news, announcements and special events for dealers, collectors and attendees. Sent straight to your inbox.</p></div>
-  <div class="gacc-email-actions"><a class="gacc-email-button" data-gacc-signup-open href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==">Join Our Email List <span aria-hidden="true">↗</span></a><span class="gacc-email-note">Free to join · Unsubscribe anytime</span></div>
-</section>
 <div style="text-align:center;padding:18px 6%;background:#f4f6f9;color:#071c43"><a href="news-media.html" style="color:#103d85;font-weight:800">GACC News &amp; Media</a> &nbsp;·&nbsp; <a href="coin-show-visitor-guide.html" style="color:#103d85;font-weight:800">Coin Show Visitor Guide</a></div>
 <section class="gacc-countdown" aria-labelledby="gacc-countdown-heading"><h2 id="gacc-countdown-heading">Countdown to the 2027 Great American Coin &amp; Collectibles Show</h2><p class="count-subtitle">October 27–30, 2027 • Rosemont, Illinois<br>Counting down to public opening Thursday, October 28 at 10:00 AM Central</p><div class="count-grid" role="timer" aria-label="Time remaining until GACC 2027 public opening"><div class="count-unit"><span class="count-number" id="gacc-days">---</span><span class="count-label">DAYS</span></div><div class="count-unit"><span class="count-number" id="gacc-hours">--</span><span class="count-label">HOURS</span></div><div class="count-unit"><span class="count-number" id="gacc-minutes">--</span><span class="count-label">MINUTES</span></div><div class="count-unit"><span class="count-number" id="gacc-seconds">--</span><span class="count-label">SECONDS</span></div></div><p id="gacc-countdown-message" class="count-subtitle" style="margin:15px 0 0"></p></section>
 <section class="spot-prices" aria-labelledby="spot-prices-heading"><div class="spot-frame"><div class="spot-stars" aria-hidden="true">★ ★ ★ ★ ★ ★ ★ ★ ★</div><div class="spot-eyebrow">GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</div><h2 id="spot-prices-heading">LIVE PRECIOUS METALS SPOT PRICES</h2><div class="spot-stripes" aria-hidden="true"></div><iframe src="https://goldprice.com/embed/ticker" title="Live gold, silver, platinum and palladium spot prices in US dollars" loading="lazy"></iframe><p>Gold • Silver • Platinum • Palladium | USD per troy ounce. Indicative market prices, not dealer buy or sell quotes. Data provided by <a href="https://goldprice.com/" target="_blank" rel="noopener noreferrer">GoldPrice.com</a>.</p></div></section>
