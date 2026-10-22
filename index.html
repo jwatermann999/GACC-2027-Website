@@ -287,7 +287,7 @@ footer .contact-details{margin:22px auto 26px}footer .contact-details h3{margin:
 }
 @media(prefers-reduced-motion:reduce){.site-nav .nav-links a.gacc-nav-updates{transition:none}}
 /* Signup is intentionally hidden until the visitor clicks the header link. */
-.gacc-signup-dialog{position:fixed;inset:0;box-sizing:border-box;width:min(640px,calc(100% - 28px));max-width:640px;max-height:92vh;max-height:92dvh;margin:auto;padding:0;overflow:auto;border:1px solid #d8dfed;border-top:5px solid #d6b36b;border-radius:16px;background:#fff;color:#071c43;box-shadow:0 22px 90px rgba(0,0,0,.45);z-index:1000}
+.gacc-signup-dialog{position:fixed!important;inset:auto!important;top:50%!important;left:50%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important;box-sizing:border-box;width:min(640px,calc(100vw - 28px));max-width:640px;max-height:92vh;max-height:92dvh;margin:0!important;padding:0;overflow:auto;border:1px solid #d8dfed;border-top:5px solid #d6b36b;border-radius:16px;background:#fff;color:#071c43;box-shadow:0 22px 90px rgba(0,0,0,.45);z-index:1000}
 .gacc-signup-dialog::backdrop{background:rgba(3,15,38,.8)}
 .gacc-signup-dialog .gacc-signup-dialog-head{position:sticky;top:0;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:21px 22px 17px;background:#071c43;color:#fff;border-bottom:3px solid #d71920}
 .gacc-signup-dialog .gacc-signup-dialog-head small{display:block;color:#dfbd6b;text-transform:uppercase;font-size:11px;letter-spacing:.14em;font-weight:900}
