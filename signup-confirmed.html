@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#071c43">
+  <title>Email Confirmed | GACC 2027</title>
+  <meta name="description" content="Confirmation of your Great American Coin & Collectibles Show email updates subscription.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());
+    gtag('config','G-2X66E7RQ4F');
+    // Only use this page for the Brevo redirect AFTER double opt-in confirmation.
+    // Never send conversion events merely when the signup form is opened.
+    (function(){
+      var record=true;
+      try{
+        var key='gacc_confirmed_signup_v1';
+        if(sessionStorage.getItem(key)==='1')record=false;
+        else sessionStorage.setItem(key,'1');
+      }catch(_){}
+      if(record){
+        gtag('event','generate_lead',{
+          lead_source:'brevo_double_opt_in',
+          form_name:'GACC 2027 email updates'
+        });
+      }
+    })();
+  </script>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f4f6fa;color:#071c43;font:16px/1.6 Arial,Helvetica,sans-serif}
+    header{padding:19px 22px;background:#071c43;border-bottom:4px solid #d7b464;color:white;text-align:center}
+    header a{color:white;text-decoration:none;font-weight:900;font-size:24px;letter-spacing:.04em}
+    header small{display:block;font-size:12px;letter-spacing:.09em;color:#e6c67e;font-weight:700}
+    main{min-height:65vh;display:grid;place-items:center;padding:55px 20px}
+    section{background:white;border:1px solid #d9dfeb;border-top:5px solid #c6a254;box-shadow:0 14px 36px rgba(7,28,67,.1);border-radius:14px;max-width:680px;width:100%;padding:42px clamp(22px,6vw,55px);text-align:center}
+    .seal{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;border:3px solid #bb9a4a;background:#071c43;color:#fff;font-size:34px;margin:0 auto 22px}
+    h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0 0 18px}
+    p{margin:0 auto 18px;max-width:500px}
+    .button{display:inline-block;margin-top:10px;padding:14px 24px;border:2px solid #bf9b4f;background:#071c43;border-radius:999px;color:#fff;font-weight:800;text-decoration:none}
+    .button:hover,.button:focus{background:#16427b}
+    footer{background:#071c43;color:#fff;text-align:center;padding:22px;font-size:13px}
+  </style>
+</head>
+<body>
+  <header><a href="index.html">GACC 2027<small>GREAT AMERICAN COIN &amp; COLLECTIBLES SHOW</small></a></header>
+  <main>
+    <section aria-labelledby="confirmed-heading">
+      <div class="seal" aria-hidden="true">✓</div>
+      <h1 id="confirmed-heading">You're on the GACC list!</h1>
+      <p>Thank you for confirming your email address. You're signed up for Great American Coin &amp; Collectibles Show updates.</p>
+      <p>We're looking forward to seeing you in Rosemont, Illinois, October 27–30, 2027.</p>
+      <a class="button" href="index.html">Return to GACC 2027</a>
+    </section>
+  </main>
+  <footer>Great American Coin &amp; Collectibles Show · October 27–30, 2027</footer>
+</body>
+</html>
