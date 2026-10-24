@@ -140,3 +140,39 @@
   .gacc-2027-header .gacc-2027-brand-caption{max-width:175px!important;font-size:8px!important}
   .gacc-2027-header .gacc-2027-mobile-menu>summary{padding:8px 10px!important}
 }
+
+/* Premium gold-and-blue header CTA finish, 2026-10-23 */
+/* Both desktop and mobile CTAs get the signature gold perimeter and inner electric-blue line. */
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action,
+.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action{
+  gap:9px!important;
+  border:2px solid #f4c66b!important;
+  background:linear-gradient(165deg,#1797ea 0%,#086ac7 33%,#1058b2 64%,#093d90 100%)!important;
+  color:#fff!important;
+  text-shadow:0 1px 2px rgba(0,22,58,.38)!important;
+  box-shadow:inset 0 0 0 2px #68baff,inset 0 2px 2px rgba(255,255,255,.34),
+             0 0 0 1px rgba(36,112,202,.72),0 4px 12px rgba(0,8,33,.28),
+             0 0 10px rgba(236,188,89,.17)!important;
+}
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action:hover,
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action:focus-visible,
+.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action:hover,
+.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action:focus-visible{
+  border-color:#ffe3a3!important;
+  background:linear-gradient(165deg,#36aff9 0%,#127bdf 40%,#0f57b4 100%)!important;
+  box-shadow:inset 0 0 0 2px #98d7ff,inset 0 2px 2px rgba(255,255,255,.42),
+             0 0 0 1px rgba(44,131,229,.8),0 6px 17px rgba(0,8,33,.35),
+             0 0 14px rgba(244,198,107,.32)!important;
+  text-decoration:none!important;
+}
+.gacc-2027-header a.gacc-2027-action[data-gacc-signup-open]::before,
+.gacc-2027-header a.gacc-2027-action[href="contact.html"]::before{
+  content:"";display:inline-block;flex:0 0 20px;width:20px;height:20px;
+  background-position:center;background-repeat:no-repeat;background-size:contain;
+}
+.gacc-2027-header a.gacc-2027-action[data-gacc-signup-open]::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffe2a0%22%20stroke-width%3D%222.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%222%22%20y%3D%224%22%20width%3D%2220%22%20height%3D%2216%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22m3%206%209%207%209-7%22%2F%3E%3C%2Fsvg%3E");
+}
+.gacc-2027-header a.gacc-2027-action[href="contact.html"]::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffe2a0%22%20stroke-width%3D%222.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2016.5v3a2%202%200%200%201-2.18%202A19%2019%200%200%201%202.5%205.18%202%202%200%200%201%204.5%203h3a2%202%200%200%201%202%201.72l.43%202.83a2%202%200%200%201-.58%201.71l-1.52%201.52a15%2015%200%200%200%205.39%205.39l1.52-1.52a2%202%200%200%201%201.71-.58l2.83.43A2%202%200%200%201%2021%2016.5Z%22%2F%3E%3C%2Fsvg%3E");
+}
