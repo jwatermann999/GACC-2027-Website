@@ -1,0 +1,26 @@
+/* Approved black-and-gold coin-themed header. */
+.gacc-2027-header{background:#0b0c0e!important;color:#f5eddd!important;border-bottom:2px solid #d5b36b!important;box-shadow:0 4px 18px #0003!important}
+.gacc-2027-header::before,.gacc-2027-header::after{content:"";position:absolute;top:0;bottom:0;width:270px;background:url('gacc-header-coin-texture.webp') left center/cover no-repeat;opacity:.6;pointer-events:none;z-index:-1}
+.gacc-2027-header::before{left:0}.gacc-2027-header::after{right:0;transform:scaleX(-1)}
+.gacc-2027-header .gacc-2027-brand-title{color:#edcf88!important;text-shadow:0 1px 1px #000!important}
+.gacc-2027-header .gacc-2027-brand-caption{color:#eee7d8!important}
+.gacc-2027-header .gacc-2027-desktop-links>a{color:#f3edde!important}
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action,.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action{border:2px solid #e7bf6d!important;border-radius:12px!important;background:linear-gradient(150deg,#191a1d,#08090b)!important;color:#fff7e9!important;box-shadow:inset 0 1px 0 #ffffff12,0 3px 10px #0004!important;text-shadow:none!important}
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action:hover,.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action:hover{background:#282219!important;border-color:#ffe3a3!important;box-shadow:0 0 0 2px #d5b36b22!important}
+.gacc-2027-header .gacc-2027-mobile-menu>summary{background:#131416!important;border:1px solid #d5b36b!important;color:#f1d391!important}
+.gacc-2027-header .gacc-2027-menu-symbol{color:#f1d391!important}
+.gacc-2027-header .gacc-2027-mobile-menu[open]>summary{background:#282219!important;border-color:#ffe3a3!important}
+.gacc-2027-header .gacc-2027-menu-panel{background:#101113!important;border-color:#b89858!important}
+.gacc-2027-header .gacc-2027-menu-panel>a:hover,.gacc-2027-header .gacc-2027-menu-panel>a:focus-visible,.gacc-2027-header .gacc-2027-menu-panel>a[aria-current="page"]{background:#282219!important;border-color:#b89858!important}
+@media(min-width:900px){
+.gacc-coin-home .gacc-2027-header-inner{position:relative!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:20px!important;padding:24px 4% 15px!important;min-height:164px!important}
+.gacc-coin-home .gacc-2027-brand{align-self:flex-start!important}
+.gacc-coin-home .gacc-2027-brand-title{font-size:clamp(42px,4.2vw,64px)!important;letter-spacing:1px!important}
+.gacc-coin-home .gacc-2027-brand-caption{font-size:clamp(9px,.9vw,13px)!important;max-width:none!important;letter-spacing:1px!important;font-weight:500!important}
+.gacc-coin-home .gacc-2027-desktop-links{display:flex!important;justify-content:space-between!important;flex:none!important;gap:12px!important;width:100%!important}
+.gacc-coin-home .gacc-2027-desktop-links>a:not(.gacc-2027-action){font:500 clamp(12px,1.1vw,16px)/1.3 Georgia,serif!important;padding:8px 0!important}
+.gacc-coin-home .gacc-2027-desktop-links>a.gacc-2027-action{position:absolute!important;top:38px!important;right:4%!important;min-width:145px!important;font:500 17px/1.3 Georgia,serif!important;min-height:49px!important}
+.gacc-coin-home .gacc-2027-desktop-links>a.gacc-2027-action[data-gacc-signup-open]{right:calc(4% + 161px)!important;min-width:165px!important}
+.gacc-coin-home .gacc-2027-mobile-menu{display:none!important}
+}
+@media(max-width:899px){.gacc-coin-home .gacc-2027-desktop-links{display:none!important}.gacc-coin-home .gacc-2027-mobile-menu{display:block!important}.gacc-2027-header::before,.gacc-2027-header::after{width:145px;opacity:.45}}
