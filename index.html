@@ -403,6 +403,33 @@ footer .contact-details{margin:22px auto 26px}footer .contact-details h3{margin:
 <section class="gacc-stay-connected" aria-labelledby="stay-connected-heading"><p class="gacc-eyebrow">STAY CONNECTED</p><h2 id="stay-connected-heading">Be part of what’s next.</h2><p>Get show announcements and updates as we get ready for Rosemont.</p><a class="gacc-preview-cta" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" data-gacc-signup-open>JOIN <span aria-hidden="true">✉</span></a></section>
 
 <div class="hero"><picture><source media="(max-width: 600px)" srcset="GACC-2027-Hero-Mobile-v2.webp" width="768" height="960"><img src="GACC-2027-Hero-Splash.webp" srcset="GACC-2027-Hero-Splash-768.webp 768w, GACC-2027-Hero-Splash.webp 1357w" sizes="100vw" width="1357" height="542" alt="GACC 2027: Morgan dollars and gold and silver bullion beside a D.B. Cooper ransom note in splashing water against the Chicago skyline and American flag" fetchpriority="high" decoding="async"></picture></div>
+<script data-benjamin-hero-ready>
+/* Reveal the original Benjamin artwork only after its files are uploaded.
+   The existing hero remains intact if the new files are not there yet. */
+(function(){
+  var picture=document.querySelector('.hero picture');
+  if(!picture)return;
+  var mobile=window.matchMedia('(max-width: 600px)').matches;
+  var file=mobile?'gacc-benjamin-hero-mobile.webp':'gacc-benjamin-hero-desktop.webp';
+  var test=new Image();
+  test.onload=function(){
+    var image=picture.querySelector('img');
+    var source=picture.querySelector('source');
+    if(!image||!source)return;
+    source.setAttribute('srcset','gacc-benjamin-hero-mobile.webp');
+    source.setAttribute('width','1145');
+    source.setAttribute('height','1374');
+    image.removeAttribute('srcset');
+    image.removeAttribute('sizes');
+    image.setAttribute('src','gacc-benjamin-hero-desktop.webp');
+    image.setAttribute('width','2056');
+    image.setAttribute('height','765');
+    image.alt='Great American Coin and Collectibles Show 2027: Chicago skyline and U.S. flag, rare coins and gold and silver, with Benjamin Franklin on stacks of one-hundred-dollar bills';
+  };
+  test.onerror=function(){/* No broken art: leave the previous approved hero untouched. */};
+  test.src=file+'?v=20261025-benjamin';
+})();
+</script>
 <div class="hero-event-details"><p class="hero-event-name">Great American Coin &amp; Collectibles Show</p><p class="hero-event-date">October 27–30, 2027</p><p class="hero-event-venue">Donald E. Stephens Convention Center <span>· Rosemont, Illinois</span></p></div>
 
 <section class="gacc-seo-about" aria-labelledby="gacc-about-heading" style="padding:34px 6%;background:#fff;text-align:center"><p class="gacc-collectibles">Rare Coins ★ Gold ★ Silver ★ Currency ★ World Coins ★ Ancient Coins ★ Tokens ★ Exonumia ★ Watches ★ Jewelry</p><h1 id="gacc-about-heading" style="font-size:clamp(23px,3vw,34px);color:#071c43;margin:0 0 14px">Your Next Great Find Starts Here</h1><p style="max-width:760px;margin:0 auto;color:#46546b;line-height:1.65;font-size:clamp(16px,2vw,18px)">Join us October 27–30, 2027, in Rosemont, Illinois, for an exciting event featuring rare coins, currency, precious metals, bullion, and collectibles.</p></section>
