@@ -24,3 +24,7 @@
 .gacc-coin-home .gacc-2027-mobile-menu{display:none!important}
 }
 @media(max-width:899px){.gacc-coin-home .gacc-2027-desktop-links{display:none!important}.gacc-coin-home .gacc-2027-mobile-menu{display:block!important}.gacc-2027-header::before,.gacc-2027-header::after{width:145px;opacity:.45}}
+
+/* Plain black header with matching navy and gold actions. */
+.gacc-2027-header::before,.gacc-2027-header::after{display:none!important}
+.gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action,.gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action{background:linear-gradient(145deg,#1a314a,#101d2c)!important;border:2px solid #d4b875!important;color:#f2dba5!important}
