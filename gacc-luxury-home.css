@@ -1,0 +1,197 @@
+/* GACC 2027 | Full-width luxury homepage, 2026-10-25.
+   Purposefully limited to body.gacc-coin-home.
+   All photographs, sponsor creative, forms, scripts and URLs are unchanged.
+   NO fixed-width webpage wrapper. Content widths only constrain readable cards. */
+:root{--gacc-ink:#0a0c10;--gacc-night:#0d1827;--gacc-midnight:#10243b;--gacc-gold:#d4b16d;--gacc-goldlight:#f6dea3;--gacc-ivory:#f7f2e9;--gacc-muted:#c3c9d2}
+html,body.gacc-coin-home{width:100%;max-width:none;min-width:0;margin:0}
+body.gacc-coin-home{background:var(--gacc-ink);color:var(--gacc-ivory);overflow-x:clip;-webkit-font-smoothing:antialiased}
+body.gacc-coin-home > section,body.gacc-coin-home > .hero,body.gacc-coin-home > .hero-event-details,body.gacc-coin-home > footer{box-sizing:border-box;width:100%;max-width:none;margin-inline:0}
+body.gacc-coin-home h1,body.gacc-coin-home h2,body.gacc-coin-home .hero-event-name{font-family:Georgia,'Times New Roman',serif}
+body.gacc-coin-home .gacc-2027-header{isolation:isolate}
+body.gacc-coin-home :is(a,button,summary):focus-visible{outline:3px solid var(--gacc-goldlight);outline-offset:3px}
+
+/* The quiet sign-up ribbon spans the viewport, not a narrow centre column. */
+body.gacc-coin-home .gacc-stay-connected{
+ background:radial-gradient(ellipse at 13% 0%,#2b241a 0%,transparent 48%),linear-gradient(105deg,#0a0b0d,#151a21 48%,#0b0e13);
+ border-top:1px solid #c6a56644;border-bottom:1px solid #d4b16d7c;
+ padding:24px clamp(18px,4.8vw,88px);text-align:left;
+ display:grid;grid-template-columns:minmax(120px,.7fr) minmax(250px,1.65fr) minmax(220px,1.6fr) auto;
+ gap:clamp(14px,2vw,35px);align-items:center;
+}
+body.gacc-coin-home .gacc-stay-connected .gacc-eyebrow{margin:0;color:var(--gacc-gold);font-size:11px;font-weight:800;letter-spacing:.24em;white-space:nowrap}
+body.gacc-coin-home .gacc-stay-connected h2{margin:0!important;color:#fff6df;text-align:left;font-size:clamp(23px,2.4vw,38px);text-transform:none;font-weight:400;line-height:1.17}
+body.gacc-coin-home .gacc-stay-connected p:not(.gacc-eyebrow){margin:0;color:#c5c8ca;font-size:clamp(13px,1.05vw,16px);line-height:1.55}
+body.gacc-coin-home .gacc-stay-connected .gacc-preview-cta{
+ display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:122px;
+ padding:13px 25px;text-decoration:none;white-space:nowrap;text-align:center;font-size:13px;
+ font-weight:800;letter-spacing:.18em;color:#15171b;background:linear-gradient(135deg,#fcdfa0,#cda35b);
+ border:1px solid #f5deaa;border-radius:6px;box-shadow:0 6px 23px #0008;transition:filter .2s ease,transform .2s ease
+}
+body.gacc-coin-home .gacc-stay-connected .gacc-preview-cta:hover{filter:brightness(1.1);transform:translateY(-2px)}
+
+/* The hero uses the original real collectible photograph, intact and fully visible. */
+body.gacc-coin-home .hero{width:100%!important;max-width:none!important;padding:0!important;margin:0!important;overflow:visible;background:#0b111a}
+body.gacc-coin-home .hero picture{display:block;width:100%;line-height:0}
+body.gacc-coin-home .hero picture img{display:block;width:100%;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;border:0}
+body.gacc-coin-home .hero-event-details{
+ position:relative;text-align:center;border-top:1px solid #b78d4666;border-bottom:1px solid #cfaa6c55;
+ background:radial-gradient(ellipse at 50% 0%,#263c50,#0e1927 72%);
+ padding:clamp(30px,4.5vw,65px) clamp(16px,4vw,60px) clamp(34px,5vw,70px);
+}
+body.gacc-coin-home .hero-event-details:before{content:'✦';display:block;color:var(--gacc-gold);font-size:18px;margin-bottom:16px}
+body.gacc-coin-home .hero-event-name{color:#f6f2e8;letter-spacing:.06em;font-size:clamp(24px,3.2vw,49px);font-weight:400;line-height:1.15;max-width:1200px;margin:auto!important;text-transform:none}
+body.gacc-coin-home .hero-event-details .hero-event-date{color:var(--gacc-goldlight);font-size:clamp(18px,2.2vw,30px);letter-spacing:.12em;font-weight:700;margin-top:22px}
+body.gacc-coin-home .hero-event-details .hero-event-venue{color:#c9d2d8;font-size:clamp(15px,1.4vw,19px);letter-spacing:.02em;margin-top:14px}
+
+/* Full-bleed editorial invitation: comfortable text width, never page width. */
+body.gacc-coin-home section.gacc-seo-about{
+ background:linear-gradient(115deg,#f8f3e9,#eee5d5 52%,#fbf8f2)!important;
+ padding:clamp(53px,7vw,106px) 6%!important;border-block:1px solid #c3a37475
+}
+body.gacc-coin-home .gacc-seo-about .gacc-collectibles{
+ max-width:1140px;margin:0 auto 28px;color:#7c6036;text-transform:uppercase;
+ font-size:clamp(11px,1.2vw,15px);font-weight:800;letter-spacing:.12em;line-height:2.2
+}
+body.gacc-coin-home .gacc-seo-about h1{
+ color:#17263a!important;font-size:clamp(36px,5.2vw,74px)!important;
+ line-height:1.12;font-weight:400;max-width:1000px;margin:0 auto 27px!important;
+ letter-spacing:-.025em;text-wrap:balance
+}
+body.gacc-coin-home .gacc-seo-about h1:after{content:'';display:block;width:112px;height:2px;background:#b78b4e;margin:28px auto 0}
+body.gacc-coin-home .gacc-seo-about p:last-child{color:#445064!important;max-width:810px!important;line-height:1.85!important;font-size:clamp(16px,1.5vw,20px)!important}
+
+/* Countdown and live ticker each have a distinct premium surface. */
+body.gacc-coin-home .gacc-countdown{
+ background:radial-gradient(ellipse at 50% 0%,#223749 0%,#0e1c2e 51%,#070b13 100%);
+ padding:clamp(55px,7vw,100px) clamp(18px,6%,100px);
+ border-block:1px solid #a7834e88
+}
+body.gacc-coin-home .gacc-countdown h2{color:#f7f3e9;font-size:clamp(28px,3.5vw,49px);font-weight:400;text-transform:none;letter-spacing:.015em;line-height:1.22;margin:0 auto 16px;max-width:970px}
+body.gacc-coin-home .gacc-countdown .count-subtitle{color:#c6cdd4;line-height:1.8;font-size:clamp(12px,1.2vw,16px)}
+body.gacc-coin-home .count-grid{width:100%;max-width:790px;gap:clamp(7px,1.5vw,19px);margin:32px auto 0}
+body.gacc-coin-home .count-unit{
+ border:1px solid #ccaa6d88;border-radius:9px;
+ background:linear-gradient(140deg,#233043,#101c2c 62%,#111923);
+ box-shadow:inset 0 1px 0 #ffffff14,0 15px 35px #0005;
+ padding:clamp(15px,2.5vw,29px) 5px
+}
+body.gacc-coin-home .count-number{color:#f5db9e;font-size:clamp(28px,4.7vw,61px);font-weight:500;font-family:Georgia,'Times New Roman',serif;letter-spacing:-.02em}
+body.gacc-coin-home .count-label{color:#d3d9df;font-size:clamp(9px,1vw,12px);letter-spacing:.2em;margin-top:8px}
+body.gacc-coin-home .spot-prices{background:linear-gradient(125deg,#e9dec9,#faf5eb 55%,#e6ddcb);padding:clamp(45px,6vw,85px) clamp(16px,4vw,60px);border:0}
+body.gacc-coin-home .spot-frame{
+ max-width:1140px;padding:clamp(23px,3.5vw,47px) clamp(14px,5vw,65px);
+ border:1px solid #c4a36a;border-radius:12px;background:#fffdfa;
+ box-shadow:0 20px 55px #14223922,inset 0 0 0 7px #f7f0e5
+}
+body.gacc-coin-home .spot-frame:before,body.gacc-coin-home .spot-frame:after{background:linear-gradient(#a97b38,#f2d78a,#a97b38);width:4px}
+body.gacc-coin-home .spot-eyebrow,body.gacc-coin-home .spot-stars{color:#9a733d}
+body.gacc-coin-home .spot-frame h2{font-size:clamp(23px,3vw,37px);letter-spacing:.07em;color:#17263a}
+body.gacc-coin-home .spot-frame p{color:#66717c}
+body.gacc-coin-home .spot-frame a{color:#1d4c71}
+
+/* Three information cards across the full dark-blue section. */
+body.gacc-coin-home .gacc-show-hours-feature{
+ padding:clamp(55px,7vw,110px) clamp(16px,5vw,96px);
+ background:linear-gradient(145deg,#0e1a2b,#18334a 57%,#071522);border-top:1px solid #e1c48f77
+}
+body.gacc-coin-home .gacc-show-hours-feature>h2{color:#f2d69e!important;max-width:1000px!important;font-size:clamp(35px,4.8vw,64px)!important;font-weight:400;letter-spacing:.03em;text-transform:none}
+body.gacc-coin-home .gacc-show-hours-feature>h2:after{background:linear-gradient(90deg,transparent,#cfad6b,transparent);height:2px;max-width:320px;margin:22px auto 0}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid{width:100%;max-width:1420px!important;gap:clamp(14px,1.6vw,26px)!important}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .hours{
+ border:1px solid #d4b77e80;border-radius:12px;background:#fcfbf8;box-shadow:0 22px 56px #02091575;overflow:hidden
+}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .hours h3{min-height:90px;font-family:Georgia,'Times New Roman',serif;font-weight:400!important;letter-spacing:.025em}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .hours.gacc-dealer-gold h3{
+ background:linear-gradient(120deg,#f3d991,#b99451)!important;
+ color:#1b2331!important;border-bottom:3px solid #997335!important
+}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .hours.access h3{
+ background:#172d49!important;color:#f5deaa!important;border-bottom:3px solid #ba9657!important
+}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .hours.public:not(.access) h3{
+ background:#552631!important;color:#f8ede2!important;border-bottom:3px solid #b88777!important
+}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .row{border-color:#e6dfd5;background:#fffefb}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .row:nth-of-type(2n){background:#faf6ed}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .row :is(span,b,strong){color:#253249}
+body.gacc-coin-home .gacc-show-hours-feature .hours-grid .row small{color:#8d3640!important}
+
+/* Sponsor gallery: full-width setting with readable, unaltered sponsor artwork. */
+body.gacc-coin-home .sponsors{
+ background:linear-gradient(145deg,#f6f1e7,#eae4d7 55%,#f8f3e9);
+ color:#17273b;padding:clamp(55px,7vw,105px) clamp(18px,5vw,80px)
+}
+body.gacc-coin-home .sponsors>h2{color:#172638;font-size:clamp(34px,4.4vw,57px);font-weight:400;text-transform:none;letter-spacing:-.02em;margin:0 0 24px}
+body.gacc-coin-home .sponsors .sponsor-click-hint{max-width:880px;background:transparent;color:#6b522f;border:1px solid #cbb27f;border-radius:5px;font-size:clamp(12px,1.4vw,16px);letter-spacing:.045em;padding:16px}
+body.gacc-coin-home .sponsors .sponsor-click-hint span{color:#6a4a2d}
+body.gacc-coin-home .sponsors .sponsor-tier-heading{font-family:Arial,Helvetica,sans-serif;color:#604d33;font-size:clamp(14px,1.55vw,20px);letter-spacing:.22em;margin-top:45px}
+body.gacc-coin-home .sponsors .banners{max-width:1320px;gap:clamp(13px,2vw,28px)}
+body.gacc-coin-home .sponsors .banners .banner{border-radius:7px;box-shadow:0 12px 25px #1923381a}
+body.gacc-coin-home .sponsors .west-coast-featured-sponsor{max-width:1200px!important;margin-bottom:30px!important}
+body.gacc-coin-home .sponsors .west-coast-featured-sponsor img{width:100%;height:auto;object-fit:contain}
+body.gacc-coin-home .sponsors .ambassadors{max-width:1290px;border-top:1px solid #bda879;gap:15px}
+body.gacc-coin-home .sponsors .ambassador-ads{max-width:1290px}
+body.gacc-coin-home .coinzip-home-banner{background:#151b24!important;color:#e6d7bc;padding:38px 5%!important;border-block:1px solid #b28e5677}
+body.gacc-coin-home .coinzip-home-banner :is(p,strong){color:#e8dfce}
+
+/* Light industry directory panels preserve company brand-color legibility. */
+body.gacc-coin-home #industry-resources{background:#fbf8f2!important;padding:clamp(57px,6vw,90px) clamp(18px,5vw,90px)!important}
+body.gacc-coin-home #industry-resources h2{color:#20334a;font-weight:400;text-transform:none;font-size:clamp(29px,3.4vw,49px)}
+body.gacc-coin-home #industry-resources .intro{color:#596577;font-size:clamp(15px,1.2vw,18px);max-width:850px}
+body.gacc-coin-home #industry-resources .banners{max-width:1320px!important;gap:clamp(12px,1.5vw,21px)!important}
+body.gacc-coin-home #industry-resources .banner{background:white!important;border:1px solid #d8c7a7!important;border-radius:8px;box-shadow:0 10px 24px #17243a12}
+body.gacc-coin-home #industry-resources .banner>a{height:100%}
+
+/* Destination and finishing signature. */
+body.gacc-coin-home .location{background:linear-gradient(145deg,#10263d,#0b1728);padding:clamp(60px,6vw,95px) clamp(18px,5vw,90px);color:#f8f4e9}
+body.gacc-coin-home .location h2{color:#f0d79c;font-size:clamp(32px,4vw,56px);font-weight:400;text-transform:none}
+body.gacc-coin-home .location .intro{color:#dce0e4;font-size:clamp(16px,1.4vw,19px);line-height:1.7;max-width:900px}
+body.gacc-coin-home .location>div{max-width:1320px!important;gap:clamp(14px,2vw,26px)!important;align-items:stretch}
+body.gacc-coin-home .location>div>div{background:#f9f4e9!important;color:#1c2a3b;border:1px solid #d8b780!important;border-left:5px solid #b68d4b!important;border-radius:8px;padding:clamp(22px,3vw,42px)!important}
+body.gacc-coin-home .location>div>div h3{color:#17263c}
+body.gacc-coin-home .location .btn{background:#1a3653;color:white;border:1px solid #bd9652;text-decoration:none;border-radius:5px;display:inline-flex;padding:13px 22px}
+body.gacc-coin-home .location iframe{min-height:340px;border:1px solid #d9bc82!important;border-radius:8px;width:100%;height:100%}
+body.gacc-coin-home .gacc-closing{
+ background:radial-gradient(ellipse at 50% 0%,#2b2a26,#101318 65%,#080b10);
+ border-top:1px solid #c09a5c;padding:clamp(60px,7vw,100px) 20px;
+ text-align:center;color:#e6dfd1
+}
+body.gacc-coin-home .gacc-closing .gacc-farewell{margin:0 auto 29px;max-width:900px;color:#f2d08b;font:400 clamp(31px,4.7vw,66px)/1.17 Georgia,'Times New Roman',serif}
+body.gacc-coin-home .gacc-closing .gacc-farewell span{font-size:clamp(23px,3.6vw,48px);color:#e5e1d9}
+body.gacc-coin-home .gacc-closing p{font-size:clamp(15px,1.3vw,20px);line-height:1.7}
+body.gacc-coin-home .gacc-closing a{color:#f0d393;text-underline-offset:5px}
+body.gacc-coin-home footer#contact{border-top:1px solid #836a42;background:#08090c;color:#c4c5ca;padding:35px 22px 42px;font-size:13px;letter-spacing:.03em;line-height:1.7}
+body.gacc-coin-home footer#contact strong{color:#f1d59c;letter-spacing:.17em;font-size:clamp(12px,1.1vw,15px)}
+body.gacc-coin-home footer#contact p{max-width:1200px;margin:10px auto}
+
+@media(max-width:1100px){
+ body.gacc-coin-home .gacc-stay-connected{grid-template-columns:1fr auto;gap:10px 24px}
+ body.gacc-coin-home .gacc-stay-connected .gacc-eyebrow{grid-column:1/-1}
+ body.gacc-coin-home .gacc-stay-connected h2{grid-column:1;grid-row:2}
+ body.gacc-coin-home .gacc-stay-connected p:not(.gacc-eyebrow){grid-column:1;grid-row:3}
+ body.gacc-coin-home .gacc-stay-connected .gacc-preview-cta{grid-column:2;grid-row:2/4}
+}
+@media(max-width:760px){
+ body.gacc-coin-home .gacc-stay-connected{display:flex;flex-direction:column;gap:12px;text-align:center;padding:24px 20px 28px}
+ body.gacc-coin-home .gacc-stay-connected h2{text-align:center}
+ body.gacc-coin-home .gacc-stay-connected .gacc-preview-cta{width:min(100%,235px)}
+ body.gacc-coin-home .hero-event-details{padding:35px 18px 42px}
+ body.gacc-coin-home section.gacc-seo-about{padding:58px 20px!important}
+ body.gacc-coin-home .gacc-countdown{padding:54px 14px}
+ body.gacc-coin-home .count-grid{max-width:540px}
+ body.gacc-coin-home .gacc-show-hours-feature{padding:60px 14px 70px}
+ body.gacc-coin-home .gacc-show-hours-feature .hours-grid{grid-template-columns:1fr!important;max-width:600px!important;gap:20px!important}
+ body.gacc-coin-home .sponsors{padding:60px 18px}
+ body.gacc-coin-home .location>div{grid-template-columns:1fr!important}
+ body.gacc-coin-home .location iframe{min-height:290px;height:330px}
+}
+@media(max-width:440px){
+ body.gacc-coin-home .count-grid{gap:6px}
+ body.gacc-coin-home .count-unit{padding:14px 2px}
+ body.gacc-coin-home .count-number{font-size:clamp(26px,8vw,40px)}
+ body.gacc-coin-home .count-label{font-size:8px;letter-spacing:.06em}
+ body.gacc-coin-home .hero-event-name{font-size:clamp(21px,6.2vw,30px)}
+ body.gacc-coin-home .gacc-seo-about .gacc-collectibles{letter-spacing:.07em;line-height:2}
+ body.gacc-coin-home .gacc-show-hours-feature .hours-grid .row{min-width:0}
+}
+@media(prefers-reduced-motion:reduce){body.gacc-coin-home .gacc-stay-connected .gacc-preview-cta{transition:none}}
