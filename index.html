@@ -339,6 +339,17 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
  .gacc-top-show-dates time{font-size:11px}
  .restored-heritage-header .brand-title{font-size:16px}
 }
+
+/* Navigation-only header: remove the repeated gold show title, preserve original hero art. */
+@media (min-width:1051px){
+  .restored-heritage-header .restored-header-layout{grid-template-rows:auto!important;row-gap:0!important;padding:10px 0!important;}
+  .restored-heritage-header .nav{grid-row:1!important;grid-column:1!important;border-top:0!important;width:100%;padding:3px 0!important;}
+  .restored-heritage-header .header-actions{grid-row:1!important;grid-column:2!important;}
+}
+@media (max-width:1050px){
+  .restored-heritage-header .restored-header-layout{min-height:0!important;padding:10px 0!important;}
+  .restored-heritage-header .mobile-menu{grid-row:1!important;grid-column:1/-1!important;}
+}
 </style>
 </head>
 <body>
@@ -352,7 +363,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </div>
 <header class="header restored-heritage-header" aria-label="GACC 2027 site navigation">
   <div class="inner restored-header-layout">
-    <a class="brand" href="#top" aria-label="Great American Coin and Collectibles Show homepage"><span class="brand-title">Great American Coin &amp; Collectibles Show</span></a>
+    
     <div class="header-actions"><a class="nav-btn" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==">✉ JOIN</a><a class="nav-btn" href="https://www.gaccshow.com/contact.html">☎ Contact</a></div>
     <nav class="nav" aria-label="Main navigation"><a href="#top" aria-current="page">Home</a><a href="https://www.gaccshow.com/attendee-hub.html">Attendee Hub</a><a href="https://www.gaccshow.com/dealer-hub.html">Dealer Hub</a><a href="https://www.gaccshow.com/floor-map.html">Floor Map &amp; Dealers</a><a href="https://www.gaccshow.com/schedule.html">Schedule</a><a href="https://www.gaccshow.com/hotels.html">Hotels</a><a href="https://www.gaccshow.com/sponsors.html">Sponsors</a><a href="https://www.gaccshow.com/news-media.html">News &amp; Media</a></nav>
     <details class="mobile-menu"><summary aria-label="Open site navigation">☰ Menu</summary><nav class="menu-list" aria-label="Mobile navigation"><a href="#top">Home</a><a href="https://www.gaccshow.com/attendee-hub.html">Attendee Hub</a><a href="https://www.gaccshow.com/dealer-hub.html">Dealer Hub</a><a href="https://www.gaccshow.com/floor-map.html">Floor Map &amp; Dealers</a><a href="https://www.gaccshow.com/schedule.html">Schedule</a><a href="https://www.gaccshow.com/hotels.html">Hotels</a><a href="https://www.gaccshow.com/sponsors.html">Sponsors</a><a href="https://www.gaccshow.com/news-media.html">News &amp; Media</a><a href="https://www.gaccshow.com/contact.html">Contact</a><a href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==">✉ JOIN</a></nav></details>
