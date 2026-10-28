@@ -197,38 +197,94 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </style>
 <style id="gacc-intro-after-hours-style">.gacc-intro-after-hours{position:relative;padding:55px 0 65px;background:radial-gradient(ellipse at 50% 0%,#293139,#121920 70%,#0b1016);text-align:center}.gacc-intro-after-hours .intro-block{margin-top:0}.gacc-intro-after-hours .intro-block h1{margin-top:0}@media(max-width:650px){.gacc-intro-after-hours{padding:35px 0 45px}}</style>
 
-<style id="gacc-benjamin-approved-preview-promoted-2027">
-.benjamin-slim{position:relative;width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);min-height:210px;height:clamp(228px,21vw,350px);overflow:hidden;display:grid;grid-template-columns:43% 57%;background:radial-gradient(ellipse at 80% 30%,#192b40,#070d15 72%);border-block:2px solid #d5a450;box-shadow:0 22px 58px #000a}
-.benjamin-slim:before,.benjamin-slim:after{position:absolute;z-index:3;pointer-events:none;content:"";left:0;right:0;height:1px;background:linear-gradient(90deg,#946833,#fff2bb,#b78343,#fff2bb,#946833)}
-.benjamin-slim:before{top:5px}.benjamin-slim:after{bottom:5px}
-.benjamin-portrait{position:relative;min-width:0;background:#18171a url('/gacc-2027-benjamin-countdown.webp') 8% 52% / auto 168% no-repeat}
-.benjamin-portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 57%,rgba(9,15,24,.5) 80%,#0b1420 100%)}
-.benjamin-information{position:relative;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px clamp(20px,3vw,52px) 24px 4px}
-.benjamin-information:before{content:"";position:absolute;z-index:0;inset:clamp(12px,1.6vw,22px) clamp(12px,2vw,34px) clamp(12px,1.6vw,22px) 0;border:1.5px solid #d7aa64;border-radius:10px;box-shadow:inset 0 0 0 3px #09121d,inset 0 0 0 4px #5c472f,0 0 28px #daa7522f;background:linear-gradient(110deg,#06091077,#0a111a55)}
-.benjamin-content{position:relative;z-index:1;width:100%;padding:0 5px}
-.benjamin-eyebrow{margin:0 0 20px;display:flex;align-items:center;gap:15px;justify-content:center;color:#f4dfb1;font:400 clamp(15px,1.6vw,25px)/1.15 Georgia,serif;letter-spacing:.27em;white-space:nowrap;text-shadow:0 0 13px #ce9c4b55}
-.benjamin-eyebrow:before,.benjamin-eyebrow:after{content:"";height:1px;min-width:12px;max-width:85px;flex:1;background:linear-gradient(90deg,transparent,#e8c17c)}
-.benjamin-eyebrow:after{transform:rotate(180deg)}
-.benjamin-timer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(7px,1vw,16px);width:100%;max-width:900px}
-.timer-unit{min-width:0;min-height:92px;background:linear-gradient(160deg,#152030,#080c15 70%);border:1px solid #d9aa60;border-radius:8px;box-shadow:inset 0 0 0 2px #0a121d,inset 0 0 0 3px #68533766,0 0 17px #b7833c22;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:9px 2px;color:#f4d18a}
-.timer-unit strong{font:700 clamp(29px,3.7vw,64px)/1.08 Georgia,serif;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 0 16px #efb65d65}
-.timer-unit span{margin-top:6px;font:700 clamp(9px,.75vw,12px)/1 Arial,sans-serif;letter-spacing:.13em;color:#e9ddc9}
-.benjamin-date{margin:18px 0 0;color:#edc786;font:600 clamp(13px,1.35vw,21px)/1.3 Georgia,serif;letter-spacing:.13em}
-@media(max-width:760px){
-.benjamin-slim{height:auto;min-height:0;grid-template-columns:1fr;grid-template-rows:clamp(135px,38vw,218px) auto}
-.benjamin-portrait{background-size:auto 240%;background-position:6% 46%}
-.benjamin-portrait:after{background:linear-gradient(0deg,#0b1420 0%,transparent 44%)}
-.benjamin-information{padding:13px 11px 20px}
-.benjamin-information:before{inset:2px 8px 8px}
-.benjamin-content{padding:13px 9px 8px}
-.benjamin-eyebrow{font-size:clamp(12px,3.5vw,19px);letter-spacing:.18em;gap:7px;margin-bottom:13px}
-.benjamin-timer{gap:6px}
-.timer-unit{min-height:67px;padding:8px 1px;border-radius:6px}
-.timer-unit strong{font-size:clamp(22px,7.2vw,40px)}
-.timer-unit span{font-size:clamp(8px,2vw,11px);letter-spacing:0}
-.benjamin-date{font-size:clamp(12px,3vw,16px);letter-spacing:.1em;margin-top:14px}
+<style id="gacc-benjamin-new-panorama-2027">
+/* Actual approved panoramic artwork, not a crop of the old banner.
+   Count values are replaced by live HTML over the artwork's numeric windows. */
+.hero-shell .gacc-ben-panorama{
+ position:relative;width:100vw;max-width:none;
+ margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);
+ aspect-ratio:1600/345;height:auto;min-height:0;
+ overflow:hidden;container-type:inline-size;
+ background:#090d15;border:0;border-top:1px solid #d7a65d;
+ border-bottom:1px solid #d7a65d;border-radius:0;
+ box-shadow:0 15px 42px #0009;
 }
-@media(prefers-reduced-motion:reduce){.benjamin-slim *{animation:none!important;transition:none!important}}
+.hero-shell .gacc-ben-panorama-art{
+ width:100%;height:auto;display:block;aspect-ratio:1600/345;
+ object-fit:contain;object-position:center;max-width:none;transform:none;
+}
+.hero-shell .gacc-ben-panorama-counter{
+ position:absolute;inset:0;pointer-events:none;
+}
+.hero-shell .gacc-ben-value{
+ box-sizing:border-box;position:absolute;top:35%;height:20%;min-width:0;
+ display:flex;align-items:center;justify-content:center;
+ border:0;border-radius:3px;margin:0;padding:0;
+ background:radial-gradient(ellipse at 50% 50%,#15171c 0%,#090b12 88%);
+ color:#ffe2a0;box-shadow:none;
+ font:700 4.5cqw/1 Georgia,'Times New Roman',serif;
+ font-variant-numeric:tabular-nums;white-space:nowrap;
+ text-shadow:0 0 1px #fff5cb,0 0 11px #f5bf5888,0 1px 2px #050507;
+}
+.hero-shell .gacc-ben-value:nth-child(1){left:48.10%;width:8.55%}
+.hero-shell .gacc-ben-value:nth-child(2){left:59.56%;width:7.85%}
+.hero-shell .gacc-ben-value:nth-child(3){left:70.90%;width:7.80%}
+.hero-shell .gacc-ben-value:nth-child(4){left:82.55%;width:7.18%}
+.hero-shell .gacc-ben-value:after{display:none}
+.hero-shell .gacc-ben-mobile-date{display:none}
+@media(max-width:720px){
+ .hero-shell .gacc-ben-panorama{
+   height:auto;aspect-ratio:auto;
+   display:flex;flex-direction:column;container-type:normal;
+ }
+ .hero-shell .gacc-ben-panorama-art{
+   display:none;
+ }
+ .hero-shell .gacc-ben-mobile-portrait{
+   display:block;flex:none;width:100%;height:clamp(140px,39vw,205px);
+   background:#121926 url('/gacc-benjamin-panorama-2027.webp') 11% 50% / auto 155% no-repeat;
+   position:relative;
+ }
+ .hero-shell .gacc-ben-mobile-portrait:after{
+   content:"";position:absolute;inset:0;
+   background:linear-gradient(0deg,#0b1623 0%,transparent 36%);
+ }
+ .hero-shell .gacc-ben-panorama-counter{
+   position:relative;inset:auto;display:grid;
+   grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;
+   padding:50px 11px 17px;
+   background:radial-gradient(ellipse at 50% 0%,#1b2b3b,#08111c 83%);
+   border-top:1px solid #9f7b4a;
+ }
+ .hero-shell .gacc-ben-panorama-counter:before{
+   content:"SHOW OPENS IN";position:absolute;top:14px;left:0;right:0;
+   text-align:center;color:#f4d9a3;
+   font:500 clamp(13px,3.5vw,18px)/1 Georgia,serif;letter-spacing:.2em;
+ }
+ .hero-shell .gacc-ben-value,
+ .hero-shell .gacc-ben-value:nth-child(n){
+   position:relative;inset:auto;left:auto;top:auto;
+   width:100%;height:auto;min-height:72px;
+   display:flex;flex-direction:column;gap:6px;
+   padding:9px 1px 8px;
+   border:1px solid #ca9d57;border-radius:5px;
+   background:linear-gradient(160deg,#192636,#070b12);
+   box-shadow:inset 0 0 0 2px #0a111a;
+   font:700 clamp(23px,7vw,39px)/1 Georgia,serif;
+ }
+ .hero-shell .gacc-ben-value:after{
+   display:block;content:attr(data-label);
+   font:700 clamp(8px,2vw,10px)/1 Arial,sans-serif;
+   letter-spacing:.035em;color:#e9d6b6;text-shadow:none;
+ }
+ .hero-shell .gacc-ben-mobile-date{
+   display:block;text-align:center;margin:0;
+   padding:0 10px 18px;background:#08111c;
+   color:#ebc989;
+   font:600 clamp(12px,3vw,17px)/1.2 Georgia,serif;
+   letter-spacing:.11em;
+ }
+}
 </style>
 </head>
 <body><header class="header restored-heritage-header" aria-label="GACC 2027 site navigation">
@@ -249,20 +305,16 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 <section class="grand-show-art" aria-label="Official GACC 2027 artwork with Chicago skyline, American flag, D. B. Cooper currency, Morgan silver dollars, gold and silver bullion">
   <picture class="grand-art-picture"><source media="(max-width: 600px)" srcset="/GACC-2027-Hero-Mobile-v2.webp" width="768" height="960"><img src="/GACC-2027-Hero-Splash.webp" srcset="/GACC-2027-Hero-Splash-768.webp 768w, /GACC-2027-Hero-Splash.webp 1357w" sizes="100vw" width="1357" height="542" alt="GACC 2027 original approved artwork: Morgan dollars, gold and silver bullion, D. B. Cooper note, American flag and Chicago skyline" fetchpriority="high" decoding="async"></picture>
 </section>
-<section class="hero-shell"><div class="inner hero-grid"><div class="heritage-mini heritage-invite"><p>Stay in the know for Chicagoland’s <strong>Fourth Annual Great American Coin &amp; Collectibles Show.</strong></p><a class="heritage-join" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" aria-label="Join the GACC email updates list">✉ &nbsp; JOIN US</a></div><div class="benjamin-slim" aria-label="Great American Coin and Collectibles Show 2027 countdown banner">
-  <div class="benjamin-portrait" role="img" aria-label="Benjamin Franklin from the approved GACC artwork"></div>
-  <div class="benjamin-information">
-    <div class="benjamin-content">
-      <h2 class="benjamin-eyebrow">SHOW OPENS IN</h2>
-      <div class="benjamin-timer" role="timer" aria-label="Live time until the show opens October 27, 2027">
-        <div class="timer-unit"><strong id="desk-days">---</strong><span>DAYS</span></div>
-        <div class="timer-unit"><strong id="desk-hours">--</strong><span>HOURS</span></div>
-        <div class="timer-unit"><strong id="desk-minutes">--</strong><span>MINUTES</span></div>
-        <div class="timer-unit"><strong id="desk-seconds">--</strong><span>SECONDS</span></div>
-      </div>
-      <p class="benjamin-date">OCTOBER 27–30, 2027</p>
-    </div>
+<section class="hero-shell"><div class="inner hero-grid"><div class="heritage-mini heritage-invite"><p>Stay in the know for Chicagoland’s <strong>Fourth Annual Great American Coin &amp; Collectibles Show.</strong></p><a class="heritage-join" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" aria-label="Join the GACC email updates list">✉ &nbsp; JOIN US</a></div><div class="gacc-ben-panorama" role="group" aria-label="GACC 2027 Benjamin Franklin panoramic banner with live countdown">
+  <img class="gacc-ben-panorama-art" src="/gacc-benjamin-panorama-2027.webp" alt="Panoramic gold and blue Benjamin Franklin banner, Chicago skyline, and countdown to the 2027 Great American Coin and Collectibles Show" width="1600" height="345" fetchpriority="high" decoding="async">
+  <div class="gacc-ben-mobile-portrait" aria-hidden="true"></div>
+  <div class="gacc-ben-panorama-counter" role="timer" aria-label="Live countdown to October 27, 2027 at 3 PM Central">
+    <strong class="gacc-ben-value" id="desk-days" data-label="DAYS">---</strong>
+    <strong class="gacc-ben-value" id="desk-hours" data-label="HOURS">--</strong>
+    <strong class="gacc-ben-value" id="desk-minutes" data-label="MINUTES">--</strong>
+    <strong class="gacc-ben-value" id="desk-seconds" data-label="SECONDS">--</strong>
   </div>
+  <p class="gacc-ben-mobile-date">OCTOBER 27–30, 2027</p>
 </div>
 </div></section>
 <section class="hours-section" id="show-hours"><div class="inner"><div class="hours-heading"><h2>2027 Show Hours</h2><p>One show. Exceptional discoveries. Four memorable days.</p></div><div class="hour-cards">
