@@ -294,41 +294,50 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </style>
 
 <style id="gacc-top-show-dates-2027">
-/* GACC three-year Save the Dates at the very top, before site navigation. */
+/* Three show dates at the very top; prominent on desktop and readable on mobile. */
 .gacc-top-show-dates{
-  position:relative;z-index:11;width:100%;padding:9px 18px 11px;
-  background:radial-gradient(ellipse 80% 170% at 50% 0%,#393023,#1b2025 72%,#101316 100%);
-  border-bottom:1px solid #af9365;box-shadow:inset 0 1px 0 #f2d6a827;
+  position:relative;z-index:11;width:100%;padding:16px 18px 20px;
+  background:radial-gradient(ellipse 85% 180% at 50% 0%,#453823,#20252b 68%,#11151a 100%);
+  border-bottom:1px solid #c2a473;box-shadow:inset 0 1px 0 #f2d6a827,0 5px 18px #0005;
   color:#f6e8cc;text-align:center;
 }
 .gacc-top-show-dates .dates-kicker{
-  display:block;margin:0 0 6px;font:700 10px/1.3 Arial,Helvetica,sans-serif;
-  letter-spacing:.24em;color:#d7bb89;text-transform:uppercase;
+  display:block;margin:0 0 10px;font:700 12px/1.3 Arial,Helvetica,sans-serif;
+  letter-spacing:.24em;color:#e2c895;text-transform:uppercase;
 }
 .gacc-top-show-dates .dates-row{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;
-  width:min(100%,850px);margin:0 auto;
+  width:min(100%,1060px);margin:0 auto;
 }
 .gacc-top-show-dates .date-item{
-  display:flex;align-items:baseline;justify-content:center;gap:12px;
-  padding:3px 12px;min-width:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  padding:4px 12px;min-width:0;
 }
 .gacc-top-show-dates .date-item+.date-item{border-left:1px solid #d6bc8973}
 .gacc-top-show-dates .date-year{
-  font:400 clamp(20px,2.25vw,29px)/1.15 Georgia,'Times New Roman',serif;
-  letter-spacing:.015em;color:#ecd29d;
+  display:block;font:400 clamp(34px,3.5vw,50px)/1.05 Georgia,'Times New Roman',serif;
+  letter-spacing:.02em;color:#ecd29d;text-shadow:0 2px 12px #0005;
 }
 .gacc-top-show-dates time{
-  font:600 clamp(13px,1.35vw,16px)/1.35 Arial,Helvetica,sans-serif;
-  letter-spacing:.015em;color:#f6f1e8;white-space:nowrap;
+  display:block;font:600 clamp(17px,1.7vw,23px)/1.35 Arial,Helvetica,sans-serif;
+  letter-spacing:.005em;color:#f6f1e8;white-space:nowrap;
 }
-.gacc-top-show-dates .date-item:first-child .date-year{color:#ffdf9d}
+.gacc-top-show-dates .date-item:first-child .date-year{color:#ffe1a4}
+.restored-heritage-header .brand-title{
+  font:600 clamp(19px,2.25vw,30px)/1.15 Georgia,'Times New Roman',serif;
+  color:#edcc84;letter-spacing:.015em;white-space:normal;text-wrap:balance;
+}
 @media(max-width:660px){
- .gacc-top-show-dates{padding:9px 5px 10px}
- .gacc-top-show-dates .dates-kicker{font-size:9px;margin-bottom:6px;letter-spacing:.18em}
- .gacc-top-show-dates .date-item{display:flex;flex-direction:column;align-items:center;gap:2px;padding:2px 4px}
- .gacc-top-show-dates .date-year{font-size:20px}
- .gacc-top-show-dates time{font-size:clamp(10px,2.7vw,12px);letter-spacing:0}
+ .gacc-top-show-dates{padding:12px 4px 15px}
+ .gacc-top-show-dates .dates-kicker{font-size:10px;letter-spacing:.17em;margin-bottom:9px}
+ .gacc-top-show-dates .date-item{gap:4px;padding:2px 3px}
+ .gacc-top-show-dates .date-year{font-size:clamp(27px,7vw,37px)}
+ .gacc-top-show-dates time{font-size:clamp(12px,3.25vw,16px);letter-spacing:0}
+ .restored-heritage-header .brand-title{font-size:clamp(17px,4.3vw,22px);line-height:1.16;max-width:280px}
+}
+@media(max-width:355px){
+ .gacc-top-show-dates time{font-size:11px}
+ .restored-heritage-header .brand-title{font-size:16px}
 }
 </style>
 </head>
@@ -343,7 +352,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </div>
 <header class="header restored-heritage-header" aria-label="GACC 2027 site navigation">
   <div class="inner restored-header-layout">
-    <a class="brand" href="#top" aria-label="GACC 2027 homepage"><span class="brand-title">GACC 2027</span><span class="brand-sub">Great American Coin &amp; Collectibles Show</span></a>
+    <a class="brand" href="#top" aria-label="Great American Coin and Collectibles Show homepage"><span class="brand-title">Great American Coin &amp; Collectibles Show</span></a>
     <div class="header-actions"><a class="nav-btn" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==">✉ JOIN</a><a class="nav-btn" href="https://www.gaccshow.com/contact.html">☎ Contact</a></div>
     <nav class="nav" aria-label="Main navigation"><a href="#top" aria-current="page">Home</a><a href="https://www.gaccshow.com/attendee-hub.html">Attendee Hub</a><a href="https://www.gaccshow.com/dealer-hub.html">Dealer Hub</a><a href="https://www.gaccshow.com/floor-map.html">Floor Map &amp; Dealers</a><a href="https://www.gaccshow.com/schedule.html">Schedule</a><a href="https://www.gaccshow.com/hotels.html">Hotels</a><a href="https://www.gaccshow.com/sponsors.html">Sponsors</a><a href="https://www.gaccshow.com/news-media.html">News &amp; Media</a></nav>
     <details class="mobile-menu"><summary aria-label="Open site navigation">☰ Menu</summary><nav class="menu-list" aria-label="Mobile navigation"><a href="#top">Home</a><a href="https://www.gaccshow.com/attendee-hub.html">Attendee Hub</a><a href="https://www.gaccshow.com/dealer-hub.html">Dealer Hub</a><a href="https://www.gaccshow.com/floor-map.html">Floor Map &amp; Dealers</a><a href="https://www.gaccshow.com/schedule.html">Schedule</a><a href="https://www.gaccshow.com/hotels.html">Hotels</a><a href="https://www.gaccshow.com/sponsors.html">Sponsors</a><a href="https://www.gaccshow.com/news-media.html">News &amp; Media</a><a href="https://www.gaccshow.com/contact.html">Contact</a><a href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==">✉ JOIN</a></nav></details>
