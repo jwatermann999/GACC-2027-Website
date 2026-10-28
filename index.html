@@ -197,168 +197,107 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </style>
 <style id="gacc-intro-after-hours-style">.gacc-intro-after-hours{position:relative;padding:55px 0 65px;background:radial-gradient(ellipse at 50% 0%,#293139,#121920 70%,#0b1016);text-align:center}.gacc-intro-after-hours .intro-block{margin-top:0}.gacc-intro-after-hours .intro-block h1{margin-top:0}@media(max-width:650px){.gacc-intro-after-hours{padding:35px 0 45px}}</style>
 <style id="gacc-benjamin-full-bleed-slim-2027">
-/* Responsive, genuinely slim full-bleed Benjamin banner.
-   The original image is used ONLY in the portrait panel, so baked-in text
-   and placeholder numbers can never get chopped by a full-width crop.
-   The four live values retain their existing JavaScript IDs. */
+/* Original approved Benjamin image, unchanged. Full-width, flatter aspect ratio.
+   A single, controlled crop keeps the complete countdown and gold date strip in view. */
 .hero-shell .ben-approved{
-  box-sizing:border-box;
   width:100vw;
   max-width:none;
   margin-left:calc(50% - 50vw);
   margin-right:calc(50% - 50vw);
-  height:clamp(210px,22vw,305px);
-  min-height:0;
-  display:grid;
-  grid-template-columns:42% minmax(0,58%);
   overflow:hidden;
-  position:relative;
-  background:radial-gradient(ellipse at 76% 20%,#263748 0%,#0e1722 50%,#070b12 100%);
-  border:0;
-  border-top:1px solid #c99d54;
-  border-bottom:1px solid #c99d54;
   border-radius:0;
-  box-shadow:0 12px 45px rgba(0,0,0,.35),inset 0 0 22px rgba(232,188,105,.09);
+  border-left:0;
+  border-right:0;
 }
-.hero-shell .ben-approved-portrait{
-  min-width:0;
-  position:relative;
-  background-image:url('/gacc-2027-benjamin-countdown.webp');
-  background-repeat:no-repeat;
-  background-size:auto 185%;
-  background-position:3% 43%;
-  background-color:#10171c;
-}
-.hero-shell .ben-approved-portrait:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,transparent 58%,rgba(8,14,22,.53) 80%,#0c1520 100%);
-}
-.hero-shell .ben-approved-content{
-  position:relative;
-  z-index:2;
-  min-width:0;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:18px clamp(18px,3vw,52px) 19px 8px;
-  color:#f6ead2;
-  text-align:center;
-}
-.hero-shell .ben-approved-content:before{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  inset:12px clamp(10px,1.3vw,24px) 12px 0;
-  border:1px solid rgba(222,180,105,.78);
-  box-shadow:inset 0 0 0 2px #0d1623,inset 0 0 0 3px rgba(202,149,72,.35),0 0 21px rgba(239,175,84,.12);
-  border-radius:8px;
-  pointer-events:none;
-}
-.hero-shell .ben-approved-eyebrow{
-  margin:0 0 clamp(12px,1.5vw,23px);
-  font:600 clamp(12px,1.45vw,20px)/1.1 Georgia,serif;
-  letter-spacing:.3em;
-  color:#f7dfae;
-  text-shadow:0 0 15px rgba(255,212,134,.30);
-}
-.hero-shell .ben-approved .ben-approved-timer{
-  position:relative;
-  inset:auto;
-  width:100%;
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:clamp(6px,1vw,16px);
-  padding:0;
-  margin:0;
-  background:transparent;
-  pointer-events:none;
-}
-.hero-shell .ben-approved .ben-approved-unit,
-.hero-shell .ben-approved .ben-approved-unit:nth-child(n){
-  all:unset;
-  box-sizing:border-box;
-  min-width:0;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 3px 10px;
-  border:1px solid rgba(229,184,106,.78);
-  border-radius:6px;
-  background:linear-gradient(165deg,#192737 0%,#080e17 84%);
-  color:#ffdfa0;
-  text-shadow:0 0 14px rgba(244,192,103,.32);
-  box-shadow:inset 0 0 0 1px rgba(233,188,109,.13);
-  font:700 clamp(30px,4vw,62px)/1 Georgia,serif;
-  font-variant-numeric:tabular-nums;
-}
-.hero-shell .ben-approved .ben-approved-unit strong{display:block;font:inherit;white-space:nowrap}
-.hero-shell .ben-approved .ben-approved-unit span{
-  display:block;
-  font:700 clamp(9px,.86vw,12px)/1.2 Arial,sans-serif;
-  letter-spacing:.13em;
-  color:#eed4a8;
-  text-shadow:none;
-}
-.hero-shell .ben-approved-date{
-  margin:clamp(12px,1.6vw,23px) 0 0;
-  font:600 clamp(12px,1.3vw,19px)/1.2 Georgia,serif;
-  letter-spacing:.15em;
-  color:#eccc8d;
+@media(min-width:651px){
+  .hero-shell .ben-approved{
+    height:clamp(215px,27vw,390px);
+  }
+  .hero-shell .ben-approved-art{
+    display:block;
+    width:100%;
+    height:100%;
+    aspect-ratio:auto;
+    object-fit:cover;
+    object-position:center 64%;
+    transform:none;
+  }
+  .hero-shell .ben-approved-timer{
+    position:absolute;
+    inset:0;
+    display:block;
+    padding:0;
+    background:transparent;
+  }
+  .hero-shell .ben-approved-unit,
+  .hero-shell .ben-approved-unit:nth-child(n){
+    position:absolute;
+    top:calc(64% - 7.613cqw);
+    height:4.201cqw;
+    display:flex;
+    flex-direction:row;
+    padding:0;
+    margin:0;
+    border-radius:0;
+    border:0;
+    font:700 4.2cqw/1 Georgia,serif;
+  }
+  .hero-shell .ben-approved-unit:nth-child(1){left:47.65%;width:9.1%}
+  .hero-shell .ben-approved-unit:nth-child(2){left:61%;width:8.15%}
+  .hero-shell .ben-approved-unit:nth-child(3){left:73%;width:7.5%}
+  .hero-shell .ben-approved-unit:nth-child(4){left:84%;width:7.7%}
+  .hero-shell .ben-approved-unit span{display:none}
+  .hero-shell .ben-mobile-heading{display:none}
 }
 @media(max-width:650px){
   .hero-shell .ben-approved{
+    display:flex;
+    flex-direction:column;
     height:auto;
-    min-height:0;
-    grid-template-columns:1fr;
-    grid-template-rows:clamp(125px,34vw,180px) auto;
   }
-  .hero-shell .ben-approved-portrait{
-    background-size:auto 255%;
-    background-position:7% 43%;
+  .hero-shell .ben-approved-art{
+    display:block;
+    width:100%;
+    height:clamp(165px,44vw,218px);
+    aspect-ratio:auto;
+    object-fit:cover;
+    object-position:left center;
+    max-width:none;
+    transform:scale(1.4);
+    transform-origin:left center;
+    order:0;
   }
-  .hero-shell .ben-approved-portrait:after{
-    background:linear-gradient(0deg,#0c1520 0%,transparent 36%);
+  .hero-shell .ben-mobile-heading{display:block;order:1}
+  .hero-shell .ben-approved-timer{
+    position:relative;
+    inset:auto;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:5px;
+    padding:12px 9px 16px;
+    background:linear-gradient(145deg,#071320,#132d42,#08121f);
+    order:2;
   }
-  .hero-shell .ben-approved-content{
-    padding:16px 13px 18px;
-  }
-  .hero-shell .ben-approved-content:before{
-    inset:2px 7px 5px;
-  }
-  .hero-shell .ben-approved-eyebrow{
-    font-size:12px;
-    letter-spacing:.17em;
-    margin-bottom:12px;
-  }
-  .hero-shell .ben-approved .ben-approved-timer{
+  .hero-shell .ben-approved-unit,
+  .hero-shell .ben-approved-unit:nth-child(n){
+    position:static;
+    width:auto;
+    height:auto;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
     gap:6px;
-    padding:0;
+    padding:9px 2px;
+    border:1px solid #bd924f;
+    border-radius:6px;
+    font:700 clamp(22px,7vw,36px)/1 Georgia,serif;
   }
-  .hero-shell .ben-approved .ben-approved-unit,
-  .hero-shell .ben-approved .ben-approved-unit:nth-child(n){
-    gap:6px;
-    padding:10px 1px 9px;
-    font-size:clamp(24px,7vw,36px);
-  }
-  .hero-shell .ben-approved .ben-approved-unit span{
-    font-size:clamp(8px,2vw,10px);
-    letter-spacing:.035em;
-  }
-  .hero-shell .ben-approved-date{
-    font-size:12px;
-    margin-top:13px;
+  .hero-shell .ben-approved-unit span{
+    display:block;
+    font:700 9px/1 Arial,sans-serif;
     letter-spacing:.09em;
+    color:#f1d59e;
   }
-}
-@media(prefers-reduced-motion:reduce){
-  .hero-shell .ben-approved *{animation:none!important}
 }
 </style>
 </head>
@@ -380,19 +319,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 <section class="grand-show-art" aria-label="Official GACC 2027 artwork with Chicago skyline, American flag, D. B. Cooper currency, Morgan silver dollars, gold and silver bullion">
   <picture class="grand-art-picture"><source media="(max-width: 600px)" srcset="/GACC-2027-Hero-Mobile-v2.webp" width="768" height="960"><img src="/GACC-2027-Hero-Splash.webp" srcset="/GACC-2027-Hero-Splash-768.webp 768w, /GACC-2027-Hero-Splash.webp 1357w" sizes="100vw" width="1357" height="542" alt="GACC 2027 original approved artwork: Morgan dollars, gold and silver bullion, D. B. Cooper note, American flag and Chicago skyline" fetchpriority="high" decoding="async"></picture>
 </section>
-<section class="hero-shell"><div class="inner hero-grid"><div class="heritage-mini heritage-invite"><p>Stay in the know for Chicagoland’s <strong>Fourth Annual Great American Coin &amp; Collectibles Show.</strong></p><a class="heritage-join" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" aria-label="Join the GACC email updates list">✉ &nbsp; JOIN US</a></div><div class="ben-approved" role="group" aria-label="Benjamin Franklin and live countdown to the Great American Coin and Collectibles Show 2027">
-  <div class="ben-approved-portrait" role="img" aria-label="Benjamin Franklin from the approved GACC 2027 artwork"></div>
-  <div class="ben-approved-content">
-    <p class="ben-approved-eyebrow">SHOW OPENS IN</p>
-    <div class="ben-approved-timer" role="timer" aria-label="Live time remaining until October 27, 2027 at 3 PM Central">
-      <div class="ben-approved-unit"><strong id="desk-days">---</strong><span>DAYS</span></div>
-      <div class="ben-approved-unit"><strong id="desk-hours">--</strong><span>HOURS</span></div>
-      <div class="ben-approved-unit"><strong id="desk-minutes">--</strong><span>MINUTES</span></div>
-      <div class="ben-approved-unit"><strong id="desk-seconds">--</strong><span>SECONDS</span></div>
-    </div>
-    <p class="ben-approved-date">OCTOBER 27–30, 2027</p>
-  </div>
-</div>
+<section class="hero-shell"><div class="inner hero-grid"><div class="heritage-mini heritage-invite"><p>Stay in the know for Chicagoland’s <strong>Fourth Annual Great American Coin &amp; Collectibles Show.</strong></p><a class="heritage-join" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" aria-label="Join the GACC email updates list">✉ &nbsp; JOIN US</a></div><div class="ben-approved" role="group" aria-label="Live countdown to the Great American Coin and Collectibles Show 2027"><img class="ben-approved-art" src="/gacc-2027-benjamin-countdown.webp" alt="GACC 2027 Benjamin Franklin gold and blue show countdown artwork" width="1536" height="639" fetchpriority="high" decoding="async"><div class="ben-approved-timer" role="timer" aria-label="Live time remaining until October 27, 2027 at 3 PM Central"><div class="ben-approved-unit"><strong id="desk-days">---</strong><span>DAYS</span></div><div class="ben-approved-unit"><strong id="desk-hours">--</strong><span>HOURS</span></div><div class="ben-approved-unit"><strong id="desk-minutes">--</strong><span>MINUTES</span></div><div class="ben-approved-unit"><strong id="desk-seconds">--</strong><span>SECONDS</span></div></div><p class="ben-luxe-heading ben-mobile-heading">THE SHOW OPENS IN</p></div>
 </div></section>
 <section class="hours-section" id="show-hours"><div class="inner"><div class="hours-heading"><h2>2027 Show Hours</h2><p>One show. Exceptional discoveries. Four memorable days.</p></div><div class="hour-cards">
 <div class="hours-card"><div class="card-top"><p class="mini">Everyone's invited</p><h3>Public Hours</h3></div><div class="hour-row"><b>Wednesday · Oct. 27</b><div><strong>V.I.P. Equal &amp; Early Passholders</strong></div></div><div class="hour-row"><b>Thursday · Oct. 28</b><div><strong>10 AM–6 PM</strong><small>One-way: 5:30 PM</small></div></div><div class="hour-row"><b>Friday · Oct. 29</b><div><strong>10 AM–6 PM</strong><small>One-way: 5:30 PM</small></div></div><div class="hour-row"><b>Saturday · Oct. 30</b><div><strong>9 AM–3 PM</strong><small>One-way: 2:30 PM</small></div></div></div>
