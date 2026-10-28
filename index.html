@@ -195,7 +195,63 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 .hero-shell .heritage-invite .heritage-join:hover,.hero-shell .heritage-invite .heritage-join:focus-visible{background:linear-gradient(135deg,#4a4235,#1c2b3c);box-shadow:0 0 26px rgba(242,204,137,.4);transform:translateY(-1px)}
 @media(max-width:650px){.hero-shell .heritage-invite{gap:13px!important;padding:16px 12px!important}.hero-shell .heritage-invite p{font-size:17px}.hero-shell .heritage-invite .heritage-join{padding:12px 26px}}
 </style>
-<style id="gacc-intro-after-hours-style">.gacc-intro-after-hours{position:relative;padding:55px 0 65px;background:radial-gradient(ellipse at 50% 0%,#293139,#121920 70%,#0b1016);text-align:center}.gacc-intro-after-hours .intro-block{margin-top:0}.gacc-intro-after-hours .intro-block h1{margin-top:0}@media(max-width:650px){.gacc-intro-after-hours{padding:35px 0 45px}}</style></head>
+<style id="gacc-intro-after-hours-style">.gacc-intro-after-hours{position:relative;padding:55px 0 65px;background:radial-gradient(ellipse at 50% 0%,#293139,#121920 70%,#0b1016);text-align:center}.gacc-intro-after-hours .intro-block{margin-top:0}.gacc-intro-after-hours .intro-block h1{margin-top:0}@media(max-width:650px){.gacc-intro-after-hours{padding:35px 0 45px}}</style>
+<style id="gacc-benjamin-full-bleed-slim-2027">
+/* The approved Benjamin artwork is unchanged. Crop its top/bottom, never stretch.
+   The live digits follow the original artwork coordinates as the crop changes. */
+.hero-shell .ben-approved{
+  width:100vw;
+  max-width:none;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  border-left:0;
+  border-right:0;
+  border-radius:0;
+}
+@media(min-width:651px){
+  .hero-shell .ben-approved{
+    height:clamp(195px,24vw,390px);
+  }
+  .hero-shell .ben-approved-art{
+    display:block;
+    width:100%;
+    height:100%;
+    aspect-ratio:auto;
+    object-fit:cover;
+    object-position:center center;
+    transform:none;
+  }
+  .hero-shell .ben-approved-timer{
+    position:absolute;
+    inset:0;
+  }
+  .hero-shell .ben-approved-unit{
+    /* In a centered cover crop, the art's 45.7% y maps here.
+       Original art is 1536 x 639; no repositioning as screen width changes. */
+    top:calc(50% - 1.78875cqw);
+    height:4.2002cqw;
+  }
+}
+@media(max-width:650px){
+  .hero-shell .ben-approved-art{
+    height:clamp(165px,44vw,218px);
+    transform:scale(1.4);
+  }
+  .hero-shell .ben-mobile-heading{
+    padding:9px 8px 0;
+  }
+  .hero-shell .ben-approved-timer{
+    gap:5px;
+    padding:12px 9px 16px;
+  }
+  .hero-shell .ben-approved-unit,
+  .hero-shell .ben-approved-unit:nth-child(n){
+    gap:6px;
+    padding:9px 2px;
+  }
+}
+</style>
+</head>
 <body><header class="header restored-heritage-header" aria-label="GACC 2027 site navigation">
   <div class="inner restored-header-layout">
     <a class="brand" href="#top" aria-label="GACC 2027 homepage"><span class="brand-title">GACC 2027</span><span class="brand-sub">Great American Coin &amp; Collectibles Show</span></a>
