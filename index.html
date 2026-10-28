@@ -218,7 +218,8 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
     height:100%;
     aspect-ratio:auto;
     object-fit:cover;
-    object-position:center center;
+    /* Reveal more of Benjamin's upper portrait; hide the cut-off date artwork below. */
+    object-position:center 37%;
     transform:none;
   }
   .hero-shell .ben-approved-timer{
@@ -228,7 +229,8 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
   .hero-shell .ben-approved-unit{
     /* In a centered cover crop, the art's 45.7% y maps here.
        Original art is 1536 x 639; no repositioning as screen width changes. */
-    top:calc(50% - 1.78875cqw);
+    /* Track the identical image position: 0.457*image-height - 0.37*overflow. */
+    top:calc(37% + 3.6192cqw);
     height:4.2002cqw;
   }
 }
