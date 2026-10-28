@@ -292,6 +292,31 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 @media(max-width:900px){.industry-grid.grading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.industry-grid.grading-grid{grid-template-columns:1fr}}
 </style>
+
+<style id="gacc-top-show-dates-2027">
+/* A single date announcement above the hero, separate from navigation and artwork. */
+.gacc-top-show-dates{
+  position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;
+  min-height:76px;padding:14px 22px;text-align:center;
+  background:radial-gradient(ellipse 75% 130% at 50% 0%,#36302a 0%,#1b1b1b 58%,#111416 100%);
+  border-bottom:1px solid #a78a59;box-shadow:inset 0 1px 0 #f4ddae30,0 8px 25px #0004;
+}
+.gacc-top-show-dates:before,.gacc-top-show-dates:after{
+  content:"";position:absolute;top:50%;width:min(12vw,125px);height:1px;
+  background:linear-gradient(90deg,transparent,#ba9b65b5);
+}
+.gacc-top-show-dates:before{left:max(18px,calc(50% - 365px))}
+.gacc-top-show-dates:after{right:max(18px,calc(50% - 365px));transform:rotate(180deg)}
+.gacc-top-show-dates time{
+  display:block;font:400 clamp(23px,2.6vw,35px)/1.18 Georgia,'Times New Roman',serif;
+  letter-spacing:.025em;color:#f7e8c9;text-shadow:0 1px 14px #e6c38a23;
+}
+@media(max-width:760px){
+ .gacc-top-show-dates{min-height:62px;padding:13px 12px}
+ .gacc-top-show-dates time{font-size:clamp(19px,5vw,27px);letter-spacing:.012em}
+ .gacc-top-show-dates:before,.gacc-top-show-dates:after{display:none}
+}
+</style>
 </head>
 <body><header class="header restored-heritage-header" aria-label="GACC 2027 site navigation">
   <div class="inner restored-header-layout">
@@ -302,6 +327,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
   </div>
 </header>
 <main id="top">
+<div class="gacc-top-show-dates" aria-label="Great American Coin and Collectibles Show 2027 dates"><time datetime="2027-10-27">October 27–30, 2027</time></div>
 <aside class="gacc-site-update" aria-label="Website improvements">
   <div class="gacc-site-update__inner">
     <span class="gacc-site-update__headline">✦ We're building something extraordinary</span>
