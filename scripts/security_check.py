@@ -13,15 +13,15 @@ SKIP_DIRS = {".git", "node_modules", "vendor", ".venv"}
 
 # Do not print matched secret content to logs.
 SENSITIVE_PATTERNS = [
-    ("Stripe secret/restricted key", re.compile(r"\\b(?:sk|rk)_(?:live|test)_[A-Za-z0-9]{12,}")),
-    ("GitHub personal access token", re.compile(r"\\b(?:ghp|gho|ghu|ghs)_[A-Za-z0-9]{25,}")),
-    ("GitHub fine-grained token", re.compile(r"\\bgithub_pat_[A-Za-z0-9_]{20,}")),
-    ("AWS access key", re.compile(r"\\bAKIA[0-9A-Z]{16}\\b")),
+    ("Stripe secret/restricted key", re.compile(r"\b(?:sk|rk)_(?:live|test)_[A-Za-z0-9]{12,}")),
+    ("GitHub personal access token", re.compile(r"\b(?:ghp|gho|ghu|ghs)_[A-Za-z0-9]{25,}")),
+    ("GitHub fine-grained token", re.compile(r"\bgithub_pat_[A-Za-z0-9_]{20,}")),
+    ("AWS access key", re.compile(r"\bAKIA[0-9A-Z]{16}\b")),
     ("Private key block", re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
 ]
-HTTP_ACTIVE_CONTENT = re.compile(r"\\b(?:src|action)\\s*=\\s*['\\\"]http://", re.I)
-INSECURE_FORM = re.compile(r"<form\\b[^>]*\\baction\\s*=\\s*['\\\"]http://", re.I)
-PAYMENT_FIELDS = re.compile(r"<input\\b[^>]*\\b(?:name|id)\\s*=\\s*['\\\"](?:card(?:_|-)?number|cvc|cvv|routing(?:_|-)?number|ssn)['\\\"]", re.I)
+HTTP_ACTIVE_CONTENT = re.compile(r"""(?i)\b(?:src|action)\s*=\s*['"]http://""")
+INSECURE_FORM = re.compile(r"""(?i)<form\b[^>]*\baction\s*=\s*['"]http://""")
+PAYMENT_FIELDS = re.compile(r"""(?i)<input\b[^>]*\b(?:name|id)\s*=\s*['"](?:card(?:_|-)?number|cvc|cvv|routing(?:_|-)?number|ssn)['"]""")
 
 problems = []
 examined = 0
