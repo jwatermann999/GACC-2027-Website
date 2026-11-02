@@ -1,0 +1,186 @@
+/* GACC 2027 visible mobile navigation.
+   Keep desktop layouts unchanged. Mobile and tablet links are always visible. */
+@media (max-width: 1050px) {
+  /* Home page: replace the lonely Menu button with real navigation. */
+  .restored-heritage-header .restored-header-layout {
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:center!important;
+    width:calc(100% - 28px)!important;
+    min-height:0!important;
+    padding:10px 0 12px!important;
+    gap:9px!important;
+  }
+  .restored-heritage-header .nav {
+    grid-row:auto!important;
+    grid-column:auto!important;
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:7px!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    align-items:stretch!important;
+    justify-content:stretch!important;
+  }
+  .restored-heritage-header .nav a {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:0!important;
+    min-height:44px!important;
+    margin:0!important;
+    padding:8px 6px!important;
+    color:#f5eddd!important;
+    font:700 12px/1.25 Arial,Helvetica,sans-serif!important;
+    letter-spacing:0!important;
+    text-align:center!important;
+    text-transform:none!important;
+    text-wrap:balance!important;
+    white-space:normal!important;
+    border:1px solid #8f774c!important;
+    border-radius:7px!important;
+    background:linear-gradient(155deg,#1d2530,#0d131b)!important;
+    box-shadow:inset 0 1px 0 #ffffff12!important;
+  }
+  .restored-heritage-header .nav a[aria-current="page"] {
+    border-color:#d7b97a!important;
+    background:linear-gradient(145deg,#383021,#171b21)!important;
+    color:#ffe1a3!important;
+  }
+  .restored-heritage-header .header-actions {
+    grid-row:auto!important;
+    grid-column:auto!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    margin:0!important;
+    width:100%!important;
+  }
+  .restored-heritage-header .header-actions .nav-btn {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:0!important;
+    min-height:44px!important;
+    padding:9px 10px!important;
+    border:1px solid #e2c68e!important;
+    border-radius:7px!important;
+    color:#f9e2ae!important;
+    font:700 13px/1.25 Arial,Helvetica,sans-serif!important;
+    text-align:center!important;
+  }
+  .restored-heritage-header .mobile-menu {display:none!important}
+
+  /* Subpages: shared mobile layout with matching visible buttons. */
+  .gacc-2027-header {
+    position:relative!important;
+    top:auto!important;
+  }
+  .gacc-2027-header .gacc-2027-header-inner {
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:center!important;
+    flex-wrap:nowrap!important;
+    gap:10px!important;
+    width:100%!important;
+    min-height:0!important;
+    padding:10px 14px 12px!important;
+  }
+  .gacc-2027-header .gacc-2027-brand {
+    align-self:center!important;
+    align-items:center!important;
+    text-align:center!important;
+    flex:0 0 auto!important;
+  }
+  .gacc-2027-header .gacc-2027-brand-title {
+    font-size:24px!important;
+  }
+  .gacc-2027-header .gacc-2027-brand-caption {
+    font-size:9px!important;
+    max-width:none!important;
+  }
+  .gacc-2027-header .gacc-2027-desktop-links {
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    align-items:stretch!important;
+    justify-items:stretch!important;
+    justify-content:stretch!important;
+    flex:0 0 auto!important;
+    width:100%!important;
+    gap:7px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .gacc-2027-header .gacc-2027-desktop-links>a {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:0!important;
+    width:100%!important;
+    min-height:44px!important;
+    padding:8px 6px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    text-wrap:balance!important;
+    color:#f5eddd!important;
+    font:700 12px/1.25 Arial,Helvetica,sans-serif!important;
+    background:linear-gradient(155deg,#1d2530,#0d131b)!important;
+    border:1px solid #8f774c!important;
+    border-radius:7px!important;
+    box-shadow:inset 0 1px 0 #ffffff12!important;
+    text-decoration:none!important;
+  }
+  .gacc-2027-header .gacc-2027-desktop-links>a[aria-current="page"] {
+    border-color:#d7b97a!important;
+    background:linear-gradient(145deg,#383021,#171b21)!important;
+    color:#ffe1a3!important;
+    text-decoration:none!important;
+  }
+  .gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action {
+    min-height:44px!important;
+    padding:8px 10px!important;
+    border:1px solid #e2c68e!important;
+    border-radius:7px!important;
+    background:linear-gradient(145deg,#1b3146,#101d2c)!important;
+    color:#f9e2ae!important;
+    font:700 13px/1.25 Arial,Helvetica,sans-serif!important;
+    box-shadow:inset 0 1px 0 #ffffff12!important;
+  }
+  .gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action::before {
+    width:16px!important;
+    height:16px!important;
+    flex-basis:16px!important;
+  }
+  .gacc-2027-header .gacc-2027-mobile-menu {display:none!important}
+}
+
+@media (min-width: 681px) and (max-width: 1050px) {
+  .gacc-2027-header .gacc-2027-desktop-links>a:nth-last-child(-n+2) {
+    grid-column:span 2!important;
+  }
+}
+
+@media (max-width: 680px) {
+  .restored-heritage-header .nav,
+  .gacc-2027-header .gacc-2027-desktop-links {
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+  }
+  .restored-heritage-header .nav a,
+  .gacc-2027-header .gacc-2027-desktop-links>a {
+    font-size:13px!important;
+    min-height:43px!important;
+  }
+}
+@media (max-width: 360px) {
+  .restored-heritage-header .nav a,
+  .gacc-2027-header .gacc-2027-desktop-links>a {
+    font-size:12px!important;
+    padding:7px 4px!important;
+  }
+  .restored-heritage-header .header-actions .nav-btn {font-size:12px!important}
+}
