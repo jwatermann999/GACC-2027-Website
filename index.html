@@ -448,29 +448,37 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 <link rel="stylesheet" href="gacc-mobile-nav-grid-20261101.css?v=1">
 
 <style id="gacc-cooper-currency-magnify-2027">
-/* The actual certified Cooper-note display now scales up as a full, crisp overlay.
-   Original GACC hero assets stay untouched, and the note never displaces the skyline,
-   headline, event links, countdown or navigation. */
+/* GACC artwork note spotlight v3: a reliable CSS background crop of the approved
+   certified note image, not an external image nested inside inline SVG.
+   The original full banner and all responsive layout/links remain unchanged. */
 .grand-show-art{position:relative!important;isolation:isolate!important}
 .grand-show-art .gacc-cooper-focus{
-  position:absolute;z-index:2;display:block;box-sizing:border-box;
-  height:auto;pointer-events:none;overflow:hidden;
-  border:1px solid #c8a36a;border-radius:7px;
-  box-shadow:0 8px 23px #0008,0 0 0 2px #e6bf7630;
+  position:absolute!important;z-index:3!important;display:block!important;
+  pointer-events:none!important;overflow:hidden!important;
+  box-sizing:border-box!important;
+  background-repeat:no-repeat!important;
+  background-color:#090b0c!important;
+  border:1px solid #c5a46b!important;border-radius:6px!important;
+  box-shadow:0 6px 20px #0009,0 0 0 1px #e6c78338!important;
 }
 .grand-show-art .gacc-cooper-focus--desktop{
-  width:46%;left:27%;top:1.8%;aspect-ratio:342 / 173;
+  width:46%!important;left:27%!important;top:1.8%!important;
+  aspect-ratio:342/173!important;height:auto!important;
+  background-image:url('/GACC-2027-Hero-Splash.webp')!important;
+  background-size:396.784% auto!important;
+  background-position:49.56% 25.47%!important;
 }
-.grand-show-art .gacc-cooper-focus--mobile{display:none}
+.grand-show-art .gacc-cooper-focus--mobile{display:none!important}
 @media(max-width:600px){
-  .grand-show-art .gacc-cooper-focus--desktop{display:none}
+  .grand-show-art .gacc-cooper-focus--desktop{display:none!important}
   .grand-show-art .gacc-cooper-focus--mobile{
-    display:block;width:70%;left:15%;top:19.5%;aspect-ratio:285 / 149;
-    border-radius:5px;
+    display:block!important;
+    width:70%!important;left:15%!important;top:19.5%!important;
+    aspect-ratio:285/149!important;height:auto!important;
+    background-image:url('/GACC-2027-Hero-Mobile-v2.webp')!important;
+    background-size:269.474% auto!important;
+    background-position:49.48% 33.17%!important;
   }
-}
-@media(prefers-reduced-motion:reduce){
-  .grand-show-art .gacc-cooper-focus{transition:none!important}
 }
 </style>
 </head>
@@ -500,14 +508,8 @@ a{color:inherit;text-decoration:none}a:hover{color:#f3d9a0}a:focus-visible,summa
 </aside>
 <section class="grand-show-art" aria-label="Official GACC 2027 artwork with Chicago skyline, American flag, D. B. Cooper currency, Morgan silver dollars, gold and silver bullion">
   <picture class="grand-art-picture"><source media="(max-width: 600px)" srcset="/GACC-2027-Hero-Mobile-v2.webp" width="768" height="960"><img src="/GACC-2027-Hero-Splash.webp" srcset="/GACC-2027-Hero-Splash-768.webp 768w, /GACC-2027-Hero-Splash.webp 1357w" sizes="100vw" width="1357" height="542" alt="GACC 2027 original approved artwork: Morgan dollars, gold and silver bullion, D. B. Cooper note, American flag and Chicago skyline" fetchpriority="high" decoding="async"></picture>
-  <!-- Crisp enlargement of the complete D. B. Cooper PCGS holder, rather than just
-       the note's tiny interior. Cropped from the original approved artwork. -->
-  <svg class="gacc-cooper-focus gacc-cooper-focus--desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 173" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-    <image href="/GACC-2027-Hero-Splash.webp?v=20261101-cooper-focus" x="-503" y="-94" width="1357" height="542" preserveAspectRatio="none"/>
-  </svg>
-  <svg class="gacc-cooper-focus gacc-cooper-focus--mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 149" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-    <image href="/GACC-2027-Hero-Mobile-v2.webp?v=20261101-cooper-focus" x="-239" y="-269" width="768" height="960" preserveAspectRatio="none"/>
-  </svg>
+  <div class="gacc-cooper-focus gacc-cooper-focus--desktop" aria-hidden="true"></div>
+  <div class="gacc-cooper-focus gacc-cooper-focus--mobile" aria-hidden="true"></div>
 </section>
 <section class="hero-shell"><div class="inner hero-grid"><div class="heritage-mini heritage-invite"><p>Stay in the know for Chicagoland’s <strong>Fourth Annual Great American Coin &amp; Collectibles Show.</strong></p><a class="heritage-join" href="https://bee26ee3.sibforms.com/v2/serve/MUIFAB8PTfi4OyWnbMiXofnEucjabf4Qjd0byQf4l_Yei-y1UPBMauF0GAtr3V4yw0kF5aDziEwpJm4Raj5ZXdOQ0rUkX7pybTTkPFDA-YQWNlb2AxHasStFX3DzWEEvRhls9wHj2kT7IDzoGsZiFOED2aQEBDJOI1YRNC9dLHiw02VcC7p_I6U50b6pgKAZ1CHLqOo2J5cx-8zFdQ==" aria-label="Join the GACC email updates list">✉ &nbsp; JOIN US</a></div><div class="gacc-ben-panorama" role="group" aria-label="GACC 2027 Benjamin Franklin panoramic banner with live countdown">
   <img class="gacc-ben-panorama-art" src="/gacc-benjamin-panorama-2027.webp" alt="Panoramic gold and blue Benjamin Franklin banner, Chicago skyline, and countdown to the 2027 Great American Coin and Collectibles Show" width="1600" height="345" fetchpriority="high" decoding="async">
