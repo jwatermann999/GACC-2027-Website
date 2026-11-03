@@ -1,0 +1,320 @@
+/* GACC 2027 refinement: purposeful calls to action, unified directory and digital application.
+   Scoped to three page classes so approved hero artwork, forms and sponsor placements remain intact. */
+
+/* Homepage: let the artwork lead, then offer three clear paths. */
+body.gacc-page-home .gacc-quick-actions {
+  width:100%;
+  background:linear-gradient(105deg,#090f18 0%,#15263b 50%,#090f18 100%);
+  border-top:1px solid rgba(211,175,104,.42);
+  border-bottom:1px solid rgba(211,175,104,.42);
+  padding:18px clamp(15px,3vw,40px);
+}
+body.gacc-page-home .gacc-quick-actions__inner {
+  width:min(100%,1220px);
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+body.gacc-page-home .gacc-quick-action {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:57px;
+  padding:12px 16px;
+  border:1px solid rgba(223,190,122,.65);
+  border-radius:8px;
+  background:linear-gradient(145deg,rgba(21,39,60,.95),rgba(9,17,28,.96));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
+  text-align:center;
+  color:#f8e4ba;
+  font:700 clamp(13px,1.35vw,16px)/1.25 Arial,Helvetica,sans-serif;
+  letter-spacing:.025em;
+  text-decoration:none;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+body.gacc-page-home .gacc-quick-action:hover,
+body.gacc-page-home .gacc-quick-action:focus-visible {
+  background:#25486d;
+  border-color:#fae2ab;
+  color:#fff1d6;
+  transform:translateY(-1px);
+}
+body.gacc-page-home .gacc-quick-action:focus-visible {
+  outline:3px solid #fff1b7;
+  outline-offset:3px;
+}
+@media(max-width:700px) {
+  body.gacc-page-home .gacc-quick-actions { padding:12px 14px; }
+  body.gacc-page-home .gacc-quick-actions__inner { grid-template-columns:1fr; gap:8px; }
+  body.gacc-page-home .gacc-quick-action { min-height:48px; padding:10px 12px; font-size:14px; }
+}
+
+/* Floor map + dealer directory: same midnight/blue/gold frame as other hubs.
+   Do not change the approved floor map artwork or searchable dealer table behavior. */
+body.gacc-page-floor #gacc-2027-dealer-list {
+  background:linear-gradient(145deg,#fff,#f7f9fd) !important;
+  border:2px solid #caa352 !important;
+  border-radius:17px !important;
+  box-shadow:0 12px 32px rgba(0,0,0,.28) !important;
+}
+body.gacc-page-floor #gacc-2027-dealer-list h2 {
+  color:#12345b !important;
+  font-family:Georgia,serif;
+  letter-spacing:-.015em;
+}
+body.gacc-page-floor #gacc-dealer-search {
+  border:1px solid #9caec4 !important;
+  background:#fff !important;
+  color:#102c51 !important;
+}
+body.gacc-page-floor #gacc-dealer-search:focus-visible {
+  outline:3px solid #d7b46c;
+  outline-offset:2px;
+}
+body.gacc-page-floor #gacc-dealer-table th {
+  background:#132c48 !important;
+  color:#fff6dd !important;
+  border-bottom:2px solid #c7a35e !important;
+}
+body.gacc-page-floor #gacc-dealer-table tbody tr:nth-child(even) {
+  background:#f3f6fa;
+}
+body.gacc-page-floor #gacc-dealer-table tbody tr:hover {
+  background:#edf3fa;
+}
+@media(max-width:680px) {
+  body.gacc-page-floor #gacc-2027-dealer-list { padding:17px 14px !important; }
+  body.gacc-page-floor #gacc-dealer-table td { font-size:14px; line-height:1.4; }
+}
+
+/* Digital application: premium show identity with readable white form panels.
+   No changes to field values, pricing calculations, or the existing submission service. */
+body.gacc-page-application {
+  background:
+    radial-gradient(ellipse at 50% 4%,rgba(27,57,92,.55),transparent 57%),
+    linear-gradient(125deg,#101925,#0b111b 62%,#080e16) !important;
+  color:#eaf0f7;
+}
+body.gacc-page-application .top {
+  background:linear-gradient(120deg,#0a1524,#1b3555 52%,#090f1a) !important;
+  border-bottom:3px solid #c9a562 !important;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+body.gacc-page-application .top h1 { color:#f9f4e9; font-family:Georgia,serif; }
+body.gacc-page-application .top p { color:#e7e8ed; }
+body.gacc-page-application .wrap > p:first-child a { color:#f8d999; font-weight:700; }
+body.gacc-page-application .wrap > .note { color:#e1e9f3; }
+body.gacc-page-application .panel {
+  background:linear-gradient(145deg,#fff,#f8fafd) !important;
+  border:2px solid #cba65f !important;
+  box-shadow:0 12px 32px rgba(0,0,0,.28) !important;
+  color:#153054 !important;
+}
+body.gacc-page-application .panel h2 { color:#102d55; }
+body.gacc-page-application input:focus-visible,
+body.gacc-page-application textarea:focus-visible,
+body.gacc-page-application select:focus-visible {
+  outline:3px solid #c7a057;
+  outline-offset:2px;
+}
+body.gacc-page-application .actions button {
+  background:linear-gradient(130deg,#17365a,#0e243e) !important;
+  border:2px solid #d0ad68 !important;
+  color:#fbe9c3 !important;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+body.gacc-page-application .actions button:hover,
+body.gacc-page-application .actions button:focus-visible {
+  background:#254f7a !important;
+}
+body.gacc-page-application .actions .note { color:#e3e9f2; }
+body.gacc-page-application .actions .note a { color:#f9dc9c; }
+
+
+/* GACC discovery gallery: original ornamental SVG artwork, no stock imagery.
+   A calm editorial transition from the show description into sponsor placements. */
+body.gacc-page-home .gacc-discovery {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(46px,5vw,80px) clamp(16px,3.5vw,44px) clamp(52px,5.5vw,88px);
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(37,77,118,.25),transparent 68%),
+    linear-gradient(130deg,#080f19,#0e1c2e 55%,#070d15);
+  border-top:1px solid rgba(210,176,105,.36);
+  border-bottom:1px solid rgba(210,176,105,.36);
+}
+body.gacc-page-home .gacc-discovery__inner { width:min(100%,1300px); margin-inline:auto; }
+body.gacc-page-home .gacc-discovery__eyebrow {
+  margin:0 0 12px;
+  color:#d3b780;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font:700 11px/1.4 Arial,Helvetica,sans-serif;
+}
+body.gacc-page-home .gacc-discovery h2 {
+  color:#f8f4ec;
+  text-align:center;
+  font:400 clamp(30px,4.2vw,56px)/1.15 Georgia,'Times New Roman',serif;
+  letter-spacing:-.025em;
+  margin:0 auto 12px;
+}
+body.gacc-page-home .gacc-discovery__intro {
+  color:#c6d3e2;
+  font:400 clamp(14px,1.3vw,17px)/1.7 Arial,Helvetica,sans-serif;
+  text-align:center;
+  margin:0 auto 30px;
+  max-width:710px;
+  text-wrap:balance;
+}
+body.gacc-page-home .gacc-discovery__grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:15px;
+}
+body.gacc-page-home .gacc-discovery-card {
+  position:relative;
+  isolation:isolate;
+  min-width:0;
+  min-height:240px;
+  overflow:hidden;
+  padding:23px 22px 24px;
+  border:1px solid rgba(199,165,102,.72);
+  border-radius:13px;
+  background:linear-gradient(150deg,#1a2d41 0%,#0b1725 70%);
+  box-shadow:0 16px 35px rgba(0,0,0,.26),inset 0 1px 0 rgba(255,255,255,.06);
+}
+body.gacc-page-home .gacc-discovery-card::before {
+  content:"";
+  position:absolute;
+  inset:-80px -60px auto auto;
+  width:235px;
+  height:235px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(211,174,101,.13),transparent 68%);
+  z-index:-1;
+}
+body.gacc-page-home .gacc-discovery-card__art {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:68px;
+  height:68px;
+  border:1px solid rgba(228,194,122,.66);
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#314a5b,#122134 75%);
+  color:#eacb8d;
+  box-shadow:inset 0 0 0 5px rgba(219,173,91,.08);
+  margin-bottom:20px;
+}
+body.gacc-page-home .gacc-discovery-card__art svg {
+  width:37px;
+  height:37px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+body.gacc-page-home .gacc-discovery-card h3 {
+  margin:0 0 9px;
+  color:#f7e4bd;
+  font:400 clamp(21px,2vw,27px)/1.2 Georgia,'Times New Roman',serif;
+}
+body.gacc-page-home .gacc-discovery-card p {
+  margin:0;
+  color:#d3dce7;
+  font:400 14px/1.62 Arial,Helvetica,sans-serif;
+}
+body.gacc-page-home .gacc-discovery__footer {
+  text-align:center;
+  margin:26px 0 0;
+}
+body.gacc-page-home .gacc-discovery__footer a {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:44px;
+  padding:10px 21px;
+  color:#f9e3b2;
+  border:1px solid #c8aa70;
+  border-radius:7px;
+  background:#162b42;
+  font:700 14px/1.4 Arial,Helvetica,sans-serif;
+  text-decoration:none;
+}
+body.gacc-page-home .gacc-discovery__footer a:hover,
+body.gacc-page-home .gacc-discovery__footer a:focus-visible {
+  color:#fff8e9;
+  background:#25476a;
+  border-color:#ffe3ac;
+}
+body.gacc-page-home .gacc-discovery__footer a:focus-visible {
+  outline:3px solid #ffdea0;
+  outline-offset:3px;
+}
+@media(max-width:920px) {
+  body.gacc-page-home .gacc-discovery__grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  body.gacc-page-home .gacc-discovery-card { min-height:210px; }
+}
+@media(max-width:600px) {
+  body.gacc-page-home .gacc-discovery { padding:42px 0 48px; }
+  body.gacc-page-home .gacc-discovery__eyebrow,
+  body.gacc-page-home .gacc-discovery h2,
+  body.gacc-page-home .gacc-discovery__intro,
+  body.gacc-page-home .gacc-discovery__footer { margin-left:18px; margin-right:18px; }
+  body.gacc-page-home .gacc-discovery__intro { margin-bottom:20px; }
+  body.gacc-page-home .gacc-discovery__grid {
+    display:flex;
+    gap:12px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-padding-left:18px;
+    padding:3px 18px 15px;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-inline:contain;
+    scrollbar-color:#b89b67 #15273a;
+    scrollbar-width:thin;
+  }
+  body.gacc-page-home .gacc-discovery-card {
+    flex:0 0 min(78vw,310px);
+    min-height:236px;
+    scroll-snap-align:start;
+    padding:21px 19px 22px;
+  }
+  body.gacc-page-home .gacc-discovery-card h3 { font-size:24px; }
+  body.gacc-page-home .gacc-discovery__footer { margin-top:17px; }
+  body.gacc-page-home .gacc-discovery__footer a { width:100%; max-width:340px; }
+  /* Preserve all visible mobile navigation buttons, just reduce dead space. */
+  body.gacc-page-home .restored-heritage-header .restored-header-layout {
+    gap:7px!important;
+    padding-top:8px!important;
+    padding-bottom:9px!important;
+  }
+  body.gacc-page-home .restored-heritage-header .nav { gap:6px!important; }
+  body.gacc-page-home .restored-heritage-header .nav a {
+    min-height:44px!important;
+    padding:8px 6px!important;
+  }
+  body.gacc-page-home .gacc-quick-actions { padding:10px 12px; }
+  body.gacc-page-home .gacc-quick-actions__inner {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:7px;
+  }
+  body.gacc-page-home .gacc-quick-action {
+    min-height:48px;
+    padding:9px 8px;
+    font-size:13px;
+  }
+  body.gacc-page-home .gacc-quick-action:first-child { grid-column:1/-1; }
+  body.gacc-page-home .gacc-discovery__grid:focus-visible {
+    outline:3px solid #f4d491;
+    outline-offset:-3px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.gacc-page-home .gacc-quick-action { transition:none; }
+}
