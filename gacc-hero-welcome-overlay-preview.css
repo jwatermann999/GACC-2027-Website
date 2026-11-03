@@ -1,0 +1,69 @@
+/* Preview-only, non-destructive replacement of the duplicate GACC lettering
+   inside the original responsive hero image. Keeps authentic note and coin
+   imagery, including the existing D. B. Cooper magnification overlays. */
+body.gacc-page-home .grand-show-art {
+  position:relative!important;
+  isolation:isolate!important;
+}
+body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay {
+  position:absolute;
+  z-index:2;
+  left:8%;
+  top:43%;
+  width:84%;
+  height:33%;
+  display:grid;
+  place-items:center;
+  overflow:visible;
+  pointer-events:none;
+  text-align:center;
+}
+body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  border-radius:25%;
+  -webkit-backdrop-filter:blur(27px) brightness(.36) saturate(1.3);
+  backdrop-filter:blur(27px) brightness(.36) saturate(1.3);
+  background:
+    linear-gradient(0deg,rgba(7,23,64,.83),rgba(4,13,39,.84) 48%,rgba(8,34,75,.83)),
+    repeating-linear-gradient(176deg,rgba(249,181,50,.35) 0 2px,transparent 3px 14px);
+  -webkit-mask-image:radial-gradient(ellipse 72% 76% at 50% 50%,#000 63%,transparent 100%);
+  mask-image:radial-gradient(ellipse 72% 76% at 50% 50%,#000 63%,transparent 100%);
+}
+body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay span {
+  position:relative;
+  z-index:1;
+  display:block;
+  max-width:100%;
+  color:#ffe9b3;
+  background:linear-gradient(180deg,#fffde5 0%,#ffe9a2 23%,#f3bc4e 46%,#fff9d3 65%,#b97419 91%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font:700 clamp(46px,7.3vw,126px)/1 Georgia,"Times New Roman",serif;
+  letter-spacing:-.055em;
+  white-space:nowrap;
+  filter:drop-shadow(0 3px 1px #051329) drop-shadow(0 8px 8px rgba(0,0,0,.7));
+}
+@media(max-width:700px) {
+  body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay {
+    left:3%;
+    top:48%;
+    width:94%;
+    height:16.5%;
+  }
+  body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay::before {
+    inset:-9% 0;
+    border-radius:12%;
+    -webkit-backdrop-filter:blur(26px) brightness(.32) saturate(1.3);
+    backdrop-filter:blur(26px) brightness(.32) saturate(1.3);
+    -webkit-mask-image:radial-gradient(ellipse 67% 88% at 50% 50%,#000 67%,transparent 100%);
+    mask-image:radial-gradient(ellipse 67% 88% at 50% 50%,#000 67%,transparent 100%);
+  }
+  body.gacc-page-home .grand-show-art .gacc-hero-welcome-overlay span {
+    font-size:clamp(48px,14.1vw,105px);
+    letter-spacing:-.07em;
+  }
+}
