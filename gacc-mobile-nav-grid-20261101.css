@@ -2,6 +2,8 @@
    Restore the compact Menu on phones/tablets. The full desktop navigation stays untouched.
    All existing menu destinations and keyboard-friendly <details> behavior are preserved. */
 
+ .restored-heritage-header .gacc-compact-brand {display:none;} 
+
 @media (max-width:1050px) {
   /* Homepage: clean, single-row branding and Menu. */
   .restored-heritage-header .restored-header-layout {
