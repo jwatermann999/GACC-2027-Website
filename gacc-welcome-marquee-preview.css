@@ -1,0 +1,236 @@
+/* GACC 2027 electric welcome marquee.
+   Motion stays smooth, never strobes, and respects reduced-motion settings.
+   Preview-only until visual approval; does not touch hero or countdown assets. */
+
+body.gacc-page-home .hero-shell {
+  padding-top:22px!important;
+}
+
+body.gacc-page-home .hero-shell .heritage-mini.gacc-welcome {
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden;
+  box-sizing:border-box;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(185px,auto)!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:18px 26px!important;
+  width:min(100% - 36px,1280px)!important;
+  max-width:1280px!important;
+  min-height:166px;
+  margin:0 auto 18px!important;
+  padding:23px clamp(22px,4vw,58px)!important;
+  border:2px solid #d2a95a!important;
+  border-radius:12px;
+  background:
+    radial-gradient(ellipse at 14% 0%,rgba(19,107,185,.37),transparent 57%),
+    radial-gradient(ellipse at 88% 110%,rgba(244,180,72,.21),transparent 49%),
+    linear-gradient(110deg,#070e1c 0%,#102540 47%,#080f1d 100%)!important;
+  box-shadow:
+    0 0 0 1px rgba(241,211,146,.25),
+    0 0 22px rgba(28,130,255,.23),
+    0 0 44px rgba(231,168,61,.19),
+    inset 0 0 35px rgba(28,89,157,.24);
+  text-align:left;
+  text-transform:none;
+  letter-spacing:normal!important;
+  text-shadow:none!important;
+  animation:gacc-marquee-glow 5.5s ease-in-out infinite;
+}
+
+/* Soft, traversing searchlight. */
+body.gacc-page-home .hero-shell .gacc-welcome::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  border-radius:10px;
+  background:linear-gradient(106deg,
+    transparent 19%,
+    rgba(30,134,255,.02) 36%,
+    rgba(183,219,255,.16) 49%,
+    rgba(255,210,122,.16) 51%,
+    transparent 64%);
+  background-size:240% 100%;
+  background-position:120% 50%;
+  animation:gacc-marquee-sweep 7.5s ease-in-out infinite;
+}
+
+/* Gold lightbulbs around the border, with an electric-blue secondary glow. */
+body.gacc-page-home .hero-shell .gacc-welcome::after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  pointer-events:none;
+  inset:5px;
+  border:1px solid rgba(251,221,151,.31);
+  border-radius:7px;
+  box-shadow:inset 0 0 7px rgba(255,218,135,.2);
+}
+
+body.gacc-page-home .hero-shell .gacc-welcome__copy,
+body.gacc-page-home .hero-shell .gacc-welcome__join { position:relative; z-index:2; }
+
+body.gacc-page-home .hero-shell .gacc-welcome__copy {
+  min-width:0;
+  display:flex;
+  align-items:flex-start;
+  flex-direction:column;
+  gap:6px;
+}
+
+body.gacc-page-home .hero-shell .gacc-welcome__eyebrow {
+  display:block;
+  margin:0;
+  color:#d6e9ff;
+  font:800 clamp(11px,1vw,14px)/1.35 Arial,Helvetica,sans-serif;
+  letter-spacing:.37em;
+  text-shadow:0 0 16px rgba(65,159,255,.55);
+}
+
+body.gacc-page-home .hero-shell .gacc-welcome__title {
+  display:block;
+  max-width:100%;
+  margin:0;
+  font:800 clamp(43px,5.5vw,77px)/.99 Georgia,'Times New Roman',serif;
+  letter-spacing:.025em;
+  text-transform:uppercase;
+  color:#ffe6ac;
+  background:linear-gradient(98deg,#bc8534 0%,#f4ce78 20%,#fff9df 42%,#d69b3a 61%,#ffe8aa 82%,#c38b38 100%);
+  background-size:210% auto;
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 15px rgba(255,187,79,.22));
+  animation:gacc-title-shimmer 6.7s linear infinite;
+}
+
+body.gacc-page-home .hero-shell .gacc-welcome__full {
+  display:block;
+  margin:0;
+  color:#fff7e7;
+  font:700 clamp(12px,1.15vw,16px)/1.42 Arial,Helvetica,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-shadow:0 1px 13px rgba(18,120,218,.45);
+}
+
+body.gacc-page-home .hero-shell .gacc-welcome__date {
+  display:block;
+  margin:4px 0 0;
+  color:#e0be7d;
+  font:700 clamp(11px,1.05vw,14px)/1.5 Arial,Helvetica,sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+body.gacc-page-home .hero-shell .heritage-invite .heritage-join.gacc-welcome__join {
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  min-height:60px;
+  min-width:198px;
+  max-width:100%;
+  padding:15px 25px!important;
+  margin:0;
+  color:#14121b!important;
+  border:2px solid #fff2bb!important;
+  border-radius:8px!important;
+  background:linear-gradient(135deg,#fff0b7,#dfa647 53%,#ffe6a6)!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.75),
+    0 0 18px rgba(253,201,96,.43),
+    0 0 36px rgba(240,152,39,.23)!important;
+  font:900 clamp(13px,1.15vw,16px)/1.3 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.075em!important;
+  text-align:center;
+  white-space:normal!important;
+  text-decoration:none!important;
+  text-shadow:none!important;
+  transition:transform .2s ease,filter .2s ease!important;
+  animation:gacc-join-glow 4.5s ease-in-out infinite;
+}
+body.gacc-page-home .hero-shell .heritage-invite .heritage-join.gacc-welcome__join:hover {
+  transform:translateY(-2px);
+  filter:brightness(1.14);
+}
+body.gacc-page-home .hero-shell .heritage-invite .heritage-join.gacc-welcome__join:focus-visible {
+  outline:3px solid #fff;
+  outline-offset:4px;
+  transform:translateY(-2px);
+}
+
+@keyframes gacc-marquee-glow {
+  0%,100% { box-shadow:0 0 0 1px rgba(241,211,146,.25),0 0 19px rgba(28,130,255,.25),0 0 37px rgba(231,168,61,.14),inset 0 0 35px rgba(28,89,157,.24); }
+  50% { box-shadow:0 0 0 1px rgba(255,225,160,.55),0 0 28px rgba(28,130,255,.52),0 0 58px rgba(255,185,66,.29),inset 0 0 48px rgba(28,89,157,.32); }
+}
+@keyframes gacc-marquee-sweep {
+  0%,13% { background-position:120% 50%; }
+  65%,100% { background-position:-120% 50%; }
+}
+@keyframes gacc-title-shimmer {
+  0% { background-position:0% 50%; }
+  100% { background-position:210% 50%; }
+}
+@keyframes gacc-join-glow {
+  0%,100% { box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 0 16px rgba(253,201,96,.36),0 0 33px rgba(240,152,39,.18); }
+  50% { box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 0 24px rgba(255,217,118,.64),0 0 46px rgba(255,172,46,.35); }
+}
+@media(max-width:850px) {
+  body.gacc-page-home .hero-shell .heritage-mini.gacc-welcome {
+    grid-template-columns:1fr!important;
+    text-align:center;
+    gap:14px!important;
+    min-height:0;
+    padding:22px 18px!important;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome__copy { align-items:center; }
+  body.gacc-page-home .hero-shell .gacc-welcome__title { font-size:clamp(42px,9vw,68px); }
+  body.gacc-page-home .hero-shell .heritage-invite .heritage-join.gacc-welcome__join {
+    justify-self:center;
+    min-height:48px;
+    width:min(100%,300px);
+    padding:11px 18px!important;
+  }
+}
+@media(max-width:600px) {
+  body.gacc-page-home .hero-shell { padding-top:16px!important; }
+  body.gacc-page-home .hero-shell .heritage-mini.gacc-welcome {
+    width:calc(100% - 24px)!important;
+    margin-bottom:13px!important;
+    padding:19px 11px 18px!important;
+    gap:12px!important;
+    border-radius:9px;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome__eyebrow {
+    font-size:11px;
+    letter-spacing:.27em;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome__title {
+    font-size:clamp(43px,11vw,62px);
+    line-height:1;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome__full {
+    font-size:clamp(11px,2.7vw,14px);
+    line-height:1.5;
+    letter-spacing:.06em;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome__date {
+    font-size:11px;
+    line-height:1.4;
+    letter-spacing:.06em;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.gacc-page-home .hero-shell .heritage-mini.gacc-welcome,
+  body.gacc-page-home .hero-shell .gacc-welcome::before,
+  body.gacc-page-home .hero-shell .gacc-welcome__title,
+  body.gacc-page-home .hero-shell .heritage-invite .heritage-join.gacc-welcome__join {
+    animation:none!important;
+    transition:none!important;
+  }
+  body.gacc-page-home .hero-shell .gacc-welcome::before { display:none; }
+  body.gacc-page-home .hero-shell .gacc-welcome__title { background-position:50% 50%; }
+}
