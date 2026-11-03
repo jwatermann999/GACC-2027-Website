@@ -1,0 +1,218 @@
+/* GACC 2027 unified midnight-charcoal / blue / gold design
+   Applied only to pages with body.gacc-unified-luxe.
+   Do not alter layout, forms, dealer data, sponsor ads, or mobile navigation. */
+
+body.gacc-unified-luxe {
+  background:
+    radial-gradient(ellipse at 48% 7%,rgba(25,51,82,.55),transparent 54%),
+    linear-gradient(122deg,#121a26 0%,#101722 48%,#080c13 100%) !important;
+  background-color:#0d131c !important;
+}
+
+/* Site-wide navigation and announcement ribbon: color only; all original
+   navigation layout, breakpoints, buttons and click targets are preserved. */
+body.gacc-unified-luxe .gacc-2027-header,
+body.gacc-unified-luxe .restored-heritage-header {
+  background:linear-gradient(118deg,#0a101a 0%,#162337 49%,#080d16 100%) !important;
+  border-bottom:2px solid #cba65f !important;
+  box-shadow:0 6px 25px rgba(0,0,0,.35) !important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-brand-title,
+body.gacc-unified-luxe .restored-heritage-header .brand-title {
+  color:#f1d38f !important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-desktop-links>a[aria-current="page"]:not(.gacc-2027-action),
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-menu-panel>a[aria-current="page"]:not(.gacc-2027-action) {
+  color:#f5d58e !important;
+  text-decoration-color:#e5bc66 !important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-desktop-links>a.gacc-2027-action,
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-menu-panel>a.gacc-2027-action {
+  border-color:#d7ba77 !important;
+  background:linear-gradient(145deg,#1a2d43,#101b2b) !important;
+  color:#f4dda9 !important;
+}
+body.gacc-unified-luxe .gacc-site-update {
+  background:linear-gradient(90deg,#0b111a 0%,#1c2938 51%,#0b111a 100%) !important;
+  border-bottom:1px solid rgba(207,165,86,.52) !important;
+}
+body.gacc-unified-luxe .gacc-site-update__headline {color:#efd092 !important;}
+
+/* Keep the original approved homepage artwork, coin countdown, and spacing.
+   The homepage already has the charcoal-gold design language. */
+body.gacc-page-home .end-footer {
+  background:linear-gradient(125deg,#080d14,#141e2a 55%,#080d14) !important;
+  border-top:1px solid #c5a15c !important;
+}
+
+/* Non-homepage footer, common to all inner pages. */
+body.gacc-unified-luxe:not(.gacc-page-home) > footer {
+  background:
+    radial-gradient(ellipse at 25% 80%,rgba(21,48,79,.5),transparent 64%),
+    linear-gradient(120deg,#080d15,#172331 55%,#080d15) !important;
+  color:#f5f3ee !important;
+  border-top:2px solid #c7a05c !important;
+  box-shadow:inset 0 12px 24px rgba(0,0,0,.22);
+  margin-top:0 !important;
+}
+body.gacc-unified-luxe:not(.gacc-page-home) > footer a {color:#f2d99a !important;}
+
+/* Shared white panels: bright readable centers framed in gold. */
+body.gacc-page-hotels main>.card,
+body.gacc-page-dealer .dealer-overview,
+body.gacc-page-dealer .dealer-important,
+body.gacc-page-dealer .dealer-preserved-more .card,
+body.gacc-page-dealer .dealer-page>.card,
+body.gacc-page-schedule .schedule-coming-card,
+body.gacc-page-news main .article,
+body.gacc-page-contact main section,
+body.gacc-page-attendee .attendee-planner {
+  background:linear-gradient(145deg,#fff 0%,#f7f9fd 100%) !important;
+  border:2px solid #caa352 !important;
+  border-radius:17px !important;
+  box-shadow:0 12px 32px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.8) !important;
+}
+body.gacc-page-hotels main>.card h2,
+body.gacc-page-news main .article h2,
+body.gacc-page-news main .article h3,
+body.gacc-page-contact main section h1,
+body.gacc-page-dealer .dealer-overview h1 {
+  color:#0c2856 !important;
+}
+
+/* Attendee Hub: preserve the original patriotic poster and interactive passes.
+   Midnight surroundings, with visitor planning in a readable white panel. */
+body.gacc-page-attendee main.attendee-magical {
+  background:
+    radial-gradient(ellipse at 50% 4%,#193c66 0%,#111e31 37%,#0a111d 100%) !important;
+}
+body.gacc-page-attendee .approved-attendee {
+  background:
+    radial-gradient(ellipse at 50% 22%,#1b487a 0%,#0c2548 49%,#091320 100%) !important;
+  border-bottom:1px solid rgba(203,163,82,.7);
+}
+body.gacc-page-attendee .approved-poster-frame {border-color:#dfbd72 !important;}
+body.gacc-page-attendee .approved-poster-zoom a {color:#f2d799 !important;}
+body.gacc-page-attendee .attendee-planner {
+  max-width:1160px;
+  padding:28px clamp(15px,3vw,34px) 30px;
+  margin:34px auto 32px;
+}
+body.gacc-page-attendee .attendee-planner-heading h2 {color:#102c59 !important;}
+body.gacc-page-attendee .attendee-arrival {
+  background:linear-gradient(128deg,#0e2746,#142f52 56%,#0e2039) !important;
+  border:1px solid #c7a45d;
+}
+body.gacc-page-attendee .attendee-feature {border-color:#d7c18d !important;}
+body.gacc-page-attendee .attendee-dining {border-color:#d6c08e !important;}
+
+/* Dealer Hub: preserve application, pricing calculator, rules and downloads. */
+body.gacc-page-dealer main.dealer-page {background:transparent !important;}
+body.gacc-page-dealer .dealer-hero {
+  border-bottom:2px solid #ccaa69;
+  box-shadow:0 14px 26px rgba(0,0,0,.28);
+}
+body.gacc-page-dealer .dealer-overview,
+body.gacc-page-dealer .dealer-important {border-color:#caa352 !important;}
+body.gacc-page-dealer .dealer-resources-heading {
+  border:1px solid #caa352;
+  border-radius:14px;
+  background:#f8faff !important;
+  padding:20px;
+  margin-bottom:15px;
+}
+body.gacc-page-dealer .dealer-resources-heading h2,
+body.gacc-page-dealer .dealer-resources-heading p {color:#102e57 !important;}
+
+/* Schedule: preserve actual schedule text, time data, and page structure. */
+body.gacc-page-schedule .schedule-main {
+  background:
+    radial-gradient(ellipse at 48% 5%,rgba(20,51,91,.6),transparent 54%),
+    linear-gradient(135deg,#111b29,#090f19) !important;
+}
+body.gacc-page-schedule .schedule-hero {
+  border-bottom:2px solid #d5b36e;
+  background:
+    radial-gradient(ellipse at 30% 30%,rgba(27,73,131,.54),transparent 65%),
+    linear-gradient(125deg,#081323,#173454 50%,#081425) !important;
+}
+body.gacc-page-schedule .schedule-coming-card {border-top:5px solid #dfbd76 !important;}
+body.gacc-page-schedule .schedule-coming-card h2 {color:#123567 !important;}
+
+/* Hotels: gold-framed white listings on charcoal instead of a pale page. */
+body.gacc-page-hotels main > h1 {color:#f2d58f !important;}
+body.gacc-page-hotels main > .intro {color:#e0e9f4 !important;}
+body.gacc-page-hotels .hotel-announcement {
+  background:linear-gradient(118deg,#0b1a30,#16365c 58%,#0b1629) !important;
+  border-top:4px solid #caa45f !important;
+  border-bottom:4px solid #caa45f !important;
+  box-shadow:0 14px 32px #0005 !important;
+}
+body.gacc-page-hotels .card h3 {color:#a36c1b !important;}
+body.gacc-page-hotels .hotel-button {
+  background:linear-gradient(125deg,#112f53,#0b1d34) !important;
+  border:1px solid #d4b26e;
+  color:#fce5ad !important;
+}
+body.gacc-page-hotels .hotel-button:hover,
+body.gacc-page-hotels .hotel-button:focus-visible {background:#244b78 !important;}
+
+/* Sponsors: keep actual logos, advertiser branding and two working category tabs. */
+body.gacc-page-sponsors .sponsors {
+  background:
+    radial-gradient(ellipse at 50% 0%,#213a57 0%,#121c2a 39%,#0a1019 100%) !important;
+}
+body.gacc-page-sponsors .sponsors-page-title {color:#f0d393 !important;}
+body.gacc-page-sponsors .sponsors>.intro {color:#d9e2ee !important;}
+body.gacc-page-sponsors .grand {
+  background:linear-gradient(115deg,#0b1a31,#17335a,#0b1a31) !important;
+  border:1px solid #caa65d !important;
+  border-bottom:4px solid #cba65d !important;
+  border-radius:12px;
+  box-shadow:0 12px 30px #0005;
+}
+body.gacc-page-sponsors .sponsor-click-hint {
+  border-color:#caa65d !important;
+  background:#fcfdff !important;
+}
+body.gacc-page-sponsors .sponsor-tabs button {
+  border-color:#cba65d !important;
+  border-radius:9px;
+}
+body.gacc-page-sponsors .sponsor-tabs button[aria-selected="true"] {
+  background:linear-gradient(120deg,#112943,#1e4266) !important;
+  color:#f5dfa9 !important;
+}
+body.gacc-page-sponsors .banner {
+  background:#fff !important;
+  border:1px solid #c5a562 !important;
+  border-radius:10px;
+  box-shadow:0 6px 18px #0003;
+}
+
+/* News & Media: readable article cards with contrast on a dark page. */
+body.gacc-page-news main > h1 {color:#f1d48e !important;}
+body.gacc-page-news main > .lead {color:#dce6f4 !important;}
+body.gacc-page-news main > h2,
+body.gacc-page-news main > section > h2 {color:#f0d292 !important;}
+body.gacc-page-news main .article {color:#1b2d4d !important;}
+body.gacc-page-news main .article a {color:#1850a0 !important;}
+
+/* Contact: preserve addresses, email and phone links, improve framing. */
+body.gacc-page-contact main section {
+  border-top:5px solid #d3af62 !important;
+}
+body.gacc-page-contact main section a {color:#14569b !important;}
+
+/* Small-screen safeguards: preserve mobile navigation, prevent horizontal overflow. */
+@media(max-width:760px){
+  body.gacc-unified-luxe{overflow-x:hidden;}
+  body.gacc-page-attendee .attendee-planner{
+    width:calc(100% - 20px);
+    padding:20px 12px 22px;
+    margin:18px auto 28px;
+  }
+  body.gacc-page-dealer .dealer-resources-heading {padding:15px;}
+  body.gacc-page-hotels main > .card {padding:20px 16px;}
+  body.gacc-page-news main .article {padding:20px 17px;}
+}
