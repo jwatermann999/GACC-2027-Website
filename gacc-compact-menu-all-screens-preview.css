@@ -1,0 +1,138 @@
+/* GACC 2027 preview: one clean Menu control instead of rows of page buttons.
+   Applies across desktop, tablet, and phone. Preview-only until sign-off. */
+
+/* Homepage header uses original accessible <details> dropdown. */
+body.gacc-page-home .restored-heritage-header .restored-header-layout {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  width:min(calc(100% - 28px),1520px)!important;
+  max-width:1520px!important;
+  min-height:59px!important;
+  gap:15px!important;
+  padding:9px 0!important;
+}
+body.gacc-page-home .restored-heritage-header .nav,
+body.gacc-page-home .restored-heritage-header .header-actions {
+  display:none!important;
+}
+body.gacc-page-home .restored-heritage-header .gacc-compact-brand {
+  display:inline-flex!important;
+  flex:0 1 auto!important;
+  align-items:center!important;
+  color:#f1d38f!important;
+  font:700 clamp(21px,3vw,29px)/1.2 Georgia,'Times New Roman',serif!important;
+  letter-spacing:.025em;
+  text-decoration:none!important;
+  white-space:nowrap;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu {
+  display:block!important;
+  flex:0 0 auto!important;
+  position:relative!important;
+  grid-row:auto!important;
+  grid-column:auto!important;
+  justify-self:auto!important;
+  margin:0 0 0 auto!important;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu>summary {
+  display:flex!important;
+  min-height:45px!important;
+  min-width:101px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:10px 17px!important;
+  color:#ffe7b3!important;
+  border:1px solid #d6b36f!important;
+  border-radius:8px!important;
+  background:linear-gradient(145deg,#1b3450,#0d1928)!important;
+  cursor:pointer;
+  font:700 14px/1.2 Arial,Helvetica,sans-serif;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu:not([open]) .menu-list {display:none!important}
+body.gacc-page-home .restored-heritage-header .mobile-menu .menu-list {
+  position:absolute!important;
+  top:calc(100% + 7px)!important;
+  left:auto!important;
+  right:0!important;
+  width:min(340px,calc(100vw - 26px))!important;
+  max-height:min(75vh,680px)!important;
+  overflow-y:auto!important;
+  z-index:6000!important;
+  padding:9px!important;
+  border:1px solid #c6a05d!important;
+  border-radius:9px!important;
+  background:#101d2b!important;
+  box-shadow:0 16px 42px #000b!important;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu .menu-list a {
+  display:block!important;
+  min-height:43px!important;
+  padding:12px!important;
+  color:#f9f2e4!important;
+  border-bottom:1px solid #ffffff18!important;
+  font:700 14px/1.35 Arial,Helvetica,sans-serif!important;
+  letter-spacing:0!important;
+  text-align:left!important;
+  text-decoration:none!important;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu .menu-list a:hover,
+body.gacc-page-home .restored-heritage-header .mobile-menu .menu-list a:focus-visible {
+  color:#ffe0a4!important;
+  background:#244361!important;
+}
+body.gacc-page-home .restored-heritage-header .mobile-menu>summary:focus-visible {
+  outline:3px solid #ffe4ad!important;
+  outline-offset:3px!important;
+}
+
+/* Inner pages all use the original compact-menu component. */
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-header-inner {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  max-width:1560px!important;
+  width:100%!important;
+  min-height:65px!important;
+  gap:12px!important;
+  padding:10px clamp(14px,3vw,30px)!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-desktop-links {display:none!important}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-mobile-menu {
+  display:block!important;
+  position:relative!important;
+  flex:0 0 auto!important;
+  margin-left:auto!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-brand {
+  flex:0 1 auto!important;
+  align-items:flex-start!important;
+  text-align:left!important;
+  min-width:0!important;
+  max-width:calc(100% - 120px)!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-brand-title {
+  font-size:clamp(23px,3vw,33px)!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-brand-caption {
+  font-size:9px!important;
+  max-width:275px!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-mobile-menu>summary {
+  background:linear-gradient(145deg,#1b3450,#0d1928)!important;
+  border:1px solid #d6b36f!important;
+  color:#ffe7b3!important;
+  min-height:44px!important;
+}
+body.gacc-unified-luxe .gacc-2027-header .gacc-2027-menu-panel {
+  background:#101d2b!important;
+  border-color:#c6a05d!important;
+}
+@media(max-width:380px) {
+  body.gacc-page-home .restored-heritage-header .gacc-compact-brand {font-size:21px!important}
+  body.gacc-unified-luxe .gacc-2027-header .gacc-2027-brand-caption {font-size:8px!important}
+}
