@@ -119,6 +119,11 @@ body{background:#f5f8ff}
 .floor-intro-compact p{font-size:15px}
 .floor-status-only .floor-panel-inside{min-height:155px}
 }
+
+/* Keep the still-unpublished floor map status, without repeating the live dealer directory. */
+.floor-status-only{grid-template-columns:minmax(0,1fr)!important;}
+.floor-status-only .floor-panel-inside{min-height:120px;gap:8px;padding:16px;}
+@media(max-width:760px){.floor-status-only .floor-panel-inside{min-height:120px;}}
 </style>
 <link rel="canonical" href="https://www.gaccshow.com/floor-map.html"><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:title" content="GACC 2027 Coin Show Floor Map & Dealer Directory | Rosemont IL"><meta property="og:description" content="Find the GACC 2027 Chicago-area coin show floor map and dealer directory in Rosemont. Explore rare coin, currency, paper money, bullion and collectible dealers."><meta property="og:url" content="https://www.gaccshow.com/floor-map.html">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X66E7RQ4F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2X66E7RQ4F');</script><link rel="stylesheet" href="gacc-nav.css?v=20261025restored"><script src="gacc-nav.js?v=20261022b" defer></script><link rel="stylesheet" href="gacc-site-update.css?v=20261026">
@@ -330,8 +335,6 @@ body{background:#f5f8ff}
           <p>We'll publish the show floor layout when it's finalized.</p>
         </div>
       </section>
-      <section class="floor-status-panel" id="show-dealer-directory" aria-labelledby="show-dealer-directory-heading">
-        <h2 id="show-dealer-directory-heading">Dealer Directory</h2><div class="floor-panel-inside"><strong>2027 Dealer List</strong><p>Browse the participating dealer list. Table locations will be added when confirmed.</p><p><a href="#gacc-2027-dealer-list">View all 42 dealers</a></p></div></section>
     </div>
     <section class="section" id="gacc-2027-dealer-list"><h2>2027 Dealer Directory</h2><p>Participating dealers for the 2027 Great American Coin &amp; Collectibles Show. Table assignments will be published when confirmed.</p><label for="gacc-dealer-search"><strong>Find a dealer</strong></label><input id="gacc-dealer-search" class="search" type="search" placeholder="Search dealer names"><div style="overflow-x:auto"><table id="gacc-dealer-table"><thead><tr><th>Dealer / Company</th><th>Listing</th></tr></thead><tbody><tr><td>Allen G. Berman</td><td>Dealer</td></tr>
 <tr><td>Andrew Reiber INC</td><td>Dealer</td></tr>
