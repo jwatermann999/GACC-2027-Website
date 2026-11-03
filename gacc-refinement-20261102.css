@@ -1,0 +1,133 @@
+/* GACC 2027 refinement: purposeful calls to action, unified directory and digital application.
+   Scoped to three page classes so approved hero artwork, forms and sponsor placements remain intact. */
+
+/* Homepage: let the artwork lead, then offer three clear paths. */
+body.gacc-page-home .gacc-quick-actions {
+  width:100%;
+  background:linear-gradient(105deg,#090f18 0%,#15263b 50%,#090f18 100%);
+  border-top:1px solid rgba(211,175,104,.42);
+  border-bottom:1px solid rgba(211,175,104,.42);
+  padding:18px clamp(15px,3vw,40px);
+}
+body.gacc-page-home .gacc-quick-actions__inner {
+  width:min(100%,1220px);
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+body.gacc-page-home .gacc-quick-action {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:57px;
+  padding:12px 16px;
+  border:1px solid rgba(223,190,122,.65);
+  border-radius:8px;
+  background:linear-gradient(145deg,rgba(21,39,60,.95),rgba(9,17,28,.96));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
+  text-align:center;
+  color:#f8e4ba;
+  font:700 clamp(13px,1.35vw,16px)/1.25 Arial,Helvetica,sans-serif;
+  letter-spacing:.025em;
+  text-decoration:none;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+body.gacc-page-home .gacc-quick-action:hover,
+body.gacc-page-home .gacc-quick-action:focus-visible {
+  background:#25486d;
+  border-color:#fae2ab;
+  color:#fff1d6;
+  transform:translateY(-1px);
+}
+body.gacc-page-home .gacc-quick-action:focus-visible {
+  outline:3px solid #fff1b7;
+  outline-offset:3px;
+}
+@media(max-width:700px) {
+  body.gacc-page-home .gacc-quick-actions { padding:12px 14px; }
+  body.gacc-page-home .gacc-quick-actions__inner { grid-template-columns:1fr; gap:8px; }
+  body.gacc-page-home .gacc-quick-action { min-height:48px; padding:10px 12px; font-size:14px; }
+}
+
+/* Floor map + dealer directory: same midnight/blue/gold frame as other hubs.
+   Do not change the approved floor map artwork or searchable dealer table behavior. */
+body.gacc-page-floor #gacc-2027-dealer-list {
+  background:linear-gradient(145deg,#fff,#f7f9fd) !important;
+  border:2px solid #caa352 !important;
+  border-radius:17px !important;
+  box-shadow:0 12px 32px rgba(0,0,0,.28) !important;
+}
+body.gacc-page-floor #gacc-2027-dealer-list h2 {
+  color:#12345b !important;
+  font-family:Georgia,serif;
+  letter-spacing:-.015em;
+}
+body.gacc-page-floor #gacc-dealer-search {
+  border:1px solid #9caec4 !important;
+  background:#fff !important;
+  color:#102c51 !important;
+}
+body.gacc-page-floor #gacc-dealer-search:focus-visible {
+  outline:3px solid #d7b46c;
+  outline-offset:2px;
+}
+body.gacc-page-floor #gacc-dealer-table th {
+  background:#132c48 !important;
+  color:#fff6dd !important;
+  border-bottom:2px solid #c7a35e !important;
+}
+body.gacc-page-floor #gacc-dealer-table tbody tr:nth-child(even) {
+  background:#f3f6fa;
+}
+body.gacc-page-floor #gacc-dealer-table tbody tr:hover {
+  background:#edf3fa;
+}
+@media(max-width:680px) {
+  body.gacc-page-floor #gacc-2027-dealer-list { padding:17px 14px !important; }
+  body.gacc-page-floor #gacc-dealer-table td { font-size:14px; line-height:1.4; }
+}
+
+/* Digital application: premium show identity with readable white form panels.
+   No changes to field values, pricing calculations, or the existing submission service. */
+body.gacc-page-application {
+  background:
+    radial-gradient(ellipse at 50% 4%,rgba(27,57,92,.55),transparent 57%),
+    linear-gradient(125deg,#101925,#0b111b 62%,#080e16) !important;
+  color:#eaf0f7;
+}
+body.gacc-page-application .top {
+  background:linear-gradient(120deg,#0a1524,#1b3555 52%,#090f1a) !important;
+  border-bottom:3px solid #c9a562 !important;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+body.gacc-page-application .top h1 { color:#f9f4e9; font-family:Georgia,serif; }
+body.gacc-page-application .top p { color:#e7e8ed; }
+body.gacc-page-application .wrap > p:first-child a { color:#f8d999; font-weight:700; }
+body.gacc-page-application .wrap > .note { color:#e1e9f3; }
+body.gacc-page-application .panel {
+  background:linear-gradient(145deg,#fff,#f8fafd) !important;
+  border:2px solid #cba65f !important;
+  box-shadow:0 12px 32px rgba(0,0,0,.28) !important;
+  color:#153054 !important;
+}
+body.gacc-page-application .panel h2 { color:#102d55; }
+body.gacc-page-application input:focus-visible,
+body.gacc-page-application textarea:focus-visible,
+body.gacc-page-application select:focus-visible {
+  outline:3px solid #c7a057;
+  outline-offset:2px;
+}
+body.gacc-page-application .actions button {
+  background:linear-gradient(130deg,#17365a,#0e243e) !important;
+  border:2px solid #d0ad68 !important;
+  color:#fbe9c3 !important;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+body.gacc-page-application .actions button:hover,
+body.gacc-page-application .actions button:focus-visible {
+  background:#254f7a !important;
+}
+body.gacc-page-application .actions .note { color:#e3e9f2; }
+body.gacc-page-application .actions .note a { color:#f9dc9c; }
