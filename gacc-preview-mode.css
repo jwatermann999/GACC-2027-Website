@@ -1,0 +1,16 @@
+/* Isolated review-mode ribbon. Never deployed to the live website. */
+.gacc-preview-ribbon {
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px 16px;
+  min-height:38px;padding:9px 16px;
+  border-bottom:1px solid #d9bb79;
+  background:#111d2b;color:#ffedc3;
+  font:700 12px/1.5 Arial,Helvetica,sans-serif;
+  text-align:center;letter-spacing:.03em;position:relative;z-index:2000;
+}
+.gacc-preview-ribbon strong { letter-spacing:.12em; }
+.gacc-preview-ribbon a { color:#fff7e4!important;text-decoration:underline!important;text-underline-offset:3px; }
+.gacc-preview-ribbon a:focus-visible { outline:2px solid #ffe6ad;outline-offset:2px; }
+.gacc-preview-ribbon span { color:#dce5ee; }
+@media(max-width:600px) {
+  .gacc-preview-ribbon {font-size:11px;gap:3px 12px;min-height:40px;padding:7px 8px;}
+}
