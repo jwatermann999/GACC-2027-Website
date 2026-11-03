@@ -1,0 +1,206 @@
+/* GACC 2027 unified single-menu navigation: preview-only visual design.
+   Override legacy mobile grid and desktop inline navbar rules at every width.
+   Keeps existing accessible <details> / <summary> menus and all original links. */
+
+html body .restored-heritage-header,
+html body .gacc-2027-header {
+  position:relative!important;
+  top:auto!important;
+  z-index:1100!important;
+  background:linear-gradient(112deg,#070d16,#162438 53%,#090f19)!important;
+  border-bottom:2px solid #cca85e!important;
+  box-shadow:0 8px 24px rgba(0,0,0,.27)!important;
+}
+
+html body .restored-heritage-header .restored-header-layout {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:16px!important;
+  width:calc(100% - 36px)!important;
+  max-width:1480px!important;
+  min-height:61px!important;
+  margin:0 auto!important;
+  padding:9px 0!important;
+  grid-template-columns:none!important;
+  grid-template-rows:none!important;
+}
+html body .restored-heritage-header .nav,
+html body .restored-heritage-header .header-actions {
+  display:none!important;
+}
+html body .restored-heritage-header .gacc-compact-brand {
+  display:block!important;
+  min-width:0;
+  flex:0 1 auto;
+  margin:0 auto 0 0!important;
+  font:700 clamp(22px,2.8vw,33px)/1.1 Georgia,'Times New Roman',serif;
+  letter-spacing:.045em;
+  white-space:nowrap;
+  color:#f4d998!important;
+  text-decoration:none!important;
+  text-shadow:0 0 16px rgba(230,168,82,.2);
+}
+html body .restored-heritage-header details.mobile-menu {
+  display:block!important;
+  position:relative!important;
+  flex:0 0 auto!important;
+  grid-row:auto!important;
+  grid-column:auto!important;
+  z-index:2500!important;
+  margin:0!important;
+  justify-self:auto!important;
+}
+html body .restored-heritage-header details.mobile-menu>summary,
+html body .gacc-2027-header details.gacc-2027-mobile-menu>summary {
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:9px!important;
+  min-width:112px!important;
+  min-height:44px!important;
+  padding:10px 17px!important;
+  border:1px solid #dbb76d!important;
+  border-radius:8px!important;
+  background:linear-gradient(140deg,#1b344d,#0c1b2b)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important;
+  color:#ffe9bc!important;
+  font:800 14px/1.2 Arial,Helvetica,sans-serif!important;
+  text-align:center!important;
+  letter-spacing:.055em!important;
+  cursor:pointer!important;
+  list-style:none!important;
+}
+html body .restored-heritage-header details.mobile-menu>summary::-webkit-details-marker,
+html body .gacc-2027-header details.gacc-2027-mobile-menu>summary::-webkit-details-marker {
+  display:none!important;
+}
+html body .restored-heritage-header details.mobile-menu>summary::marker,
+html body .gacc-2027-header details.gacc-2027-mobile-menu>summary::marker {content:""}
+html body .restored-heritage-header details.mobile-menu[open]>summary,
+html body .gacc-2027-header details.gacc-2027-mobile-menu[open]>summary {
+  border-color:#ffdfa0!important;
+  background:#234769!important;
+}
+html body .restored-heritage-header details.mobile-menu .menu-list {
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  position:absolute!important;
+  top:calc(100% + 9px)!important;
+  left:auto!important;
+  right:0!important;
+  z-index:2600!important;
+  width:min(325px,calc(100vw - 28px))!important;
+  max-height:min(72vh,650px)!important;
+  padding:10px!important;
+  margin:0!important;
+  overflow-y:auto!important;
+  border:1px solid #b99b61!important;
+  border-radius:11px!important;
+  background:#0c1c30!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.52)!important;
+}
+html body .restored-heritage-header details.mobile-menu:not([open]) .menu-list {
+  display:none!important;
+}
+html body .restored-heritage-header details.mobile-menu .menu-list a {
+  display:block!important;
+  min-height:43px!important;
+  padding:12px 14px!important;
+  margin:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:6px!important;
+  text-decoration:none!important;
+  color:#f8f0e3!important;
+  font:700 14px/1.35 Arial,Helvetica,sans-serif!important;
+  letter-spacing:0!important;
+}
+html body .restored-heritage-header details.mobile-menu .menu-list a:hover,
+html body .restored-heritage-header details.mobile-menu .menu-list a:focus-visible,
+html body .restored-heritage-header details.mobile-menu .menu-list a[aria-current="page"] {
+  background:#214261!important;
+  color:#ffe4ab!important;
+}
+
+/* Every inner page: same compact GACC brand + dropdown, even on desktop. */
+html body .gacc-2027-header .gacc-2027-header-inner {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  width:100%!important;
+  max-width:1480px!important;
+  min-height:64px!important;
+  margin:0 auto!important;
+  padding:10px clamp(14px,3vw,28px)!important;
+  gap:14px!important;
+}
+html body .gacc-2027-header .gacc-2027-brand {
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  flex:0 1 auto!important;
+  align-self:auto!important;
+  min-width:0!important;
+  margin:0 auto 0 0!important;
+  text-align:left!important;
+}
+html body .gacc-2027-header .gacc-2027-brand-title {
+  color:#f4d998!important;
+  font-size:clamp(24px,3vw,33px)!important;
+  letter-spacing:.035em!important;
+}
+html body .gacc-2027-header .gacc-2027-brand-caption {
+  color:#e4e6ee!important;
+  font-size:clamp(8px,.9vw,10px)!important;
+  max-width:280px!important;
+  text-align:left!important;
+}
+html body .gacc-2027-header nav.gacc-2027-desktop-links {
+  display:none!important;
+}
+html body .gacc-2027-header details.gacc-2027-mobile-menu {
+  display:block!important;
+  position:relative!important;
+  flex:0 0 auto!important;
+  align-self:center!important;
+  margin:0 0 0 auto!important;
+  z-index:2500!important;
+}
+html body .gacc-2027-header .gacc-2027-menu-panel {
+  background:#0c1c30!important;
+  border-color:#b99b61!important;
+  max-height:min(72vh,650px)!important;
+}
+html body .gacc-2027-header .gacc-2027-menu-panel>a[aria-current="page"] {
+  background:#214261!important;
+  color:#ffe4ab!important;
+}
+html body .restored-heritage-header .gacc-compact-brand:focus-visible,
+html body .restored-heritage-header details.mobile-menu summary:focus-visible,
+html body .gacc-2027-header details.gacc-2027-mobile-menu summary:focus-visible,
+html body .restored-heritage-header .menu-list a:focus-visible {
+  outline:3px solid #ffe0a1!important;
+  outline-offset:3px!important;
+}
+@media(max-width:500px) {
+  html body .restored-heritage-header .restored-header-layout {
+    min-height:56px!important;
+    width:calc(100% - 26px)!important;
+    padding:8px 0!important;
+  }
+  html body .restored-heritage-header .gacc-compact-brand {font-size:23px!important}
+  html body .gacc-2027-header .gacc-2027-header-inner {min-height:60px!important}
+  html body .gacc-2027-header .gacc-2027-brand-caption {max-width:185px!important}
+  html body .restored-heritage-header details.mobile-menu>summary,
+  html body .gacc-2027-header details.gacc-2027-mobile-menu>summary {
+    min-width:96px!important;
+    padding:9px 12px!important;
+  }
+}
