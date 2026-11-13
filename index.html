@@ -1633,6 +1633,90 @@ html body .sponsor-artwork .angel-dees-verified .angel-url{
  display:block!important;margin-top:2px!important;font:700 clamp(10px,1vw,14px)/1.15 Georgia,serif!important;
  color:#e9e5bf!important;text-decoration:underline!important;text-underline-offset:2px!important;
 }
+
+/* ILNA sponsor artwork: responsive 16:9 recreation of the approved green,
+   cream and navy ILNA-first banner. Genuine ILNA seal retained from the
+   existing ILNA image; full ad stays clickable and frameless. */
+html body .sponsor-artwork .ilna-featured-ad .sponsor-art-image{
+  container-type:inline-size!important;background:transparent!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-website-banner{
+  position:relative!important;display:block!important;overflow:hidden!important;
+  width:100%!important;height:100%!important;
+  background:
+    radial-gradient(ellipse at 84% 45%,#fffef5 0%,#f1f4d5 57%,#d7efa1 100%)!important;
+  color:#06230e!important;isolation:isolate!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-website-banner::before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:0!important;
+  border-top:1.2cqw solid #4e9b0d!important;
+  border-radius:60% 0 0 0 / 22% 0 0 0!important;
+  pointer-events:none!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-seal-crop{
+  position:absolute!important;left:1.4%!important;top:4%!important;
+  width:37%!important;height:57%!important;overflow:hidden!important;
+  border-radius:50%!important;z-index:1!important;
+  box-shadow:0 0 0 .45cqw #83d817,0 0 0 .85cqw #fff!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-seal-crop img{
+  position:absolute!important;top:-9%!important;left:-12%!important;display:block!important;
+  width:230%!important;height:117%!important;max-width:none!important;max-height:none!important;
+  object-fit:fill!important;object-position:left center!important;border:0!important;
+  border-radius:0!important;box-shadow:none!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-hero-words{
+  position:absolute!important;left:40%!important;right:3%!important;top:3.5%!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;
+  justify-content:flex-start!important;gap:0!important;text-align:center!important;z-index:1!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-organization{
+  font:900 5cqw/.83 Georgia,'Times New Roman',serif!important;
+  color:#05250d!important;letter-spacing:-.055em!important;white-space:nowrap!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-ribbon{
+  display:block!important;width:86%!important;padding:.3cqw 1cqw!important;margin:.6cqw 0 0!important;
+  background:linear-gradient(100deg,#0b3d0b,#09220c 48%,#174d0c)!important;
+  color:#fff!important;border-bottom:.55cqw solid #9ee320!important;
+  font:900 9.5cqw/.95 Georgia,'Times New Roman',serif!important;letter-spacing:-.04em!important;
+  text-align:center!important;clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-established{
+  display:block!important;margin-top:.9cqw!important;
+  font:700 2.4cqw/1.1 Georgia,'Times New Roman',serif!important;
+  letter-spacing:.24em!important;white-space:nowrap!important;color:#173613!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-tagline{
+  position:absolute!important;left:4%!important;right:4%!important;top:63%!important;
+  font:italic 700 5.3cqw/1.15 Georgia,'Times New Roman',serif!important;
+  text-align:center!important;letter-spacing:-.045em!important;color:#0c3315!important;
+  white-space:nowrap!important;z-index:2!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-activities{
+  position:absolute!important;left:2%!important;right:2%!important;top:77%!important;
+  color:#092c11!important;font:700 2.45cqw/1.2 Georgia,'Times New Roman',serif!important;
+  text-align:center!important;white-space:nowrap!important;z-index:2!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-activities b{
+  color:#77be00!important;padding:0 .25cqw!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-footer-band{
+  position:absolute!important;left:2%!important;right:2%!important;bottom:2%!important;
+  display:flex!important;align-items:center!important;justify-content:space-between!important;
+  height:12%!important;padding:0 2.5%!important;
+  border-radius:40px!important;background:linear-gradient(100deg,#104507,#061e0b 55%,#1a5209)!important;
+  box-shadow:0 0 0 .5cqw #83cc04!important;z-index:3!important;
+  color:#fff!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-footer-band>span{
+  display:block!important;width:24%!important;font:italic 700 2.2cqw/.95 Georgia,serif!important;
+  text-align:center!important;white-space:nowrap!important;
+}
+html body .sponsor-artwork .ilna-featured-ad .ilna-footer-band strong{
+  display:block!important;width:75%!important;text-align:center!important;
+  color:#fff!important;font:900 5.3cqw/1 Georgia,serif!important;
+  letter-spacing:-.055em!important;white-space:nowrap!important;
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -1693,7 +1777,7 @@ html body .sponsor-artwork .angel-dees-verified .angel-url{
 <a class="sponsor-art-card" href="https://bidnow.vegascoindealer.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit VCD Auctions"><span class="tier">Featured Sponsor</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/vcd-auctions.jpg" alt="Original VCD Auctions advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>VCD Auctions</span></span><span class="sponsor-art-caption">VCD Auctions <span aria-hidden="true">↗</span></span></a>
 <a class="sponsor-art-card" href="mailto:gaccshow@gmail.com?subject=Greg%20Allen%20Sponsor" target="_blank" rel="noopener noreferrer" aria-label="Visit Greg Allen"><span class="tier">Show Sponsor</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/IMG_20261012_183103.png" alt="Original Greg Allen advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Greg Allen</span></span><span class="sponsor-art-caption">Greg Allen <span aria-hidden="true">↗</span></span></a>
 <a class="sponsor-art-card" href="http://www.ingodwetrustcoins.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit In God We Trust Coins"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/In%20God%20We%20trust.jpg" alt="Original In God We Trust Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>In God We Trust Coins</span></span><span class="sponsor-art-caption">In God We Trust Coins <span aria-hidden="true">↗</span></span></a>
-<a class="sponsor-art-card" href="http://www.ilnaclub.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Illinois Numismatic Association"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/ChatGPT%20Image%20Oct%208%2C%202026%2C%2006_36_02%20PM.png" alt="Original Illinois Numismatic Association advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Illinois Numismatic Association</span></span><span class="sponsor-art-caption">Illinois Numismatic Association <span aria-hidden="true">↗</span></span></a>
+<a class="sponsor-art-card ilna-featured-ad" href="http://www.ilnaclub.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Illinois Numismatic Association"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><span class="ilna-website-banner" role="img" aria-label="Illinois Numismatic Association, founded in 1959. Knowledge Through Numismatics. Supporting coin clubs, educating collectors, celebrating numismatics. www.ilnaclub.org."><span class="ilna-seal-crop" aria-hidden="true"><img src="https://www.gaccshow.com/ChatGPT%20Image%20Oct%208%2C%202026%2C%2006_36_02%20PM.png" alt="" loading="lazy" decoding="async"></span><span class="ilna-hero-words"><span class="ilna-organization">ILLINOIS<br>NUMISMATIC<br>ASSOCIATION</span><span class="ilna-ribbon">ILNA</span><span class="ilna-established">ESTABLISHED 1959</span></span><span class="ilna-tagline">Knowledge Through Numismatics</span><span class="ilna-activities">Supporting Coin Clubs <b>•</b> Educating Collectors <b>•</b> Celebrating Numismatics</span><span class="ilna-footer-band"><span>Proud Show<br>Ambassador</span><strong>WWW.ILNACLUB.ORG</strong></span></span></span><span class="sponsor-art-caption">Illinois Numismatic Association <span aria-hidden="true">↗</span></span></a>
 <a class="sponsor-art-card" href="https://numismaticcrimes.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Numismatic Crime Information Center"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/Doug_Davis_NCIC_Updated_Ad.png" alt="Original Numismatic Crime Information Center advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Numismatic Crime Information Center</span></span><span class="sponsor-art-caption">Numismatic Crime Information Center <span aria-hidden="true">↗</span></span></a>
 <a class="sponsor-art-card" href="https://harborcoins.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Harbor Coins"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/a_clean_polished_graphic_banner_style_advertisem.png" alt="Original Harbor Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Harbor Coins</span></span><span class="sponsor-art-caption">Harbor Coins <span aria-hidden="true">↗</span></span></a>
 <a class="sponsor-art-card" href="https://www.gaccshow.com/sponsors.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Windy City Currency"><span class="tier">Show Ambassador</span><span class="sponsor-art-image"><img src="https://www.gaccshow.com/a_clean_high_resolution_logo_graphic_on_a_solid_b.png" alt="Original Windy City Currency advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Windy City Currency</span></span><span class="sponsor-art-caption">Windy City Currency <span aria-hidden="true">↗</span></span></a>
