@@ -723,6 +723,49 @@ html body .hours-section .hours-card .access-row{flex:1 1 0!important;box-sizing
  html body .hours-section .hours-card .hour-row strong{font-size:14px!important}
 }
 </style>
+<style id="gacc-vip-access-spacing-fix">
+html body .hours-section .hours-card .access-row{
+ flex:1 1 auto!important;
+ min-height:125px!important;
+ padding:18px 16px 19px!important;
+ display:flex!important;
+ flex-direction:column!important;
+ justify-content:center!important;
+ gap:12px!important;
+ border-bottom:1px solid #c99a4b38!important;
+}
+html body .hours-section .hours-card .access-row:last-child{border-bottom:0!important;padding-bottom:22px!important}
+html body .hours-section .access-row .date{
+ position:relative!important;
+ display:block!important;
+ margin:0!important;
+ padding:0!important;
+ line-height:1.4!important;
+ font-size:14px!important;
+}
+html body .hours-section .access-pair{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+ gap:10px!important;
+ margin:0!important;
+}
+html body .hours-section .access-pair div{
+ box-sizing:border-box!important;
+ min-width:0!important;
+ min-height:65px!important;
+ padding:11px 5px!important;
+ display:flex!important;
+ flex-direction:column!important;
+ align-items:center!important;
+ justify-content:center!important;
+ line-height:1.3!important;
+}
+html body .hours-section .access-pair span{margin:0 0 5px!important}
+@media(max-width:600px){
+ html body .hours-section .hours-card .access-row{min-height:120px!important;padding:16px 12px 18px!important}
+ html body .hours-section .access-pair div{font-size:12px!important;white-space:normal!important}
+}
+</style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
 <div class="gacc-top-show-dates" aria-label="Save the dates for the 2027, 2028, and 2029 Great American Coin and Collectibles Shows">
