@@ -1927,6 +1927,55 @@ html body .spot-section.spot-mini .spot-compact-footer .spot-sponsor-link{
     font-size:10px!important;
   }
 }
+
+/* On small screens, get visitors to sponsor artwork immediately:
+   no gigantic heading, billboard-sized CLICK control or extra empty space. */
+html body .sponsor-artwork .gacc-mobile-visit-hint{display:none}
+@media(max-width:760px){
+  html body .sponsor-list.sponsor-artwork{
+    padding-top:20px!important;
+    padding-bottom:34px!important;
+  }
+  html body .sponsor-list.sponsor-artwork > .inner{
+    width:calc(100% - 34px)!important;
+  }
+  html body .sponsor-list.sponsor-artwork > .inner > .eyebrow.center{
+    font-size:10px!important;
+    line-height:1.25!important;
+    letter-spacing:.13em!important;
+    margin:0 auto 8px!important;
+    text-align:center!important;
+  }
+  html body .sponsor-list.sponsor-artwork > .inner > h2{
+    font:400 clamp(25px,7vw,31px)/1.1 Georgia,'Times New Roman',serif!important;
+    text-align:center!important;
+    max-width:340px!important;
+    margin:0 auto 8px!important;
+    letter-spacing:-.015em!important;
+  }
+  html body .sponsor-artwork .gacc-discover-invite{
+    margin:0 auto 15px!important;
+    padding:0!important;
+    max-width:340px!important;
+  }
+  html body .sponsor-artwork .gacc-discover-line,
+  html body .sponsor-artwork .gacc-click-plaque,
+  html body .sponsor-artwork .gacc-click-caption{
+    display:none!important;
+  }
+  html body .sponsor-artwork .gacc-mobile-visit-hint{
+    display:block!important;
+    margin:0!important;
+    text-align:center!important;
+    color:#d9c5a0!important;
+    font:500 12px/1.35 Arial,Helvetica,sans-serif!important;
+    letter-spacing:.015em!important;
+  }
+  html body .sponsor-artwork .sponsor-art-grid{
+    gap:18px!important;
+  }
+  #gacc-sponsor-gallery{scroll-margin-top:68px!important}
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -1980,6 +2029,7 @@ html body .spot-section.spot-mini .spot-compact-footer .spot-sponsor-link{
   <p class="gacc-discover-line">See a name you know<span class="gacc-discover-dash">—</span>or discover someone new.</p>
   <a class="gacc-click-plaque" href="#gacc-sponsor-gallery" aria-label="Explore sponsor advertisements below"><span aria-hidden="true">✦</span><strong>CLICK</strong><span aria-hidden="true">✦</span></a>
   <p class="gacc-click-caption">SPONSOR LINKS TO EXPLORE</p>
+  <p class="gacc-mobile-visit-hint">Tap any ad to visit their website</p>
 </div>
 <div class="sponsor-art-grid" id="gacc-sponsor-gallery"><a class="sponsor-art-card" href="https://www.westcoastcoinsoregon.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit West Coast Coins"><span class="sponsor-art-image"><img src="https://www.gaccshow.com/West%20Coast%20Coins%20Sponsor%20Banner.png" alt="Original West Coast Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>West Coast Coins</span></span></a>
 <a class="sponsor-art-card" href="https://landbcoins.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit L&amp;B Coins"><span class="sponsor-art-image"><img src="https://www.gaccshow.com/lb-coins-sponsor.png" alt="Original L&amp;B Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>L&amp;B Coins</span></span></a>
