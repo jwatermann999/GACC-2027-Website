@@ -2414,6 +2414,90 @@ html body .sponsor-artwork .gacc-discover-invite .gacc-click-plaque > span{
     font-size:16px!important;
   }
 }
+
+/* West Coast Coins is a featured, full-bleed billboard ABOVE the smaller sponsors. */
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-shell{
+  width:100vw!important;
+  max-width:100vw!important;
+  margin:15px 0 30px calc(50% - 50vw)!important;
+  padding:0!important;
+  position:relative!important;
+  left:auto!important;
+  border:0!important;
+  overflow:hidden!important;
+  scroll-margin-top:80px!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  aspect-ratio:3 / 1!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  background:#092d5b!important;
+  border-top:3px solid #e1bb73!important;
+  border-bottom:3px solid #e1bb73!important;
+  box-shadow:0 12px 28px #050b1880!important;
+  text-decoration:none!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-link > img{
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  display:block!important;
+  object-fit:fill!important;
+  border:0!important;
+  transform:none!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-top{
+  position:absolute!important;
+  top:0!important;
+  left:0!important;
+  width:100%!important;
+  height:25%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:clamp(9px,3vw,42px)!important;
+  box-sizing:border-box!important;
+  border-bottom:3px solid #d9ae64!important;
+  background:linear-gradient(165deg,#061a40 0%,#0b3b80 38%,#06193a 75%,#0b3578 100%)!important;
+  box-shadow:0 4px 12px #0006!important;
+  color:#fff1bf!important;
+  text-shadow:0 2px 2px #000b,0 0 11px #e4b864b3!important;
+  font:700 clamp(15px,5vw,75px)/1.05 Georgia,'Times New Roman',serif!important;
+  letter-spacing:.045em!important;
+  white-space:nowrap!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-top > span{
+  color:#ffd379!important;
+  font-size:.65em!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-link:hover > img{
+  filter:brightness(1.07)!important;
+}
+html body .sponsor-list.sponsor-artwork .gacc-west-featured-link:focus-visible{
+  outline:4px solid #fff!important;
+  outline-offset:-7px!important;
+}
+@media(max-width:760px){
+  html body .sponsor-list.sponsor-artwork .gacc-west-featured-shell{
+    margin:10px 0 19px calc(50% - 50vw)!important;
+    scroll-margin-top:70px!important;
+  }
+  html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
+    border-top-width:2px!important;
+    border-bottom-width:2px!important;
+  }
+  html body .sponsor-list.sponsor-artwork .gacc-west-featured-top{
+    border-bottom-width:1px!important;
+    font-size:clamp(13px,4.2vw,28px)!important;
+    letter-spacing:.02em!important;
+  }
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -2467,7 +2551,14 @@ html body .sponsor-artwork .gacc-discover-invite .gacc-click-plaque > span{
   <p class="gacc-discover-line">See a name you know<span class="gacc-discover-dash">—</span>or discover someone new.</p>
   <a class="gacc-click-plaque" href="#gacc-sponsor-gallery" aria-label="Click sponsor links to explore"><span aria-hidden="true">✦</span><strong>CLICK SPONSOR LINKS TO EXPLORE</strong><span aria-hidden="true">✦</span></a>
 </div>
-<div class="sponsor-art-grid" id="gacc-sponsor-gallery"><a class="sponsor-art-card" href="https://www.westcoastcoinsoregon.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit West Coast Coins"><span class="sponsor-art-image"><img src="https://www.gaccshow.com/West%20Coast%20Coins%20Sponsor%20Banner.png" alt="Original West Coast Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>West Coast Coins</span></span></a>
+
+<div class="gacc-west-featured-shell" id="gacc-sponsor-gallery">
+  <a class="gacc-west-featured-link" href="https://www.westcoastcoinsoregon.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit West Coast Coins, GACC featured sponsor">
+    <img src="https://www.gaccshow.com/West%20Coast%20Coins%20Sponsor%20Banner.png" alt="West Coast Coins, U.S. Type Coins and More, featured sponsor. Visit westcoastcoinsoregon.com." loading="eager" decoding="async">
+    <span class="gacc-west-featured-top"><span aria-hidden="true">★</span> FEATURED SPONSOR <span aria-hidden="true">★</span></span>
+  </a>
+</div>
+<div class="sponsor-art-grid" id="gacc-regular-sponsor-gallery">
 <a class="sponsor-art-card" href="https://landbcoins.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit L&amp;B Coins"><span class="sponsor-art-image"><img src="https://www.gaccshow.com/lb-coins-sponsor.png" alt="Original L&amp;B Coins advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>L&amp;B Coins</span></span></a>
 <a class="sponsor-art-card angel-dees-verified" href="https://angeldees.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Angel Dee’s Coins and Collectibles"><span class="sponsor-art-image"><img src="angel-dees-website-inspired-banner.svg" alt="Angel Dee’s Coins and Collectibles. Premium Quality U.S. Type Coins, specializing in Small Cents and Nickels. angeldees.com" loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>Angel Dee’s Coins and Collectibles · Premium U.S. Type Coins · angeldees.com</span></span></a>
 <a class="sponsor-art-card" href="https://bidnow.vegascoindealer.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit VCD Auctions"><span class="sponsor-art-image"><img src="https://www.gaccshow.com/vcd-auctions.jpg" alt="Original VCD Auctions advertisement" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="sponsor-text-fallback" hidden>VCD Auctions</span></span></a>
