@@ -995,6 +995,66 @@ html body .hours-section .hours-note {
   box-shadow:0 12px 25px #163a5c22!important;
 }
 </style>
+
+<style id="gacc-animated-patriotic-intro-20261112">
+/* Slow red / white / blue fading wash solely behind the collector invitation.
+   Never modify the approved hero image, copy or layout. */
+@keyframes gaccIntroRedFade {
+  0%, 5%, 65%, 100% { opacity: 0; }
+  22%, 35% { opacity: 1; }
+}
+@keyframes gaccIntroWhiteFade {
+  0%, 36%, 80%, 100% { opacity: 0; }
+  53%, 62% { opacity: 1; }
+}
+html body .gacc-intro-after-hours {
+  position: relative!important;
+  isolation: isolate!important;
+  overflow: hidden!important;
+  background: linear-gradient(135deg,#153c71,#0b2c59 72%,#19467d)!important;
+}
+html body .gacc-intro-after-hours::before,
+html body .gacc-intro-after-hours::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:0;
+}
+html body .gacc-intro-after-hours::before {
+  background:linear-gradient(135deg,#af273e 0%,#861f36 58%,#bc3244 100%);
+  animation:gaccIntroRedFade 18s ease-in-out infinite;
+}
+html body .gacc-intro-after-hours::after {
+  background:linear-gradient(135deg,#ffffff 0%,#e9f1fc 52%,#fafcff 100%);
+  animation:gaccIntroWhiteFade 18s ease-in-out infinite;
+}
+html body .gacc-intro-after-hours > .inner {
+  position:relative;
+  z-index:1;
+}
+html body .gacc-intro-after-hours .intro-block {
+  position:relative;
+  isolation:isolate;
+}
+html body .gacc-intro-after-hours .intro-block::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:-20px -16px;
+  border-radius:12px;
+  pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(7,25,49,.88) 0%,rgba(7,25,49,.72) 46%,rgba(7,25,49,.27) 78%,transparent 100%);
+}
+@media(prefers-reduced-motion:reduce) {
+  html body .gacc-intro-after-hours::before,
+  html body .gacc-intro-after-hours::after {
+    animation:none!important;
+    opacity:0!important;
+  }
+}
+</style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
 <div class="gacc-top-show-dates" aria-label="Save the dates for the 2027, 2028, and 2029 Great American Coin and Collectibles Shows">
