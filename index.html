@@ -543,6 +543,21 @@ document.addEventListener('DOMContentLoaded',function(){
   window.addEventListener('resize',syncMobile);
 });
 </script>
+<style id="gacc-compact-show-dates">
+/* Compact all three show dates by roughly one quarter on desktop and mobile. */
+html body .gacc-top-show-dates{padding:10px 12px 12px!important}
+html body .gacc-top-show-dates .dates-kicker{font-size:10px!important;line-height:1.2!important;margin-bottom:6px!important}
+html body .gacc-top-show-dates .date-item{gap:3px!important;padding:2px 8px!important}
+html body .gacc-top-show-dates .date-year{font-size:clamp(27px,2.8vw,38px)!important;line-height:1!important}
+html body .gacc-top-show-dates time{font-size:clamp(13px,1.35vw,18px)!important;line-height:1.2!important}
+@media(max-width:660px){
+ html body .gacc-top-show-dates{padding:8px 3px 9px!important}
+ html body .gacc-top-show-dates .dates-kicker{font-size:9px!important;margin-bottom:5px!important}
+ html body .gacc-top-show-dates .date-item{gap:2px!important;padding:1px 2px!important}
+ html body .gacc-top-show-dates .date-year{font-size:clamp(23px,6vw,29px)!important}
+ html body .gacc-top-show-dates time{font-size:clamp(10px,2.8vw,13px)!important;white-space:nowrap!important}
+}
+</style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
 <div class="gacc-top-show-dates" aria-label="Save the dates for the 2027, 2028, and 2029 Great American Coin and Collectibles Shows">
