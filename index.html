@@ -2081,8 +2081,8 @@ html body footer.end-footer .goldrule{
 /* GACC farewell replacement: fast patriotic motion without obscuring content.
    CSNS-style ad wording with prominent public and dealer CTA/contact details. */
 @keyframes gaccInviteFlagSweep{
-  from{background-position:0 0}
-  to{background-position:360px 0}
+  from{background-position:0% 50%}
+  to{background-position:200% 50%}
 }
 @keyframes gaccInviteTextSweep{
   from{background-position:0% 50%}
@@ -2105,22 +2105,22 @@ html body .farewell.gacc-patriotic-invite{
 }
 html body .farewell.gacc-patriotic-invite::before{
   content:""!important;
-  position:absolute!important;inset:0!important;z-index:0!important;
+  position:absolute!important;inset:-25% -50%!important;z-index:-1!important;
   pointer-events:none!important;
-  background:repeating-linear-gradient(108deg,
-    rgba(218,37,64,.8) 0px,rgba(218,37,64,.8) 65px,
-    rgba(255,255,255,.32) 65px,rgba(255,255,255,.32) 105px,
-    rgba(27,99,188,.72) 105px,rgba(27,99,188,.72) 180px,
-    rgba(6,28,67,.6) 180px,rgba(6,28,67,.6) 240px)!important;
-  background-size:auto!important;
-  animation:gaccInviteFlagSweep 1.4s linear infinite!important;
+  background:repeating-linear-gradient(112deg,
+    rgba(179,27,54,.45) 0%,rgba(179,27,54,.45) 6%,
+    rgba(255,255,255,.15) 6%,rgba(255,255,255,.15) 11%,
+    rgba(25,75,147,.26) 11%,rgba(25,75,147,.26) 19%,
+    rgba(6,27,64,.18) 19%,rgba(6,27,64,.18) 26%)!important;
+  background-size:240% 100%!important;
+  animation:gaccInviteFlagSweep 1.65s linear infinite!important;
 }
 html body .farewell.gacc-patriotic-invite::after{
-  content:""!important;position:absolute!important;inset:0!important;z-index:1!important;pointer-events:none!important;
-  background:radial-gradient(ellipse at 50% 48%,rgba(6,25,53,.42),rgba(7,24,49,.2) 70%,rgba(5,15,37,.34))!important;
+  content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;pointer-events:none!important;
+  background:radial-gradient(ellipse at 50% 48%,rgba(6,25,53,.78),rgba(7,24,49,.3) 70%,rgba(5,15,37,.5))!important;
 }
 html body .farewell.gacc-patriotic-invite .gacc-invite-inner{
-  position:relative!important;z-index:2!important;
+  position:relative!important;z-index:1!important;
   width:min(100%,1040px)!important;
 }
 html body .farewell.gacc-patriotic-invite .gacc-invite-kicker{
