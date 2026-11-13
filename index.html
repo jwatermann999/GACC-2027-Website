@@ -2077,6 +2077,194 @@ html body footer.end-footer .goldrule{
 @media(max-width:700px){
  html body footer.end-footer{padding:22px 16px 27px!important}
 }
+
+/* GACC farewell replacement: fast patriotic motion without obscuring content.
+   CSNS-style ad wording with prominent public and dealer CTA/contact details. */
+@keyframes gaccInviteFlagSweep{
+  from{background-position:0% 50%}
+  to{background-position:200% 50%}
+}
+@keyframes gaccInviteTextSweep{
+  from{background-position:0% 50%}
+  to{background-position:260% 50%}
+}
+@keyframes gaccInviteRibbonPulse{
+  0%{background-position:0% 50%}
+  100%{background-position:250% 50%}
+}
+html body .farewell.gacc-patriotic-invite{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  padding:52px 20px 56px!important;
+  background:linear-gradient(130deg,#0a2443 0%,#174c83 28%,#08244b 52%,#123e78 76%,#091b38 100%)!important;
+  color:#fff!important;
+  text-align:center!important;
+  border-top:6px solid #e2bd72!important;
+  border-bottom:6px solid #b52b44!important;
+}
+html body .farewell.gacc-patriotic-invite::before{
+  content:""!important;
+  position:absolute!important;inset:-25% -50%!important;z-index:-1!important;
+  pointer-events:none!important;
+  background:repeating-linear-gradient(112deg,
+    rgba(179,27,54,.45) 0%,rgba(179,27,54,.45) 6%,
+    rgba(255,255,255,.15) 6%,rgba(255,255,255,.15) 11%,
+    rgba(25,75,147,.26) 11%,rgba(25,75,147,.26) 19%,
+    rgba(6,27,64,.18) 19%,rgba(6,27,64,.18) 26%)!important;
+  background-size:240% 100%!important;
+  animation:gaccInviteFlagSweep 1.65s linear infinite!important;
+}
+html body .farewell.gacc-patriotic-invite::after{
+  content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;pointer-events:none!important;
+  background:radial-gradient(ellipse at 50% 48%,rgba(6,25,53,.78),rgba(7,24,49,.3) 70%,rgba(5,15,37,.5))!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-inner{
+  position:relative!important;z-index:1!important;
+  width:min(100%,1040px)!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-kicker{
+  margin:0 auto 12px!important;
+  color:#ffe3a9!important;
+  font:800 clamp(12px,1.5vw,17px)/1.4 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.15em!important;
+  text-shadow:0 2px 6px #06152c!important;
+}
+html body .farewell.gacc-patriotic-invite h2,
+html body .farewell.gacc-patriotic-invite h2 span{
+  display:block!important;
+  max-width:none!important;
+  margin:0 auto!important;
+  background-image:linear-gradient(100deg,
+    #fff 0%,#fff 14%,#ffb8b8 22%,#e83c55 34%,
+    #fff 43%,#fff 57%,#78b4ff 68%,#356ee4 80%,#fff 92%,#fff 100%)!important;
+  background-size:260% 100%!important;
+  background-clip:text!important;-webkit-background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;color:transparent!important;
+  animation:gaccInviteTextSweep 1.35s linear infinite!important;
+  text-shadow:none!important;
+  font:900 clamp(32px,5.3vw,70px)/1.04 Georgia,'Times New Roman',serif!important;
+  letter-spacing:-.035em!important;
+}
+html body .farewell.gacc-patriotic-invite h2 span{
+  font-size:.86em!important;margin-top:5px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-audience{
+  margin:17px auto 13px!important;
+  color:#fff!important;
+  font:800 clamp(12px,1.65vw,18px)/1.45 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.11em!important;
+  text-shadow:0 1px 5px #000a!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-audience b{
+  color:#f7c36c!important;padding:0 8px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-date{
+  color:#fff!important;margin:0 auto 4px!important;
+  font:900 clamp(23px,3.5vw,40px)/1.2 Georgia,serif!important;
+  letter-spacing:.02em!important;
+  text-shadow:0 3px 9px #000b!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-location{
+  color:#f2f6ff!important;margin:0 auto 20px!important;
+  font:600 clamp(12px,1.5vw,17px)/1.5 Arial,Helvetica,sans-serif!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-location span{
+  color:#f2bd70!important;padding:0 7px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-main-link{
+  display:block!important;max-width:840px!important;width:100%!important;
+  margin:0 auto 21px!important;padding:13px 22px!important;
+  background:linear-gradient(105deg,#bb2846 0%,#e34655 23%,#f6f7ff 42%,#e2edff 52%,#2365af 70%,#a42744 100%)!important;
+  background-size:250% 100%!important;
+  animation:gaccInviteRibbonPulse 1.4s linear infinite!important;
+  color:#06172d!important;
+  border:2px solid #ffe1a8!important;border-radius:9px!important;
+  box-shadow:0 6px 19px #06142b88,inset 0 1px 2px #fff9!important;
+  font:900 clamp(12px,1.7vw,19px)/1.4 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.025em!important;text-decoration:none!important;
+  text-shadow:0 1px 1px #fff9!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-main-link span{
+  padding:0 6px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-main-link strong{
+  font-weight:900!important;color:#06172d!important;text-decoration:underline!important;
+  text-underline-offset:3px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-invite-contact{
+  width:min(100%,810px)!important;
+  margin:0 auto!important;padding:16px 17px 18px!important;
+  background:rgba(247,250,255,.97)!important;
+  color:#092a50!important;border:3px solid #d43b50!important;
+  border-radius:12px!important;
+  box-shadow:0 0 0 3px #2d72c4,0 10px 25px #05152d77!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-contact-heading{
+  display:block!important;margin-bottom:12px!important;
+  color:#123c70!important;
+  font:900 clamp(15px,2.1vw,23px)/1.25 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.055em!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-contact-methods{
+  display:flex!important;flex-wrap:wrap!important;
+  justify-content:center!important;align-items:center!important;
+  gap:9px 17px!important;
+}
+html body .farewell.gacc-patriotic-invite .gacc-contact-methods a{
+  display:inline-block!important;
+  color:#b1223c!important;background:transparent!important;
+  text-decoration:underline!important;text-underline-offset:4px!important;
+  font:800 clamp(15px,2vw,22px)/1.35 Arial,Helvetica,sans-serif!important;
+  overflow-wrap:anywhere!important;
+}
+html body .farewell.gacc-patriotic-invite a:focus-visible{
+  outline:3px solid #ffd36d!important;outline-offset:3px!important;
+}
+@media(max-width:700px){
+  html body .farewell.gacc-patriotic-invite{padding:30px 15px 36px!important}
+  html body .farewell.gacc-patriotic-invite .gacc-invite-kicker{
+    font-size:11px!important;letter-spacing:.09em!important;
+  }
+  html body .farewell.gacc-patriotic-invite h2{
+    font-size:clamp(29px,8vw,43px)!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-invite-audience{
+    font-size:11px!important;letter-spacing:.06em!important;
+    margin:12px auto 10px!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-invite-audience b{
+    padding:0 3px!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-invite-location{
+    font-size:12px!important;margin-bottom:14px!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-invite-location span{padding:0 3px!important}
+  html body .farewell.gacc-patriotic-invite .gacc-invite-main-link{
+    padding:11px 10px!important;margin-bottom:17px!important;
+    font-size:12px!important;line-height:1.45!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-invite-contact{
+    padding:13px 9px 15px!important;border-width:2px!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-contact-heading{
+    font-size:14px!important;letter-spacing:.03em!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-contact-methods{
+    flex-direction:column!important;gap:7px!important;
+  }
+  html body .farewell.gacc-patriotic-invite .gacc-contact-methods a{
+    font-size:clamp(15px,4.5vw,20px)!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html body .farewell.gacc-patriotic-invite::before,
+  html body .farewell.gacc-patriotic-invite h2,
+  html body .farewell.gacc-patriotic-invite h2 span,
+  html body .farewell.gacc-patriotic-invite .gacc-invite-main-link{
+    animation:none!important;
+  }
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -2158,7 +2346,23 @@ html body footer.end-footer .goldrule{
 <p class="not-sponsors">Industry links are separate from official show sponsors and do not imply sponsorship or exhibition participation.</p>
 </div></section>
 
-<section class="farewell"><div class="inner"><p class="eyebrow">Until we meet again</p><h2>See ya next year!<span>Be there or be square.</span></h2><div class="ghost-line" style="max-width:500px;margin:31px auto 0"></div><p>Jaye Watermann · Event Coordinator<br><a href="mailto:gaccshow@gmail.com">gaccshow@gmail.com</a> · <a href="tel:+17797712417">779-771-2417</a></p></div></section><section class="spot-section spot-mini" id="spot-prices" aria-label="Precious metals live spot prices and sponsorship">
+<section class="farewell gacc-patriotic-invite" id="gacc-show-invite" aria-labelledby="gacc-invite-title">
+  <div class="inner gacc-invite-inner">
+    <p class="gacc-invite-kicker">CHICAGOLAND’S PREMIER COIN &amp; COLLECTIBLES SHOW</p>
+    <h2 id="gacc-invite-title">YOUR NEXT GREAT FIND <span>STARTS HERE!</span></h2>
+    <p class="gacc-invite-audience">DEALERS <b>★</b> COLLECTORS <b>★</b> EVERYONE’S INVITED</p>
+    <p class="gacc-invite-date">OCTOBER 27–30, 2027</p>
+    <p class="gacc-invite-location">Donald E. Stephens Convention Center <span>•</span> Rosemont, Illinois</p>
+    <a class="gacc-invite-main-link" href="https://www.gaccshow.com/" aria-label="Book your tables and get up-to-date show information at GACCshow.com">BOOK YOUR TABLES NOW <span>•</span> GET LIVE SHOW UPDATES AT <strong>GACCSHOW.COM</strong></a>
+    <div class="gacc-invite-contact" aria-label="Contact Jaye Watermann for show information">
+      <strong class="gacc-contact-heading">CONTACT JAYE WATERMANN FOR MORE INFO</strong>
+      <div class="gacc-contact-methods">
+        <a href="tel:+17797712417" aria-label="Call Jaye at 779-771-2417">☎ 779-771-2417</a>
+        <a href="mailto:gaccshow@gmail.com" aria-label="Email Jaye at gaccshow@gmail.com">✉ gaccshow@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section><section class="spot-section spot-mini" id="spot-prices" aria-label="Precious metals live spot prices and sponsorship">
   <div class="inner">
     <div class="spot-compact">
       <div class="spot-compact-heading"><strong>Precious Metals</strong><span>Live Spot Prices</span></div>
