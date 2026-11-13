@@ -511,7 +511,7 @@ html body .grand-show-art .gacc-cooper-focus{display:none!important}
 document.addEventListener('DOMContentLoaded',function(){
   var header=document.querySelector('.restored-heritage-header');
   var art=document.querySelector('.grand-show-art');
-  var notice=document.querySelector('.gacc-site-update');
+  var notice=null;
   if(!header||!art)return;
   var originalParent=art.parentNode;
   var originalNext=art.nextSibling;
@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded',function(){
   function syncMobile(){
     if(window.matchMedia('(max-width:600px)').matches){
       if(art.previousElementSibling!==document.querySelector('.gacc-top-show-dates')) {
-        header.parentNode.insertBefore(art,header);
+        header.parentNode.insertBefore(art,header.nextSibling);
       }
       if(notice&&notice.previousElementSibling!==header){header.parentNode.insertBefore(notice,header.nextSibling)}
     }else{
@@ -562,12 +562,7 @@ document.addEventListener('DOMContentLoaded',function(){
   </div>
 </header>
 <main id="top">
-<aside class="gacc-site-update" aria-label="Website improvements">
-  <div class="gacc-site-update__inner">
-    <span class="gacc-site-update__headline">✦ We're building something extraordinary</span>
-    <span class="gacc-site-update__copy">Our website is continuously being enhanced to bring you the very best experience. Thank you for your patience as we build something great!</span>
-  </div>
-</aside>
+
 <section class="grand-show-art" aria-label="Official GACC 2027 artwork with Chicago skyline, American flag, D. B. Cooper currency, Morgan silver dollars, gold and silver bullion">
   <picture class="grand-art-picture"><img src="/Untitled%20design%20(3).webp" width="1358" height="543" alt="GACC 2027 show banner with Chicago skyline, American flag, D. B. Cooper currency, gold and silver bullion, October 27–30, 2027 in Rosemont" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block"></picture>
   <div class="gacc-cooper-focus gacc-cooper-focus--desktop" aria-hidden="true"></div>
