@@ -1508,11 +1508,15 @@ html body .sponsor-artwork .sponsor-art-image img{
   border-radius:0!important;
   background:transparent!important;
 }
-/* The square Windy City artwork needs a matching full-width billboard.
-   Extend its own black background to the same 16:9 size as Harbor Coins;
-   keep the round logo and phone number untouched, never stretch/crop. */
+/* Uniform full-width billboards: square source graphics retain their
+   correct proportions while their original backdrop fills the 16:9 ad slot.
+   Do not crop, stretch, or frame sponsor artwork. */
 html body .sponsor-artwork .sponsor-art-card[aria-label="Visit Windy City Currency"] .sponsor-art-image{
   background:#000!important;
+}
+html body .sponsor-artwork .sponsor-art-card[aria-label="Visit VCD Auctions"] .sponsor-art-image,
+html body .sponsor-artwork .sponsor-art-card[aria-label="Visit In God We Trust Coins"] .sponsor-art-image{
+  background:#fff!important;
 }
 html body .sponsor-artwork .sponsor-art-image img[hidden]{
   display:none!important;
