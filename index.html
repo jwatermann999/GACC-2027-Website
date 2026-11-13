@@ -6,6 +6,7 @@
 <link rel="icon" href="/gacc-app-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/gacc-app-icon.svg">
 <link rel="canonical" href="https://www.gaccshow.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Great American Coin &amp; Collectibles Show | Chicago Coin Show 2027">
 <meta property="og:description" content="Rare coins, gold, silver, currency and collectibles in Rosemont, Illinois. October 27–30, 2027.">
@@ -2301,14 +2302,14 @@ html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
   margin:0!important;
   padding:0!important;
   color:#fff!important;
-  font:700 clamp(30px,5.5vw,67px)/1.15 Georgia,'Times New Roman',serif!important;
-  letter-spacing:-.02em!important;
+  font:400 clamp(38px,6.7vw,88px)/1.18 'Kaushan Script','Brush Script MT','Segoe Script',cursive!important;
+  letter-spacing:.005em!important;
   text-transform:none!important;
   animation:gaccGoodbyeLetters .9s steps(1,end) infinite!important;
-  text-shadow:0 2px 4px #0009!important;
+  text-shadow:0 2px 0 #75501f,0 5px 14px #dca84966,0 3px 7px #000b!important;
 }
 html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
-  font-size:clamp(23px,4.3vw,52px)!important;
+  font-size:clamp(30px,5.2vw,67px)!important;
 }
 html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy,
 html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy:visited{
@@ -2329,6 +2330,27 @@ html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy:visited{
   html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
     animation:none!important;
     color:#fff!important;
+  }
+}
+
+/* Fine gold brush flourish like the approved CSNS sign lettering. */
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words strong::after{
+  content:""!important;
+  display:block!important;
+  width:clamp(105px,26vw,330px)!important;
+  height:5px!important;
+  margin:-1px auto 9px!important;
+  border-radius:100% 12% 100% 12%!important;
+  background:linear-gradient(90deg,transparent,#b88125 15%,#ffdc81 52%,#bd8322 86%,transparent)!important;
+  transform:rotate(-2deg)!important;
+  box-shadow:0 1px 5px #f6b94f66!important;
+}
+@media(max-width:700px){
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words strong{
+    font-size:clamp(36px,10vw,56px)!important;
+  }
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
+    font-size:clamp(27px,7.3vw,42px)!important;
   }
 }
 </style>
