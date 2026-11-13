@@ -1048,18 +1048,23 @@ html body .gacc-intro-after-hours .intro-block::before {
   background:radial-gradient(ellipse at center,rgba(7,25,49,.88) 0%,rgba(7,25,49,.72) 46%,rgba(7,25,49,.27) 78%,transparent 100%);
 }
 /* Matching three-color word cycle, readable above each background phase. */
+@property --gacc-word-color {
+  syntax:"<color>";
+  inherits:true;
+  initial-value:#ffffff;
+}
 @keyframes gaccPatrioticWords {
-  0%, 100% { color:#ffffff; }
-  24% { color:#91d9ff; }
-  50% { color:#ff677a; }
-  75% { color:#ffffff; }
+  0%, 100% { --gacc-word-color:#ffffff; }
+  24% { --gacc-word-color:#91d9ff; }
+  50% { --gacc-word-color:#ff677a; }
+  75% { --gacc-word-color:#ffffff; }
 }
 html body .gacc-intro-after-hours .intro-block h1,
 html body .gacc-intro-after-hours .intro-block h1 em,
 html body .gacc-intro-after-hours .intro-block .rarities span {
   background-image:none!important;
   -webkit-text-fill-color:currentColor!important;
-  color:#ffffff!important;
+  color:var(--gacc-word-color)!important;
   animation:gaccPatrioticWords 3.2s ease-in-out infinite!important;
   animation-delay:0s!important;
   text-shadow:0 2px 5px #071a30,0 0 12px #071a3066!important;
