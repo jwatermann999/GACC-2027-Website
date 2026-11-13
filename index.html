@@ -2433,7 +2433,8 @@ html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
   width:100%!important;
   margin:0!important;
   padding:0!important;
-  aspect-ratio:3 / 1!important;
+  /* Same edge-to-edge placement, approximately half the former height. */
+  aspect-ratio:6 / 1!important;
   min-height:0!important;
   overflow:hidden!important;
   background:#092d5b!important;
@@ -2488,6 +2489,8 @@ html body .sponsor-list.sponsor-artwork .gacc-west-featured-link:focus-visible{
     scroll-margin-top:70px!important;
   }
   html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
+    /* Slightly taller on phones so the sponsor name and website stay readable. */
+    aspect-ratio:5 / 1!important;
     border-top-width:2px!important;
     border-bottom-width:2px!important;
   }
