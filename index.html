@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded',function(){
       if(art.previousElementSibling!==document.querySelector('.gacc-top-show-dates')) {
         header.parentNode.insertBefore(art,header);
       }
-      if(notice&&notice.previousElementSibling!==art){art.parentNode.insertBefore(notice,art.nextSibling)}
+      if(notice&&notice.previousElementSibling!==header){header.parentNode.insertBefore(notice,header.nextSibling)}
     }else{
       if(originalNext&&originalNext.parentNode===originalParent)originalParent.insertBefore(art,originalNext);
       else originalParent.appendChild(art);
