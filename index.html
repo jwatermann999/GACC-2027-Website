@@ -1441,12 +1441,15 @@ html body .sponsor-artwork .sponsor-art-grid{
   display:grid!important;
   grid-template-columns:repeat(3,minmax(0,1fr))!important;
   gap:clamp(19px,2.6vw,38px)!important;
-  align-items:start!important;
+  align-items:stretch!important;
+  grid-auto-rows:1fr!important;
 }
 html body .sponsor-artwork .sponsor-art-card{
   display:flex!important;
   flex-direction:column!important;
+  justify-content:flex-start!important;
   min-width:0!important;
+  height:100%!important;
   padding:0!important;
   margin:0!important;
   border:0!important;
@@ -1467,7 +1470,10 @@ html body .sponsor-artwork .sponsor-art-card:focus-visible{
 html body .sponsor-artwork .sponsor-art-card .tier{
   display:block!important;
   margin:0 0 10px!important;
+  min-height:28px!important;
+  width:100%!important;
   padding:0!important;
+  text-align:center!important;
   color:#f2cb82!important;
   font-size:11px!important;
   font-weight:700!important;
@@ -1527,7 +1533,9 @@ html body .sponsor-artwork .sponsor-art-caption{
   justify-content:center!important;
   text-align:center!important;
   gap:7px!important;
-  min-height:0!important;
+  min-height:52px!important;
+  width:100%!important;
+  align-items:flex-start!important;
   padding:10px 2px 0!important;
   margin:0!important;
   font-size:13px!important;
