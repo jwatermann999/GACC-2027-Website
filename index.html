@@ -1508,6 +1508,12 @@ html body .sponsor-artwork .sponsor-art-image img{
   border-radius:0!important;
   background:transparent!important;
 }
+/* The square Windy City artwork needs a matching full-width billboard.
+   Extend its own black background to the same 16:9 size as Harbor Coins;
+   keep the round logo and phone number untouched, never stretch/crop. */
+html body .sponsor-artwork .sponsor-art-card[aria-label="Visit Windy City Currency"] .sponsor-art-image{
+  background:#000!important;
+}
 html body .sponsor-artwork .sponsor-art-image img[hidden]{
   display:none!important;
 }
