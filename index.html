@@ -490,6 +490,59 @@ html body .grand-show-art .grand-art-picture{display:block!important;width:100%!
 html body .grand-show-art .grand-art-picture img{display:block!important;width:100%!important;max-width:none!important;height:auto!important;max-height:none!important;aspect-ratio:1358 / 543!important;object-fit:contain!important;object-position:center!important;margin:0!important;padding:0!important}
 html body .grand-show-art .gacc-cooper-focus{display:none!important}
 </style>
+<style id="gacc-mobile-navigation-fix">
+@media(max-width:600px){
+  .restored-heritage-header{padding:8px 14px!important}
+  .restored-heritage-header .restored-header-layout{display:block!important;width:100%!important;max-width:none!important;margin:0!important}
+  .restored-heritage-header .restored-header-layout>.header-actions,
+  .restored-heritage-header .restored-header-layout>.nav{display:none!important}
+  .gacc-mobile-menu{display:block!important;width:100%}
+  .gacc-mobile-menu summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border:1px solid #bfa16b;border-radius:8px;color:#f3d7a3;font-weight:700;font-size:16px;background:#141c29}
+  .gacc-mobile-menu summary::-webkit-details-marker{display:none}
+  .gacc-mobile-menu summary:after{content:"☰";font-size:22px}
+  .gacc-mobile-menu[open] summary:after{content:"✕"}
+  .gacc-mobile-menu-links{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:12px 0 4px}
+  .gacc-mobile-menu-links a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:42px;padding:9px 6px;border:1px solid #8b7857;border-radius:6px;color:#f5e5c6;text-decoration:none;font-size:13px;font-weight:600}
+  .grand-show-art{margin:0!important;padding:0!important}
+}
+@media(min-width:601px){.gacc-mobile-menu{display:none!important}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var header=document.querySelector('.restored-heritage-header');
+  var art=document.querySelector('.grand-show-art');
+  var notice=document.querySelector('.gacc-site-update');
+  if(!header||!art)return;
+  var originalParent=art.parentNode;
+  var originalNext=art.nextSibling;
+  var menu=document.createElement('details');
+  menu.className='gacc-mobile-menu';
+  var summary=document.createElement('summary');
+  summary.textContent='Explore GACC';
+  menu.appendChild(summary);
+  var links=document.createElement('div');
+  links.className='gacc-mobile-menu-links';
+  header.querySelectorAll('.header-actions a, nav.nav a').forEach(function(a){links.appendChild(a.cloneNode(true))});
+  menu.appendChild(links);
+  var layout=header.querySelector('.restored-header-layout');
+  if(layout)layout.appendChild(menu);
+  function syncMobile(){
+    if(window.matchMedia('(max-width:600px)').matches){
+      if(art.previousElementSibling!==document.querySelector('.gacc-top-show-dates')) {
+        header.parentNode.insertBefore(art,header);
+      }
+      if(notice&&notice.previousElementSibling!==art){art.parentNode.insertBefore(notice,art.nextSibling)}
+    }else{
+      if(originalNext&&originalNext.parentNode===originalParent)originalParent.insertBefore(art,originalNext);
+      else originalParent.appendChild(art);
+      if(notice&&notice.parentNode===originalParent)originalParent.insertBefore(notice,art);
+      menu.open=false;
+    }
+  }
+  syncMobile();
+  window.addEventListener('resize',syncMobile);
+});
+</script>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
 <div class="gacc-top-show-dates" aria-label="Save the dates for the 2027, 2028, and 2029 Great American Coin and Collectibles Shows">
