@@ -1976,6 +1976,81 @@ html body .sponsor-artwork .gacc-mobile-visit-hint{display:none}
   }
   #gacc-sponsor-gallery{scroll-margin-top:68px!important}
 }
+
+/* Sponsor mobile repair 2026-11-13: remove full-gallery equal-height rows.
+   Each clickable sponsor slot is a 16:9 banner with normal row spacing. */
+html body .sponsor-list.sponsor-artwork .sponsor-art-grid{
+  grid-auto-rows:auto!important;
+  align-items:start!important;
+}
+html body .sponsor-list.sponsor-artwork .sponsor-art-card{
+  height:auto!important;
+  min-height:0!important;
+  align-self:start!important;
+  display:block!important;
+  box-shadow:none!important;
+  border:0!important;
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+}
+html body .sponsor-list.sponsor-artwork .sponsor-art-image{
+  position:relative!important;
+  display:flex!important;
+  flex:0 0 auto!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:16 / 9!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  overflow:hidden!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+html body .sponsor-list.sponsor-artwork .sponsor-art-image > img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  object-fit:contain!important;
+}
+/* Critical: the old Angel Dee's fallback style forced display:flex despite
+   the hidden attribute, displaying duplicate giant text beside the SVG. */
+html body .sponsor-list.sponsor-artwork .sponsor-text-fallback[hidden],
+html body .sponsor-list.sponsor-artwork .sponsor-art-image > img[hidden]{
+  display:none!important;
+}
+html body .sponsor-list.sponsor-artwork .angel-dees-verified .sponsor-text-fallback[hidden]{
+  display:none!important;
+}
+html body .sponsor-list.sponsor-artwork .sponsor-art-image > .sponsor-text-fallback:not([hidden]){
+  display:flex!important;
+  width:100%!important;
+  height:100%!important;
+  padding:12px!important;
+  margin:0!important;
+  font:700 clamp(16px,3vw,25px)/1.25 Georgia,serif!important;
+}
+@media(max-width:760px){
+  html body .sponsor-list.sponsor-artwork .sponsor-art-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-auto-rows:auto!important;
+    gap:18px!important;
+    align-items:start!important;
+    justify-items:stretch!important;
+  }
+  html body .sponsor-list.sponsor-artwork .sponsor-art-card{
+    width:100%!important;
+    height:auto!important;
+    align-self:start!important;
+  }
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
