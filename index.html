@@ -2263,6 +2263,74 @@ html body .hours-section .hours-card .hour-row.public-vip-row strong{
     text-align:left!important;
   }
 }
+
+/* Final goodbye belongs at the very bottom on black, with text-only motion. */
+@keyframes gaccGoodbyeLetters{
+  0%,32.99%{color:#ffffff}
+  33%,65.99%{color:#ff5369}
+  66%,99.99%{color:#8cc1ff}
+  100%{color:#ffffff}
+}
+html body footer.end-footer.gacc-final-goodbye{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:17px!important;
+  min-height:210px!important;
+  padding:43px 18px 30px!important;
+  background:#080b12!important;
+  background-color:#080b12!important;
+  background-image:none!important;
+  color:#ffffff!important;
+  border-top:3px solid #c6a166!important;
+  box-shadow:none!important;
+  text-align:center!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  gap:7px!important;
+  width:100%!important;
+  max-width:960px!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words strong,
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
+  display:block!important;
+  margin:0!important;
+  padding:0!important;
+  color:#fff!important;
+  font:700 clamp(30px,5.5vw,67px)/1.15 Georgia,'Times New Roman',serif!important;
+  letter-spacing:-.02em!important;
+  text-transform:none!important;
+  animation:gaccGoodbyeLetters .9s steps(1,end) infinite!important;
+  text-shadow:0 2px 4px #0009!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
+  font-size:clamp(23px,4.3vw,52px)!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy,
+html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy:visited{
+  color:#e7c78c!important;
+  font:600 13px/1.4 Arial,Helvetica,sans-serif!important;
+  text-decoration:underline!important;
+  text-underline-offset:4px!important;
+}
+@media(max-width:700px){
+  html body footer.end-footer.gacc-final-goodbye{
+    padding:30px 14px 26px!important;
+    min-height:170px!important;
+    gap:12px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words strong,
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
+    animation:none!important;
+    color:#fff!important;
+  }
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -2344,19 +2412,7 @@ html body .hours-section .hours-card .hour-row.public-vip-row strong{
 <p class="not-sponsors">Industry links are separate from official show sponsors and do not imply sponsorship or exhibition participation.</p>
 </div></section>
 
-<section class="farewell gacc-blue-farewell" id="gacc-show-invite" aria-labelledby="gacc-invite-title">
-  <div class="inner">
-    <p class="eyebrow">OCTOBER 27–30, 2027 · ROSEMONT, ILLINOIS</p>
-    <h2 id="gacc-invite-title">Chicagoland’s Premier<span>Coin &amp; Collectibles Show</span></h2>
-    <p class="gacc-farewell-audience">Dealers, Collectors &amp; Everyone Welcome!</p>
-    <p class="gacc-farewell-booking">Book your tables now and get up-to-date show information at <a href="https://www.gaccshow.com/">gaccshow.com</a></p>
-    <div class="ghost-line" style="max-width:500px;margin:24px auto 0"></div>
-    <div class="gacc-farewell-contact">
-      <p class="gacc-farewell-contact-heading">Contact <strong>Jaye Watermann</strong> for more information</p>
-      <p class="gacc-farewell-contact-links"><a href="mailto:gaccshow@gmail.com">gaccshow@gmail.com</a><span aria-hidden="true"> · </span><a href="tel:+17797712417">779-771-2417</a></p>
-    </div>
-  </div>
-</section><section class="spot-section spot-mini" id="spot-prices" aria-label="Precious metals live spot prices and sponsorship">
+<section class="spot-section spot-mini" id="spot-prices" aria-label="Precious metals live spot prices and sponsorship">
   <div class="inner">
     <div class="spot-compact">
       <div class="spot-compact-heading"><strong>Precious Metals</strong><span>Live Spot Prices</span></div>
@@ -2372,6 +2428,12 @@ html body .hours-section .hours-card .hour-row.public-vip-row strong{
 </section>
 <section class="venue" id="venue"><div class="inner venue-grid"><div><p class="eyebrow">Find us in Rosemont</p><h2>Where collectors<br>come together.</h2><p class="address">Donald E. Stephens Convention Center<br>5555 N River Road<br>Rosemont, Illinois 60018</p><p>Steps from the heart of Rosemont, with convenient access to nearby hotels, dining, and the Chicago area.</p><a class="cta cta-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Donald+E.+Stephens+Convention+Center,+5555+N+River+Rd,+Rosemont,+IL+60018" target="_blank" rel="noopener">Get Directions ↗</a></div><div class="map-frame"><iframe title="Map: Donald E. Stephens Convention Center in Rosemont" loading="lazy" src="https://maps.google.com/maps?output=embed&amp;q=Donald%20E.%20Stephens%20Convention%20Center%2C%205555%20N%20River%20Road%2C%20Rosemont%2C%20IL%2060018&amp;z=15"></iframe><div class="map-tag"><small>Event location</small>Donald E. Stephens Convention Center</div></div></div></section>
 </main>
-<footer class="end-footer" style="background:#f2f7fd!important;background-color:#f2f7fd!important;background-image:none!important;color:#193e67!important;border-top:5px solid #bb3049!important;box-shadow:none!important"><strong style="display:block;color:#123a65!important;font-size:clamp(17px,2vw,21px)!important;line-height:1.3!important;letter-spacing:.025em!important">Great American Coin &amp; Collectibles Show</strong><span style="display:block;color:#345675!important;font-size:clamp(13px,1.5vw,15px)!important;line-height:1.7!important;letter-spacing:.01em!important;margin-top:7px">October 27–30, 2027 · Donald E. Stephens Convention Center · Rosemont, Illinois</span><div style="margin-top:15px"><a href="privacy.html" style="color:#a4233d!important;text-decoration:underline!important;text-underline-offset:4px!important;font-size:14px!important;font-weight:700!important">Privacy Notice</a></div><div class="goldrule"></div></footer>
+<footer class="end-footer gacc-final-goodbye" id="gacc-show-invite" aria-label="Great American Coin and Collectibles Show closing message">
+  <div class="gacc-goodbye-words">
+    <strong>See Ya Next Year.</strong>
+    <span>Be There Or Be Square.</span>
+  </div>
+  <a class="gacc-footer-privacy" href="privacy.html">Privacy Notice</a>
+</footer>
 <script>(function(){const target=new Date('2027-10-27T15:00:00-05:00').getTime();let last={};function tick(){let t=Math.max(0,Math.floor((target-Date.now())/1000));let p=[Math.floor(t/86400),Math.floor(t%86400/3600),Math.floor(t%3600/60),t%60];['days','hours','minutes','seconds'].forEach((k,i)=>{let el=document.getElementById('desk-'+k);if(!el)return;let v=i?String(p[i]).padStart(2,'0'):String(p[i]);if(el.textContent!==v){el.textContent=v;if(last[k]!==undefined&&window.matchMedia('(prefers-reduced-motion: no-preference)').matches){el.classList.remove('ben-tick');void el.offsetWidth;el.classList.add('ben-tick')}last[k]=v}});if(t===0){let h=document.querySelector('.ben-luxe-heading');if(h)h.textContent='THE SHOW HAS BEGUN'}}tick();setInterval(tick,1000)})();</script>
 </body></html>
