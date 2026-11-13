@@ -2415,92 +2415,68 @@ html body .sponsor-artwork .gacc-discover-invite .gacc-click-plaque > span{
   }
 }
 
-/* West Coast Coins is a featured, full-bleed billboard ABOVE the smaller sponsors. */
+/* West Coast Coins featured banner: never stretch the approved 3:1 artwork.
+   A full-bleed navy sponsor band surrounds a smaller, centered proportional banner. */
 html body .sponsor-list.sponsor-artwork .gacc-west-featured-shell{
-  width:100vw!important;
-  max-width:100vw!important;
-  margin:15px 0 30px calc(50% - 50vw)!important;
-  padding:0!important;
   position:relative!important;
   left:auto!important;
-  border:0!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  margin:15px 0 26px calc(50% - 50vw)!important;
+  padding:15px 0!important;
   overflow:hidden!important;
+  border:0!important;
+  background:linear-gradient(90deg,#0b2d52 0%,#174b79 35%,#0e3561 65%,#0b2d52 100%)!important;
   scroll-margin-top:80px!important;
 }
 html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
   display:block!important;
   position:relative!important;
-  width:100%!important;
-  margin:0!important;
-  padding:0!important;
-  /* Same edge-to-edge placement, approximately half the former height. */
-  aspect-ratio:6 / 1!important;
+  width:min(65vw,1100px)!important;
+  max-width:100%!important;
+  height:auto!important;
   min-height:0!important;
+  aspect-ratio:3 / 1!important;
+  margin:0 auto!important;
+  padding:0!important;
   overflow:hidden!important;
   background:#092d5b!important;
-  border:0!important;
-  box-shadow:0 12px 28px #050b1880!important;
+  border:1px solid #d7b576!important;
+  box-shadow:0 8px 22px #050b1880!important;
   text-decoration:none!important;
 }
 html body .sponsor-list.sponsor-artwork .gacc-west-featured-link > img{
-  width:100%!important;
-  height:100%!important;
-  max-width:100%!important;
-  max-height:100%!important;
   display:block!important;
-  object-fit:fill!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:none!important;
+  aspect-ratio:3 / 1!important;
+  object-fit:contain!important;
+  object-position:center center!important;
   border:0!important;
   transform:none!important;
-}
-html body .sponsor-list.sponsor-artwork .gacc-west-featured-top{
-  position:absolute!important;
-  top:0!important;
-  left:0!important;
-  width:100%!important;
-  height:25%!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  gap:clamp(9px,3vw,42px)!important;
-  box-sizing:border-box!important;
-  border-bottom:3px solid #d9ae64!important;
-  background:linear-gradient(165deg,#061a40 0%,#0b3b80 38%,#06193a 75%,#0b3578 100%)!important;
-  box-shadow:0 4px 12px #0006!important;
-  color:#fff1bf!important;
-  text-shadow:0 2px 2px #000b,0 0 11px #e4b864b3!important;
-  font:700 clamp(15px,5vw,75px)/1.05 Georgia,'Times New Roman',serif!important;
-  letter-spacing:.045em!important;
-  white-space:nowrap!important;
-}
-html body .sponsor-list.sponsor-artwork .gacc-west-featured-top > span{
-  color:#ffd379!important;
-  font-size:.65em!important;
 }
 html body .sponsor-list.sponsor-artwork .gacc-west-featured-link:hover > img{
   filter:brightness(1.07)!important;
 }
 html body .sponsor-list.sponsor-artwork .gacc-west-featured-link:focus-visible{
   outline:4px solid #fff!important;
-  outline-offset:-7px!important;
+  outline-offset:3px!important;
 }
 @media(max-width:760px){
   html body .sponsor-list.sponsor-artwork .gacc-west-featured-shell{
-    margin:10px 0 19px calc(50% - 50vw)!important;
+    margin:10px 0 17px calc(50% - 50vw)!important;
+    padding:7px 0!important;
     scroll-margin-top:70px!important;
   }
   html body .sponsor-list.sponsor-artwork .gacc-west-featured-link{
-    /* Slightly taller on phones so the sponsor name and website stay readable. */
-    aspect-ratio:5 / 1!important;
-    border-top-width:2px!important;
-    border-bottom-width:2px!important;
-  }
-  html body .sponsor-list.sponsor-artwork .gacc-west-featured-top{
-    border-bottom-width:1px!important;
-    font-size:clamp(13px,4.2vw,28px)!important;
-    letter-spacing:.02em!important;
+    width:calc(100vw - 16px)!important;
+    max-width:100%!important;
+    height:auto!important;
+    aspect-ratio:3 / 1!important;
   }
 }
-
 /* Match 2029's year color to the red 2027 date, preserving 2028 navy. */
 html body .gacc-top-show-dates .date-item:nth-child(3) .date-year{
   color:#a82438!important;
