@@ -604,6 +604,22 @@ html body .gacc-top-show-dates time{font-size:clamp(13px,1.35vw,18px)!important;
  html body .hero-shell .gacc-ben-panorama-counter{position:relative!important;inset:auto!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;padding:43px 11px 13px!important}
 }
 </style>
+<style id="gacc-mobile-live-countdown-in-ben-banner">
+@media(max-width:720px){
+ html body .hero-shell .gacc-ben-panorama{position:relative!important;display:block!important;width:100vw!important;height:auto!important;aspect-ratio:1600/345!important;container-type:inline-size!important;overflow:hidden!important}
+ html body .hero-shell .gacc-ben-panorama-art{display:block!important;width:100%!important;height:auto!important;aspect-ratio:1600/345!important;object-fit:contain!important}
+ html body .hero-shell .gacc-ben-mobile-portrait{display:none!important}
+ html body .hero-shell .gacc-ben-panorama-counter{position:absolute!important;inset:0!important;display:block!important;padding:0!important;border:0!important;background:transparent!important;pointer-events:none!important}
+ html body .hero-shell .gacc-ben-panorama-counter:before{display:none!important;content:none!important}
+ html body .hero-shell .gacc-ben-value,html body .hero-shell .gacc-ben-value:nth-child(n){position:absolute!important;top:35%!important;height:20%!important;min-height:0!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:0!important;padding:0!important;margin:0!important;border:0!important;border-radius:2px!important;background:#090b12!important;box-shadow:none!important;font:700 4.5cqw/1 Georgia,serif!important;color:#ffe2a0!important;text-shadow:0 0 4px #c99352!important}
+ html body .hero-shell .gacc-ben-value:nth-child(1){left:48.10%!important;width:8.55%!important}
+ html body .hero-shell .gacc-ben-value:nth-child(2){left:59.56%!important;width:7.85%!important}
+ html body .hero-shell .gacc-ben-value:nth-child(3){left:70.90%!important;width:7.80%!important}
+ html body .hero-shell .gacc-ben-value:nth-child(4){left:82.55%!important;width:7.18%!important}
+ html body .hero-shell .gacc-ben-value:after{display:none!important;content:none!important}
+ html body .hero-shell .gacc-ben-mobile-date{display:none!important}
+}
+</style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
 <div class="gacc-top-show-dates" aria-label="Save the dates for the 2027, 2028, and 2029 Great American Coin and Collectibles Shows">
