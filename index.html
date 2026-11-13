@@ -2267,10 +2267,9 @@ html body .hours-section .hours-card .hour-row.public-vip-row strong{
 
 /* Final goodbye belongs at the very bottom on black, with text-only motion. */
 @keyframes gaccGoodbyeLetters{
-  0%,32.99%{color:#ffffff}
-  33%,65.99%{color:#ff5369}
-  66%,99.99%{color:#8cc1ff}
-  100%{color:#ffffff}
+  0%{background-position:0% 50%;transform:translateX(-4px)}
+  50%{transform:translateX(4px)}
+  100%{background-position:100% 50%;transform:translateX(-4px)}
 }
 html body footer.end-footer.gacc-final-goodbye{
   display:flex!important;
@@ -2301,12 +2300,19 @@ html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
   display:block!important;
   margin:0!important;
   padding:0!important;
-  color:#fff!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  background-image:linear-gradient(100deg,#ffffff 0%,#ffffff 15%,#ed2f49 25%,#ff5970 33%,#ffffff 45%,#ffffff 53%,#3c87e8 65%,#89c8ff 75%,#ffffff 87%,#ffffff 100%)!important;
+  background-size:300% 100%!important;
+  background-repeat:no-repeat!important;
+  background-clip:text!important;
+  -webkit-background-clip:text!important;
   font:400 clamp(38px,6.7vw,88px)/1.18 'Kaushan Script','Brush Script MT','Segoe Script',cursive!important;
   letter-spacing:.005em!important;
   text-transform:none!important;
-  animation:gaccGoodbyeLetters .9s steps(1,end) infinite!important;
-  text-shadow:0 2px 0 #75501f,0 5px 14px #dca84966,0 3px 7px #000b!important;
+  animation:gaccGoodbyeLetters 1.65s linear infinite!important;
+  will-change:background-position,transform!important;
+  text-shadow:0 2px 0 #75501f,0 5px 14px #dca84944,0 3px 7px #0008!important;
 }
 html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
   font-size:clamp(30px,5.2vw,67px)!important;
@@ -2329,7 +2335,10 @@ html body footer.end-footer.gacc-final-goodbye .gacc-footer-privacy:visited{
   html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words strong,
   html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
     animation:none!important;
+    background-image:none!important;
     color:#fff!important;
+    -webkit-text-fill-color:#fff!important;
+    transform:none!important;
   }
 }
 
