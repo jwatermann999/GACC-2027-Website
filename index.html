@@ -2544,6 +2544,57 @@ html body .hours-section .hours-card .access-row .date{
     box-shadow:0 5px 13px #163a5c18!important;
   }
 }
+
+/* Farewell refinement: brighter readable icy blue in top line, plus signature
+   tucked beside the second line. Preserve original font, background and copy. */
+@keyframes gaccGoodbyeHeadlineLegible{
+  0%,31.9%{color:#fffdf5}
+  32%,63.9%{color:#f25b69}
+  64%,95.9%{color:#d6edff}
+  96%,100%{color:#fffdf5}
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words > strong{
+  animation:gaccGoodbyeHeadlineLegible 1.2s steps(1,end) infinite!important;
+  text-shadow:0 2px 1px #1a2741,0 0 10px #d5eaff42,0 3px 9px #000b!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-second-line{
+  display:flex!important;
+  align-items:baseline!important;
+  justify-content:center!important;
+  flex-wrap:wrap!important;
+  column-gap:clamp(10px,1.7vw,24px)!important;
+  row-gap:3px!important;
+  max-width:100%!important;
+  width:100%!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-second-line > span{
+  min-width:0!important;
+  text-align:center!important;
+}
+html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-second-line > .gacc-goodbye-signature{
+  display:inline-block!important;
+  flex:0 0 auto!important;
+  font:400 clamp(17px,2.2vw,27px)/1.25 'Kaushan Script','Brush Script MT','Segoe Script',cursive!important;
+  color:#f1d19a!important;
+  -webkit-text-fill-color:#f1d19a!important;
+  text-shadow:0 2px 7px #000b!important;
+  white-space:nowrap!important;
+}
+@media(max-width:700px){
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-second-line{
+    column-gap:7px!important;
+  }
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-second-line > .gacc-goodbye-signature{
+    font-size:clamp(17px,4.6vw,22px)!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words > strong{
+    animation:none!important;
+    color:#fffdf5!important;
+    -webkit-text-fill-color:#fffdf5!important;
+  }
+}
 </style>
 </head>
 <body class="gacc-unified-luxe gacc-page-home">
@@ -2650,7 +2701,7 @@ html body .hours-section .hours-card .access-row .date{
 <footer class="end-footer gacc-final-goodbye" id="gacc-show-invite" aria-label="Great American Coin and Collectibles Show closing message">
   <div class="gacc-goodbye-words">
     <strong>See Ya Next Year.</strong>
-    <span>Be There Or Be Square.</span>
+    <div class="gacc-goodbye-second-line"><span>Be There Or Be Square.</span><small class="gacc-goodbye-signature">~ Jaye Watermann</small></div>
   </div>
   <a class="gacc-footer-privacy" href="privacy.html">Privacy Notice</a>
 </footer>
