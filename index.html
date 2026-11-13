@@ -1276,7 +1276,7 @@ html body .end-footer{
   color:#17385f!important;
   box-shadow:inset 0 5px 0 #ffffff!important;
 }
-html body .end-footer strong{
+html body .end-footer:not(.gacc-final-goodbye) strong{
   color:#133b6c!important;
 }
 html body .end-footer a{
@@ -2064,7 +2064,7 @@ html body footer.end-footer{
  text-align:center!important;
  box-shadow:none!important;
 }
-html body footer.end-footer strong{color:#123a65!important}
+html body footer.end-footer:not(.gacc-final-goodbye) strong{color:#123a65!important}
 html body footer.end-footer a,
 html body footer.end-footer a:visited{
  color:#a4233d!important;
@@ -2303,7 +2303,7 @@ html body footer.end-footer.gacc-final-goodbye .gacc-goodbye-words span{
   padding:0!important;
   /* Unified color across every letter, not striped or muddy. */
   color:#fffaf1;
-  -webkit-text-fill-color:currentColor;
+  -webkit-text-fill-color:currentColor!important;
   background:none!important;
   background-image:none!important;
   -webkit-background-clip:border-box!important;
